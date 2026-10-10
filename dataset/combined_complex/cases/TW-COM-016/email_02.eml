@@ -1,0 +1,80 @@
+Received: from mail-out.news-rewards.example.org (news-rewards.example.org [192.0.2.80])
+	by mx.students.example.org with ESMTP id TWCOM01602;
+	Thu, 18 Jun 2026 16:39:37 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-016
+From: "Ferncliff Reader Rewards" <rewards@news-rewards.example.org>
+To: "Yusuf Demir" <yusuf.demir@students.example.org>
+Subject: Reader survey prize: claim your reward
+Date: Thu, 18 Jun 2026 16:39:34 +0000
+Message-ID: <tw-com-016.email_02.fdbbc9b46e@mail-out.news-rewards.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-COM-016_email_02_alt"
+
+--=_TW-COM-016_email_02_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Yusuf,
+
+You have been selected for a reader reward.
+
+Scan the QR code to see your prize.
+
+[QR code image(s) embedded in the HTML version of this message]
+
+Regards,
+Ferncliff Reader Rewards
+
+--=_TW-COM-016_email_02_alt
+Content-Type: multipart/related; boundary="=_TW-COM-016_email_02_rel"
+
+--=_TW-COM-016_email_02_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Yusuf,</p><p>You have been selected for a reader reward.</p><p>Scan the QR code to see your prize.</p><p><img src="cid:qr_02.email_02.tw-com-016@mail-out.news-rewards.example.org" alt="QR code" width="200" height="200"></p><p>Regards,<br>Ferncliff Reader Rewards</p></body></html>
+--=_TW-COM-016_email_02_rel
+Content-Type: image/png; name="reader-prize-qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr_02.email_02.tw-com-016@mail-out.news-rewards.example.org>
+Content-Disposition: inline; filename="reader-prize-qr.png"
+
+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
+--=_TW-COM-016_email_02_rel--
+--=_TW-COM-016_email_02_alt--

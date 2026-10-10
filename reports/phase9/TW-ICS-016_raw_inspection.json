@@ -1,0 +1,78 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-016.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-016.ics",
+    "size_bytes": 112,
+    "sha256": "8afccd4a9bbf438cbc347463b97b0f0fb1310dc188865c831585968d739c1e65"
+  },
+  "inspection": {
+    "inspected_at": "2026-10-03T15:17:29.546006+00:00",
+    "encoding_used": "utf-8"
+  },
+  "structure": {
+    "has_vcalendar_begin": true,
+    "has_vcalendar_end": false,
+    "balanced_vcalendar": false,
+    "component_analysis": {
+      "begin_components": [
+        {
+          "line_number": 1,
+          "component": "VCALENDAR"
+        },
+        {
+          "line_number": 5,
+          "component": "VEVEN"
+        }
+      ],
+      "end_components": []
+    },
+    "line_analysis": {
+      "total_lines": 5,
+      "lines": [
+        {
+          "line_number": 1,
+          "length": 15,
+          "text": "BEGIN:VCALENDAR",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 2,
+          "length": 11,
+          "text": "VERSION:2.0",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 3,
+          "length": 49,
+          "text": "PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 4,
+          "length": 18,
+          "text": "CALSCALE:GREGORIAN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 5,
+          "length": 11,
+          "text": "BEGIN:VEVEN",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        }
+      ]
+    }
+  },
+  "anomalies": [],
+  "encoded_candidates": [],
+  "raw_preview": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVEN"
+}

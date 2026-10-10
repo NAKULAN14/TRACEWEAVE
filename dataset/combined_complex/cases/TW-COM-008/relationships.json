@@ -1,0 +1,83 @@
+[
+  {
+    "relationship_id": "REL-001",
+    "source": "artifact:email_01.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:qr_01.png",
+    "evidence_type": "observed",
+    "basis": "MIME image part 'offer-acceptance.png' is byte-identical to qr_01.png"
+  },
+  {
+    "relationship_id": "REL-002",
+    "source": "artifact:email_01.eml",
+    "relation": "sent_from",
+    "target": "email_address:offers@vantor-talent.example.org",
+    "evidence_type": "observed",
+    "basis": "From header"
+  },
+  {
+    "relationship_id": "REL-003",
+    "source": "artifact:qr_01.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_01#1",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-004",
+    "source": "qr:qr_01#1",
+    "relation": "encodes",
+    "target": "url:https://offer.example.net/accept/TW-COM-008",
+    "evidence_type": "observed",
+    "basis": "decoded payload is a URL"
+  },
+  {
+    "relationship_id": "REL-005",
+    "source": "url:https://offer.example.net/accept/TW-COM-008",
+    "relation": "has_domain",
+    "target": "domain:offer.example.net",
+    "evidence_type": "observed",
+    "basis": "URL host"
+  },
+  {
+    "relationship_id": "REL-006",
+    "source": "dns_event:TW-COM-008-DNS-001",
+    "relation": "queries",
+    "target": "domain:offer.example.net",
+    "evidence_type": "observed",
+    "basis": "DNS query name"
+  },
+  {
+    "relationship_id": "REL-007",
+    "source": "dns_event:TW-COM-008-DNS-001",
+    "relation": "resolves_to",
+    "target": "ip:192.0.2.136",
+    "evidence_type": "observed",
+    "basis": "DNS response"
+  },
+  {
+    "relationship_id": "REL-008",
+    "source": "browser_event:TW-COM-008-BRW-001",
+    "relation": "visits",
+    "target": "url:https://offer.example.net/accept/TW-COM-008",
+    "evidence_type": "observed",
+    "basis": "browser event url"
+  },
+  {
+    "relationship_id": "REL-009",
+    "source": "artifact:email_01.eml",
+    "relation": "likely_origin_of",
+    "target": "browser_event:TW-COM-008-BRW-001",
+    "evidence_type": "inferred",
+    "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+    "confidence": "high"
+  },
+  {
+    "relationship_id": "REL-010",
+    "source": "browser_event:TW-COM-008-BRW-002",
+    "relation": "visits",
+    "target": "url:https://offer.example.net/accept/TW-COM-008",
+    "evidence_type": "observed",
+    "basis": "browser event url"
+  }
+]

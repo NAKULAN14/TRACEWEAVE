@@ -1,0 +1,277 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-004.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-004.ics",
+    "size_bytes": 844,
+    "sha256": "339b06edb58310fb2e40ce45f3925f7ef7d89ce19846bfc9ac6a98a3cece6105"
+  },
+  "inspection": {
+    "inspected_at": "2026-10-03T15:17:29.313116+00:00",
+    "encoding_used": "utf-8"
+  },
+  "structure": {
+    "has_vcalendar_begin": false,
+    "has_vcalendar_end": true,
+    "balanced_vcalendar": false,
+    "component_analysis": {
+      "begin_components": [
+        {
+          "line_number": 18,
+          "component": "VALARM"
+        }
+      ],
+      "end_components": [
+        {
+          "line_number": 22,
+          "component": "VALARM"
+        },
+        {
+          "line_number": 23,
+          "component": "VEVENT"
+        },
+        {
+          "line_number": 24,
+          "component": "VCALENDAR"
+        }
+      ]
+    },
+    "line_analysis": {
+      "total_lines": 24,
+      "lines": [
+        {
+          "line_number": 1,
+          "length": 11,
+          "text": "VERSION:2.0",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 2,
+          "length": 49,
+          "text": "PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 3,
+          "length": 18,
+          "text": "CALSCALE:GREGORIAN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 4,
+          "length": 42,
+          "text": "UID:tw-ics-004-aa04518c@events.example.edu",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 5,
+          "length": 24,
+          "text": "DTSTAMP:20260221T090000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 6,
+          "length": 24,
+          "text": "DTSTART:20260311T080000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 7,
+          "length": 22,
+          "text": "DTEND:20260311T100000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 8,
+          "length": 37,
+          "text": "SUMMARY:Digital Forensics Lab Session",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 9,
+          "length": 75,
+          "text": "DESCRIPTION:Practical exercise on disk imaging\\, evidence handling\\, and ti",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 10,
+          "length": 75,
+          "text": " meline reconstruction using synthetic case data. Please bring your student",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 11,
+          "length": 75,
+          "text": "  ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://even",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 12,
+          "length": 29,
+          "text": " ts.example.edu/tw/agenda/004",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 13,
+          "length": 61,
+          "text": "LOCATION:Room 285\\, Block B\\, Example Institute of Technology",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 14,
+          "length": 67,
+          "text": "ORGANIZER;CN=\"Prof. Karthik Menon\":mailto:karthik.menon@example.edu",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 15,
+          "length": 23,
+          "text": "CATEGORIES:LAB,ACADEMIC",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 16,
+          "length": 16,
+          "text": "STATUS:CONFIRMED",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 17,
+          "length": 37,
+          "text": "URL:https://events.example.edu/tw/004",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 18,
+          "length": 12,
+          "text": "BEGIN:VALARM",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 19,
+          "length": 14,
+          "text": "ACTION:DISPLAY",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 20,
+          "length": 38,
+          "text": "DESCRIPTION:Event starts in 15 minutes",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 21,
+          "length": 14,
+          "text": "TRIGGER:-PT15M",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 22,
+          "length": 10,
+          "text": "END:VALARM",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        },
+        {
+          "line_number": 23,
+          "length": 10,
+          "text": "END:VEVENT",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        },
+        {
+          "line_number": 24,
+          "length": 13,
+          "text": "END:VCALENDAR",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        }
+      ]
+    }
+  },
+  "anomalies": [
+    {
+      "line_number": 10,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "meline reconstruction using synthetic case data. Please bring your student"
+    },
+    {
+      "line_number": 12,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "ts.example.edu/tw/agenda/004"
+    }
+  ],
+  "encoded_candidates": [
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 136,
+      "end_offset": 152,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "3edfc63650e1af42c72fc546e224e697e4d014572f0566bfafc848a8af9ab496"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 162,
+      "end_offset": 178,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "fb6e47d49af6177edf4051ceb49da2b058034acc98232b7114a3e2df258cf800"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 186,
+      "end_offset": 202,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "a90e0aca6fe6a3a384bd75d50b18348581d4b516fb6c9c63685713927cb9a29c"
+    }
+  ],
+  "raw_preview": "VERSION:2.0\r\nPRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN\r\nCALSCALE:GREGORIAN\r\nUID:tw-ics-004-aa04518c@events.example.edu\r\nDTSTAMP:20260221T090000Z\r\nDTSTART:20260311T080000Z\r\nDTEND:20260311T100000Z\r\nSUMMARY:Digital Forensics Lab Session\r\nDESCRIPTION:Practical exercise on disk imaging\\, evidence handling\\, and ti\r\n meline reconstruction using synthetic case data. Please bring your student\r\n  ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://even\r\n ts.example.edu/tw/agenda/004\r\nLOCATION:Room 285\\, Block B\\, Example Institute of Technology\r\nORGANIZER;CN=\"Prof. Karthik Menon\":mailto:karthik.menon@example.edu\r\nCATEGORIES:LAB,ACADEMIC\r\nSTATUS:CONFIRMED\r\nURL:https://events.example.edu/tw/004\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Event starts in 15 minutes\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+}

@@ -1,0 +1,62 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-007.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-007.ics",
+        "size_bytes": 867,
+        "sha256": "b49e5809a8cc8655e7777f7f216033b0c62737977d3bcc0803df71c04ac7f908"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-007_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-007_recovered.ics",
+        "size_bytes": 870,
+        "sha256": "00fe470bf95aaa1035b111fd285142a56bf2c65166070f973c3b704b80b5d865"
+    },
+    "transformations": [
+        {
+            "type": "BROKEN_FOLD_RECOVERY",
+            "line_number": 12,
+            "original": "trees with short practice problems. Please bring your student ID and a lap",
+            "recovered": " trees with short practice problems. Please bring your student ID and a lap",
+            "property": "DESCRIPTION",
+            "reason": "Line without property delimiter followed a text property and was recovered as a folded continuation"
+        },
+        {
+            "type": "BROKEN_FOLD_RECOVERY",
+            "line_number": 13,
+            "original": "top. Review the pre-reading beforehand.\\nAgenda: https://events.example.ed",
+            "recovered": " top. Review the pre-reading beforehand.\\nAgenda: https://events.example.ed",
+            "property": "DESCRIPTION",
+            "reason": "Line without property delimiter followed a text property and was recovered as a folded continuation"
+        },
+        {
+            "type": "BROKEN_FOLD_RECOVERY",
+            "line_number": 14,
+            "original": "u/tw/agenda/007",
+            "recovered": " u/tw/agenda/007",
+            "property": "DESCRIPTION",
+            "reason": "Line without property delimiter followed a text property and was recovered as a folded continuation"
+        }
+    ],
+    "transformation_count": 3,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:54.944133+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

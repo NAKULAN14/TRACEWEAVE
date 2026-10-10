@@ -1,0 +1,26 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-003.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-003.ics",
+    "size_bytes": 859
+  },
+  "standard_parser": {
+    "name": "icalendar",
+    "status": "FAILED",
+    "error": {
+      "type": "ValueError",
+      "message": "Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]"
+    }
+  },
+  "recovery": {
+    "required": true,
+    "status": "PENDING",
+    "method": null,
+    "recovered_artifact": null,
+    "confidence": null
+  },
+  "analysis": {
+    "analyzed_at": "2026-10-03T12:41:41.314626+00:00",
+    "workflow_stage": "phase_9b"
+  }
+}

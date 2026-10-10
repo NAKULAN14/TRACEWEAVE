@@ -1,0 +1,162 @@
+[
+  {
+    "timestamp": "2026-06-21T16:40:49+00:00",
+    "source_timestamp": "2026-06-21T16:40:49+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T16:40:52+00:00",
+    "source_timestamp": "2026-06-21T16:40:52+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T16:40:52+00:00",
+    "source_timestamp": "2026-06-21T16:40:52+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:52.482+00:00",
+    "source_timestamp": "2026-06-21T19:00:52.482+00:00",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://go.example.net/r/TW-COM-017",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:52.970+00:00",
+    "source_timestamp": "2026-06-21T19:00:52.970+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for go.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-017-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:52.978+00:00",
+    "source_timestamp": "2026-06-21T19:00:52.978+00:00",
+    "event_type": "dns_query",
+    "description": "AAAA lookup for go.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-017-DNS-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:53.362+00:00",
+    "source_timestamp": "2026-06-21T19:00:53.362+00:00",
+    "event_type": "http_redirect",
+    "description": "redirect https://go.example.net/r/TW-COM-017",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:53.462+00:00",
+    "source_timestamp": "2026-06-21T19:00:53.462+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for files.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-017-DNS-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:54.571+00:00",
+    "source_timestamp": "2026-06-21T19:00:54.571+00:00",
+    "event_type": "page_load",
+    "description": "load https://files.example.net/view/TW-COM-017",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:55.966+00:00",
+    "source_timestamp": "2026-06-21T19:00:55.966+00:00",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://files.example.net/view/TW-COM-017",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:00:58.651+00:00",
+    "source_timestamp": "2026-06-21T19:00:58.651+00:00",
+    "event_type": "link_clicked",
+    "description": "click_simulated_link https://files.example.net/view/TW-COM-017",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-005",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:01:00.320+00:00",
+    "source_timestamp": "2026-06-21T19:01:00.320+00:00",
+    "event_type": "file_download",
+    "description": "download_simulated_no_file https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-006",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-21T19:01:18.043+00:00",
+    "source_timestamp": "2026-06-21T19:01:18.043+00:00",
+    "event_type": "tab_closed",
+    "description": "close_tab https://files.example.net/view/TW-COM-017",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-017-BRW-007",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-22T16:40:49+00:00",
+    "source_timestamp": "2026-06-22T16:40:49+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_02.eml",
+    "source_artifact": "email_02.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-22T16:40:52+00:00",
+    "source_timestamp": "2026-06-22T16:40:52+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_02.eml",
+    "source_artifact": "email_02.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-22T16:40:52+00:00",
+    "source_timestamp": "2026-06-22T16:40:52+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_02.png becomes extractable once email_02.eml is received",
+    "source_artifact": "qr_02.png",
+    "reference_id": "qr:qr_02#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  }
+]

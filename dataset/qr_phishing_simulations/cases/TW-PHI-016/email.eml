@@ -1,0 +1,93 @@
+Received: from mail-out.alderwick-conference.example.com (alderwick-conference.example.com [192.0.2.33])
+	by mx.mail.example.net with ESMTP id TWPHI016;
+	Wed, 06 May 2026 13:09:29 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-016
+From: "Alderwick Conference Office" <conference@alderwick-conference.example.com>
+To: "Yusuf Demir" <yusuf.demir@mail.example.net>
+Subject: Final call: conference registration closes soon
+Date: Wed, 06 May 2026 05:09:24 -0800
+Message-ID: <tw-phi-016.332c6f24b1@mail-out.alderwick-conference.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-PHI-016_mix"
+
+--=_TW-PHI-016_mix
+Content-Type: multipart/alternative; boundary="=_TW-PHI-016_alt"
+
+--=_TW-PHI-016_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Yusuf,
+
+Registration for the Annual Student Research Conference closes soon.
+
+Complete your registration to be included in the attendee list and
+printed program.
+
+Scan the attached QR code (conference-qr.png) with your phone camera to
+continue.
+
+A calendar invitation has been sent in a separate message.
+
+If scanning does not work, use this link instead:
+https://example.com/conference/register/TW-PHI-016
+
+Regards,
+Alderwick Conference Office
+
+--=_TW-PHI-016_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Yusuf,</p><p>Registration for the Annual Student Research Conference closes soon.</p><p>Complete your registration to be included in the attendee list and printed program.</p><p>Scan the attached QR code (conference-qr.png) with your phone camera to continue.</p><p>A calendar invitation has been sent in a separate message.</p><p>(QR code attached: conference-qr.png)</p><p>If scanning does not work, use this link instead:<br><a href="https://example.com/conference/register/TW-PHI-016">https://example.com/conference/register/TW-PHI-016</a></p><p>Regards,<br>Alderwick Conference Office</p></body></html>
+--=_TW-PHI-016_alt--
+--=_TW-PHI-016_mix
+Content-Type: image/png; name="conference-qr.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="conference-qr.png"
+
+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
+9cf/bQrdFvn1hsUAAAAASUVORK5CYII=
+--=_TW-PHI-016_mix--

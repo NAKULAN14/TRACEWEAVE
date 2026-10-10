@@ -1,0 +1,151 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-015.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-015.ics",
+    "size_bytes": 309,
+    "sha256": "8d4f025048586600f8291090931587e1fcff1b69eaa4e23c15c9a5837ce3bad5"
+  },
+  "inspection": {
+    "inspected_at": "2026-10-03T15:17:29.476043+00:00",
+    "encoding_used": "utf-8"
+  },
+  "structure": {
+    "has_vcalendar_begin": true,
+    "has_vcalendar_end": false,
+    "balanced_vcalendar": false,
+    "component_analysis": {
+      "begin_components": [
+        {
+          "line_number": 1,
+          "component": "VCALENDAR"
+        },
+        {
+          "line_number": 5,
+          "component": "VEVENT"
+        }
+      ],
+      "end_components": []
+    },
+    "line_analysis": {
+      "total_lines": 11,
+      "lines": [
+        {
+          "line_number": 1,
+          "length": 15,
+          "text": "BEGIN:VCALENDAR",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 2,
+          "length": 11,
+          "text": "VERSION:2.0",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 3,
+          "length": 49,
+          "text": "PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 4,
+          "length": 18,
+          "text": "CALSCALE:GREGORIAN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 5,
+          "length": 12,
+          "text": "BEGIN:VEVENT",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 6,
+          "length": 42,
+          "text": "UID:tw-ics-015-f2307bcb@events.example.edu",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 7,
+          "length": 24,
+          "text": "DTSTAMP:20260216T090000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 8,
+          "length": 24,
+          "text": "DTSTART:20260415T093000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 9,
+          "length": 22,
+          "text": "DTEND:20260415T103000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 10,
+          "length": 35,
+          "text": "SUMMARY:Cloud Security Study Circle",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 11,
+          "length": 37,
+          "text": "DESCRIPTION:Study circle on identity ",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        }
+      ]
+    }
+  },
+  "anomalies": [],
+  "encoded_candidates": [
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 167,
+      "end_offset": 183,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "91edb9759a30ffd65b6c4c30ed6520574d872e6aea5146977b37f95ade28e6d6"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 193,
+      "end_offset": 209,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "654a43ee3cfc21334f639c84b3317c7fc9888ff1c20b88e7e741d4fc0e047b17"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 217,
+      "end_offset": 233,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "5dfee30cd909735d04ca81399ec586b4cac7205a804f9135f70d41935ef8b5d8"
+    }
+  ],
+  "raw_preview": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:tw-ics-015-f2307bcb@events.example.edu\r\nDTSTAMP:20260216T090000Z\r\nDTSTART:20260415T093000Z\r\nDTEND:20260415T103000Z\r\nSUMMARY:Cloud Security Study Circle\r\nDESCRIPTION:Study circle on identity "
+}

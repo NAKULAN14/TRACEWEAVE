@@ -1,0 +1,261 @@
+{
+  "case_id": "TW-COM-004",
+  "category": "combined_complex",
+  "scenario": "Urgent-sounding IT notice with inline QR code; no browser or DNS evidence, no recorded scan.",
+  "expected_classification": "inconclusive",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "2f2ee60a9f0f5ddcf036af72ce7b137f9e72c057e3add6e27bf183f13cde05ae"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "3d6846f7de2819b14be62fcc9b86d1a7d005a2d028d3bf869fe08f26b6df297e"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "980840ddb20f8f7559b5b0c87f90ddca78f66b3e0747cc6ffd5810814cf125a3"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "2cfc47d6de33cac6840dc9944bdb923b59acd06969be3ae1baf7a0d18e644454"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "efe04491a06186d62a01b055962f8f387f6e1384332ec406fcfb1b8b46fdd171"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "inline image of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://wifi-help.example.org/certs/TW-COM-004",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://wifi-help.example.org/certs/TW-COM-004"
+  ],
+  "expected_urls": [
+    "https://wifi-help.example.org/certs/TW-COM-004"
+  ],
+  "expected_domains": [
+    "tessarine-it.example.org",
+    "wifi-help.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://wifi-help.example.org/certs/TW-COM-004",
+      "normalized_value": "https://wifi-help.example.org/certs/TW-COM-004",
+      "observed_values": [
+        "https://wifi-help.example.org/certs/TW-COM-004"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "qr_01.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "tessarine-it.example.org",
+      "normalized_value": "tessarine-it.example.org",
+      "observed_values": [
+        "tessarine-it.example.org"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "wifi-help.example.org",
+      "normalized_value": "wifi-help.example.org",
+      "observed_values": [
+        "wifi-help.example.org"
+      ],
+      "roles": [
+        "url_host"
+      ],
+      "source_artifacts": [
+        "qr_01.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "email_address",
+      "value": "servicedesk@tessarine-it.example.org",
+      "normalized_value": "servicedesk@tessarine-it.example.org",
+      "observed_values": [
+        "servicedesk@tessarine-it.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.37",
+      "normalized_value": "192.0.2.37",
+      "observed_values": [
+        "192.0.2.37"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "embeds_inline",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'wifi-cert-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:servicedesk@tessarine-it.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://wifi-help.example.org/certs/TW-COM-004",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://wifi-help.example.org/certs/TW-COM-004",
+      "relation": "has_domain",
+      "target": "domain:wifi-help.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-13T10:49:59+00:00",
+      "source_timestamp": "2026-05-13T10:49:59+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T10:50:02+00:00",
+      "source_timestamp": "2026-05-13T10:50:02+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T10:50:02+00:00",
+      "source_timestamp": "2026-05-13T10:50:02+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [
+    {
+      "artifact": "browser_events.json",
+      "reason": "not_collected",
+      "impact": "Cannot confirm or rule out that the QR code was scanned."
+    },
+    {
+      "artifact": "dns_events.json",
+      "reason": "not_collected",
+      "impact": "No resolver evidence for wifi-help.example.org."
+    }
+  ],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "weak_indicators",
+      "description": "Urgency language and a QR host (wifi-help.example.org) on a different sub-domain than the sender (tessarine-it.example.org). Neither is sufficient to establish malicious intent.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "qr_01.png"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": null,
+      "expected_handling": "Report as suspicious-but-unconfirmed; classify inconclusive."
+    }
+  ],
+  "notes": "Only weak indicators (urgency, different sub-domain); nothing shows a scan or malicious content. Classification: inconclusive. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-05-25T12:37:23+00:00",
+    "source_timestamp": "2026-05-25T12:37:23+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-25T12:37:23+00:00",
+    "source_timestamp": "2026-05-25T12:37:23+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-25T15:37:23+00:00",
+    "source_timestamp": "2026-05-25T21:07:23+05:30",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-25T17:40:23.118+00:00",
+    "source_timestamp": "2026-05-25T17:40:23.118+00:00",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://offer.example.net/accept/TW-COM-008",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-008-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-25T17:40:23.655+00:00",
+    "source_timestamp": "2026-05-25T17:40:23.655+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for offer.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-008-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-25T17:40:25.304+00:00",
+    "source_timestamp": "2026-05-25T17:40:25.304+00:00",
+    "event_type": "page_load",
+    "description": "load https://offer.example.net/accept/TW-COM-008",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-008-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-25T17:40:26.610+00:00",
+    "source_timestamp": "2026-05-25T17:40:26.610+00:00",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://offer.example.net/accept/TW-COM-008",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-008-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-25T17:40:31.893+00:00",
+    "source_timestamp": "2026-05-25T17:40:31.893+00:00",
+    "event_type": "tab_closed",
+    "description": "close_tab https://offer.example.net/accept/TW-COM-008",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-008-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  }
+]

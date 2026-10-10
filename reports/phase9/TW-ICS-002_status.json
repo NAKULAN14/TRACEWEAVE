@@ -1,0 +1,23 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-002.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-002.ics",
+    "size_bytes": 837
+  },
+  "standard_parser": {
+    "name": "icalendar",
+    "status": "SUCCESS",
+    "error": null
+  },
+  "recovery": {
+    "required": false,
+    "status": "NOT_REQUIRED",
+    "method": null,
+    "recovered_artifact": null,
+    "confidence": null
+  },
+  "analysis": {
+    "analyzed_at": "2026-10-03T12:41:35.356094+00:00",
+    "workflow_stage": "phase_9b"
+  }
+}

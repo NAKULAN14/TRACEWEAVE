@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-004",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-004.ics",
+  "corrupted_file": "TW-ICS-004.ics",
+  "is_malformed": true,
+  "corruption_type": "missing_begin_delimiters_vcalendar_vevent",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/004",
+    "https://events.example.edu/tw/agenda/004"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Properties appear outside any component and END markers are unmatched. Recovery requires inferring the VCALENDAR/VEVENT boundaries from property names."
+}

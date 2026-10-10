@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Northfield Institute//Campus Calendar 2.1//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-001-fe79654344df6d5c@northfield.example.org
+DTSTAMP:20261005T034300Z
+DTSTART;TZID=Asia/Kolkata:20261012T100000
+DTEND;TZID=Asia/Kolkata:20261012T110000
+SUMMARY:Mid-Semester Examination Briefing
+DESCRIPTION:Briefing on seating\, ID card rules\, permitted stationery and 
+ the re-evaluation procedure for the mid-semester examinations.\nAttendance
+  encouraged\, not mandatory.
+LOCATION:Seminar Hall A\, Academic Block
+ORGANIZER;CN="Office of Academic Affairs":mailto:academic.affairs@northfiel
+ d.example.org
+CATEGORIES:Academic,Announcement
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261005T034300Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Mid-Semester Examination Briefing
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

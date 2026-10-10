@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-013",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-013.ics",
+  "corrupted_file": "TW-ICS-013.ics",
+  "is_malformed": true,
+  "corruption_type": "vevent_nested_in_vjournal",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/013",
+    "https://events.example.edu/tw/agenda/013"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "A VEVENT is only valid directly under VCALENDAR. Generic parsers build the tree anyway, so the file is often accepted; a conformance check is needed to flag it."
+}

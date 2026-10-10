@@ -1,0 +1,384 @@
+{
+  "case_id": "TW-PHI-013",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.com/meeting/room/TW-PHI-013",
+  "expected_url": "https://example.com/meeting/room/TW-PHI-013",
+  "expected_domain": "example.com",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.com/meeting/room/TW-PHI-013",
+      "normalized_value": "https://example.com/meeting/room/TW-PHI-013",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "example.com",
+      "normalized_value": "example.com",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "browser_events.json",
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "facilities@vantor-facilities.example.com",
+      "normalized_value": "facilities@vantor-facilities.example.com",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "vantor-facilities.example.com",
+      "normalized_value": "vantor-facilities.example.com",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.183",
+      "normalized_value": "192.0.2.183",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "203.0.113.204",
+      "normalized_value": "203.0.113.204",
+      "role": "resolved_ip_a",
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-PHI-013-BRW-001",
+      "timestamp": "2026-05-05T13:02:27.996Z",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://example.com/meeting/room/TW-PHI-013",
+      "domain": "example.com"
+    },
+    {
+      "event_id": "TW-PHI-013-BRW-002",
+      "timestamp": "2026-05-05T13:02:29.635Z",
+      "event_type": "page_load",
+      "url": "https://example.com/meeting/room/TW-PHI-013",
+      "domain": "example.com"
+    },
+    {
+      "event_id": "TW-PHI-013-BRW-003",
+      "timestamp": "2026-05-05T13:02:30.659Z",
+      "event_type": "form_displayed",
+      "url": "https://example.com/meeting/room/TW-PHI-013",
+      "domain": "example.com"
+    },
+    {
+      "event_id": "TW-PHI-013-BRW-004",
+      "timestamp": "2026-05-05T13:03:29.126Z",
+      "event_type": "tab_closed",
+      "url": "https://example.com/meeting/room/TW-PHI-013",
+      "domain": "example.com"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-PHI-013-DNS-001",
+      "timestamp": "2026-05-05T13:02:28.451Z",
+      "query": "example.com",
+      "record_type": "A",
+      "response": "203.0.113.204"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'qr.png' (inline) is byte-identical to qr.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.com/meeting/room/TW-PHI-013",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to event.ics"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://example.com/meeting/room/TW-PHI-013",
+      "evidence_type": "observed",
+      "basis": "URL present in ICS DESCRIPTION and URL property"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://example.com/meeting/room/TW-PHI-013",
+      "relation": "has_domain",
+      "target": "domain:example.com",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:facilities@vantor-facilities.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "browser_event:TW-PHI-013-BRW-001",
+      "relation": "visits",
+      "target": "url:https://example.com/meeting/room/TW-PHI-013",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:email.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-PHI-013-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR delivered by this email; scan source cannot be proven"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "dns_event:TW-PHI-013-DNS-001",
+      "relation": "queries",
+      "target": "domain:example.com",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "dns_event:TW-PHI-013-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:203.0.113.204",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "browser_event:TW-PHI-013-BRW-001",
+      "relation": "precedes",
+      "target": "dns_event:TW-PHI-013-DNS-001",
+      "evidence_type": "inferred",
+      "basis": "DNS lookup follows URL open within one second"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-04-30T13:25:53Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-30T13:25:53Z",
+      "event_type": "calendar_invitation_created",
+      "description": "ICS DTSTAMP",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-30T13:25:56Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-05T13:00:00Z",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    },
+    {
+      "timestamp": "2026-05-05T13:02:27.996Z",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://example.com/meeting/room/TW-PHI-013",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-013-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-05T13:02:28.451Z",
+      "event_type": "dns_query",
+      "description": "A lookup for example.com",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-PHI-013-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-05T13:02:29.635Z",
+      "event_type": "page_load",
+      "description": "load https://example.com/meeting/room/TW-PHI-013",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-013-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-05T13:02:30.659Z",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://example.com/meeting/room/TW-PHI-013",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-013-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-05T13:03:29.126Z",
+      "event_type": "tab_closed",
+      "description": "close_tab https://example.com/meeting/room/TW-PHI-013",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-013-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'meeting_room_change' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png",
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code attached to the email"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-013-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-013-DNS-001"
+      ],
+      "description": "Synthetic DNS resolution of the simulated phishing host(s)"
+    },
+    {
+      "order": 6,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-013-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 7,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-013-BRW-003"
+      ],
+      "description": "Static simulated form displayed; no input, credentials or personal data exist in this dataset"
+    }
+  ],
+  "missing_artifacts": [],
+  "notes": "Scenario: meeting_room_change. QR embedded inline (Content-ID) in the HTML body. ICS attached inside the email and also supplied as event.ics (identical). Complete evidence chain: email, QR, DNS and browser events all present. OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic."
+}

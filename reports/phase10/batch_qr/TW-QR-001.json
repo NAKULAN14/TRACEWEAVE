@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-001\\qr.png",
+    "sha256": "29db0e2bd3e9359abb6a6b0789fd3b4806b8f9d90f808032550b1f4644eaa9f4"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:20.465671+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "Welcome to Northfield Institute Open Day 2026",
+        "points": [
+          [
+            48.0,
+            48.0
+          ],
+          [
+            395.0,
+            48.0
+          ],
+          [
+            395.4662170410156,
+            395.4662170410156
+          ],
+          [
+            48.0,
+            395.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "Welcome to Northfield Institute Open Day 2026",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "TEXT",
+    "confidence": 0.8
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-001"
+}

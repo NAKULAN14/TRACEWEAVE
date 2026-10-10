@@ -1,0 +1,911 @@
+{
+  "case_id": "TW-COM-017",
+  "category": "combined_complex",
+  "scenario": "Multi-stage chain: lure email, QR scan, redirect, simulated link click and file download, then a reminder email after the scan.",
+  "expected_classification": "simulated_phishing",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "f8b83aa897f844302baf2fd06b2ff3fb46b64b4f12109ca6b75f1f34901ea1a4"
+    },
+    {
+      "filename": "email_02.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "0034d9dac5291437ddc55f4949c9952e7d2ecd67aeb05ed2492ba02864f5f261"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "eaecf1d313a5906e964a23c04d809100bbd75f1db9909278cf323f1f496ea490"
+    },
+    {
+      "filename": "qr_02.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "121997cfb9ef95e1643e70f50b8ef68ab8cdf6b1ed3907269b3ce78a2d48e1ec"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "02c43b31ee75921b6913fab8bd62cdcc5894b6799445f6719e1ff11d6b1b6f3f"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "56451eab14f10c990e543dc8984cebac691a042c6d21b68d2ade080e163ed65c"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "af2c2f0722ff1e0c54509d8eec55a1723bd8792b8fc47e161dfc8414d9a3222f"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "02c4897ce24fb86d20682e68d8108b049e535c2c08609981abc79948e8e36d82"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "26bbf1a66d268c544a23118bbec9e0796eef6f3ec8551a0ad4b528980f487f4d"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "inline image of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://go.example.net/r/TW-COM-017",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_02#1",
+      "filename": "qr_02.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_02.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://go.example.net/r/TW-COM-017",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://go.example.net/r/TW-COM-017",
+    "https://go.example.net/r/TW-COM-017"
+  ],
+  "expected_urls": [
+    "https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+    "https://files.example.net/view/TW-COM-017",
+    "https://go.example.net/r/TW-COM-017"
+  ],
+  "expected_domains": [
+    "files.example.net",
+    "go.example.net",
+    "vantor-academy.example.net"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+      "normalized_value": "https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+      "observed_values": [
+        "https://files.example.net/download/TW-COM-017/scholarship-form.pdf"
+      ],
+      "roles": [
+        "browser_visited_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "https://files.example.net/view/TW-COM-017",
+      "normalized_value": "https://files.example.net/view/TW-COM-017",
+      "observed_values": [
+        "https://files.example.net/view/TW-COM-017"
+      ],
+      "roles": [
+        "browser_visited_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "url",
+      "value": "https://go.example.net/r/TW-COM-017",
+      "normalized_value": "https://go.example.net/r/TW-COM-017",
+      "observed_values": [
+        "https://go.example.net/r/TW-COM-017"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_01.png",
+        "qr_02.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "files.example.net",
+      "normalized_value": "files.example.net",
+      "observed_values": [
+        "files.example.net"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "domain",
+      "value": "go.example.net",
+      "normalized_value": "go.example.net",
+      "observed_values": [
+        "go.example.net"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png",
+        "qr_02.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "domain",
+      "value": "vantor-academy.example.net",
+      "normalized_value": "vantor-academy.example.net",
+      "observed_values": [
+        "vantor-academy.example.net"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "email_address",
+      "value": "scholarships@vantor-academy.example.net",
+      "normalized_value": "scholarships@vantor-academy.example.net",
+      "observed_values": [
+        "scholarships@vantor-academy.example.net"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-008",
+      "type": "ipv4",
+      "value": "192.0.2.123",
+      "normalized_value": "192.0.2.123",
+      "observed_values": [
+        "192.0.2.123"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-009",
+      "type": "ipv4",
+      "value": "192.0.2.144",
+      "normalized_value": "192.0.2.144",
+      "observed_values": [
+        "192.0.2.144"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-010",
+      "type": "ipv4",
+      "value": "192.0.2.169",
+      "normalized_value": "192.0.2.169",
+      "observed_values": [
+        "192.0.2.169"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-011",
+      "type": "ipv4",
+      "value": "192.0.2.92",
+      "normalized_value": "192.0.2.92",
+      "observed_values": [
+        "192.0.2.92"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_02.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-012",
+      "type": "ipv6",
+      "value": "2001:db8:3::90",
+      "normalized_value": "2001:db8:3::90",
+      "observed_values": [
+        "2001:db8:3::90"
+      ],
+      "roles": [
+        "resolved_ip_aaaa"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-017-BRW-001",
+      "timestamp": "2026-06-21T19:00:52.482+00:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://go.example.net/r/TW-COM-017",
+      "domain": "go.example.net"
+    },
+    {
+      "event_id": "TW-COM-017-BRW-002",
+      "timestamp": "2026-06-21T19:00:53.362+00:00",
+      "event_type": "http_redirect",
+      "url": "https://go.example.net/r/TW-COM-017",
+      "domain": "go.example.net"
+    },
+    {
+      "event_id": "TW-COM-017-BRW-003",
+      "timestamp": "2026-06-21T19:00:54.571+00:00",
+      "event_type": "page_load",
+      "url": "https://files.example.net/view/TW-COM-017",
+      "domain": "files.example.net"
+    },
+    {
+      "event_id": "TW-COM-017-BRW-004",
+      "timestamp": "2026-06-21T19:00:55.966+00:00",
+      "event_type": "form_displayed",
+      "url": "https://files.example.net/view/TW-COM-017",
+      "domain": "files.example.net"
+    },
+    {
+      "event_id": "TW-COM-017-BRW-005",
+      "timestamp": "2026-06-21T19:00:58.651+00:00",
+      "event_type": "link_clicked",
+      "url": "https://files.example.net/view/TW-COM-017",
+      "domain": "files.example.net"
+    },
+    {
+      "event_id": "TW-COM-017-BRW-006",
+      "timestamp": "2026-06-21T19:01:00.320+00:00",
+      "event_type": "file_download",
+      "url": "https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+      "domain": "files.example.net"
+    },
+    {
+      "event_id": "TW-COM-017-BRW-007",
+      "timestamp": "2026-06-21T19:01:18.043+00:00",
+      "event_type": "tab_closed",
+      "url": "https://files.example.net/view/TW-COM-017",
+      "domain": "files.example.net"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-017-DNS-001",
+      "timestamp": "2026-06-21T19:00:52.970+00:00",
+      "query": "go.example.net",
+      "record_type": "A",
+      "response": "192.0.2.144"
+    },
+    {
+      "event_id": "TW-COM-017-DNS-002",
+      "timestamp": "2026-06-21T19:00:52.978+00:00",
+      "query": "go.example.net",
+      "record_type": "AAAA",
+      "response": "2001:db8:3::90"
+    },
+    {
+      "event_id": "TW-COM-017-DNS-003",
+      "timestamp": "2026-06-21T19:00:53.462+00:00",
+      "query": "files.example.net",
+      "record_type": "A",
+      "response": "192.0.2.123"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "embeds_inline",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'scholarship-doc.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:scholarships@vantor-academy.example.net",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email_02.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_02.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'scholarship-doc-reminder.png' is byte-identical to qr_02.png"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_02.eml",
+      "relation": "sent_from",
+      "target": "email_address:scholarships@vantor-academy.example.net",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://go.example.net/r/TW-COM-017",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "artifact:qr_02.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_02#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "qr:qr_02#1",
+      "relation": "encodes",
+      "target": "url:https://go.example.net/r/TW-COM-017",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "url:https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+      "relation": "has_domain",
+      "target": "domain:files.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "url:https://files.example.net/view/TW-COM-017",
+      "relation": "has_domain",
+      "target": "domain:files.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "url:https://go.example.net/r/TW-COM-017",
+      "relation": "has_domain",
+      "target": "domain:go.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "dns_event:TW-COM-017-DNS-001",
+      "relation": "queries",
+      "target": "domain:go.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "dns_event:TW-COM-017-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.144",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-014",
+      "source": "dns_event:TW-COM-017-DNS-002",
+      "relation": "queries",
+      "target": "domain:go.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-015",
+      "source": "dns_event:TW-COM-017-DNS-002",
+      "relation": "resolves_to",
+      "target": "ip:2001:db8:3::90",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-016",
+      "source": "dns_event:TW-COM-017-DNS-003",
+      "relation": "queries",
+      "target": "domain:files.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-017",
+      "source": "dns_event:TW-COM-017-DNS-003",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.123",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-018",
+      "source": "browser_event:TW-COM-017-BRW-001",
+      "relation": "visits",
+      "target": "url:https://go.example.net/r/TW-COM-017",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-019",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-017-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-020",
+      "source": "browser_event:TW-COM-017-BRW-002",
+      "relation": "redirects_to",
+      "target": "url:https://files.example.net/view/TW-COM-017",
+      "evidence_type": "observed",
+      "basis": "redirect_location field"
+    },
+    {
+      "relationship_id": "REL-021",
+      "source": "browser_event:TW-COM-017-BRW-003",
+      "relation": "visits",
+      "target": "url:https://files.example.net/view/TW-COM-017",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-022",
+      "source": "browser_event:TW-COM-017-BRW-005",
+      "relation": "visits",
+      "target": "url:https://files.example.net/view/TW-COM-017",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-023",
+      "source": "browser_event:TW-COM-017-BRW-006",
+      "relation": "visits",
+      "target": "url:https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-024",
+      "source": "artifact:email_01.eml",
+      "relation": "shares_domain_with",
+      "target": "artifact:email_02.eml",
+      "evidence_type": "inferred",
+      "basis": "both carry URLs on go.example.net",
+      "confidence": "medium"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-06-21T16:40:49+00:00",
+      "source_timestamp": "2026-06-21T16:40:49+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T16:40:52+00:00",
+      "source_timestamp": "2026-06-21T16:40:52+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T16:40:52+00:00",
+      "source_timestamp": "2026-06-21T16:40:52+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:52.482+00:00",
+      "source_timestamp": "2026-06-21T19:00:52.482+00:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://go.example.net/r/TW-COM-017",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:52.970+00:00",
+      "source_timestamp": "2026-06-21T19:00:52.970+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for go.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-017-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:52.978+00:00",
+      "source_timestamp": "2026-06-21T19:00:52.978+00:00",
+      "event_type": "dns_query",
+      "description": "AAAA lookup for go.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-017-DNS-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:53.362+00:00",
+      "source_timestamp": "2026-06-21T19:00:53.362+00:00",
+      "event_type": "http_redirect",
+      "description": "redirect https://go.example.net/r/TW-COM-017",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:53.462+00:00",
+      "source_timestamp": "2026-06-21T19:00:53.462+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for files.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-017-DNS-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:54.571+00:00",
+      "source_timestamp": "2026-06-21T19:00:54.571+00:00",
+      "event_type": "page_load",
+      "description": "load https://files.example.net/view/TW-COM-017",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:55.966+00:00",
+      "source_timestamp": "2026-06-21T19:00:55.966+00:00",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://files.example.net/view/TW-COM-017",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:00:58.651+00:00",
+      "source_timestamp": "2026-06-21T19:00:58.651+00:00",
+      "event_type": "link_clicked",
+      "description": "click_simulated_link https://files.example.net/view/TW-COM-017",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-005",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:01:00.320+00:00",
+      "source_timestamp": "2026-06-21T19:01:00.320+00:00",
+      "event_type": "file_download",
+      "description": "download_simulated_no_file https://files.example.net/download/TW-COM-017/scholarship-form.pdf",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-006",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-21T19:01:18.043+00:00",
+      "source_timestamp": "2026-06-21T19:01:18.043+00:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://files.example.net/view/TW-COM-017",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-017-BRW-007",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-22T16:40:49+00:00",
+      "source_timestamp": "2026-06-22T16:40:49+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-22T16:40:52+00:00",
+      "source_timestamp": "2026-06-22T16:40:52+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-22T16:40:52+00:00",
+      "source_timestamp": "2026-06-22T16:40:52+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_02.png becomes extractable once email_02.eml is received",
+      "source_artifact": "qr_02.png",
+      "reference_id": "qr:qr_02#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "2 phishing-style email(s) delivered"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Urgency/authority lure theme in subject and body"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr_01.png",
+        "qr_02.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code presented to the recipient(s)"
+    },
+    {
+      "order": 4,
+      "stage": "follow_up_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Follow-up email to the same recipient"
+    },
+    {
+      "order": 5,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 6,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-DNS-001",
+        "TW-COM-017-DNS-002",
+        "TW-COM-017-DNS-003"
+      ],
+      "description": "Synthetic DNS resolution of simulated hosts"
+    },
+    {
+      "order": 7,
+      "stage": "redirect_chain",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-BRW-002"
+      ],
+      "description": "Initial URL redirected to a second simulated host"
+    },
+    {
+      "order": 8,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-BRW-003"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 9,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-BRW-004"
+      ],
+      "description": "Static form displayed; no input or credentials exist in the dataset"
+    },
+    {
+      "order": 10,
+      "stage": "user_interaction_simulated",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-BRW-005"
+      ],
+      "description": "Simulated link click on the landing page"
+    },
+    {
+      "order": 11,
+      "stage": "simulated_payload_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-017-BRW-006"
+      ],
+      "description": "Synthetic download record only; no file exists"
+    }
+  ],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "download_is_simulated",
+      "description": "The file_download event is a synthetic log record; no file exists in the evidence.",
+      "artifacts_involved": [
+        "browser_events.json"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": null,
+      "expected_handling": "Report the event without implying a payload was obtained."
+    }
+  ],
+  "notes": "Scholarship-document lure with redirect, interaction and simulated download; reminder resend after the scan. Classification: simulated_phishing. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

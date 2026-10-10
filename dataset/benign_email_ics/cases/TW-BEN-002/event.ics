@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-002-ec03dda768e96102@northfield.example.org
+DTSTAMP:20261008T130800Z
+DTSTART;TZID=Asia/Kolkata:20261016T160000
+DTEND;TZID=Asia/Kolkata:20261016T173000
+SUMMARY:Cultural Club Inauguration 2026-27
+DESCRIPTION:Inauguration of the Cultural Club council with a faculty addres
+ s and student performances.\nRefreshments at the foyer after the programme
+ .
+LOCATION:Main Auditorium
+ORGANIZER;CN="Kavya Subramanian":mailto:kavya.subramanian@students.northfie
+ ld.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Aarav Menon":mailto:aarav.menon@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Diya Nambiar":mailto:diya.nambiar@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Rohit Sharma":mailto:rohit.sharma@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Prof. Rohan Iyer":mailto:rohan.iyer@northfield.example.org
+CATEGORIES:Club,Cultural
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261008T130800Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Cultural Club Inauguration 2026-27
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

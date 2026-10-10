@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+    "sha256": "83c6e159e79e347ea0c602ae4c410116ef06bbb20147a7f905b9e6c6dd1803a6"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:21.717295+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "BEGIN:VCARD\r\nVERSION:3.0\r\nN:Menon;Ravi;;Prof.;\r\nFN:Prof. Ravi Menon\r\nORG:Northfield Institute of Technology;Department of Computer Science and Engineering\r\nTITLE:Faculty Coordinator, Student Clubs\r\nTEL;TYPE=WORK,VOICE:+1-555-0142\r\nEMAIL;TYPE=WORK:ravi.menon@example.com\r\nADR;TYPE=WORK:;;Block C, Northfield Campus;Sampletown;;000000;India\r\nURL:https://example.com/people/ravi-menon\r\nNOTE:Office hours Tuesday and Thursday 15:00-16:00 IST in Room C-204.\r\nEND:VCARD",
+        "points": [
+          [
+            32.0,
+            32.0
+          ],
+          [
+            807.0,
+            32.0
+          ],
+          [
+            807.0612182617188,
+            807.0612182617188
+          ],
+          [
+            32.0,
+            807.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "BEGIN:VCARD\r\nVERSION:3.0\r\nN:Menon;Ravi;;Prof.;\r\nFN:Prof. Ravi Menon\r\nORG:Northfield Institute of Technology;Department of Computer Science and Engineering\r\nTITLE:Faculty Coordinator, Student Clubs\r\nTEL;TYPE=WORK,VOICE:+1-555-0142\r\nEMAIL;TYPE=WORK:ravi.menon@example.com\r\nADR;TYPE=WORK:;;Block C, Northfield Campus;Sampletown;;000000;India\r\nURL:https://example.com/people/ravi-menon\r\nNOTE:Office hours Tuesday and Thursday 15:00-16:00 IST in Room C-204.\r\nEND:VCARD",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "TEXT",
+    "confidence": 0.8
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-012"
+}

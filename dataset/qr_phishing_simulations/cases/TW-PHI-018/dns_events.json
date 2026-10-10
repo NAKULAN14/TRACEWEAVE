@@ -1,0 +1,24 @@
+[
+  {
+    "event_id": "TW-PHI-018-DNS-001",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:21.108Z",
+    "query": "go.example.net",
+    "record_type": "A",
+    "response": "192.0.2.144",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-018-DNS-002",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:21.639Z",
+    "query": "files.example.net",
+    "record_type": "A",
+    "response": "192.0.2.123",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-QR-018",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Northfield Institute//Poster QR//EN\r\nBEGIN:VEVENT\r\nUID:tw-qr-018-56ed216e018e@example.com\r\nDTSTAMP:20261101T090000Z\r\nDTSTART:20261120T140000\r\nDTEND:20261120T153000\r\nSUMMARY:Guest Lecture: Machine Learning Pipelines in Practice\r\nLOCATION:Seminar Hall B\\, Academic Block\r\nDESCRIPTION:Guest lecture for third-year students.\\nTopics: data validation\r\n \\, feature stores\\, model monitoring.\\nQuestions welcome at the end.\r\nURL:https://events.example.com/seminars/ml-pipelines\r\nSTATUS:CONFIRMED\r\nCATEGORIES:Academic,Lecture\r\nEND:VEVENT\r\nEND:VCALENDAR",
+  "payload_type": "calendar_event",
+  "expected_urls": [
+    "https://events.example.com/seminars/ml-pipelines"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Full VCALENDAR/VEVENT with folded lines, escaped text, a UID and a URL property (the URL is the only expected URL). QR version 16, error correction L (~7%), module size 8px, quiet zone 4 modules, image 712x712px (8-bit greyscale PNG, black on white); payload length 584 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

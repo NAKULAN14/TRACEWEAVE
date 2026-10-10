@@ -1,0 +1,833 @@
+{
+  "case_id": "TW-COM-006",
+  "category": "combined_complex",
+  "scenario": "Campaign-style survey lure sent to three recipients with per-recipient QR URLs on one shared host; only one recipient's device scanned.",
+  "expected_classification": "simulated_phishing",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "eeba2ccd88e0d4b0b9f91397ef37264acc0c0d5e7ccf6848b476f60a88212cd4"
+    },
+    {
+      "filename": "email_02.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "663078259483ab1d7e72ae4185a3e244315b2161ccbe03d0100ad53634550928"
+    },
+    {
+      "filename": "email_03.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "d04040f35293f683e526375308f6ec2ffd09ec154f1d64262f0b68d568f29bc6"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "cc828308d5ef93016396cb9e705b8c0ed39b0abba045fd1207722638030ccdc9"
+    },
+    {
+      "filename": "qr_02.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "a2166c533b7bcf9b733d7d2b8b4076d30aaf262543e6acccd4a0eae47dd7df44"
+    },
+    {
+      "filename": "qr_03.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "e800c201ef7ee6d39786e79970e4d582e3b89ef6f6b8685967dc18b50f35a5da"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "f05824eaf667018bdf35d2a17ef6b0ea6dac896890147d551304a128fa319865"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "584cb105830207023371d1069086b7f3d365205ba0683facb2b1a3227cd72c75"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "5a65f87f2e112f2e95127e6f0533de3a069019765f90d462bab574c0b42192e0"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "a1947f7b1782ecc95a0cfacb0912ec8b88493ebf5775114a54179ba60dbaaf99"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "892c6323e7be9681af613233b478227f51a9e8e310ff287984ef7bd9cdb72423"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "inline image of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://portal.example.com/survey/TW-COM-006-A",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_02#1",
+      "filename": "qr_02.png",
+      "position_left_to_right": 1,
+      "source": "inline image of email_02.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://portal.example.com/survey/TW-COM-006-B",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_03#1",
+      "filename": "qr_03.png",
+      "position_left_to_right": 1,
+      "source": "inline image of email_03.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://portal.example.com/survey/TW-COM-006-C",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://portal.example.com/survey/TW-COM-006-A",
+    "https://portal.example.com/survey/TW-COM-006-B",
+    "https://portal.example.com/survey/TW-COM-006-C"
+  ],
+  "expected_urls": [
+    "https://portal.example.com/survey/TW-COM-006-A",
+    "https://portal.example.com/survey/TW-COM-006-B",
+    "https://portal.example.com/survey/TW-COM-006-C"
+  ],
+  "expected_domains": [
+    "ferncliff-surveys.example.com",
+    "portal.example.com"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://portal.example.com/survey/TW-COM-006-A",
+      "normalized_value": "https://portal.example.com/survey/TW-COM-006-A",
+      "observed_values": [
+        "https://portal.example.com/survey/TW-COM-006-A"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "https://portal.example.com/survey/TW-COM-006-B",
+      "normalized_value": "https://portal.example.com/survey/TW-COM-006-B",
+      "observed_values": [
+        "https://portal.example.com/survey/TW-COM-006-B"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_02.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "url",
+      "value": "HTTPS://PORTAL.EXAMPLE.COM/survey/TW-COM-006-C",
+      "normalized_value": "https://portal.example.com/survey/TW-COM-006-C",
+      "observed_values": [
+        "HTTPS://PORTAL.EXAMPLE.COM/survey/TW-COM-006-C",
+        "https://portal.example.com/survey/TW-COM-006-C"
+      ],
+      "roles": [
+        "email_body_link",
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "email_03.eml",
+        "qr_03.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "ferncliff-surveys.example.com",
+      "normalized_value": "ferncliff-surveys.example.com",
+      "observed_values": [
+        "ferncliff-surveys.example.com"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "email_03.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "domain",
+      "value": "portal.example.com",
+      "normalized_value": "portal.example.com",
+      "observed_values": [
+        "portal.example.com"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_03.eml",
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png",
+        "qr_02.png",
+        "qr_03.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "email_address",
+      "value": "survey@ferncliff-surveys.example.com",
+      "normalized_value": "survey@ferncliff-surveys.example.com",
+      "observed_values": [
+        "survey@ferncliff-surveys.example.com"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "email_03.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "ipv4",
+      "value": "192.0.2.210",
+      "normalized_value": "192.0.2.210",
+      "observed_values": [
+        "192.0.2.210"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_02.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-008",
+      "type": "ipv4",
+      "value": "192.0.2.43",
+      "normalized_value": "192.0.2.43",
+      "observed_values": [
+        "192.0.2.43"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-009",
+      "type": "ipv4",
+      "value": "192.0.2.91",
+      "normalized_value": "192.0.2.91",
+      "observed_values": [
+        "192.0.2.91"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_03.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-010",
+      "type": "ipv4",
+      "value": "203.0.113.86",
+      "normalized_value": "203.0.113.86",
+      "observed_values": [
+        "203.0.113.86"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-006-BRW-001",
+      "timestamp": "2026-05-19T12:12:12.251+01:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://portal.example.com/survey/TW-COM-006-B",
+      "domain": "portal.example.com"
+    },
+    {
+      "event_id": "TW-COM-006-BRW-002",
+      "timestamp": "2026-05-19T12:12:14.248+01:00",
+      "event_type": "page_load",
+      "url": "https://portal.example.com/survey/TW-COM-006-B",
+      "domain": "portal.example.com"
+    },
+    {
+      "event_id": "TW-COM-006-BRW-003",
+      "timestamp": "2026-05-19T12:12:15.968+01:00",
+      "event_type": "form_displayed",
+      "url": "https://portal.example.com/survey/TW-COM-006-B",
+      "domain": "portal.example.com"
+    },
+    {
+      "event_id": "TW-COM-006-BRW-004",
+      "timestamp": "2026-05-19T12:12:28.509+01:00",
+      "event_type": "tab_closed",
+      "url": "https://portal.example.com/survey/TW-COM-006-B",
+      "domain": "portal.example.com"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-006-DNS-001",
+      "timestamp": "2026-05-19T11:12:12.534+00:00",
+      "query": "portal.example.com",
+      "record_type": "A",
+      "response": "203.0.113.86"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "embeds_inline",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'survey-qr-a.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:survey@ferncliff-surveys.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email_02.eml",
+      "relation": "embeds_inline",
+      "target": "artifact:qr_02.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'survey-qr-b.png' is byte-identical to qr_02.png"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_02.eml",
+      "relation": "sent_from",
+      "target": "email_address:survey@ferncliff-surveys.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:email_03.eml",
+      "relation": "embeds_inline",
+      "target": "artifact:qr_03.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'survey-qr-c.png' is byte-identical to qr_03.png"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email_03.eml",
+      "relation": "contains_url",
+      "target": "url:https://portal.example.com/survey/TW-COM-006-C",
+      "evidence_type": "observed",
+      "basis": "link in email body"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "artifact:email_03.eml",
+      "relation": "sent_from",
+      "target": "email_address:survey@ferncliff-surveys.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://portal.example.com/survey/TW-COM-006-A",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "artifact:qr_02.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_02#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "qr:qr_02#1",
+      "relation": "encodes",
+      "target": "url:https://portal.example.com/survey/TW-COM-006-B",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "artifact:qr_03.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_03#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "qr:qr_03#1",
+      "relation": "encodes",
+      "target": "url:https://portal.example.com/survey/TW-COM-006-C",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-014",
+      "source": "url:https://portal.example.com/survey/TW-COM-006-A",
+      "relation": "has_domain",
+      "target": "domain:portal.example.com",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-015",
+      "source": "url:https://portal.example.com/survey/TW-COM-006-B",
+      "relation": "has_domain",
+      "target": "domain:portal.example.com",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-016",
+      "source": "url:https://portal.example.com/survey/TW-COM-006-C",
+      "relation": "has_domain",
+      "target": "domain:portal.example.com",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-017",
+      "source": "dns_event:TW-COM-006-DNS-001",
+      "relation": "queries",
+      "target": "domain:portal.example.com",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-018",
+      "source": "dns_event:TW-COM-006-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:203.0.113.86",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-019",
+      "source": "browser_event:TW-COM-006-BRW-001",
+      "relation": "visits",
+      "target": "url:https://portal.example.com/survey/TW-COM-006-B",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-020",
+      "source": "artifact:email_02.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-006-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-021",
+      "source": "browser_event:TW-COM-006-BRW-002",
+      "relation": "visits",
+      "target": "url:https://portal.example.com/survey/TW-COM-006-B",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-022",
+      "source": "artifact:email_01.eml",
+      "relation": "shares_domain_with",
+      "target": "artifact:email_02.eml",
+      "evidence_type": "inferred",
+      "basis": "both carry URLs on portal.example.com",
+      "confidence": "medium"
+    },
+    {
+      "relationship_id": "REL-023",
+      "source": "artifact:email_01.eml",
+      "relation": "shares_domain_with",
+      "target": "artifact:email_03.eml",
+      "evidence_type": "inferred",
+      "basis": "both carry URLs on portal.example.com",
+      "confidence": "medium"
+    },
+    {
+      "relationship_id": "REL-024",
+      "source": "artifact:email_02.eml",
+      "relation": "shares_domain_with",
+      "target": "artifact:email_03.eml",
+      "evidence_type": "inferred",
+      "basis": "both carry URLs on portal.example.com",
+      "confidence": "medium"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-19T10:13:09+00:00",
+      "source_timestamp": "2026-05-19T10:13:09+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T10:13:12+00:00",
+      "source_timestamp": "2026-05-19T10:13:12+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T10:13:12+00:00",
+      "source_timestamp": "2026-05-19T10:13:12+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-19T10:20:09+00:00",
+      "source_timestamp": "2026-05-19T10:20:09+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T10:20:12+00:00",
+      "source_timestamp": "2026-05-19T10:20:12+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T10:20:12+00:00",
+      "source_timestamp": "2026-05-19T10:20:12+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_02.png becomes extractable once email_02.eml is received",
+      "source_artifact": "qr_02.png",
+      "reference_id": "qr:qr_02#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-19T10:32:09+00:00",
+      "source_timestamp": "2026-05-19T10:32:09+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_03.eml",
+      "source_artifact": "email_03.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T10:32:12+00:00",
+      "source_timestamp": "2026-05-19T10:32:12+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_03.eml",
+      "source_artifact": "email_03.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T10:32:12+00:00",
+      "source_timestamp": "2026-05-19T10:32:12+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_03.png becomes extractable once email_03.eml is received",
+      "source_artifact": "qr_03.png",
+      "reference_id": "qr:qr_03#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-19T11:12:12.251+00:00",
+      "source_timestamp": "2026-05-19T12:12:12.251+01:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://portal.example.com/survey/TW-COM-006-B",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-006-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T11:12:12.534+00:00",
+      "source_timestamp": "2026-05-19T11:12:12.534+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for portal.example.com",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-006-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T11:12:14.248+00:00",
+      "source_timestamp": "2026-05-19T12:12:14.248+01:00",
+      "event_type": "page_load",
+      "description": "load https://portal.example.com/survey/TW-COM-006-B",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-006-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T11:12:15.968+00:00",
+      "source_timestamp": "2026-05-19T12:12:15.968+01:00",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://portal.example.com/survey/TW-COM-006-B",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-006-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-19T11:12:28.509+00:00",
+      "source_timestamp": "2026-05-19T12:12:28.509+01:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://portal.example.com/survey/TW-COM-006-B",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-006-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "email_03.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "3 phishing-style email(s) delivered"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "email_03.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Urgency/authority lure theme in subject and body"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr_01.png",
+        "qr_02.png",
+        "qr_03.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code presented to the recipient(s)"
+    },
+    {
+      "order": 4,
+      "stage": "campaign_distribution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "email_03.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Same template distributed to several recipients"
+    },
+    {
+      "order": 5,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-006-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 6,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-006-DNS-001"
+      ],
+      "description": "Synthetic DNS resolution of simulated hosts"
+    },
+    {
+      "order": 7,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-006-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 8,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-006-BRW-003"
+      ],
+      "description": "Static form displayed; no input or credentials exist in the dataset"
+    }
+  ],
+  "missing_evidence": [
+    {
+      "artifact": "browser/DNS evidence for aisha.khan@students.example.com",
+      "reason": "not_collected",
+      "impact": "No device logs for recipient A; scan of TW-COM-006-A cannot be confirmed or excluded."
+    },
+    {
+      "artifact": "browser/DNS evidence for nora.lindqvist@students.example.org",
+      "reason": "not_collected",
+      "impact": "No device logs for recipient C; scan of TW-COM-006-C cannot be confirmed or excluded."
+    }
+  ],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "no_scan_recorded_for_two_recipients",
+      "description": "Logs exist only for recipient B's device; absence of events for A and C is not evidence that no scan occurred.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "email_03.eml",
+        "browser_events.json"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Do not conclude that A and C were safe; flag as unobserved."
+    }
+  ],
+  "notes": "Same template and shared host across three recipients, prize lure; one scan and DNS lookup observed. Classification: simulated_phishing. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

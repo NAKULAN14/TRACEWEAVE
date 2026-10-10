@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-014-4767bee8@events.example.edu
+DTSTAMP:20260217T090000Z
+DTSTART:20260412T080000Z
+DTEND:20260412T100000Z
+SUMMARY:Research Methods Seminar
+DESCRIPTION:Seminar on formulating research questions\, choosing methods\, 
+ and documenting experiments reproducibly. Please bring your student ID and
+  a laptop. Review the pre-reading beforehand.\nAgenda: https://events.exam
+ ple.edu/tw/agenda/014
+LOCATION:Room 377\, Block D\, Example Institute of Technology
+ORGANIZER;CN="Prof. Karthik Menon":mailto:karthik.menon@example.edu
+CATEGORIES:SEMINAR,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/014
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:TW-PHI-007-02dba082@securedu-conf.example.com
+DTSTAMP:20260418T162418Z
+DTSTART:20260422T163000Z
+DTEND:20260422T180000Z
+SUMMARY:SecurEdu 2026 Conference - Day 1
+DESCRIPTION:Conference schedule and badge page: https://example.com/conf/ba
+ dge/TW-PHI-007
+LOCATION:Ferncliff Convention Hall
+ORGANIZER;CN="SecurEdu 2026 Registrations":mailto:registration@securedu-con
+ f.example.com
+URL:https://example.com/conf/badge/TW-PHI-007
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

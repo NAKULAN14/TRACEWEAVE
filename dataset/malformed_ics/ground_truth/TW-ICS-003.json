@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-003",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-003.ics",
+  "corrupted_file": "TW-ICS-003.ics",
+  "is_malformed": true,
+  "corruption_type": "missing_end_delimiter_vevent",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/003",
+    "https://events.example.edu/tw/agenda/003"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Structural defect only; every property is present and valid. A tolerant parser auto-closes the VEVENT when END:VCALENDAR arrives."
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-010",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-010.ics",
+  "corrupted_file": "TW-ICS-010.ics",
+  "is_malformed": true,
+  "corruption_type": "duplicate_identical_properties",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/010",
+    "https://events.example.edu/tw/agenda/010"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Duplicates are identical, so no information is lost. RFC 5545 allows these properties only once; tolerant parsers accept the file."
+}

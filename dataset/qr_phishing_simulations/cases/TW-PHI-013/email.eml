@@ -1,0 +1,111 @@
+Received: from mail-out.vantor-facilities.example.com (vantor-facilities.example.com [192.0.2.183])
+	by mx.staff.example.org with ESMTP id TWPHI013;
+	Thu, 30 Apr 2026 13:25:56 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-013
+From: "Vantor Facilities" <facilities@vantor-facilities.example.com>
+To: "Hannah Weiss" <hannah.weiss@staff.example.org>
+Subject: Meeting room change - scan QR at entrance
+Date: Thu, 30 Apr 2026 08:25:53 -0500
+Message-ID: <tw-phi-013.29b662f0e7@mail-out.vantor-facilities.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-PHI-013_mix"
+
+--=_TW-PHI-013_mix
+Content-Type: multipart/alternative; boundary="=_TW-PHI-013_alt"
+
+--=_TW-PHI-013_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Hannah,
+
+The room for Thursday's planning meeting has changed.
+
+The updated invitation is attached; the new room details are on the
+meeting page.
+
+Scan the QR code below with your phone camera to continue.
+
+A calendar invitation is attached to this message.
+
+[QR code image is embedded in the HTML version of this message]
+
+Regards,
+Vantor Facilities
+
+--=_TW-PHI-013_alt
+Content-Type: multipart/related; boundary="=_TW-PHI-013_rel"
+
+--=_TW-PHI-013_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Hannah,</p><p>The room for Thursday&#x27;s planning meeting has changed.</p><p>The updated invitation is attached; the new room details are on the meeting page.</p><p>Scan the QR code below with your phone camera to continue.</p><p>A calendar invitation is attached to this message.</p><p><img src="cid:qr-tw-phi-013@mail-out.vantor-facilities.example.com" alt="QR code" width="220" height="220"></p><p>Regards,<br>Vantor Facilities</p></body></html>
+--=_TW-PHI-013_rel
+Content-Type: image/png; name="qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr-tw-phi-013@mail-out.vantor-facilities.example.com>
+Content-Disposition: inline; filename="qr.png"
+
+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
+bAgSNvzq+Re+YfyYV0dE9wAAAABJRU5ErkJggg==
+--=_TW-PHI-013_rel--
+--=_TW-PHI-013_alt--
+--=_TW-PHI-013_mix
+Content-Type: text/calendar; charset=utf-8; method=REQUEST
+Content-Disposition: attachment; filename="invite.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:TW-PHI-013-653aab2e@vantor-facilities.example.com
+DTSTAMP:20260430T132553Z
+DTSTART:20260505T130000Z
+DTEND:20260505T140000Z
+SUMMARY:Planning Meeting (Room Change)
+DESCRIPTION:Scan the QR code at the entrance to open the room page: https:/
+ /example.com/meeting/room/TW-PHI-013
+LOCATION:Room 5A\, Vantor Headquarters
+ORGANIZER;CN="Vantor Facilities":mailto:facilities@vantor-facilities.exampl
+ e.com
+ATTENDEE;CN="Hannah Weiss";ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:hannah.wei
+ ss@staff.example.org
+URL:https://example.com/meeting/room/TW-PHI-013
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-PHI-013_mix--

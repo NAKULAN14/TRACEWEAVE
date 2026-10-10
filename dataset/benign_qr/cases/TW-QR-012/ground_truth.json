@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-QR-012",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "BEGIN:VCARD\r\nVERSION:3.0\r\nN:Menon;Ravi;;Prof.;\r\nFN:Prof. Ravi Menon\r\nORG:Northfield Institute of Technology;Department of Computer Science and Engineering\r\nTITLE:Faculty Coordinator, Student Clubs\r\nTEL;TYPE=WORK,VOICE:+1-555-0142\r\nEMAIL;TYPE=WORK:ravi.menon@example.com\r\nADR;TYPE=WORK:;;Block C, Northfield Campus;Sampletown;;000000;India\r\nURL:https://example.com/people/ravi-menon\r\nNOTE:Office hours Tuesday and Thursday 15:00-16:00 IST in Room C-204.\r\nEND:VCARD",
+  "payload_type": "vcard",
+  "expected_urls": [
+    "https://example.com/people/ravi-menon"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Detailed vCard 3.0 with organisation, phone, e-mail, address and a URL property (the URL is the only expected URL). QR version 20, error correction Q (~25%), module size 8px, quiet zone 4 modules, image 840x840px (8-bit greyscale PNG, black on white); payload length 463 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

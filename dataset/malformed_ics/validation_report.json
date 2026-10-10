@@ -1,0 +1,941 @@
+{
+  "seed": 20260403,
+  "icalendar_version": "7.3.0",
+  "errors": [],
+  "warnings": [],
+  "cases": [
+    {
+      "case_id": "TW-ICS-001",
+      "corruption_type": "missing_required_property_uid",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "vevent_missing_UID"
+        ],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [
+          "UID"
+        ],
+        "invalid": [],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-002",
+      "corruption_type": "missing_required_properties_dtstamp_dtstart",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "vevent_missing_DTSTAMP",
+          "vevent_missing_DTSTART"
+        ],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [
+          "DTSTAMP",
+          "DTSTART"
+        ],
+        "invalid": [],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-003",
+      "corruption_type": "missing_end_delimiter_vevent",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "exception",
+        "exception": "ValueError: Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]",
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": null
+      },
+      "observed_outcome": "failure",
+      "expected_outcome": "failure",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [],
+        "issues": [
+          "unclosed:VEVENT"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-004",
+      "corruption_type": "missing_begin_delimiters_vcalendar_vevent",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "exception",
+        "exception": "ValueError: Property \"VERSION\" does not have a parent component.",
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": null
+      },
+      "observed_outcome": "failure",
+      "expected_outcome": "failure",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [],
+        "issues": [
+          "implicit_open:VCALENDAR",
+          "implicit_open:VEVENT"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-005",
+      "corruption_type": "invalid_datetime_format",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "unparsed_DTSTAMP",
+          "unparsed_DTSTART"
+        ],
+        "icalendar_errors": [
+          "('DTSTAMP', 'Wrong datetime format: 20260216090000Z')",
+          "('DTSTART', \"Expected datetime, date, or time. Got: '2026-03-15 04:30:00'\")"
+        ],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "DTSTAMP",
+          "DTSTART"
+        ],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-006",
+      "corruption_type": "invalid_datetime_values",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "unparsed_DTEND",
+          "unparsed_DTSTART"
+        ],
+        "icalendar_errors": [
+          "('DTSTART', 'Wrong datetime format: 20261318T040000Z')",
+          "('DTEND', 'Wrong datetime format: 20260318T256100Z')"
+        ],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "DTSTART",
+          "DTEND"
+        ],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-007",
+      "corruption_type": "improper_line_folding",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [],
+        "icalendar_errors": [
+          "(None, \"Content line could not be parsed into parts: 'trees with short practice problems. Please bring your student ID a",
+          "(None, \"Content line could not be parsed into parts: 'top. Review the pre-reading beforehand.\\\\nAgenda: https://events.e",
+          "(None, \"Content line could not be parsed into parts: 'u/tw/agenda/007': u/tw/agenda/007\")"
+        ],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "DESCRIPTION"
+        ],
+        "issues": [
+          "unparseable_line"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-008",
+      "corruption_type": "invalid_encoding_latin1",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": false,
+      "reference_recovery": {
+        "encoding": "non_utf8_fallback",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "DESCRIPTION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "SUMMARY",
+          "LOCATION"
+        ],
+        "issues": [
+          "encoding:non_utf8_fallback"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-009",
+      "corruption_type": "invalid_encoding_utf16_bom",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "exception",
+        "exception": "ValueError: Content line could not be parsed into parts: '��B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000\r\u0000': ��B\u0000E\u0000G\u0000I\u0000N\u0000",
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": null
+      },
+      "observed_outcome": "failure",
+      "expected_outcome": "failure",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf16_bom",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [],
+        "issues": [
+          "encoding:utf16_bom"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-010",
+      "corruption_type": "duplicate_identical_properties",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "duplicate_LOCATION",
+          "duplicate_STATUS",
+          "duplicate_UID"
+        ],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "success_despite_corruption",
+      "expected_outcome": "success_despite_corruption",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [],
+        "issues": [
+          "duplicate_property:LOCATION",
+          "duplicate_property:STATUS",
+          "duplicate_property:UID"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-011",
+      "corruption_type": "duplicate_conflicting_properties",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "duplicate_DTSTART",
+          "duplicate_SUMMARY"
+        ],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTEND",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "DTSTART",
+          "SUMMARY"
+        ],
+        "issues": [
+          "conflicting_duplicate:DTSTART",
+          "conflicting_duplicate:SUMMARY"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-012",
+      "corruption_type": "crossed_component_nesting",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "success_despite_corruption",
+      "expected_outcome": "success_despite_corruption",
+      "strict_parser_noticed_corruption": false,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [],
+        "issues": [
+          "stray_end:VALARM",
+          "unclosed:VALARM"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-013",
+      "corruption_type": "vevent_nested_in_vjournal",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "vevent_parent_is_VJOURNAL"
+        ],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "success_despite_corruption",
+      "expected_outcome": "success_despite_corruption",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [],
+        "issues": [
+          "misplaced:VEVENT_in_VJOURNAL"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-014",
+      "corruption_type": "invalid_uid_value",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "uid_format"
+        ],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "UID"
+        ],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-015",
+      "corruption_type": "truncated_mid_description",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "exception",
+        "exception": "ValueError: Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]",
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": null
+      },
+      "observed_outcome": "failure",
+      "expected_outcome": "failure",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY"
+        ],
+        "missing": [
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "invalid": [
+          "DESCRIPTION"
+        ],
+        "issues": [
+          "truncated_final_line",
+          "unclosed:VCALENDAR",
+          "unclosed:VEVENT"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-016",
+      "corruption_type": "truncated_inside_header",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "exception",
+        "exception": "ValueError: Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]",
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": null
+      },
+      "observed_outcome": "failure",
+      "expected_outcome": "failure",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 0,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE"
+        ],
+        "missing": [
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "invalid": [],
+        "issues": [
+          "truncated_final_line",
+          "unclosed:VCALENDAR",
+          "unclosed:VEVEN"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-017",
+      "corruption_type": "unexpected_malformed_properties",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [
+          "duplicate_SUMMARY"
+        ],
+        "icalendar_errors": [
+          "('PRIORITY', 'Expected int, got: high')"
+        ],
+        "event_count": 1
+      },
+      "observed_outcome": "success_despite_corruption",
+      "expected_outcome": "success_despite_corruption",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "PRIORITY"
+        ],
+        "issues": [
+          "unexpected_property:UNEXPECTED-PROPERTY",
+          "unparseable_line"
+        ]
+      }
+    },
+    {
+      "case_id": "TW-ICS-018",
+      "corruption_type": "malformed_property_parameters",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [],
+        "icalendar_errors": [
+          "(None, \"Content line could not be parsed into parts: 'LOCATION;LANGUAGE:Room 113\\\\, Block D\\\\, Example Institute of Tech",
+          "(None, 'Content line could not be parsed into parts: \\'ORGANIZER;CN=\"Mr. Vikram Rao:mailto:vikram.rao@example.edu\\': \\'C"
+        ],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "DTSTART",
+          "LOCATION",
+          "ORGANIZER"
+        ],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-019",
+      "corruption_type": "missing_property_separators",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [],
+        "icalendar_errors": [
+          "(None, \"Content line could not be parsed into parts: 'SUMMARY Web Application Security Lab': Invalid content line\")",
+          "(None, \"Content line could not be parsed into parts: 'LOCATION=Room 262\\\\, Block C\\\\, Example Institute of Technology': ",
+          "(None, \"Content line could not be parsed into parts: 'CATEGORIES;LAB,ACADEMIC': 'LAB,ACADEMIC' is not a valid parameter "
+        ],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": true,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "DESCRIPTION",
+          "ORGANIZER",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "SUMMARY",
+          "LOCATION",
+          "CATEGORIES"
+        ],
+        "issues": []
+      }
+    },
+    {
+      "case_id": "TW-ICS-020",
+      "corruption_type": "malformed_description_escapes",
+      "errors": [],
+      "warnings": [],
+      "original_valid": true,
+      "intended_corruption_present": true,
+      "strict_parse": {
+        "status": "parsed",
+        "exception": null,
+        "violations": [],
+        "icalendar_errors": [],
+        "event_count": 1
+      },
+      "observed_outcome": "partial_recovery",
+      "expected_outcome": "partial_recovery",
+      "strict_parser_noticed_corruption": false,
+      "reference_recovery": {
+        "encoding": "utf-8",
+        "event_count": 1,
+        "recovered": [
+          "VERSION",
+          "PRODID",
+          "CALSCALE",
+          "UID",
+          "DTSTAMP",
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "LOCATION",
+          "ORGANIZER",
+          "CATEGORIES",
+          "STATUS",
+          "URL",
+          "VALARM"
+        ],
+        "missing": [],
+        "invalid": [
+          "DESCRIPTION"
+        ],
+        "issues": []
+      }
+    }
+  ]
+}

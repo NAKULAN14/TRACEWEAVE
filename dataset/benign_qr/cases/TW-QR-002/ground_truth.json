@@ -1,0 +1,13 @@
+{
+  "case_id": "TW-QR-002",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "EVENT: Northfield Tech Fest 2026 - Opening Ceremony\nDATE: Saturday, 14 November 2026\nTIME: 10:00-11:30 IST\nVENUE: Main Auditorium, Academic Block\nENTRY: Free for all students with institute ID card",
+  "payload_type": "plain_text",
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "College event information as multi-line plain text (newline separated). QR version 10, error correction M (~15%), module size 10px, quiet zone 4 modules, image 650x650px (8-bit greyscale PNG, black on white); payload length 197 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

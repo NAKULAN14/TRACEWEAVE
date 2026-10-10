@@ -1,0 +1,87 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://wifi-help.example.org/certs/TW-COM-004",
+    "normalized_value": "https://wifi-help.example.org/certs/TW-COM-004",
+    "observed_values": [
+      "https://wifi-help.example.org/certs/TW-COM-004"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "tessarine-it.example.org",
+    "normalized_value": "tessarine-it.example.org",
+    "observed_values": [
+      "tessarine-it.example.org"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "wifi-help.example.org",
+    "normalized_value": "wifi-help.example.org",
+    "observed_values": [
+      "wifi-help.example.org"
+    ],
+    "roles": [
+      "url_host"
+    ],
+    "source_artifacts": [
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "email_address",
+    "value": "servicedesk@tessarine-it.example.org",
+    "normalized_value": "servicedesk@tessarine-it.example.org",
+    "observed_values": [
+      "servicedesk@tessarine-it.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.37",
+    "normalized_value": "192.0.2.37",
+    "observed_values": [
+      "192.0.2.37"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  }
+]

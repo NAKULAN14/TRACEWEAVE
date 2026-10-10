@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-009",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-009.ics",
+  "corrupted_file": "TW-ICS-009.ics",
+  "is_malformed": true,
+  "corruption_type": "invalid_encoding_utf16_bom",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/009",
+    "https://events.example.edu/tw/agenda/009"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Content is intact once the BOM is honoured. Byte-oriented tools see NUL bytes and fail; a BOM-aware reader recovers everything."
+}

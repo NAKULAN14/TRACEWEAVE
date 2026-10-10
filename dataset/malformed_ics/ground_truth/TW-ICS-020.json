@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-020",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-020.ics",
+  "corrupted_file": "TW-ICS-020.ics",
+  "is_malformed": true,
+  "corruption_type": "malformed_description_escapes",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "DESCRIPTION"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/020",
+    "https://events.example.edu/tw/agenda/020"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "The text is readable but violates TEXT escaping rules. The agenda URL at the end of DESCRIPTION is intact and extractable."
+}

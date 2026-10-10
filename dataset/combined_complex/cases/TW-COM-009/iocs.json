@@ -1,0 +1,123 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://events.example.org/workshops/TW-COM-009",
+    "normalized_value": "https://events.example.org/workshops/TW-COM-009",
+    "observed_values": [
+      "https://events.example.org/workshops/TW-COM-009"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "email_02.eml",
+      "browser_events.json",
+      "event.ics",
+      "event_02.ics",
+      "qr_01.png",
+      "qr_02.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "events.example.org",
+    "normalized_value": "events.example.org",
+    "observed_values": [
+      "events.example.org"
+    ],
+    "roles": [
+      "dns_query_name",
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "email_02.eml",
+      "browser_events.json",
+      "dns_events.json",
+      "event.ics",
+      "event_02.ics",
+      "qr_01.png",
+      "qr_02.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "email_address",
+    "value": "workshops@events.example.org",
+    "normalized_value": "workshops@events.example.org",
+    "observed_values": [
+      "workshops@events.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "email_02.eml",
+      "event.ics",
+      "event_02.ics"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "ipv4",
+    "value": "192.0.2.77",
+    "normalized_value": "192.0.2.77",
+    "observed_values": [
+      "192.0.2.77"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_02.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.99",
+    "normalized_value": "192.0.2.99",
+    "observed_values": [
+      "192.0.2.99"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "198.51.100.87",
+    "normalized_value": "198.51.100.87",
+    "observed_values": [
+      "198.51.100.87"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  }
+]

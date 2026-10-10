@@ -1,0 +1,47 @@
+{
+  "file": {
+    "filename": "TW-ICS-001.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\originals\\TW-ICS-001.ics",
+    "size_bytes": 872
+  },
+  "parser": {
+    "name": "icalendar",
+    "status": "SUCCESS",
+    "parsed_at": "2026-10-03T12:35:23.643269+00:00"
+  },
+  "calendar": {
+    "properties": {
+      "VERSION": "2.0",
+      "PRODID": "-//TRACEWEAVE//Synthetic ICS Dataset 3//EN",
+      "CALSCALE": "GREGORIAN"
+    },
+    "component_count": 2,
+    "components": [
+      {
+        "type": "VEVENT",
+        "properties": {
+          "UID": "tw-ics-001-e99d068c@events.example.edu",
+          "DTSTAMP": "vDDDTypes(2026-02-01 09:00:00+00:00, Parameters({}))",
+          "DTSTART": "vDDDTypes(2026-03-02 10:30:00+00:00, Parameters({}))",
+          "DTEND": "vDDDTypes(2026-03-02 12:30:00+00:00, Parameters({}))",
+          "SUMMARY": "Introduction to Operating Systems Lecture",
+          "DESCRIPTION": "Process scheduling, context switching, and memory management fundamentals for first-year students. Please bring your student ID and a laptop. Review the pre-reading beforehand.\nAgenda: https://events.example.edu/tw/agenda/001",
+          "LOCATION": "Room 124, Block D, Example Institute of Technology",
+          "ORGANIZER": "mailto:asha.verma@example.edu",
+          "CATEGORIES": "vCategory([vText(b'LECTURE'), vText(b'ACADEMIC')], params=Parameters({}))",
+          "STATUS": "CONFIRMED",
+          "URL": "https://events.example.edu/tw/001"
+        }
+      },
+      {
+        "type": "VALARM",
+        "properties": {
+          "ACTION": "DISPLAY",
+          "DESCRIPTION": "Event starts in 15 minutes",
+          "TRIGGER": "vDDDTypes(-1 day, 23:45:00, Parameters({}))"
+        }
+      }
+    ]
+  },
+  "error": null
+}

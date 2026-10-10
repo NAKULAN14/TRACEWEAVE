@@ -1,0 +1,74 @@
+Received: from mail-out.alderwick-notices.example.com (alderwick-notices.example.com [192.0.2.47])
+	by mx.students.example.org with ESMTP id TWPHI001;
+	Tue, 07 Apr 2026 10:48:01 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-001
+From: "Alderwick IT Accounts" <accounts-notice@alderwick-notices.example.com>
+To: "Priya Raman" <priya.raman@students.example.org>
+Subject: Action needed: confirm your campus account by Friday
+Date: Tue, 07 Apr 2026 05:47:59 -0500
+Message-ID: <tw-phi-001.29cf671e28@mail-out.alderwick-notices.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-PHI-001_alt"
+
+--=_TW-PHI-001_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Priya,
+
+Our records show that your campus account has not completed the annual
+verification step.
+
+Accounts that remain unverified after Friday may lose access to the
+learning portal and library services.
+
+Scan the QR code below with your phone camera to continue.
+
+[QR code image is embedded in the HTML version of this message]
+
+Regards,
+Alderwick IT Accounts
+
+--=_TW-PHI-001_alt
+Content-Type: multipart/related; boundary="=_TW-PHI-001_rel"
+
+--=_TW-PHI-001_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Priya,</p><p>Our records show that your campus account has not completed the annual verification step.</p><p>Accounts that remain unverified after Friday may lose access to the learning portal and library services.</p><p>Scan the QR code below with your phone camera to continue.</p><p><img src="cid:qr-tw-phi-001@mail-out.alderwick-notices.example.com" alt="QR code" width="220" height="220"></p><p>Regards,<br>Alderwick IT Accounts</p></body></html>
+--=_TW-PHI-001_rel
+Content-Type: image/png; name="qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr-tw-phi-001@mail-out.alderwick-notices.example.com>
+Content-Disposition: inline; filename="qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAASgAAAEoCAIAAABkZftOAAAFaElEQVR4nO3dUW7bMBBAwajo/a+s
+nkAFCJB5pDTzXdiO4wemWCx93ff9A/yuP7/8fIDwoOHEg4DwICA8CAgPAsKDgPAgIDwICA8CwoOA
+8CAgPAgIDwLCg4DwICA8CAgPAsKDgPAgIDwICA8CwoOA8CAgPAgIDwLCg4DwICA8CAgPAsKDwN/V
+T3Bd188JRr8nsPq5Vr/O1d+X+NbPwygnHgSEBwHhQUB4EBAeBIQHAeHBG+d41Zxk1hzp6d8/vf7d
+5majr3PWzzv6c92HfB5mceJBQHgQEB4EhAcB4UFAeBAQHnxpjrd6rnLKXlk1J5z1+Ktdh3weRjnx
+ICA8CAgPAsKDgPAgIDwICA8C283xvmbWfGnWfZu7zbveyokHAeFBQHgQEB4EhAcB4UFAeBAwx9t0
+PlbN2Xbbx3srJx4EhAcB4UFAeBAQHgSEBwHhQWC7Od5b98GqezifrP6+u1nul34enHgQEB4EhAcB
+4UFAeBAQHgSEB1+a452y97Xb3Gz0fVs9l1u9f/hWTjwICA8CwoOA8CAgPAgIDwLCg8D11n2nWUbn
+S6vnV9Xv65TXeQonHgSEBwHhQUB4EBAeBIQHAeHBG+d4u93TOGv/rbqXcvXeWrVHdx/yvLM48SAg
+PAgIDwLCg4DwICA8CAgPAsffq7nbPG3WPGr1fGnWvZ3VfaH3pMepOPEgIDwICA8CwoOA8CAgPAgI
+D750r+Ypc5vd5l2n78Wtfj9P4cSDgPAgIDwICA8CwoOA8CAgPAgcc69mtb83+jhvvRd01Oq9xGuz
++1pHOfEgIDwICA8CwoOA8CAgPAgIDwLb3as5OocZnfNU859qnjZq9Xx1t++1u6LPgxMPAsKDgPAg
+IDwICA8CwoOA8OBLc7zK6vlPpdrT223+ecrvy4kHAeFBQHgQEB4EhAcB4UFAeBD43L2a/P/9P+Xe
+zlG73bfpxIOA8CAgPAgIDwLCg4DwICA8CGy3j1d9T91u+2mz3ofV7+esn/eO5oTu1YQP8acmBIQH
+AeFBQHgQEB4EhAdv3Md7fOLN9r5OuX9yt/3G3T4/T+zjAf7UhIL/40FAeBAQHgSEBwHhQeCYezV3
+e/xZqvd/tdX3at7R48/ixIOA8CAgPAgIDwLCg4DwICA8+NK9mqfMc0afd5bdXn91/+Qpe4mjnHgQ
+EB4EhAcB4UFAeBAQHgSEB4HX7uM9WT3n2e2ez1lO2XM7hRMPAsKDgPAgIDwICA8CwoOA8OBL+3hP
+RudUp+xfzXL6HOyUPczbvZrwPv7UhIDwICA8CAgPAsKDgPDgjft4p9vt/sbdfl+n71tWnHgQEB4E
+hAcB4UFAeBAQHgSEB1+6V3M3q+dOp8/9qntBr83eh1mceBAQHgSEBwHhQUB4EBAeBIQHX7pXs5qr
+7DZX3G3fbPX7M+v135PmotXn0IkHAeFBQHgQEB4ID77BiQcB4UHgmO/HG3X6vGvUrD23WXtxq9+f
+a9L3KFbzPSceBIQHAeFBQHgQEB4EhAcB4UFguzne18yam+02p1q9L3c9/Pvd9u6eOPEgIDwICA8C
+woOA8CAgPAgIDwLmeJNV87RZ+3Kj+2yzXk/1OO7VhA/xpyYEhAcB4UFAeBAQHgSEB4Ht5ni77U3t
+di/obvOoav/w9PfTiQcB4UFAeBAQHgSEBwHhQUB48KU53m7fL3fKXK7a33tS7endi+8jXc2JB8KD
+b3DiQUB4EBAeBIQHAeFB4DpljwvexIkHAeFBQHgQEB4EhAcB4UFAeBAQHgSEBwHhQUB4EBAeBIQH
+AeFBQHgQEB4EhAcB4UFAeBAQHgSEBwHhQUB4EBAeBIQHAeFBQHgQEB4EhAcB4YHw4OcT/gG2KhVi
+U6U21wAAAABJRU5ErkJggg==
+--=_TW-PHI-001_rel--
+--=_TW-PHI-001_alt--

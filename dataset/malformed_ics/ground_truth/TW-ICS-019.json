@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-019",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-019.ics",
+  "corrupted_file": "TW-ICS-019.ics",
+  "is_malformed": true,
+  "corruption_type": "missing_property_separators",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "DESCRIPTION",
+    "ORGANIZER",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "SUMMARY",
+    "LOCATION",
+    "CATEGORIES"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/019",
+    "https://events.example.edu/tw/agenda/019"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Lines are recognisable by property name but are not valid content lines. A heuristic repair could recover the values; the conservative reference recovery does not."
+}

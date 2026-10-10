@@ -1,0 +1,112 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://openday.example.org/schedule/TW-COM-012",
+    "normalized_value": "https://openday.example.org/schedule/TW-COM-012",
+    "observed_values": [
+      "https://openday.example.org/schedule/TW-COM-012"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "events.example.org",
+    "normalized_value": "events.example.org",
+    "observed_values": [
+      "events.example.org"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "openday.example.org",
+    "normalized_value": "openday.example.org",
+    "observed_values": [
+      "openday.example.org"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "dns_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "email_address",
+    "value": "openday@events.example.org",
+    "normalized_value": "openday@events.example.org",
+    "observed_values": [
+      "openday@events.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.232",
+    "normalized_value": "192.0.2.232",
+    "observed_values": [
+      "192.0.2.232"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "198.51.100.93",
+    "normalized_value": "198.51.100.93",
+    "observed_values": [
+      "198.51.100.93"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  }
+]

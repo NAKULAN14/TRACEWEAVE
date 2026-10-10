@@ -1,0 +1,71 @@
+Return-Path: <appointments@greenleaf-dental.example.com>
+Received: from mail.greenleaf-dental.example.com (mail.greenleaf-dental.example.com)
+	by mx.mail.example.com (Postfix) with ESMTPS id D221D9CF6C
+	for <ishaan.reddy@mail.example.com>; Tue, 27 Oct 2026 10:00:02 +0530
+Received: from workstation.greenleaf-dental.example.com (workstation.greenleaf-dental.example.com)
+	by mail.greenleaf-dental.example.com (Postfix) with ESMTPSA id E6C43F9672
+	for <ishaan.reddy@mail.example.com>; Tue, 27 Oct 2026 10:00:00 +0530
+From: "Greenleaf Dental Clinic" <appointments@greenleaf-dental.example.com>
+To: "Ishaan Reddy" <ishaan.reddy@mail.example.com>
+Subject: Appointment Reminder - Thursday 29 October, 11:30
+Date: Tue, 27 Oct 2026 10:00:00 +0530
+Message-ID: <20261027100000.e6c43f9672dd@greenleaf-dental.example.com>
+MIME-Version: 1.0
+X-Mailer: CampusMailer 3.2
+Content-Type: multipart/alternative; boundary="=_TW_ALT_e6c43f9672dd3334"
+
+This is a multi-part message in MIME format.
+--=_TW_ALT_e6c43f9672dd3334
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Ishaan,
+
+This is a friendly reminder about your upcoming appointment at Greenleaf
+Dental Clinic.
+
+  Date: Thursday, 29 October 2026
+  Time: 11:30-12:15 IST
+  Service: Routine check-up and cleaning
+  Dentist: Dr. S. Anand
+  Location: Greenleaf Dental Clinic, 2nd Floor, Lakeview Plaza
+
+- Please arrive 10 minutes early to complete a short check-in form.
+- Bring your previous dental report if you have one.
+- If you need to reschedule, please contact the front desk at least 24
+  hours in advance.
+
+Warm regards,
+Front Desk
+Greenleaf Dental Clinic
+--=_TW_ALT_e6c43f9672dd3334
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Appointment Reminder - Thursday 29 October, 11:30</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Dear Ishaan,</p>
+<p>This is a friendly reminder about your upcoming appointment at Greenleaf Dental Clinic.</p>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Date</b></td><td>Thursday, 29 October 2026</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Time</b></td><td>11:30-12:15 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Service</b></td><td>Routine check-up and cleaning</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Dentist</b></td><td>Dr. S. Anand</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Location</b></td><td>Greenleaf Dental Clinic, 2nd Floor, Lakeview Plaza</td></tr>
+</table>
+<ul>
+<li>Please arrive 10 minutes early to complete a short check-in form.</li>
+<li>Bring your previous dental report if you have one.</li>
+<li>If you need to reschedule, please contact the front desk at least 24 hours in advance.</li>
+</ul>
+<p>Warm regards,<br>
+Front Desk<br>
+Greenleaf Dental Clinic</p>
+</body>
+</html>
+--=_TW_ALT_e6c43f9672dd3334--

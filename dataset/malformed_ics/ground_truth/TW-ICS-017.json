@@ -1,0 +1,38 @@
+{
+  "case_id": "TW-ICS-017",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-017.ics",
+  "corrupted_file": "TW-ICS-017.ics",
+  "is_malformed": true,
+  "corruption_type": "unexpected_malformed_properties",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "PRIORITY"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/017",
+    "https://events.example.edu/tw/agenda/017"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "All original fields remain valid. The injected lines should be reported as noise; PRIORITY is a standard property whose value must be an integer 0-9."
+}

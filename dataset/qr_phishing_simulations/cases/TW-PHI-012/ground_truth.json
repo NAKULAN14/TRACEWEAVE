@@ -1,0 +1,276 @@
+{
+  "case_id": "TW-PHI-012",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+  "expected_url": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+  "expected_domain": "example.net",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "normalized_value": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "example.net",
+      "normalized_value": "example.net",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "seats@ferncliff-workshops.example.net",
+      "normalized_value": "seats@ferncliff-workshops.example.net",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "ferncliff-workshops.example.net",
+      "normalized_value": "ferncliff-workshops.example.net",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.173",
+      "normalized_value": "192.0.2.173",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-PHI-012-BRW-001",
+      "timestamp": "2026-04-28T19:01:54.936Z",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "domain": "example.net"
+    },
+    {
+      "event_id": "TW-PHI-012-BRW-002",
+      "timestamp": "2026-04-28T19:01:56.283Z",
+      "event_type": "page_load",
+      "url": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "domain": "example.net"
+    }
+  ],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "references_qr_code",
+      "target": "artifact:qr.png",
+      "evidence_type": "inferred",
+      "basis": "email text refers to a QR code on a poster/notice; qr.png is supplied as separate evidence"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to event.ics"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "evidence_type": "observed",
+      "basis": "URL present in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "relation": "has_domain",
+      "target": "domain:example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:seats@ferncliff-workshops.example.net",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "browser_event:TW-PHI-012-BRW-001",
+      "relation": "visits",
+      "target": "url:https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:email.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-PHI-012-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR delivered by this email; scan source cannot be proven"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-04-28T14:20:36Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-28T14:20:36Z",
+      "event_type": "calendar_invitation_created",
+      "description": "ICS DTSTAMP",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-28T14:20:39Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-28T19:01:54.936Z",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-012-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-28T19:01:56.283Z",
+      "event_type": "page_load",
+      "description": "load https://example.net/workshops/seat/TW-PHI-012?src=qr",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-012-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-30T14:00:00Z",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'workshop_seat_allocation' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code referenced by the email (poster/notice image)"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-012-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-012-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    }
+  ],
+  "missing_artifacts": [
+    "dns_events.json"
+  ],
+  "notes": "Scenario: workshop_seat_allocation. QR not attached; email refers to a poster/notice and qr.png is a separately supplied image of it. ICS attached inside the email and also supplied as event.ics (identical). Incomplete evidence: DNS events were not collected; browser events show the scan. OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic."
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "TW-ICS-016",
+  "corruption_type": "truncated_inside_header",
+  "corruption_description": "File cut off in the middle of the 'BEGIN:VEVENT' delimiter, before any event data.",
+  "original_filename": "TW-ICS-016.ics",
+  "corrupted_filename": "TW-ICS-016.ics",
+  "affected_fields": [
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM",
+    "BEGIN:VEVENT",
+    "END:VCALENDAR"
+  ],
+  "expected_parsing_result": "failure",
+  "recovery_possible": false,
+  "original_sha256": "9efff136a0aeafc0aa32b22b6f466bc82785e155a81d53c2744bfd24eb6e9b49",
+  "corrupted_sha256": "8afccd4a9bbf438cbc347463b97b0f0fb1310dc188865c831585968d739c1e65"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "TW-QR-014",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "WIFI:T:WPA;S:Northfield-Guest;P:Sample-205073;H:false;;",
+  "payload_type": "wifi",
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Wi-Fi configuration (WPA, visible SSID 'Northfield-Guest'). The passphrase 'Sample-205073' is a seeded placeholder for a fictional network, not a real credential. QR version 4, error correction M (~15%), module size 10px, quiet zone 4 modules, image 410x410px (8-bit greyscale PNG, black on white); payload length 55 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

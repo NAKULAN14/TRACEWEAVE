@@ -1,0 +1,82 @@
+Return-Path: <academic.affairs@northfield.example.org>
+Received: from mail.northfield.example.org (mail.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id 3421B583DB
+	for <cse.year3@students.northfield.example.org>; Mon, 05 Oct 2026 09:15:02 +0530
+Received: from workstation.northfield.example.org (workstation.northfield.example.org)
+	by mail.northfield.example.org (Postfix) with ESMTPSA id FE79654344
+	for <cse.year3@students.northfield.example.org>; Mon, 05 Oct 2026 09:15:00 +0530
+From: "Office of Academic Affairs" <academic.affairs@northfield.example.org>
+To: "All Third-Year CSE Students" <cse.year3@students.northfield.example.org>
+Subject: Mid-Semester Examination Briefing - Monday 12 October
+Date: Mon, 05 Oct 2026 09:15:00 +0530
+Message-ID: <20261005091500.fe79654344df@northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook 16.0
+Content-Type: multipart/alternative; boundary="=_TW_ALT_fe79654344df6d5c"
+
+This is a multi-part message in MIME format.
+--=_TW_ALT_fe79654344df6d5c
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Students,
+
+The mid-semester examinations for the odd semester will begin on Monday,
+19 October 2026. To help everyone prepare, the Office of Academic
+Affairs will hold a short briefing on the examination rules and
+logistics.
+
+Briefing details:
+  Date: Monday, 12 October 2026
+  Time: 10:00-11:00 IST
+  Venue: Seminar Hall A, Academic Block
+
+Topics to be covered:
+- Seating arrangement and hall allocation
+- Identity card requirements for the examination hall
+- Permitted calculators and stationery
+- Procedure for requesting re-evaluation after results are declared
+
+Attendance is strongly encouraged but not mandatory. Students who cannot
+attend may collect a printed copy of the examination guidelines from the
+Academic Affairs office during working hours.
+
+Please carry your institute ID card to the session.
+
+Regards,
+Office of Academic Affairs
+Northfield Institute of Technology
+--=_TW_ALT_fe79654344df6d5c
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mid-Semester Examination Briefing - Monday 12 October</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Dear Students,</p>
+<p>The mid-semester examinations for the odd semester will begin on Monday, 19 October 2026. To help everyone prepare, the Office of Academic Affairs will hold a short briefing on the examination rules and logistics.</p>
+<h3 style="margin: 16px 0 6px;">Briefing details</h3>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Date</b></td><td>Monday, 12 October 2026</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Time</b></td><td>10:00-11:00 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Venue</b></td><td>Seminar Hall A, Academic Block</td></tr>
+</table>
+<h3 style="margin: 16px 0 6px;">Topics to be covered</h3>
+<ul>
+<li>Seating arrangement and hall allocation</li>
+<li>Identity card requirements for the examination hall</li>
+<li>Permitted calculators and stationery</li>
+<li>Procedure for requesting re-evaluation after results are declared</li>
+</ul>
+<p>Attendance is strongly encouraged but not mandatory. Students who cannot attend may collect a printed copy of the examination guidelines from the Academic Affairs office during working hours.</p>
+<p>Please carry your institute ID card to the session.</p>
+<p>Regards,<br>
+Office of Academic Affairs<br>
+Northfield Institute of Technology</p>
+</body>
+</html>
+--=_TW_ALT_fe79654344df6d5c--

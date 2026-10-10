@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:TW-PHI-012-b5748e45@ferncliff-workshops.example.net
+DTSTAMP:20260428T142036Z
+DTSTART:20260430T140000Z
+DTEND:20260430T153000Z
+SUMMARY:Cloud Security Workshop
+DESCRIPTION:Workshop agenda and seat page: https://example.net/workshops/se
+ at/TW-PHI-012?src=qr
+LOCATION:Lab 2\, Ferncliff Institute
+ORGANIZER;CN="Ferncliff Workshops Team":mailto:seats@ferncliff-workshops.ex
+ ample.net
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

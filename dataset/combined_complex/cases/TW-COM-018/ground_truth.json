@@ -1,0 +1,392 @@
+{
+  "case_id": "TW-COM-018",
+  "category": "combined_complex",
+  "scenario": "Fee-payment lure with sender/reply-to mismatch, QR attachment and a malformed ICS missing UID and DTSTAMP; no logs at all.",
+  "expected_classification": "simulated_phishing",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "515abd928ada71d63eb41fa412a1497b01a438f7dd8ec26fa6295c239e18963b"
+    },
+    {
+      "filename": "event.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": true,
+      "malformation": {
+        "type": "missing_required_properties",
+        "description": "UID and DTSTAMP were removed (both are required by RFC 5545).",
+        "affected_fields": [
+          "UID",
+          "DTSTAMP"
+        ],
+        "recoverable_fields": [
+          "DTSTART",
+          "DTEND",
+          "SUMMARY",
+          "DESCRIPTION",
+          "LOCATION",
+          "ORGANIZER"
+        ],
+        "url_recoverable": true,
+        "intentional": true
+      },
+      "sha256": "0fe164e6696c45d00083a77b2b5e305853f11c4cf5ccc5a069b2c27ab7af7368"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "337baaa8ccafd586424c90e3e191117c83be3242b379e84a0cede8078534b2bf"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "0060397f4bc6f69a006320f54cb98ef9563ae807d9cd6dc3166f6e1271fccb5e"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "3eaacafb8b3c9a64b0ff4c6b9617f22804a7446a7e9223f2a2b515af704938bf"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "eb8dd5d03feb65e73a886714a50be7e66a459f6967c811b8cf286b014a27416c"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://fees.example.net/pay/TW-COM-018",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://fees.example.net/pay/TW-COM-018"
+  ],
+  "expected_urls": [
+    "https://fees.example.net/pay/TW-COM-018"
+  ],
+  "expected_domains": [
+    "alderwick-bursar.example.com",
+    "fee-help.example.net",
+    "fees.example.net"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://fees.example.net/pay/TW-COM-018",
+      "normalized_value": "https://fees.example.net/pay/TW-COM-018",
+      "observed_values": [
+        "https://fees.example.net/pay/TW-COM-018"
+      ],
+      "roles": [
+        "ics_url",
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "alderwick-bursar.example.com",
+      "normalized_value": "alderwick-bursar.example.com",
+      "observed_values": [
+        "alderwick-bursar.example.com"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "fee-help.example.net",
+      "normalized_value": "fee-help.example.net",
+      "observed_values": [
+        "fee-help.example.net"
+      ],
+      "roles": [
+        "reply_to_domain_mismatch"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "fees.example.net",
+      "normalized_value": "fees.example.net",
+      "observed_values": [
+        "fees.example.net"
+      ],
+      "roles": [
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "email_address",
+      "value": "bursar-notice@alderwick-bursar.example.com",
+      "normalized_value": "bursar-notice@alderwick-bursar.example.com",
+      "observed_values": [
+        "bursar-notice@alderwick-bursar.example.com"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "email_address",
+      "value": "fees-reply@fee-help.example.net",
+      "normalized_value": "fees-reply@fee-help.example.net",
+      "observed_values": [
+        "fees-reply@fee-help.example.net"
+      ],
+      "roles": [
+        "reply_to_address_mismatch"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "ipv4",
+      "value": "192.0.2.165",
+      "normalized_value": "192.0.2.165",
+      "observed_values": [
+        "192.0.2.165"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'fees-payment-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://fees.example.net/pay/TW-COM-018",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION (recovered from malformed ICS)"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:bursar-notice@alderwick-bursar.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:email_01.eml",
+      "relation": "replies_to",
+      "target": "email_address:fees-reply@fee-help.example.net",
+      "evidence_type": "observed",
+      "basis": "Reply-To domain differs from From domain"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://fees.example.net/pay/TW-COM-018",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "url:https://fees.example.net/pay/TW-COM-018",
+      "relation": "has_domain",
+      "target": "domain:fees.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-06-24T13:29:24+00:00",
+      "source_timestamp": "2026-06-24T13:29:24+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-24T13:29:27+00:00",
+      "source_timestamp": "2026-06-24T13:29:27+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-24T13:29:27+00:00",
+      "source_timestamp": "2026-06-24T13:29:27+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-06-26T17:00:00+00:00",
+      "source_timestamp": "2026-06-26T17:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "1 phishing-style email(s) delivered"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Urgency/authority lure theme in subject and body"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr_01.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code presented to the recipient(s)"
+    }
+  ],
+  "missing_evidence": [
+    {
+      "artifact": "browser_events.json",
+      "reason": "not_collected",
+      "impact": "Cannot confirm whether the QR code was scanned."
+    },
+    {
+      "artifact": "dns_events.json",
+      "reason": "not_collected",
+      "impact": "No resolver evidence."
+    }
+  ],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "scan_unconfirmed",
+      "description": "No telemetry exists, so the delivery stage is established but any scan or page view is unknown.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "qr_01.png"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Report stages up to QR presentation only."
+    }
+  ],
+  "notes": "Strong delivery-stage indicators (reply-to mismatch, QR host unrelated to sender, penalty language) even without any recorded scan. Classification: simulated_phishing. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

@@ -1,0 +1,135 @@
+Return-Path: <kavya.subramanian@students.northfield.example.org>
+Received: from mail.students.northfield.example.org (mail.students.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id 0291426943
+	for <aarav.menon@students.northfield.example.org>; Thu, 08 Oct 2026 18:40:02 +0530
+Received: from workstation.students.northfield.example.org (workstation.students.northfield.example.org)
+	by mail.students.northfield.example.org (Postfix) with ESMTPSA id EC03DDA768
+	for <aarav.menon@students.northfield.example.org>; Thu, 08 Oct 2026 18:40:00 +0530
+From: "Kavya Subramanian" <kavya.subramanian@students.northfield.example.org>
+To: "Aarav Menon" <aarav.menon@students.northfield.example.org>,
+	"Diya Nambiar" <diya.nambiar@students.northfield.example.org>,
+	"Rohit Sharma" <rohit.sharma@students.northfield.example.org>
+Cc: "Prof. Rohan Iyer" <rohan.iyer@northfield.example.org>
+Subject: Invitation: Cultural Club Inauguration - Friday 16 October
+Date: Thu, 08 Oct 2026 18:40:00 +0530
+Message-ID: <20261008184000.ec03dda768e9@students.northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Apple Mail (16.0)
+Content-Type: multipart/mixed; boundary="=_TW_MIX_ec03dda768e96102"
+
+This is a multi-part message in MIME format.
+--=_TW_MIX_ec03dda768e96102
+Content-Type: multipart/alternative; boundary="=_TW_ALT_ec03dda768e96102"
+
+--=_TW_ALT_ec03dda768e96102
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello everyone,
+
+The Cultural Club is inaugurating its 2026-27 council and we would love
+for you to join us. It will be a relaxed evening with a few short
+performances.
+
+  Date: Friday, 16 October 2026
+  Time: 16:00-17:30 IST
+  Venue: Main Auditorium
+
+Programme:
+- Welcome note by the club secretary
+- Address by our faculty advisor, Prof. Rohan Iyer
+- Introduction of the new council members
+- Student performances: classical dance, a short skit and a band set
+
+Refreshments will be served at the foyer after the programme. Please
+accept the attached calendar invitation so we can estimate the turnout.
+
+Best,
+Kavya Subramanian
+Secretary, Cultural Club
+--=_TW_ALT_ec03dda768e96102
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Invitation: Cultural Club Inauguration - Friday 16 October</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Hello everyone,</p>
+<p>The Cultural Club is inaugurating its 2026-27 council and we would love for you to join us. It will be a relaxed evening with a few short performances.</p>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Date</b></td><td>Friday, 16 October 2026</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Time</b></td><td>16:00-17:30 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Venue</b></td><td>Main Auditorium</td></tr>
+</table>
+<h3 style="margin: 16px 0 6px;">Programme</h3>
+<ul>
+<li>Welcome note by the club secretary</li>
+<li>Address by our faculty advisor, Prof. Rohan Iyer</li>
+<li>Introduction of the new council members</li>
+<li>Student performances: classical dance, a short skit and a band set</li>
+</ul>
+<p>Refreshments will be served at the foyer after the programme. Please accept the attached calendar invitation so we can estimate the turnout.</p>
+<p>Best,<br>
+Kavya Subramanian<br>
+Secretary, Cultural Club</p>
+</body>
+</html>
+--=_TW_ALT_ec03dda768e96102--
+--=_TW_MIX_ec03dda768e96102
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST; name="invite.ics"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="invite.ics"
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-002-ec03dda768e96102@northfield.example.org
+DTSTAMP:20261008T130800Z
+DTSTART;TZID=Asia/Kolkata:20261016T160000
+DTEND;TZID=Asia/Kolkata:20261016T173000
+SUMMARY:Cultural Club Inauguration 2026-27
+DESCRIPTION:Inauguration of the Cultural Club council with a faculty addres
+ s and student performances.\nRefreshments at the foyer after the programme
+ .
+LOCATION:Main Auditorium
+ORGANIZER;CN="Kavya Subramanian":mailto:kavya.subramanian@students.northfie
+ ld.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Aarav Menon":mailto:aarav.menon@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Diya Nambiar":mailto:diya.nambiar@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Rohit Sharma":mailto:rohit.sharma@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Prof. Rohan Iyer":mailto:rohan.iyer@northfield.example.org
+CATEGORIES:Club,Cultural
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261008T130800Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Cultural Club Inauguration 2026-27
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+
+--=_TW_MIX_ec03dda768e96102--

@@ -1,0 +1,48 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-016.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-016.ics",
+        "size_bytes": 112,
+        "sha256": "8afccd4a9bbf438cbc347463b97b0f0fb1310dc188865c831585968d739c1e65"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-016_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-016_recovered.ics",
+        "size_bytes": 129,
+        "sha256": "28aaceccc604d0acb6b50b617dccffc7fe3d776539b3c3c02429d7971eb61cc2"
+    },
+    "transformations": [
+        {
+            "type": "MISSING_COMPONENT_RECONSTRUCTION",
+            "component": "VCALENDAR",
+            "position": "END",
+            "inserted": "END:VCALENDAR",
+            "reason": "VCALENDAR end boundary was missing"
+        }
+    ],
+    "transformation_count": 1,
+    "validation": {
+        "validation_status": "FAILED",
+        "parser": {
+            "name": "icalendar",
+            "status": "FAILED"
+        },
+        "error": {
+            "type": "ValueError",
+            "message": "Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]"
+        }
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:55.104278+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "FAILED",
+        "confidence": "LOW"
+    }
+}

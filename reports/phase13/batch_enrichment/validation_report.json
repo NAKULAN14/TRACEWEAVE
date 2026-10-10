@@ -1,0 +1,19 @@
+{
+  "input": "reports\\phase13\\batch_enrichment\\enriched_iocs.json",
+  "total_records": 24,
+  "valid_records": 24,
+  "invalid_records": 0,
+  "validation_status": "PASS",
+  "status_counts": {
+    "FOUND": 0,
+    "NOT_FOUND": 24
+  },
+  "ioc_type_counts": {
+    "EMAIL": 7,
+    "DOMAIN": 9,
+    "URL": 8
+  },
+  "duplicate_enrichment_identities": [],
+  "network_access_performed": false,
+  "errors": []
+}

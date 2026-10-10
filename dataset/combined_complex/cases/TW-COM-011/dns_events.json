@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-COM-011-DNS-001",
+    "case_id": "TW-COM-011",
+    "timestamp": "2026-06-03T19:19:44.507+00:00",
+    "query": "lab-access.example.net",
+    "record_type": "A",
+    "response": "192.0.2.65",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

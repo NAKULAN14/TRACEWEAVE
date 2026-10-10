@@ -1,0 +1,124 @@
+Return-Path: <anita.deshpande@northfield.example.org>
+Received: from mail.northfield.example.org (mail.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id 3821B95928
+	for <meera.joshi@students.northfield.example.org>; Fri, 09 Oct 2026 11:05:02 +0530
+Received: from workstation.northfield.example.org (workstation.northfield.example.org)
+	by mail.northfield.example.org (Postfix) with ESMTPSA id D1ACC00DAA
+	for <meera.joshi@students.northfield.example.org>; Fri, 09 Oct 2026 11:05:00 +0530
+From: "Prof. Anita Deshpande" <anita.deshpande@northfield.example.org>
+To: "Meera Joshi" <meera.joshi@students.northfield.example.org>,
+	"Karthik Rao" <karthik.rao@students.northfield.example.org>,
+	"Tanvi Bhat" <tanvi.bhat@students.northfield.example.org>
+Subject: Updated: Capstone Review Meeting - Thursday 15 October, 14:30
+Date: Fri, 09 Oct 2026 11:05:00 +0530
+Message-ID: <20261009110500.d1acc00daa37@northfield.example.org>
+In-Reply-To: <20261005110500.b1f3394910f9@northfield.example.org>
+References: <20261005110500.b1f3394910f9@northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook 16.0
+Content-Type: multipart/mixed; boundary="=_TW_MIX_d1acc00daa3795c6"
+
+This is a multi-part message in MIME format.
+--=_TW_MIX_d1acc00daa3795c6
+Content-Type: multipart/alternative; boundary="=_TW_ALT_d1acc00daa3795c6"
+
+--=_TW_ALT_d1acc00daa3795c6
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi team,
+
+Because of a clash with the faculty board meeting, I need to move our
+capstone progress review. Please note the updated schedule.
+
+  Previous slot: Wednesday, 14 October 2026, 11:00-12:00 IST
+  New slot: Thursday, 15 October 2026, 14:30-15:30 IST
+  Venue: Room 305, CS Block
+
+Please bring the updated project report and be ready for a 10-minute
+demo of your current build.
+
+The attached calendar update replaces the earlier entry. Let me know by
+tomorrow if the new slot is a problem for anyone.
+
+Regards,
+Prof. Anita Deshpande
+Department of Computer Science and Engineering
+--=_TW_ALT_d1acc00daa3795c6
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Updated: Capstone Review Meeting - Thursday 15 October, 14:30</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Hi team,</p>
+<p>Because of a clash with the faculty board meeting, I need to move our capstone progress review. Please note the updated schedule.</p>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Previous slot</b></td><td>Wednesday, 14 October 2026, 11:00-12:00 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>New slot</b></td><td>Thursday, 15 October 2026, 14:30-15:30 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Venue</b></td><td>Room 305, CS Block</td></tr>
+</table>
+<p>Please bring the updated project report and be ready for a 10-minute demo of your current build.</p>
+<p>The attached calendar update replaces the earlier entry. Let me know by tomorrow if the new slot is a problem for anyone.</p>
+<p>Regards,<br>
+Prof. Anita Deshpande<br>
+Department of Computer Science and Engineering</p>
+</body>
+</html>
+--=_TW_ALT_d1acc00daa3795c6--
+--=_TW_MIX_d1acc00daa3795c6
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST; name="updated-invite.ics"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="updated-invite.ics"
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-003-d1acc00daa3795c6@northfield.example.org
+DTSTAMP:20261009T053300Z
+DTSTART;TZID=Asia/Kolkata:20261015T143000
+DTEND;TZID=Asia/Kolkata:20261015T153000
+SUMMARY:Capstone Review Meeting
+DESCRIPTION:Progress review for the capstone project teams. Bring the updat
+ ed report and be ready for a 10-minute demo.\nRescheduled from Wednesday 1
+ 4 October 11:00.
+LOCATION:Room 305\, CS Block
+ORGANIZER;CN="Prof. Anita Deshpande":mailto:anita.deshpande@northfield.exam
+ ple.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Meera Joshi":mailto:meera.joshi@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Karthik Rao":mailto:karthik.rao@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Tanvi Bhat":mailto:tanvi.bhat@students.northfield.example.org
+CATEGORIES:Academic,Meeting
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261009T053300Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Capstone Review Meeting
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+
+--=_TW_MIX_d1acc00daa3795c6--

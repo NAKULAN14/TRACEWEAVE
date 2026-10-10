@@ -1,0 +1,14 @@
+{
+  "case_id": "TW-ICS-001",
+  "corruption_type": "missing_required_property_uid",
+  "corruption_description": "The mandatory UID property was deleted from the VEVENT.",
+  "original_filename": "TW-ICS-001.ics",
+  "corrupted_filename": "TW-ICS-001.ics",
+  "affected_fields": [
+    "UID"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "16b47a3cc183f6ecbff3ccbe71a0685912165ac1f36d307f582790e5c48adfed",
+  "corrupted_sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+}

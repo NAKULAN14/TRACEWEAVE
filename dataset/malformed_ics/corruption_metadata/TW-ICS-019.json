@@ -1,0 +1,16 @@
+{
+  "case_id": "TW-ICS-019",
+  "corruption_type": "missing_property_separators",
+  "corruption_description": "The ':' name/value separator was replaced by a space (SUMMARY), '=' (LOCATION) and ';' (CATEGORIES).",
+  "original_filename": "TW-ICS-019.ics",
+  "corrupted_filename": "TW-ICS-019.ics",
+  "affected_fields": [
+    "SUMMARY",
+    "LOCATION",
+    "CATEGORIES"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "b714f4b7366a8b8792c4ab433cc03789ebab4904516a6fcc44e5fb2ee3f4969d",
+  "corrupted_sha256": "00ac202f03190268b70db061b850024db376b08c51c81806b950ce708a212f18"
+}

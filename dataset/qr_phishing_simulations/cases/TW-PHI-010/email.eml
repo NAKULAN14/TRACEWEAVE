@@ -1,0 +1,91 @@
+Received: from mail-out.tessarine-secure.example.com (tessarine-secure.example.com [192.0.2.152])
+	by mx.mail.example.net with ESMTP id TWPHI010;
+	Sat, 25 Apr 2026 11:49:12 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-010
+From: "Tessarine Security Desk" <security-alerts@tessarine-secure.example.com>
+To: "Ravi Menon" <ravi.menon@mail.example.net>
+Reply-To: support-reply@helpdesk-reply.example.net
+Subject: Security alert: unusual sign-in to your account
+Date: Sat, 25 Apr 2026 03:49:09 -0800
+Message-ID: <tw-phi-010.9cbd0ccbcc@mail-out.tessarine-secure.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-PHI-010_alt"
+
+--=_TW-PHI-010_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Ravi,
+
+We detected a sign-in to your account from a new device.
+
+If this was not you, review the activity right away to keep your account
+protected.
+
+Scan the QR code below with your phone camera to continue.
+
+[QR code image is embedded in the HTML version of this message]
+
+If scanning does not work, use this link instead:
+HTTPS://EXAMPLE.COM/secure/device/TW-PHI-010
+
+Regards,
+Tessarine Security Desk
+
+--=_TW-PHI-010_alt
+Content-Type: multipart/related; boundary="=_TW-PHI-010_rel"
+
+--=_TW-PHI-010_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Ravi,</p><p>We detected a sign-in to your account from a new device.</p><p>If this was not you, review the activity right away to keep your account protected.</p><p>Scan the QR code below with your phone camera to continue.</p><p><img src="cid:qr-tw-phi-010@mail-out.tessarine-secure.example.com" alt="QR code" width="220" height="220"></p><p>If scanning does not work, use this link instead:<br><a href="HTTPS://EXAMPLE.COM/secure/device/TW-PHI-010">HTTPS://EXAMPLE.COM/secure/device/TW-PHI-010</a></p><p>Regards,<br>Tessarine Security Desk</p></body></html>
+--=_TW-PHI-010_rel
+Content-Type: image/png; name="qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr-tw-phi-010@mail-out.tessarine-secure.example.com>
+Content-Disposition: inline; filename="qr.png"
+
+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
+TkSuQmCC
+--=_TW-PHI-010_rel--
+--=_TW-PHI-010_alt--

@@ -1,0 +1,373 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-009.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-009.ics",
+        "size_bytes": 1760,
+        "sha256": "3907ff3efc3de6d6592d09325ee7c5f5dba821db3ef83ab35f6b56f8798e0882"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-009_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-009_recovered.ics",
+        "size_bytes": 1848,
+        "sha256": "eeecf5e2740c3a1095fbebde02dce7baf36641c877ce2055802a5dd390bf7c9f"
+    },
+    "transformations": [
+        {
+            "type": "MISSING_COMPONENT_RECONSTRUCTION",
+            "component": "VCALENDAR",
+            "position": "BEGIN",
+            "inserted": "BEGIN:VCALENDAR",
+            "reason": "VCALENDAR begin boundary was missing"
+        },
+        {
+            "type": "MISSING_COMPONENT_RECONSTRUCTION",
+            "component": "VCALENDAR",
+            "position": "END",
+            "inserted": "END:VCALENDAR",
+            "reason": "VCALENDAR end boundary was missing"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 2,
+            "original": "ÿþB\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 3,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 4,
+            "original": "\u0000V\u0000E\u0000R\u0000S\u0000I\u0000O\u0000N\u0000:\u00002\u0000.\u00000\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 5,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 6,
+            "original": "\u0000P\u0000R\u0000O\u0000D\u0000I\u0000D\u0000:\u0000-\u0000/\u0000/\u0000T\u0000R\u0000A\u0000C\u0000E\u0000W\u0000E\u0000A\u0000V\u0000E\u0000/\u0000/\u0000S\u0000y\u0000n\u0000t\u0000h\u0000e\u0000t\u0000i\u0000c\u0000 \u0000I\u0000C\u0000S\u0000 \u0000D\u0000a\u0000t\u0000a\u0000s\u0000e\u0000t\u0000 \u00003\u0000/\u0000/\u0000E\u0000N\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 7,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 8,
+            "original": "\u0000C\u0000A\u0000L\u0000S\u0000C\u0000A\u0000L\u0000E\u0000:\u0000G\u0000R\u0000E\u0000G\u0000O\u0000R\u0000I\u0000A\u0000N\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 9,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 10,
+            "original": "\u0000B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000E\u0000V\u0000E\u0000N\u0000T\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 11,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 12,
+            "original": "\u0000U\u0000I\u0000D\u0000:\u0000t\u0000w\u0000-\u0000i\u0000c\u0000s\u0000-\u00000\u00000\u00009\u0000-\u00002\u00007\u00001\u00005\u00000\u00004\u00000\u0000d\u0000@\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 13,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 14,
+            "original": "\u0000D\u0000T\u0000S\u0000T\u0000A\u0000M\u0000P\u0000:\u00002\u00000\u00002\u00006\u00000\u00002\u00000\u00002\u0000T\u00000\u00009\u00000\u00000\u00000\u00000\u0000Z\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 15,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 16,
+            "original": "\u0000D\u0000T\u0000S\u0000T\u0000A\u0000R\u0000T\u0000:\u00002\u00000\u00002\u00006\u00000\u00003\u00002\u00006\u0000T\u00000\u00009\u00000\u00000\u00000\u00000\u0000Z\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 17,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 18,
+            "original": "\u0000D\u0000T\u0000E\u0000N\u0000D\u0000:\u00002\u00000\u00002\u00006\u00000\u00003\u00002\u00006\u0000T\u00001\u00000\u00003\u00000\u00000\u00000\u0000Z\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 19,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 20,
+            "original": "\u0000S\u0000U\u0000M\u0000M\u0000A\u0000R\u0000Y\u0000:\u0000I\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000 \u0000R\u0000e\u0000s\u0000p\u0000o\u0000n\u0000s\u0000e\u0000 \u0000T\u0000a\u0000b\u0000l\u0000e\u0000t\u0000o\u0000p\u0000 \u0000E\u0000x\u0000e\u0000r\u0000c\u0000i\u0000s\u0000e\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 21,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 22,
+            "original": "\u0000D\u0000E\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000I\u0000O\u0000N\u0000:\u0000G\u0000u\u0000i\u0000d\u0000e\u0000d\u0000 \u0000t\u0000a\u0000b\u0000l\u0000e\u0000t\u0000o\u0000p\u0000 \u0000s\u0000c\u0000e\u0000n\u0000a\u0000r\u0000i\u0000o\u0000 \u0000f\u0000o\u0000r\u0000 \u0000p\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000i\u0000n\u0000g\u0000 \u0000t\u0000r\u0000i\u0000a\u0000g\u0000e\u0000\\\u0000,\u0000 \u0000c\u0000o\u0000m\u0000m\u0000u\u0000n\u0000i\u0000c\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\\\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 23,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 24,
+            "original": "\u0000 \u0000,\u0000 \u0000a\u0000n\u0000d\u0000 \u0000e\u0000s\u0000c\u0000a\u0000l\u0000a\u0000t\u0000i\u0000o\u0000n\u0000 \u0000d\u0000u\u0000r\u0000i\u0000n\u0000g\u0000 \u0000a\u0000 \u0000s\u0000i\u0000m\u0000u\u0000l\u0000a\u0000t\u0000e\u0000d\u0000 \u0000i\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000.\u0000 \u0000P\u0000l\u0000e\u0000a\u0000s\u0000e\u0000 \u0000b\u0000r\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000s\u0000t\u0000u\u0000d\u0000e\u0000n\u0000t\u0000 \u0000I\u0000D\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 25,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 26,
+            "original": "\u0000 \u0000 \u0000a\u0000n\u0000d\u0000 \u0000a\u0000 \u0000l\u0000a\u0000p\u0000t\u0000o\u0000p\u0000.\u0000 \u0000R\u0000e\u0000v\u0000i\u0000e\u0000w\u0000 \u0000t\u0000h\u0000e\u0000 \u0000p\u0000r\u0000e\u0000-\u0000r\u0000e\u0000a\u0000d\u0000i\u0000n\u0000g\u0000 \u0000b\u0000e\u0000f\u0000o\u0000r\u0000e\u0000h\u0000a\u0000n\u0000d\u0000.\u0000\\\u0000n\u0000A\u0000g\u0000e\u0000n\u0000d\u0000a\u0000:\u0000 \u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 27,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 28,
+            "original": "\u0000 \u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u0000a\u0000g\u0000e\u0000n\u0000d\u0000a\u0000/\u00000\u00000\u00009\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 29,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 30,
+            "original": "\u0000L\u0000O\u0000C\u0000A\u0000T\u0000I\u0000O\u0000N\u0000:\u0000R\u0000o\u0000o\u0000m\u0000 \u00003\u00004\u00009\u0000\\\u0000,\u0000 \u0000B\u0000l\u0000o\u0000c\u0000k\u0000 \u0000C\u0000\\\u0000,\u0000 \u0000E\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000 \u0000I\u0000n\u0000s\u0000t\u0000i\u0000t\u0000u\u0000t\u0000e\u0000 \u0000o\u0000f\u0000 \u0000T\u0000e\u0000c\u0000h\u0000n\u0000o\u0000l\u0000o\u0000g\u0000y\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 31,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 32,
+            "original": "\u0000O\u0000R\u0000G\u0000A\u0000N\u0000I\u0000Z\u0000E\u0000R\u0000;\u0000C\u0000N\u0000=\u0000\"\u0000D\u0000r\u0000.\u0000 \u0000N\u0000i\u0000s\u0000h\u0000a\u0000 \u0000K\u0000a\u0000p\u0000o\u0000o\u0000r\u0000\"\u0000:\u0000m\u0000a\u0000i\u0000l\u0000t\u0000o\u0000:\u0000n\u0000i\u0000s\u0000h\u0000a\u0000.\u0000k\u0000a\u0000p\u0000o\u0000o\u0000r\u0000@\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 33,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 34,
+            "original": "\u0000C\u0000A\u0000T\u0000E\u0000G\u0000O\u0000R\u0000I\u0000E\u0000S\u0000:\u0000E\u0000X\u0000E\u0000R\u0000C\u0000I\u0000S\u0000E\u0000,\u0000A\u0000C\u0000A\u0000D\u0000E\u0000M\u0000I\u0000C\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 35,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 36,
+            "original": "\u0000S\u0000T\u0000A\u0000T\u0000U\u0000S\u0000:\u0000C\u0000O\u0000N\u0000F\u0000I\u0000R\u0000M\u0000E\u0000D\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 37,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 38,
+            "original": "\u0000U\u0000R\u0000L\u0000:\u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u00000\u00000\u00009\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 39,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 40,
+            "original": "\u0000B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000A\u0000L\u0000A\u0000R\u0000M\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 41,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 42,
+            "original": "\u0000A\u0000C\u0000T\u0000I\u0000O\u0000N\u0000:\u0000D\u0000I\u0000S\u0000P\u0000L\u0000A\u0000Y\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 43,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 44,
+            "original": "\u0000D\u0000E\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000I\u0000O\u0000N\u0000:\u0000E\u0000v\u0000e\u0000n\u0000t\u0000 \u0000s\u0000t\u0000a\u0000r\u0000t\u0000s\u0000 \u0000i\u0000n\u0000 \u00001\u00005\u0000 \u0000m\u0000i\u0000n\u0000u\u0000t\u0000e\u0000s\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 45,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 46,
+            "original": "\u0000T\u0000R\u0000I\u0000G\u0000G\u0000E\u0000R\u0000:\u0000-\u0000P\u0000T\u00001\u00005\u0000M\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 47,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 48,
+            "original": "\u0000E\u0000N\u0000D\u0000:\u0000V\u0000A\u0000L\u0000A\u0000R\u0000M\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 49,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 50,
+            "original": "\u0000E\u0000N\u0000D\u0000:\u0000V\u0000E\u0000V\u0000E\u0000N\u0000T\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 51,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 52,
+            "original": "\u0000E\u0000N\u0000D\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 53,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 54,
+            "original": "\u0000",
+            "reason": "No safe ICS property recovery rule matched"
+        }
+    ],
+    "transformation_count": 55,
+    "validation": {
+        "validation_status": "FAILED",
+        "parser": {
+            "name": "icalendar",
+            "status": "FAILED"
+        },
+        "error": {
+            "type": "ValueError",
+            "message": "Content line could not be parsed into parts: 'ÿþB\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000': ÿþB\u0000E\u0000G\u0000I\u0000N\u0000"
+        }
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:54.993631+00:00"
+    },
+    "encoding": "latin-1",
+    "recovery": {
+        "status": "FAILED",
+        "confidence": "LOW"
+    }
+}

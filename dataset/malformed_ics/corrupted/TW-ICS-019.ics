@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-019-741283ea@events.example.edu
+DTSTAMP:20260215T090000Z
+DTSTART:20260427T100000Z
+DTEND:20260427T113000Z
+SUMMARY Web Application Security Lab
+DESCRIPTION:Laboratory exercise on input validation\, session handling\, an
+ d secure configuration of a demo application. Please bring your student ID
+  and a laptop. Review the pre-reading beforehand.\nAgenda: https://events.
+ example.edu/tw/agenda/019
+LOCATION=Room 262\, Block C\, Example Institute of Technology
+ORGANIZER;CN="Dr. Nisha Kapoor":mailto:nisha.kapoor@example.edu
+CATEGORIES;LAB,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/019
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

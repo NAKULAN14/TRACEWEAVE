@@ -1,0 +1,108 @@
+Received: from mail-out.alderwick-activities.example.org (alderwick-activities.example.org [192.0.2.65])
+	by mx.students.example.com with ESMTP id TWPHI011;
+	Mon, 27 Apr 2026 08:11:48 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-011
+From: "Alderwick Student Activities" <activities@alderwick-activities.example.org>
+To: "Chloe Dubois" <chloe.dubois@students.example.com>
+Subject: Campus Tech Fair - check-in details inside
+Date: Mon, 27 Apr 2026 16:11:46 +0800
+Message-ID: <tw-phi-011.507b80497b@mail-out.alderwick-activities.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-PHI-011_mix"
+
+--=_TW-PHI-011_mix
+Content-Type: multipart/alternative; boundary="=_TW-PHI-011_alt"
+
+--=_TW-PHI-011_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Chloe,
+
+Check-in for the Campus Tech Fair opens this week.
+
+Bring your student card; booth maps are available on the check-in page.
+
+Scan the attached QR code (techfair-checkin.png) with your phone camera
+to continue.
+
+A calendar invitation has been sent in a separate message.
+
+Regards,
+Alderwick Student Activities
+
+--=_TW-PHI-011_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Chloe,</p><p>Check-in for the Campus Tech Fair opens this week.</p><p>Bring your student card; booth maps are available on the check-in page.</p><p>Scan the attached QR code (techfair-checkin.png) with your phone camera to continue.</p><p>A calendar invitation has been sent in a separate message.</p><p>(QR code attached: techfair-checkin.png)</p><p>Regards,<br>Alderwick Student Activities</p></body></html>
+--=_TW-PHI-011_alt--
+--=_TW-PHI-011_mix
+Content-Type: image/png; name="techfair-checkin.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="techfair-checkin.png"
+
+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
+--=_TW-PHI-011_mix--

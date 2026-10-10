@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-QR-008",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+  "payload_type": "url",
+  "expected_urls": [
+    "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "HTTPS URL with query string and fragment; tests parameter handling. QR version 7, error correction Q (~25%), module size 10px, quiet zone 4 modules, image 530x530px (8-bit greyscale PNG, black on white); payload length 84 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

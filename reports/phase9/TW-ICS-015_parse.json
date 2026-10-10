@@ -1,0 +1,17 @@
+{
+  "file": {
+    "filename": "TW-ICS-015.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-015.ics",
+    "size_bytes": 309
+  },
+  "parser": {
+    "name": "icalendar",
+    "status": "FAILED",
+    "parsed_at": "2026-10-03T15:17:17.983060+00:00"
+  },
+  "calendar": null,
+  "error": {
+    "type": "ValueError",
+    "message": "Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]"
+  }
+}

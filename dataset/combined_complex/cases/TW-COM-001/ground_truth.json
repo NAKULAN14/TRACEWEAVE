@@ -1,0 +1,435 @@
+{
+  "case_id": "TW-COM-001",
+  "category": "combined_complex",
+  "scenario": "Benign guest-lecture announcement with registration QR code and consistent calendar entry (complete evidence).",
+  "expected_classification": "benign",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "aead942d0597be512786c8863eb667e594ca7eaf8303cd282a8c1fe4637e8196"
+    },
+    {
+      "filename": "event.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "45160e9313c3bc11c125f707955a2c5a9178ebc2d399da27d06a97c8b23575b4"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "4e3dae418edc072a7b4933459c1a6087d1abe4dd2cee3f5cfe6f60510532feed"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "b75bef866090e42c854708e9e78c59e2e8dcb53d23b235a14cdfbfa980a9433a"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "4353935ad328ba3ac4b2f6a227785d80b156874dd24b011666e5107bf39e571e"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "bb43e52061e0bc3a696e8632c1440130964d21f89aefaa421629b6daec192840"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "8a67a4f3fc4402c4e5516a462bca4733aa6708a0fa413b4b69549d2ec1fcab22"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "fe2c51b81f3b4988b858cc25f01b4d9d6961a59b41644a5400a81bb044812890"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://events.example.org/lectures/TW-COM-001",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://events.example.org/lectures/TW-COM-001"
+  ],
+  "expected_urls": [
+    "https://events.example.org/lectures/TW-COM-001"
+  ],
+  "expected_domains": [
+    "events.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://events.example.org/lectures/TW-COM-001",
+      "normalized_value": "https://events.example.org/lectures/TW-COM-001",
+      "observed_values": [
+        "https://events.example.org/lectures/TW-COM-001"
+      ],
+      "roles": [
+        "ics_url",
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "browser_events.json",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "events.example.org",
+      "normalized_value": "events.example.org",
+      "observed_values": [
+        "events.example.org"
+      ],
+      "roles": [
+        "dns_query_name",
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "browser_events.json",
+        "dns_events.json",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "events@events.example.org",
+      "normalized_value": "events@events.example.org",
+      "observed_values": [
+        "events@events.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "ipv4",
+      "value": "192.0.2.153",
+      "normalized_value": "192.0.2.153",
+      "observed_values": [
+        "192.0.2.153"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "198.51.100.87",
+      "normalized_value": "198.51.100.87",
+      "observed_values": [
+        "198.51.100.87"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-001-BRW-001",
+      "timestamp": "2026-05-04T17:54:42.952+01:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://events.example.org/lectures/TW-COM-001",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-001-BRW-002",
+      "timestamp": "2026-05-04T17:54:44.727+01:00",
+      "event_type": "page_load",
+      "url": "https://events.example.org/lectures/TW-COM-001",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-001-BRW-003",
+      "timestamp": "2026-05-04T17:54:46.147+01:00",
+      "event_type": "form_displayed",
+      "url": "https://events.example.org/lectures/TW-COM-001",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-001-BRW-004",
+      "timestamp": "2026-05-04T17:55:03.669+01:00",
+      "event_type": "tab_closed",
+      "url": "https://events.example.org/lectures/TW-COM-001",
+      "domain": "events.example.org"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-001-DNS-001",
+      "timestamp": "2026-05-04T16:54:43.190+00:00",
+      "query": "events.example.org",
+      "record_type": "A",
+      "response": "198.51.100.87"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'lecture-registration-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://events.example.org/lectures/TW-COM-001",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:events@events.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://events.example.org/lectures/TW-COM-001",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "url:https://events.example.org/lectures/TW-COM-001",
+      "relation": "has_domain",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "dns_event:TW-COM-001-DNS-001",
+      "relation": "queries",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "dns_event:TW-COM-001-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:198.51.100.87",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "browser_event:TW-COM-001-BRW-001",
+      "relation": "visits",
+      "target": "url:https://events.example.org/lectures/TW-COM-001",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-001-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "browser_event:TW-COM-001-BRW-002",
+      "relation": "visits",
+      "target": "url:https://events.example.org/lectures/TW-COM-001",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-04T13:37:39+00:00",
+      "source_timestamp": "2026-05-04T13:37:39+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T13:37:39+00:00",
+      "source_timestamp": "2026-05-04T13:37:39+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event.ics",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T13:37:42+00:00",
+      "source_timestamp": "2026-05-04T13:37:42+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T13:37:42+00:00",
+      "source_timestamp": "2026-05-04T13:37:42+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-04T16:54:42.952+00:00",
+      "source_timestamp": "2026-05-04T17:54:42.952+01:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://events.example.org/lectures/TW-COM-001",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-001-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T16:54:43.190+00:00",
+      "source_timestamp": "2026-05-04T16:54:43.190+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for events.example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-001-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T16:54:44.727+00:00",
+      "source_timestamp": "2026-05-04T17:54:44.727+01:00",
+      "event_type": "page_load",
+      "description": "load https://events.example.org/lectures/TW-COM-001",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-001-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T16:54:46.147+00:00",
+      "source_timestamp": "2026-05-04T17:54:46.147+01:00",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://events.example.org/lectures/TW-COM-001",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-001-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-04T16:55:03.669+00:00",
+      "source_timestamp": "2026-05-04T17:55:03.669+01:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://events.example.org/lectures/TW-COM-001",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-001-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-07T10:00:00+00:00",
+      "source_timestamp": "2026-05-07T10:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [],
+  "ambiguous_findings": [],
+  "notes": "Sender, QR host and ICS organiser share one domain; no urgency; ICS valid; ordinary scan and page view. Classification: benign. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

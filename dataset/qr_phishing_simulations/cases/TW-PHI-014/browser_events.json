@@ -1,0 +1,38 @@
+[
+  {
+    "event_id": "TW-PHI-014-BRW-001",
+    "case_id": "TW-PHI-014",
+    "timestamp": "2026-05-03T14:19:30.217Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://hr.example.org/stipend/TW-PHI-014",
+    "domain": "hr.example.org",
+    "browser": "Firefox Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-014-BRW-002",
+    "case_id": "TW-PHI-014",
+    "timestamp": "2026-05-03T14:19:31.761Z",
+    "event_type": "page_load",
+    "url": "https://hr.example.org/stipend/TW-PHI-014",
+    "domain": "hr.example.org",
+    "browser": "Firefox Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-014-BRW-003",
+    "case_id": "TW-PHI-014",
+    "timestamp": "2026-05-03T14:19:35.307Z",
+    "event_type": "tab_closed",
+    "url": "https://hr.example.org/stipend/TW-PHI-014",
+    "domain": "hr.example.org",
+    "browser": "Firefox Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

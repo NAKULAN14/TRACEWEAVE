@@ -1,0 +1,14 @@
+{
+  "case_id": "TW-ICS-014",
+  "corruption_type": "invalid_uid_value",
+  "corruption_description": "UID contains spaces, angle brackets and a malformed '@@' domain part.",
+  "original_filename": "TW-ICS-014.ics",
+  "corrupted_filename": "TW-ICS-014.ics",
+  "affected_fields": [
+    "UID"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "0ee5a976df16384b2242c11182803c98ce00ce07fb06cd3d102e45fa813ceb42",
+  "corrupted_sha256": "e92dbab3e74e080f7d6df5418a1608f7847c8f49403324310503b33c029e4722"
+}

@@ -1,0 +1,86 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-019.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-019.ics",
+        "size_bytes": 867,
+        "sha256": "00ac202f03190268b70db061b850024db376b08c51c81806b950ce708a212f18"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-019_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-019_recovered.ics",
+        "size_bytes": 870,
+        "sha256": "bc6bb9656408aa915e7f3d506a273b476d8241e64d4a035ebdec4586b8938b57"
+    },
+    "transformations": [
+        {
+            "type": "PROPERTY_SEPARATOR_RECOVERY",
+            "line_number": 10,
+            "original": "SUMMARY Web Application Security Lab",
+            "recovered": "SUMMARY: Web Application Security Lab",
+            "property": "SUMMARY",
+            "reason": "Known ICS property detected without ':' separator"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 12,
+            "original": " d secure configuration of a demo application. Please bring your student ID",
+            "recovered": " d secure configuration of a demo application. Please bring your student ID",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 13,
+            "original": "  and a laptop. Review the pre-reading beforehand.\\nAgenda: https://events.",
+            "recovered": "  and a laptop. Review the pre-reading beforehand.\\nAgenda: https://events.",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 14,
+            "original": " example.edu/tw/agenda/019",
+            "recovered": " example.edu/tw/agenda/019",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "BROKEN_FOLD_RECOVERY",
+            "line_number": 15,
+            "original": "LOCATION=Room 262\\, Block C\\, Example Institute of Technology",
+            "recovered": " LOCATION=Room 262\\, Block C\\, Example Institute of Technology",
+            "property": "DESCRIPTION",
+            "reason": "Line without property delimiter followed a text property and was recovered as a folded continuation"
+        },
+        {
+            "type": "PROPERTY_SEPARATOR_RECOVERY",
+            "line_number": 17,
+            "original": "CATEGORIES;LAB,ACADEMIC",
+            "recovered": "CATEGORIES:;LAB,ACADEMIC",
+            "property": "CATEGORIES",
+            "reason": "Known ICS property detected without ':' separator"
+        }
+    ],
+    "transformation_count": 6,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:55.147898+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

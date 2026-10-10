@@ -1,0 +1,51 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-001\\qr.png",
+    "sha256": "29db0e2bd3e9359abb6a6b0789fd3b4806b8f9d90f808032550b1f4644eaa9f4"
+  },
+  "analysis": {
+    "analyzed_at": "2026-10-07T04:25:16.682664+00:00",
+    "status": "SUCCESS"
+  },
+  "source": {
+    "original_url": "https://example.com/login",
+    "source_type": "QR_PAYLOAD"
+  },
+  "normalization": {
+    "normalized_url": "https://example.com/login",
+    "changed": false
+  },
+  "structure": {
+    "scheme": "https",
+    "hostname": "example.com",
+    "port": null,
+    "domain": "example.com",
+    "subdomain": "",
+    "path": "/login",
+    "query": "",
+    "query_parameters": [],
+    "fragment": "",
+    "username_present": false,
+    "password_present": false
+  },
+  "indicators": {
+    "count": 1,
+    "items": [
+      {
+        "indicator": "SUSPICIOUS_KEYWORDS",
+        "severity": "MEDIUM",
+        "description": "URL contains security-sensitive keywords.",
+        "keywords": [
+          "login"
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "analysis_engine": "TRACEWEAVE URL Analysis Engine",
+    "network_access_performed": false
+  }
+}

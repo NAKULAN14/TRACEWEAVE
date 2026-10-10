@@ -1,0 +1,34 @@
+{
+  "case_id": "TW-ICS-016",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-016.ics",
+  "corrupted_file": "TW-ICS-016.ics",
+  "is_malformed": true,
+  "corruption_type": "truncated_inside_header",
+  "expected_event_count": 0,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE"
+  ],
+  "expected_missing_fields": [
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Only the calendar header survives. No event data can be recovered, so the original evidence is the only source of truth."
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://fees.example.net/pay/TW-COM-018",
+    "normalized_value": "https://fees.example.net/pay/TW-COM-018",
+    "observed_values": [
+      "https://fees.example.net/pay/TW-COM-018"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "alderwick-bursar.example.com",
+    "normalized_value": "alderwick-bursar.example.com",
+    "observed_values": [
+      "alderwick-bursar.example.com"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "fee-help.example.net",
+    "normalized_value": "fee-help.example.net",
+    "observed_values": [
+      "fee-help.example.net"
+    ],
+    "roles": [
+      "reply_to_domain_mismatch"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "fees.example.net",
+    "normalized_value": "fees.example.net",
+    "observed_values": [
+      "fees.example.net"
+    ],
+    "roles": [
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "email_address",
+    "value": "bursar-notice@alderwick-bursar.example.com",
+    "normalized_value": "bursar-notice@alderwick-bursar.example.com",
+    "observed_values": [
+      "bursar-notice@alderwick-bursar.example.com"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "email_address",
+    "value": "fees-reply@fee-help.example.net",
+    "normalized_value": "fees-reply@fee-help.example.net",
+    "observed_values": [
+      "fees-reply@fee-help.example.net"
+    ],
+    "roles": [
+      "reply_to_address_mismatch"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "192.0.2.165",
+    "normalized_value": "192.0.2.165",
+    "observed_values": [
+      "192.0.2.165"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  }
+]

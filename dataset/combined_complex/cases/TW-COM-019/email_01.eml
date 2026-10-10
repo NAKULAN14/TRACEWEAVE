@@ -1,0 +1,120 @@
+Received: from mail-out.events.example.org (events.example.org [192.0.2.21])
+	by mx.students.example.org with ESMTP id TWCOM01901;
+	Sat, 27 Jun 2026 14:32:28 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-019
+From: "Quillmoor Events Newsletter" <newsletter@events.example.org>
+To: "Yusuf Demir" <yusuf.demir@students.example.org>
+Subject: This month at Quillmoor: Open Lab Evening
+Date: Sat, 27 Jun 2026 14:32:25 +0000
+Message-ID: <tw-com-019.email_01.0b9e238cbe@mail-out.events.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-019_email_01_mix"
+
+--=_TW-COM-019_email_01_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-019_email_01_alt"
+
+--=_TW-COM-019_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Yusuf,
+
+Join us for the Open Lab Evening.
+
+Scan the QR code to register; the agenda is in the attached invitation.
+
+Attached QR code file(s): register-qr.png
+
+A calendar invitation is attached.
+
+Links:
+https://www.example.org/news/TW-COM-019
+
+Regards,
+Quillmoor Events Newsletter
+
+--=_TW-COM-019_email_01_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Yusuf,</p><p>Join us for the Open Lab Evening.</p><p>Scan the QR code to register; the agenda is in the attached invitation.</p><p>Attached QR code file(s): register-qr.png</p><p>A calendar invitation is attached.</p><p><a href="https://www.example.org/news/TW-COM-019">https://www.example.org/news/TW-COM-019</a></p><p>Regards,<br>Quillmoor Events Newsletter</p></body></html>
+--=_TW-COM-019_email_01_alt--
+--=_TW-COM-019_email_01_mix
+Content-Type: image/png; name="register-qr.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="register-qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAewAAAHsCAIAAACfSAk3AAAAEXRFWHRUVy1TeW50aGV0aWMAdHJ1
+ZdGmG8sAAAoPSURBVHic7dxBjuvGEkXB5sfb/5blwR/bINyFdJ5SxAIkiqQOanSfz+fzA0DT//7r
+CwDg3xNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAw
+EQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDAR
+BwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcI+/OzzPM8
+P9/q8/mM3cM33zX5OacUr+eUU8/r1Hfd6jP4TN9wEgcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GA
+MBEHCBNxgDARBwhbt51S3C54Y9teh+2L398fOyQz92fSE9yEcRIHCBNxgDARBwgTcYAwEQcIE3GA
+MBEHCBNxgDARBwgTcYAwEQcIS26nFLdKbv3tp75r2z08xQbL7+/PKZ9L3zEncYAwEQcIE3GAMBEH
+CBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgLBrt1O+2ZuNiG2bHpMbGt9s8rkzw0kcIEzEAcJEHCBM
+xAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgzHbKhU7tkGzb2Zj8rm17L7Zl+DtO4gBhIg4QJuIA
+YSIOECbiAGEiDhAm4gBhIg4QJuIAYSIOECbiAGHXbqdM7mxMOrVnMrnFcepZnLrm4t7Lre/zrb9r
+kpM4QJiIA4SJOECYiAOEiThAmIgDhIk4QJiIA4SJOECYiAOEiThAWHI7ZXL345ud2mDZ9jmnbPtd
+k5/zhv/pDCdxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAsHXbKad2G271zffn
+1BaHfZXf++b3cBsncYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgLB12ylvdi1O
+7Tac+q5TWxynvmvy/kx+zuT9mdxXeWPyeibvoQ2W33MSBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgT
+cYAwEQcIE3GAMBEHCFu3nVLctXhj20bE5PVs29DYtj+z7bdPfs6kZ3DDZ5KTOECYiAOEiThAmIgD
+hIk4QJiIA4SJOECYiAOEiThAmIgDhIk4QNi67ZRbd1omtyZO7XUUN0Ymr+dWk/dw27v6BJ+7kzhA
+mIgDhIk4QJiIA4SJOECYiAOEiThAmIgDhIk4QJiIA4SJOEDYuu2UbdsFp3YkiiZ/+zff523v/BuT
+WyXfvIvyhpM4QJiIA4SJOECYiAOEiThAmIgDhIk4QJiIA4SJOECYiAOEiThA2LrtlOIGwqnrOfXb
+t93Dbb/r1E7Ltt/1xq3vxjdzEgcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwhb
+t50yuRFRvJ5Tn1PcvpjcRSna9o5t++/cykkcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBM
+xAHCRBwgbN12yq1bHKe+69b9kFO//dT9mXwWxc85xU7L7zmJA4SJOECYiAOEiThAmIgDhIk4QJiI
+A4SJOECYiAOEiThAmIgDhK3bTnlj2/7DrdsX2zZYbt1XmbTtXT3lE3wWpziJA4SJOECYiAOEiThA
+mIgDhIk4QJiIA4SJOECYiAOEiThAmIgDhK3bTpncZNi2ZzL5u96YvOZbdy0m916Kbt35meQkDhAm
+4gBhIg4QJuIAYSIOECbiAGEiDhAm4gBhIg4QJuIAYSIOEPZ88+ZAcdthcsvljW27Mdue16TJfZVb
+d4eKnMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHC/vwEFfcxbt1/mNzreGNy
+N2bbu3Hr+7ztmX6W/U+dxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcKebTsA
+2zZGtu20bNv9mPxd297Vyd+17bmf8s3/5VOcxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQB
+wkQcIEzEAcLWbacUNysmty++eYPFM/39/Tml+M7fykkcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzE
+AcJEHCBMxAHCRBwg7NrtlFvZcvlnk+/zti2XU269nufSLRcncYAwEQcIE3GAMBEHCBNxgDARBwgT
+cYAwEQcIE3GAMBEHCBNxgLB12ymn9g3eOPXbi9e8TXEfY3Jj5NY9k22e4O9yEgcIE3GAMBEHCBNx
+gDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwj787PM5GbFqc/ZtqWw7f6csm2rZPJzTtn2TCc9l/52
+J3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYCwddspk7sfp67nFHsmM/fn1LN4
+Y/J6tr3z257FrZzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwtZtp5zaSbC3
+sGej5tR3TZrczNlm8llse3+e4LvqJA4QJuIAYSIOECbiAGEiDhAm4gBhIg4QJuIAYSIOECbiAGEi
+DhC2bjvFZkVr1+LUvsopk9dz6ru2fU5xY+QZfKbbOIkDhIk4QJiIA4SJOECYiAOEiThAmIgDhIk4
+QJiIA4SJOECYiAOErdtOuXXfYHKz4o1TOxvbtm4mr2fbnsmt/8Hi/32SkzhAmIgDhIk4QJiIA4SJ
+OECYiAOEiThAmIgDhIk4QJiIA4SJOEBYcjvljck9iuKOhPszc39O7atM2rblMrlR81n2LN5wEgcI
+E3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwi7djvlVqd2LSY3WLZtcdy6dXPquyZ3
+SCY3am7lJA4QJuIAYSIOECbiAGEiDhAm4gBhIg4QJuIAYSIOECbiAGEiDhBmOyXm1B7Ftq2JW3c2
+JjdPJu/P5P7MrRs1pziJA4SJOECYiAOEiThAmIgDhIk4QJiIA4SJOECYiAOEiThAmIgDhD3bdgCK
+2wXFDY3id51y6pq37c+8Mfm7tj33WzmJA4SJOECYiAOEiThAmIgDhIk4QJiIA4SJOECYiAOEiThA
+mIgDhP35CSpuVpyybRdl8nNOmdz0OLVVsu2Z3rpj8wnuvTiJA4SJOECYiAOEiThAmIgDhIk4QJiI
+A4SJOECYiAOEiThAmIgDhD3FrQAA/s9JHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQB
+wkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHC
+RBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJE
+HCBMxAHCRBwgTMQBwkQc4KfrLzUK3S5A0GT6AAAAAElFTkSuQmCC
+--=_TW-COM-019_email_01_mix
+Content-Type: text/calendar; charset=utf-8; method=PUBLISH
+Content-Disposition: attachment; filename="invite-event.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic Combined Cases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:openlab-TW-COM-019@tw-uid.example.org
+DTSTAMP:20260627T143225Z
+DTSTART:20260702T170000Z
+DTEND:20260702T180000Z
+SEQUENCE:0
+SUMMARY:Open Lab Evening
+DESCRIPTION:Agenda: https://events.example.org/agenda/TW-COM-019
+LOCATION:Innovation Lab
+ORGANIZER;CN="Quillmoor Events Newsletter":mailto:newsletter@events.example
+ .org
+URL:https://events.example.org/agenda/TW-COM-019
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-COM-019_email_01_mix--

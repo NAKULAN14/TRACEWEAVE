@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-003-BRW-001",
+    "case_id": "TW-COM-003",
+    "timestamp": "2026-05-11T20:04:14.039+05:30",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+    "domain": "enroll.vantor-benefits.example.net",
+    "browser": "Edge Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-003-a",
+    "user_account": "sara.haddad@staff.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-003-BRW-002",
+    "case_id": "TW-COM-003",
+    "timestamp": "2026-05-11T20:04:16.325+05:30",
+    "event_type": "page_load",
+    "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+    "domain": "enroll.vantor-benefits.example.net",
+    "browser": "Edge Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-003-a",
+    "user_account": "sara.haddad@staff.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-003-BRW-003",
+    "case_id": "TW-COM-003",
+    "timestamp": "2026-05-11T20:04:17.871+05:30",
+    "event_type": "form_displayed",
+    "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+    "domain": "enroll.vantor-benefits.example.net",
+    "browser": "Edge Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-003-a",
+    "user_account": "sara.haddad@staff.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-003-BRW-004",
+    "case_id": "TW-COM-003",
+    "timestamp": "2026-05-11T20:04:26.230+05:30",
+    "event_type": "tab_closed",
+    "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+    "domain": "enroll.vantor-benefits.example.net",
+    "browser": "Edge Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-003-a",
+    "user_account": "sara.haddad@staff.example.com",
+    "synthetic": true
+  }
+]

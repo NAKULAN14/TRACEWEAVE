@@ -1,0 +1,44 @@
+[
+  {
+    "event_id": "TW-COM-005-BRW-001",
+    "case_id": "TW-COM-005",
+    "timestamp": "2026-05-17T19:25:41.972+05:30",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://conf.example.org/sessions/TW-COM-005/b",
+    "domain": "conf.example.org",
+    "browser": "Safari Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-005-a",
+    "user_account": "daniel.okafor@mail.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-005-BRW-002",
+    "case_id": "TW-COM-005",
+    "timestamp": "2026-05-17T19:25:43.656+05:30",
+    "event_type": "page_load",
+    "url": "https://conf.example.org/sessions/TW-COM-005/b",
+    "domain": "conf.example.org",
+    "browser": "Safari Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-005-a",
+    "user_account": "daniel.okafor@mail.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-005-BRW-003",
+    "case_id": "TW-COM-005",
+    "timestamp": "2026-05-17T19:25:59.434+05:30",
+    "event_type": "tab_closed",
+    "url": "https://conf.example.org/sessions/TW-COM-005/b",
+    "domain": "conf.example.org",
+    "browser": "Safari Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-005-a",
+    "user_account": "daniel.okafor@mail.example.com",
+    "synthetic": true
+  }
+]

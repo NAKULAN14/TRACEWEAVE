@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-COM-003-DNS-001",
+    "case_id": "TW-COM-003",
+    "timestamp": "2026-05-11T14:34:14.221+00:00",
+    "query": "enroll.vantor-benefits.example.net",
+    "record_type": "A",
+    "response": "192.0.2.70",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

@@ -1,0 +1,133 @@
+Return-Path: <cdc@northfield.example.org>
+Received: from mail.northfield.example.org (mail.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id 7AB82F791C
+	for <neha.kulkarni@students.northfield.example.org>; Wed, 04 Nov 2026 12:30:02 +0530
+Received: from workstation.northfield.example.org (workstation.northfield.example.org)
+	by mail.northfield.example.org (Postfix) with ESMTPSA id BEE869CC86
+	for <neha.kulkarni@students.northfield.example.org>; Wed, 04 Nov 2026 12:30:00 +0530
+From: "Career Development Cell" <cdc@northfield.example.org>
+To: "Neha Kulkarni" <neha.kulkarni@students.northfield.example.org>,
+	"Sanjay Gill" <sanjay.gill@students.northfield.example.org>,
+	"Priya Ramesh" <priya.ramesh@students.northfield.example.org>
+Subject: Invitation: Resume Building Workshop - Friday 13 November
+Date: Wed, 04 Nov 2026 12:30:00 +0530
+Message-ID: <20261104123000.bee869cc86c4@northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook 16.0
+Content-Type: multipart/mixed; boundary="=_TW_MIX_bee869cc86c4d08f"
+
+This is a multi-part message in MIME format.
+--=_TW_MIX_bee869cc86c4d08f
+Content-Type: multipart/alternative; boundary="=_TW_ALT_bee869cc86c4d08f"
+
+--=_TW_ALT_bee869cc86c4d08f
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear students,
+
+The Career Development Cell is hosting a resume building workshop for
+pre-final-year students ahead of the placement season.
+
+  Date: Friday, 13 November 2026
+  Time: 14:00-16:00 IST
+  Venue: Seminar Hall B, Academic Block
+  Seats: 60, allotted in order of confirmation
+
+What we will cover:
+- Structuring a clear one-page resume
+- Writing project and internship points that show impact
+- Common mistakes seen in last year's applications
+- Short one-to-one reviews at the end (sign up on the day)
+
+Please reply to this email by Wednesday, 11 November 2026 to confirm
+your seat, and accept the attached calendar invitation.
+
+Regards,
+Career Development Cell
+Northfield Institute of Technology
+--=_TW_ALT_bee869cc86c4d08f
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Invitation: Resume Building Workshop - Friday 13 November</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Dear students,</p>
+<p>The Career Development Cell is hosting a resume building workshop for pre-final-year students ahead of the placement season.</p>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Date</b></td><td>Friday, 13 November 2026</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Time</b></td><td>14:00-16:00 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Venue</b></td><td>Seminar Hall B, Academic Block</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Seats</b></td><td>60, allotted in order of confirmation</td></tr>
+</table>
+<h3 style="margin: 16px 0 6px;">What we will cover</h3>
+<ul>
+<li>Structuring a clear one-page resume</li>
+<li>Writing project and internship points that show impact</li>
+<li>Common mistakes seen in last year&#x27;s applications</li>
+<li>Short one-to-one reviews at the end (sign up on the day)</li>
+</ul>
+<p>Please reply to this email by Wednesday, 11 November 2026 to confirm your seat, and accept the attached calendar invitation.</p>
+<p>Regards,<br>
+Career Development Cell<br>
+Northfield Institute of Technology</p>
+</body>
+</html>
+--=_TW_ALT_bee869cc86c4d08f--
+--=_TW_MIX_bee869cc86c4d08f
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST; name="invite.ics"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="invite.ics"
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-008-bee869cc86c4d08f@northfield.example.org
+DTSTAMP:20261104T065800Z
+DTSTART;TZID=Asia/Kolkata:20261113T140000
+DTEND;TZID=Asia/Kolkata:20261113T160000
+SUMMARY:Resume Building Workshop
+DESCRIPTION:Workshop for pre-final-year students on structuring a one-page 
+ resume and writing impactful points.\nReply to the invitation email to con
+ firm your seat.
+LOCATION:Seminar Hall B\, Academic Block
+ORGANIZER;CN="Career Development Cell":mailto:cdc@northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Neha Kulkarni":mailto:neha.kulkarni@students.northfield.example.o
+ rg
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Sanjay Gill":mailto:sanjay.gill@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Priya Ramesh":mailto:priya.ramesh@students.northfield.example.org
+CATEGORIES:Workshop,Career
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261104T065800Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Resume Building Workshop
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+
+--=_TW_MIX_bee869cc86c4d08f--

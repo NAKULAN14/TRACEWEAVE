@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-014",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-014.ics",
+  "corrupted_file": "TW-ICS-014.ics",
+  "is_malformed": true,
+  "corruption_type": "invalid_uid_value",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "UID"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/014",
+    "https://events.example.edu/tw/agenda/014"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "UID is present but unusable as a stable identifier (dataset policy: local@domain with no whitespace/brackets)."
+}

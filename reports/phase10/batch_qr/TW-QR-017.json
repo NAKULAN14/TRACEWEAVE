@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-017\\qr.png",
+    "sha256": "6246a98b8c145d97c7de420e8effaa79dc9feff57c1f3ff68704484b822165e6"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:22.107381+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "BEGIN:VEVENT\r\nSUMMARY:Club Fair\r\nDTSTART:20261105T100000\r\nDTEND:20261105T160000\r\nLOCATION:Main Quadrangle\r\nEND:VEVENT",
+        "points": [
+          [
+            40.0,
+            40.0
+          ],
+          [
+            488.9866027832031,
+            40.0
+          ],
+          [
+            488.7256164550781,
+            489.4749450683594
+          ],
+          [
+            40.0,
+            489.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "BEGIN:VEVENT\r\nSUMMARY:Club Fair\r\nDTSTART:20261105T100000\r\nDTEND:20261105T160000\r\nLOCATION:Main Quadrangle\r\nEND:VEVENT",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "TEXT",
+    "confidence": 0.8
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-017"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "event_id": "TW-COM-016-BRW-001",
+    "case_id": "TW-COM-016",
+    "timestamp": "2026-06-18T12:39:37.214-05:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://news.example.org/newsletter/TW-COM-016",
+    "domain": "news.example.org",
+    "browser": "Chrome Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-016-a",
+    "user_account": "yusuf.demir@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-016-BRW-002",
+    "case_id": "TW-COM-016",
+    "timestamp": "2026-06-18T12:39:38.511-05:00",
+    "event_type": "page_load",
+    "url": "https://news.example.org/newsletter/TW-COM-016",
+    "domain": "news.example.org",
+    "browser": "Chrome Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-016-a",
+    "user_account": "yusuf.demir@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-016-BRW-003",
+    "case_id": "TW-COM-016",
+    "timestamp": "2026-06-18T12:39:58.654-05:00",
+    "event_type": "tab_closed",
+    "url": "https://news.example.org/newsletter/TW-COM-016",
+    "domain": "news.example.org",
+    "browser": "Chrome Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-016-a",
+    "user_account": "yusuf.demir@students.example.org",
+    "synthetic": true
+  }
+]

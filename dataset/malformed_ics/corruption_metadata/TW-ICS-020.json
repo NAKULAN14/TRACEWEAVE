@@ -1,0 +1,14 @@
+{
+  "case_id": "TW-ICS-020",
+  "corruption_type": "malformed_description_escapes",
+  "corruption_description": "DESCRIPTION contains an invalid escape sequence (\\q), a raw BEL control character, and unescaped commas.",
+  "original_filename": "TW-ICS-020.ics",
+  "corrupted_filename": "TW-ICS-020.ics",
+  "affected_fields": [
+    "DESCRIPTION"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "b8e98f5f13ff13e4101ab154984ae4bcfc5d3eb9a6e9fe4f67eacc612a60e1c2",
+  "corrupted_sha256": "a4949bc1e9041340f3c92c45370f15526174ae751e1b4cd64ea52781a1a94bbf"
+}

@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+    "sha256": "e10b3f20bb28d982acdd2e89f19aff0bc7590c6ceb9207a270b601e7e49a0d45"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:22.223934+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Northfield Institute//Poster QR//EN\r\nBEGIN:VEVENT\r\nUID:tw-qr-018-56ed216e018e@example.com\r\nDTSTAMP:20261101T090000Z\r\nDTSTART:20261120T140000\r\nDTEND:20261120T153000\r\nSUMMARY:Guest Lecture: Machine Learning Pipelines in Practice\r\nLOCATION:Seminar Hall B\\, Academic Block\r\nDESCRIPTION:Guest lecture for third-year students.\\nTopics: data validation\r\n \\, feature stores\\, model monitoring.\\nQuestions welcome at the end.\r\nURL:https://events.example.com/seminars/ml-pipelines\r\nSTATUS:CONFIRMED\r\nCATEGORIES:Academic,Lecture\r\nEND:VEVENT\r\nEND:VCALENDAR",
+        "points": [
+          [
+            33.0,
+            33.0
+          ],
+          [
+            678.0,
+            33.0
+          ],
+          [
+            679.5377197265625,
+            679.5377197265625
+          ],
+          [
+            33.0,
+            678.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Northfield Institute//Poster QR//EN\r\nBEGIN:VEVENT\r\nUID:tw-qr-018-56ed216e018e@example.com\r\nDTSTAMP:20261101T090000Z\r\nDTSTART:20261120T140000\r\nDTEND:20261120T153000\r\nSUMMARY:Guest Lecture: Machine Learning Pipelines in Practice\r\nLOCATION:Seminar Hall B\\, Academic Block\r\nDESCRIPTION:Guest lecture for third-year students.\\nTopics: data validation\r\n \\, feature stores\\, model monitoring.\\nQuestions welcome at the end.\r\nURL:https://events.example.com/seminars/ml-pipelines\r\nSTATUS:CONFIRMED\r\nCATEGORIES:Academic,Lecture\r\nEND:VEVENT\r\nEND:VCALENDAR",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "TEXT",
+    "confidence": 0.8
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-018"
+}

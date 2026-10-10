@@ -1,0 +1,48 @@
+{
+  "case_id": "TW-BEN-003",
+  "category": "meeting_update",
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "email_is_benign": true,
+  "ics_is_valid": true,
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "expected_relationships": [],
+  "email_attachments": [
+    {
+      "filename": "updated-invite.ics",
+      "content_type": "text/calendar",
+      "identical_to": "event.ics"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-10-09T11:03:00+05:30",
+      "source": "event.ics",
+      "event": "Calendar object created (DTSTAMP and LAST-MODIFIED)"
+    },
+    {
+      "timestamp": "2026-10-09T11:05:00+05:30",
+      "source": "email.eml",
+      "event": "Email sent (Date header)"
+    },
+    {
+      "timestamp": "2026-10-14T11:00:00+05:30",
+      "source": "email.eml",
+      "event": "Original meeting slot mentioned in the email (superseded by the update)"
+    },
+    {
+      "timestamp": "2026-10-15T14:30:00+05:30",
+      "source": "event.ics",
+      "event": "Event starts"
+    },
+    {
+      "timestamp": "2026-10-15T15:30:00+05:30",
+      "source": "event.ics",
+      "event": "Event ends"
+    }
+  ],
+  "notes": "Reschedule of an earlier meeting. The ICS carries SEQUENCE 1 and the same UID semantics as an update to a prior invite. ICS: METHOD:REQUEST, STATUS:CONFIRMED, SEQUENCE:1; timed event in TZID Asia/Kolkata with an embedded VTIMEZONE; 1 VALARM component(s). Email: multipart/alternative (text/plain + text/html) inside multipart/mixed, with this case's ICS attached as updated-invite.ics (text/calendar, identical to event.ics); In-Reply-To/References point to an earlier message that is not part of the dataset. No URLs, QR codes, images, scripts or macros are present. ORGANIZER/ATTENDEE values are mailto: address URIs, not web URLs. Received headers use reserved example domains and contain no IP addresses. All people and organisations are fictional."
+}

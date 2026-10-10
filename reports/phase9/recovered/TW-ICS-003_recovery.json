@@ -1,0 +1,65 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-003.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-003.ics",
+        "size_bytes": 859,
+        "sha256": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-003_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\recovered\\TW-ICS-003_recovered.ics",
+        "size_bytes": 859,
+        "sha256": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6"
+    },
+    "transformations": [
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 12,
+            "original": "  and reviewing the practice challenge schedule. Please bring your student ",
+            "recovered": "  and reviewing the practice challenge schedule. Please bring your student ",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 13,
+            "original": " ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://event",
+            "recovered": " ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://event",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 14,
+            "original": " s.example.edu/tw/agenda/003",
+            "recovered": " s.example.edu/tw/agenda/003",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 3,
+    "validation": {
+        "validation_status": "FAILED",
+        "parser": {
+            "name": "icalendar",
+            "status": "FAILED"
+        },
+        "error": {
+            "type": "ValueError",
+            "message": "Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]"
+        }
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:11:26.379146+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "FAILED",
+        "confidence": "LOW"
+    }
+}

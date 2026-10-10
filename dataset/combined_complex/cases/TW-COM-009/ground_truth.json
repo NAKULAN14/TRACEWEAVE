@@ -1,0 +1,625 @@
+{
+  "case_id": "TW-COM-009",
+  "category": "combined_complex",
+  "scenario": "Legitimate workshop invitation followed by a rescheduling email (same event UID, SEQUENCE 0 then 1); both carry the same QR URL.",
+  "expected_classification": "benign",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "ca3a4742a70d524f7d03bc0a6faea99e1cd527692c628bc8122ac3cfb6cc8c71"
+    },
+    {
+      "filename": "email_02.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "bdf75eefdf458b6c62f2b3ef8e9cc917016607d876fe582f61549ce8724d5a60"
+    },
+    {
+      "filename": "event.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "44f4f187df6f85aa020805c0bc4b1dcc14cb3036f25673f1b70a827ab8d793ca"
+    },
+    {
+      "filename": "event_02.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "403d58d94a847030687bb1ca047656b2b4ced7abc0b92005144d81ce5e611aaf"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "ea782839e7b2ce061274c2a641e2c8ac73c78a9b9025bd7c93fc26616b2e0061"
+    },
+    {
+      "filename": "qr_02.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "508f2b85fd965e1e9b36478e672358c3c213cd417635e66a600d0584d8ccab9e"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "0c0dc382a7fcb62d6e0252220344b3ff2c35c0f656d37cd3635332ad8e5fbd12"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "33578f30dd149a7015b8286dfb05e11889b87d151aa68225c35911a5403ff63b"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "b0af46a03e6b8ef06522b6b8b370520bf0bfe49f036f5d4be45756b96dcbedda"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "d7648aa56d848752911ff2a32def2703496715438084d616f24ca710e4e8a4af"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "55ba05f3ca17b208601ee8c2ac0d474171a584533c12071984c25ceb234fd5c3"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_02#1",
+      "filename": "qr_02.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_02.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://events.example.org/workshops/TW-COM-009",
+    "https://events.example.org/workshops/TW-COM-009"
+  ],
+  "expected_urls": [
+    "https://events.example.org/workshops/TW-COM-009"
+  ],
+  "expected_domains": [
+    "events.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://events.example.org/workshops/TW-COM-009",
+      "normalized_value": "https://events.example.org/workshops/TW-COM-009",
+      "observed_values": [
+        "https://events.example.org/workshops/TW-COM-009"
+      ],
+      "roles": [
+        "ics_url",
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "browser_events.json",
+        "event.ics",
+        "event_02.ics",
+        "qr_01.png",
+        "qr_02.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "events.example.org",
+      "normalized_value": "events.example.org",
+      "observed_values": [
+        "events.example.org"
+      ],
+      "roles": [
+        "dns_query_name",
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "browser_events.json",
+        "dns_events.json",
+        "event.ics",
+        "event_02.ics",
+        "qr_01.png",
+        "qr_02.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "workshops@events.example.org",
+      "normalized_value": "workshops@events.example.org",
+      "observed_values": [
+        "workshops@events.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "email_02.eml",
+        "event.ics",
+        "event_02.ics"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "ipv4",
+      "value": "192.0.2.77",
+      "normalized_value": "192.0.2.77",
+      "observed_values": [
+        "192.0.2.77"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_02.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.99",
+      "normalized_value": "192.0.2.99",
+      "observed_values": [
+        "192.0.2.99"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "198.51.100.87",
+      "normalized_value": "198.51.100.87",
+      "observed_values": [
+        "198.51.100.87"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-009-BRW-001",
+      "timestamp": "2026-05-29T20:57:33.240+05:30",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://events.example.org/workshops/TW-COM-009",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-009-BRW-002",
+      "timestamp": "2026-05-29T20:57:34.479+05:30",
+      "event_type": "page_load",
+      "url": "https://events.example.org/workshops/TW-COM-009",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-009-BRW-003",
+      "timestamp": "2026-05-29T20:57:36.491+05:30",
+      "event_type": "form_displayed",
+      "url": "https://events.example.org/workshops/TW-COM-009",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-009-BRW-004",
+      "timestamp": "2026-05-29T20:58:01.908+05:30",
+      "event_type": "tab_closed",
+      "url": "https://events.example.org/workshops/TW-COM-009",
+      "domain": "events.example.org"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-009-DNS-001",
+      "timestamp": "2026-05-29T15:27:33.735+00:00",
+      "query": "events.example.org",
+      "record_type": "A",
+      "response": "198.51.100.87"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'workshop-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:workshops@events.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:email_02.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_02.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'workshop-qr-updated.png' is byte-identical to qr_02.png"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email_02.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event_02.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "artifact:event_02.ics",
+      "relation": "contains_url",
+      "target": "url:https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:email_02.eml",
+      "relation": "sent_from",
+      "target": "email_address:workshops@events.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "artifact:qr_02.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_02#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "qr:qr_02#1",
+      "relation": "encodes",
+      "target": "url:https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "url:https://events.example.org/workshops/TW-COM-009",
+      "relation": "has_domain",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-014",
+      "source": "dns_event:TW-COM-009-DNS-001",
+      "relation": "queries",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-015",
+      "source": "dns_event:TW-COM-009-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:198.51.100.87",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-016",
+      "source": "browser_event:TW-COM-009-BRW-001",
+      "relation": "visits",
+      "target": "url:https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-017",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-009-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "low"
+    },
+    {
+      "relationship_id": "REL-018",
+      "source": "artifact:email_02.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-009-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "low"
+    },
+    {
+      "relationship_id": "REL-019",
+      "source": "browser_event:TW-COM-009-BRW-002",
+      "relation": "visits",
+      "target": "url:https://events.example.org/workshops/TW-COM-009",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-020",
+      "source": "artifact:email_02.eml",
+      "relation": "updates",
+      "target": "artifact:email_01.eml",
+      "evidence_type": "inferred",
+      "basis": "same UID, SEQUENCE 0 -> 1",
+      "confidence": "high"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-28T12:27:30+00:00",
+      "source_timestamp": "2026-05-28T12:27:30+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-28T12:27:30+00:00",
+      "source_timestamp": "2026-05-28T12:27:30+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event.ics",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-28T12:27:33+00:00",
+      "source_timestamp": "2026-05-28T12:27:33+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-28T12:27:33+00:00",
+      "source_timestamp": "2026-05-28T12:27:33+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-29T12:27:30+00:00",
+      "source_timestamp": "2026-05-29T12:27:30+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T12:27:30+00:00",
+      "source_timestamp": "2026-05-29T12:27:30+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event_02.ics",
+      "source_artifact": "event_02.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T12:27:33+00:00",
+      "source_timestamp": "2026-05-29T12:27:33+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T12:27:33+00:00",
+      "source_timestamp": "2026-05-29T12:27:33+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_02.png becomes extractable once email_02.eml is received",
+      "source_artifact": "qr_02.png",
+      "reference_id": "qr:qr_02#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-29T15:27:33.240+00:00",
+      "source_timestamp": "2026-05-29T20:57:33.240+05:30",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://events.example.org/workshops/TW-COM-009",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-009-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T15:27:33.735+00:00",
+      "source_timestamp": "2026-05-29T15:27:33.735+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for events.example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-009-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T15:27:34.479+00:00",
+      "source_timestamp": "2026-05-29T20:57:34.479+05:30",
+      "event_type": "page_load",
+      "description": "load https://events.example.org/workshops/TW-COM-009",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-009-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T15:27:36.491+00:00",
+      "source_timestamp": "2026-05-29T20:57:36.491+05:30",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://events.example.org/workshops/TW-COM-009",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-009-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-29T15:28:01.908+00:00",
+      "source_timestamp": "2026-05-29T20:58:01.908+05:30",
+      "event_type": "tab_closed",
+      "description": "close_tab https://events.example.org/workshops/TW-COM-009",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-009-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T10:00:00+00:00",
+      "source_timestamp": "2026-05-31T10:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    },
+    {
+      "timestamp": "2026-05-31T11:30:00+00:00",
+      "source_timestamp": "2026-05-31T11:30:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event_02.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "attribution_ambiguous",
+      "description": "More than one earlier email carries a QR code with the opened URL, so the scan cannot be attributed to a single email.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "email_02.eml",
+        "browser_events.json"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Report all candidates with low confidence."
+    }
+  ],
+  "notes": "ICS SEQUENCE increases consistently for a routine update; one consistent domain; no urgency. Classification: benign. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

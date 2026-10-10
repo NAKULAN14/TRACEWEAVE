@@ -1,0 +1,108 @@
+{
+    "parser": {
+        "name": "TRACEWEAVE EML Parser",
+        "version": "1.0"
+    },
+    "source": {
+        "filename": "email.eml",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\benign_email_ics\\cases\\TW-BEN-005\\email.eml"
+    },
+    "email": {
+        "from": [
+            {
+                "name": "Prof. Vikram Nair",
+                "address": "vikram.nair@northfield.example.org"
+            }
+        ],
+        "to": [
+            {
+                "name": "Arjun Pillai",
+                "address": "arjun.pillai@students.northfield.example.org"
+            },
+            {
+                "name": "Lakshmi Varma",
+                "address": "lakshmi.varma@students.northfield.example.org"
+            },
+            {
+                "name": "Faisal Khan",
+                "address": "faisal.khan@students.northfield.example.org"
+            }
+        ],
+        "cc": [],
+        "bcc": [],
+        "subject": "Post-Midsem Doubt-Clearing Sessions - Operating Systems",
+        "date_raw": "Mon, 26 Oct 2026 15:30:00 +0530",
+        "date_normalized": "2026-10-26T15:30:00+05:30",
+        "message_id": "<20261026153000.9a6c144560f6@northfield.example.org>",
+        "reply_to": null,
+        "return_path": "<vikram.nair@northfield.example.org>"
+    },
+    "headers": [
+        {
+            "name": "Return-Path",
+            "value": "<vikram.nair@northfield.example.org>"
+        },
+        {
+            "name": "Received",
+            "value": "from mail.northfield.example.org (mail.northfield.example.org)\n\tby mx.students.northfield.example.org (Postfix) with ESMTPS id 3D8D290AFD\n\tfor <arjun.pillai@students.northfield.example.org>; Mon, 26 Oct 2026 15:30:02 +0530"
+        },
+        {
+            "name": "Received",
+            "value": "from workstation.northfield.example.org (workstation.northfield.example.org)\n\tby mail.northfield.example.org (Postfix) with ESMTPSA id 9A6C144560\n\tfor <arjun.pillai@students.northfield.example.org>; Mon, 26 Oct 2026 15:30:00 +0530"
+        },
+        {
+            "name": "From",
+            "value": "\"Prof. Vikram Nair\" <vikram.nair@northfield.example.org>"
+        },
+        {
+            "name": "To",
+            "value": "\"Arjun Pillai\" <arjun.pillai@students.northfield.example.org>,\n\t\"Lakshmi Varma\" <lakshmi.varma@students.northfield.example.org>,\n\t\"Faisal Khan\" <faisal.khan@students.northfield.example.org>"
+        },
+        {
+            "name": "Subject",
+            "value": "Post-Midsem Doubt-Clearing Sessions - Operating Systems"
+        },
+        {
+            "name": "Date",
+            "value": "Mon, 26 Oct 2026 15:30:00 +0530"
+        },
+        {
+            "name": "Message-ID",
+            "value": "<20261026153000.9a6c144560f6@northfield.example.org>"
+        },
+        {
+            "name": "MIME-Version",
+            "value": "1.0"
+        },
+        {
+            "name": "X-Mailer",
+            "value": "Mozilla Thunderbird 115.0"
+        },
+        {
+            "name": "Content-Type",
+            "value": "multipart/mixed; boundary=\"=_TW_MIX_9a6c144560f6347e\""
+        }
+    ],
+    "body": {
+        "plain_text": "Dear students,\n\nAfter the mid-semester examinations I will run weekly doubt-clearing\nsessions for Operating Systems. They are open to everyone in the course\nand run for six weeks.\n\n  First session: Wednesday, 28 October 2026\n  Time: 17:00-18:00 IST\n  Repeats: Every Wednesday for six weeks\n  Venue: Room 204, CS Block\n\nPlease bring specific questions. The sessions will move through process\nscheduling, memory management and file systems, in that order, and the\nlast session is reserved for revision problems.\n\nA calendar entry for the full series is attached.\n\nRegards,\nProf. Vikram Nair\nDepartment of Computer Science and Engineering",
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Post-Midsem Doubt-Clearing Sessions - Operating Systems</title>\n</head>\n<body style=\"font-family: Arial, sans-serif; font-size: 14px; color: #222;\">\n<p>Dear students,</p>\n<p>After the mid-semester examinations I will run weekly doubt-clearing sessions for Operating Systems. They are open to everyone in the course and run for six weeks.</p>\n<table style=\"border-collapse: collapse;\">\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>First session</b></td><td>Wednesday, 28 October 2026</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Time</b></td><td>17:00-18:00 IST</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Repeats</b></td><td>Every Wednesday for six weeks</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Venue</b></td><td>Room 204, CS Block</td></tr>\n</table>\n<p>Please bring specific questions. The sessions will move through process scheduling, memory management and file systems, in that order, and the last session is reserved for revision problems.</p>\n<p>A calendar entry for the full series is attached.</p>\n<p>Regards,<br>\nProf. Vikram Nair<br>\nDepartment of Computer Science and Engineering</p>\n</body>\n</html>"
+    },
+    "urls": [],
+    "attachments": [
+        {
+            "attachment_index": 4,
+            "filename": "invite.ics",
+            "content_type": "text/calendar",
+            "content_disposition": "attachment",
+            "size_bytes": 1468,
+            "sha256": "8f8491597a2302d8fee62f907e4495bd7af74650e225f91873e30851770bac36",
+            "content_id": null
+        }
+    ],
+    "embedded_objects": [],
+    "analysis_summary": {
+        "url_count": 0,
+        "attachment_count": 1,
+        "embedded_object_count": 0
+    }
+}

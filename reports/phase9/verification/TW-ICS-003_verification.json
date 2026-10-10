@@ -1,0 +1,43 @@
+{
+    "verification_timestamp": "2026-10-03T15:13:33.548707+00:00",
+    "artifact": {
+        "filename": "TW-ICS-003.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-003.ics"
+    },
+    "before_recovery": {
+        "parser": "icalendar",
+        "status": "FAILED",
+        "error": {
+            "type": "ValueError",
+            "message": "Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]"
+        },
+        "sha256": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6"
+    },
+    "recovery": {
+        "status": "FAILED",
+        "confidence": "LOW",
+        "transformations": 3
+    },
+    "after_recovery": {
+        "recovered_artifact": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\verification\\TW-ICS-003_recovered.ics",
+        "parser": "icalendar",
+        "status": "FAILED",
+        "error": {
+            "type": "ValueError",
+            "message": "Found no components where exactly one is required: b'BEGIN:VCALENDAR\\r\\nVERSION:2.0\\r\\nPRODID:-//TRA' [...]"
+        },
+        "sha256": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6"
+    },
+    "integrity": {
+        "original_hash_before": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6",
+        "original_hash_after": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6",
+        "original_preserved": true
+    },
+    "classification": "RECOVERY_FAILED",
+    "verification": {
+        "verification_status": "FAILED",
+        "standard_parser_succeeded_before": false,
+        "standard_parser_succeeded_after": false,
+        "original_preserved": true
+    }
+}

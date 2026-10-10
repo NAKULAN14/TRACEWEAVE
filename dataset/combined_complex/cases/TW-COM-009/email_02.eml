@@ -1,0 +1,107 @@
+Received: from mail-out.events.example.org (events.example.org [192.0.2.77])
+	by mx.students.example.org with ESMTP id TWCOM00902;
+	Fri, 29 May 2026 12:27:33 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-009
+From: "Alderwick Events Office" <workshops@events.example.org>
+To: "Isabel Torres" <isabel.torres@students.example.org>
+Subject: Updated time: Intro to Memory Forensics
+Date: Fri, 29 May 2026 12:27:30 +0000
+Message-ID: <tw-com-009.email_02.f3a04848c5@mail-out.events.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-009_email_02_mix"
+
+--=_TW-COM-009_email_02_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-009_email_02_alt"
+
+--=_TW-COM-009_email_02_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Isabel,
+
+The workshop start time has changed to 11:30.
+
+The updated invitation is attached; the QR code is unchanged.
+
+Attached QR code file(s): workshop-qr-updated.png
+
+A calendar invitation is attached.
+
+Regards,
+Alderwick Events Office
+
+--=_TW-COM-009_email_02_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Isabel,</p><p>The workshop start time has changed to 11:30.</p><p>The updated invitation is attached; the QR code is unchanged.</p><p>Attached QR code file(s): workshop-qr-updated.png</p><p>A calendar invitation is attached.</p><p>Regards,<br>Alderwick Events Office</p></body></html>
+--=_TW-COM-009_email_02_alt--
+--=_TW-COM-009_email_02_mix
+Content-Type: image/png; name="workshop-qr-updated.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="workshop-qr-updated.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAbwAAAG8CAIAAAAq0oeIAAAAEXRFWHRUVy1TeW50aGV0aWMAdHJ1
+ZdGmG8sAAAgoSURBVHic7d3BbSu7FkVB++Ml4/yDUTj9U+gF8BKHVNXYkGTJWuBkm7/P8/wA8M7/
+Xv4cAKIJ0DhpAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAg
+mgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgC
+BKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBP/9DPP39/fzrT6fz5L3583j
+3Pq5r3oPdz7Xztd8os+wv2cnTYBANAEC0QQIRBMgEE2AQDQBAtEECEQTIBBNgEA0AQLRBDh5e37i
+FvWNE7fDOzfaqz7TE3flq/he7OGkCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmQCCaALdv
+z6dtvadtfldtonfexz1tx33rPv2bvxerOGkCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQ
+iCZAcO32nLM20dNe8879Pmdx0gQIRBMgEE2AQDQBAtEECEQTIBBNgEA0AQLRBAhEEyAQTYDA9vww
+O+8iX2XVjvvN40z73bmPkyZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIE127Pb71v
+etq2eucWftqd5tN+r2nPdSsnTYBANAEC0QQIRBMgEE2AQDQBAtEECEQTIBBNgEA0AQLRBLh9ez5t
+fz3Nzt30zh33rY+ziu/FHk6aAIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEPw+z1N+
+nkuceGf3tG31zg07czhpAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmwMn3nk/bRO/c
+O0/bIO+81/vNc017PdOceFf7iZ+FkyZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAKc
+fO/5ibtXd1vveX9u3ZVP+5uf5jPs83LSBAhEEyAQTYBANAEC0QQIRBMgEE2AQDQBAtEECEQTIBBN
+gJPvPZ+2B1+1C572eqZtfm/dlb/hcz+LkyZAIJoAgWgCiCbAv+GkCRCIJkAgmgCBaAIEogkQiCZA
+IJoAt2/P3zjxHu0Td+U7N/XTXvMqO/8O3zzXif8nYScnTYBANAEC0QQIRBMgEE2AQDQBAtEECEQT
+IBBNgEA0AQLRBAiu3Z5Pc+tGe6cTN+OrXs+0x1ll2ut5w0kTIBBNgEA0AQLRBAhEEyAQTYBANAEC
+0QQIRBMgEE2AQDQBgt/neX6+1Yn3jJ94j/a0O7Jt/M/yGbZPd9IECEQTIBBNgEA0AQLRBAhEEyAQ
+TYBANAEC0QQIRBMgEE2A4KvvPZ+2B5+20Z527/mJpm3qT/zfBdM4aQIEogkQiCZAIJoAgWgCBKIJ
+EIgmQCCaAIFoAgSiCRCIJkBw7fZ81db71rubv/n3mrZ3nvYeTtuwT+OkCRCIJkAgmgCBaAIEogkQ
+iCZAIJoAgWgCBKIJEIgmQCCaALdvz6ftyt/45vuvd975futd27f6DPuevuGkCRCIJkAgmgCBaAIE
+ogkQiCZAIJoAgWgCBKIJEIgmQCCaAMHv8zw/k0zbaK96PTbR99m5m562l/8M++7s5KQJEIgmQCCa
+AIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAJ2/PV7EZP+ue8Z2P88atr/mNWz/TVZw0AQLRBAhE
+EyAQTYBANAEC0QQIRBMgEE2AQDQBAtEECEQTILh2e85Zd1Lv3DKvMu13n+Zv2N/YKk6aAIFoAgSi
+CRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEPz3M8y0u5t3Pte0je03b6un7dx3Pteq9+cz7D1c
+xUkTIBBNgEA0AQLRBAhEEyAQTQDRBPg3nDQBAtEECEQTIBBNgMC954c5cas7bYO8c1P/xs7d/bT/
+A/A37PW84aQJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAwbX3np9o513S0x7n1l35
+iRvtEzf1OzlpAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmwMnb81s3rav2vNMe541b
+d+63/s3f+lyrOGkCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQiCbA7dvzE7fVO+3cer9x
+4j3sO3fu0/by096fz7Dvl5MmQCCaAIFoAgSiCRCIJkAgmgCBaAKIJsC/4aQJEIgmQCCaAMG12/Nb
+nbiJPvE1T9uDT/t/Am/cek+9kyZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEtucX
+unXzu8qJd6O/sfOe+m/mpAkQiCZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgDBtdvznfc7
+73TiXeSrrHrN0+5Gd6f5WZw0AQLRBAhEEyAQTYBANAEC0QQIRBMgEE2AQDQBAtEECEQT4Pbt+bRN
+9Im8h3PuED/xjvVv/h8RTpoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQ/D7PU34e
+4Ks5aQIEogkQiCZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgC
+BKIJEIgmQCCaAIFoAgSiCRCIJkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCI
+JkAgmgCBaAIEogkQiCZAIJoAgWgCBKIJEIgmQCCaAIFoAgSiCRCIJsDPe/8HJt8RlbI7jRYAAAAA
+SUVORK5CYII=
+--=_TW-COM-009_email_02_mix
+Content-Type: text/calendar; charset=utf-8; method=PUBLISH
+Content-Disposition: attachment; filename="invite-event_02.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic Combined Cases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:workshop-TW-COM-009@tw-uid.example.org
+DTSTAMP:20260529T122730Z
+DTSTART:20260531T113000Z
+DTEND:20260531T123000Z
+SEQUENCE:1
+SUMMARY:Intro to Memory Forensics
+DESCRIPTION:Workshop page: https://events.example.org/workshops/TW-COM-009
+LOCATION:Lab 3\, Alderwick College
+ORGANIZER;CN="Alderwick Events Office":mailto:workshops@events.example.org
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-COM-009_email_02_mix--

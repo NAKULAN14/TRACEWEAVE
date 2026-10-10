@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:TW-PHI-013-653aab2e@vantor-facilities.example.com
+DTSTAMP:20260430T132553Z
+DTSTART:20260505T130000Z
+DTEND:20260505T140000Z
+SUMMARY:Planning Meeting (Room Change)
+DESCRIPTION:Scan the QR code at the entrance to open the room page: https:/
+ /example.com/meeting/room/TW-PHI-013
+LOCATION:Room 5A\, Vantor Headquarters
+ORGANIZER;CN="Vantor Facilities":mailto:facilities@vantor-facilities.exampl
+ e.com
+ATTENDEE;CN="Hannah Weiss";ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:hannah.wei
+ ss@staff.example.org
+URL:https://example.com/meeting/room/TW-PHI-013
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

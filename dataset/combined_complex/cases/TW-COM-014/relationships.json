@@ -1,0 +1,107 @@
+[
+  {
+    "relationship_id": "REL-001",
+    "source": "artifact:email_01.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:qr_01.png",
+    "evidence_type": "observed",
+    "basis": "MIME image part 'printing-poster.png' is byte-identical to qr_01.png"
+  },
+  {
+    "relationship_id": "REL-002",
+    "source": "artifact:email_01.eml",
+    "relation": "sent_from",
+    "target": "email_address:print@print.example.org",
+    "evidence_type": "observed",
+    "basis": "From header"
+  },
+  {
+    "relationship_id": "REL-003",
+    "source": "artifact:qr_01.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_01#1",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-004",
+    "source": "qr:qr_01#1",
+    "relation": "encodes",
+    "target": "url:https://print.example.org/info/TW-COM-014",
+    "evidence_type": "observed",
+    "basis": "decoded payload is a URL"
+  },
+  {
+    "relationship_id": "REL-005",
+    "source": "artifact:qr_01.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_01#2",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-006",
+    "source": "qr:qr_01#2",
+    "relation": "encodes",
+    "target": "url:https://print-help.example.net/pay/TW-COM-014",
+    "evidence_type": "observed",
+    "basis": "decoded payload is a URL"
+  },
+  {
+    "relationship_id": "REL-007",
+    "source": "url:https://print-help.example.net/pay/TW-COM-014",
+    "relation": "has_domain",
+    "target": "domain:print-help.example.net",
+    "evidence_type": "observed",
+    "basis": "URL host"
+  },
+  {
+    "relationship_id": "REL-008",
+    "source": "url:https://print.example.org/info/TW-COM-014",
+    "relation": "has_domain",
+    "target": "domain:print.example.org",
+    "evidence_type": "observed",
+    "basis": "URL host"
+  },
+  {
+    "relationship_id": "REL-009",
+    "source": "dns_event:TW-COM-014-DNS-001",
+    "relation": "queries",
+    "target": "domain:print-help.example.net",
+    "evidence_type": "observed",
+    "basis": "DNS query name"
+  },
+  {
+    "relationship_id": "REL-010",
+    "source": "dns_event:TW-COM-014-DNS-001",
+    "relation": "resolves_to",
+    "target": "ip:192.0.2.15",
+    "evidence_type": "observed",
+    "basis": "DNS response"
+  },
+  {
+    "relationship_id": "REL-011",
+    "source": "browser_event:TW-COM-014-BRW-001",
+    "relation": "visits",
+    "target": "url:https://print-help.example.net/pay/TW-COM-014",
+    "evidence_type": "observed",
+    "basis": "browser event url"
+  },
+  {
+    "relationship_id": "REL-012",
+    "source": "artifact:email_01.eml",
+    "relation": "likely_origin_of",
+    "target": "browser_event:TW-COM-014-BRW-001",
+    "evidence_type": "inferred",
+    "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+    "confidence": "high"
+  },
+  {
+    "relationship_id": "REL-013",
+    "source": "browser_event:TW-COM-014-BRW-002",
+    "relation": "visits",
+    "target": "url:https://print-help.example.net/pay/TW-COM-014",
+    "evidence_type": "observed",
+    "basis": "browser event url"
+  }
+]

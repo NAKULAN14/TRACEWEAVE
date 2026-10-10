@@ -1,0 +1,402 @@
+{
+  "case_id": "TW-COM-007",
+  "category": "combined_complex",
+  "scenario": "Room-change email with QR code; browser and DNS records for the same URL pre-date the email's receipt (timestamp conflict).",
+  "expected_classification": "inconclusive",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "86d2cb16c4582a67ca382ec8493670c925f6a9d19c731f5e04704e9899841e77"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "b4f656d4c7c79296a8b18053cd0ea8722789b2348b9febe89df77e380938fd7b"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "ea9f7f5512cba6842f3ae129839539e7aec58bbe54ef8ae2b5cbde086a7b2dc9"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "bf47ebfb98896c1d9393ed9360a6c64ad8bc2eb2a663c27e46b2abe80efe9bff"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "5c0b91fabc817691996a09c2c429d39daf7674ba77e602366405a8fe5d12da52"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "8255984c8156b79f07ead007e6ec0433346942d28039ff2bf347d429ac27b516"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "89f9395032bc68efd017b8cff24bec3317c035fe16d9412fcfca02417549bf65"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://rooms.example.net/change/TW-COM-007",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://rooms.example.net/change/TW-COM-007"
+  ],
+  "expected_urls": [
+    "https://rooms.example.net/change/TW-COM-007"
+  ],
+  "expected_domains": [
+    "quillmoor-rooms.example.net",
+    "rooms.example.net"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://rooms.example.net/change/TW-COM-007",
+      "normalized_value": "https://rooms.example.net/change/TW-COM-007",
+      "observed_values": [
+        "https://rooms.example.net/change/TW-COM-007"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "quillmoor-rooms.example.net",
+      "normalized_value": "quillmoor-rooms.example.net",
+      "observed_values": [
+        "quillmoor-rooms.example.net"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "rooms.example.net",
+      "normalized_value": "rooms.example.net",
+      "observed_values": [
+        "rooms.example.net"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "email_address",
+      "value": "rooms@quillmoor-rooms.example.net",
+      "normalized_value": "rooms@quillmoor-rooms.example.net",
+      "observed_values": [
+        "rooms@quillmoor-rooms.example.net"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.132",
+      "normalized_value": "192.0.2.132",
+      "observed_values": [
+        "192.0.2.132"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "192.0.2.143",
+      "normalized_value": "192.0.2.143",
+      "observed_values": [
+        "192.0.2.143"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-007-BRW-001",
+      "timestamp": "2026-05-22T02:41:46.155-05:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://rooms.example.net/change/TW-COM-007",
+      "domain": "rooms.example.net"
+    },
+    {
+      "event_id": "TW-COM-007-BRW-002",
+      "timestamp": "2026-05-22T02:41:48.297-05:00",
+      "event_type": "page_load",
+      "url": "https://rooms.example.net/change/TW-COM-007",
+      "domain": "rooms.example.net"
+    },
+    {
+      "event_id": "TW-COM-007-BRW-003",
+      "timestamp": "2026-05-22T02:42:10.242-05:00",
+      "event_type": "tab_closed",
+      "url": "https://rooms.example.net/change/TW-COM-007",
+      "domain": "rooms.example.net"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-007-DNS-001",
+      "timestamp": "2026-05-22T07:41:46.727+00:00",
+      "query": "rooms.example.net",
+      "record_type": "A",
+      "response": "192.0.2.143"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'room-change-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:rooms@quillmoor-rooms.example.net",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://rooms.example.net/change/TW-COM-007",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://rooms.example.net/change/TW-COM-007",
+      "relation": "has_domain",
+      "target": "domain:rooms.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "dns_event:TW-COM-007-DNS-001",
+      "relation": "queries",
+      "target": "domain:rooms.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "dns_event:TW-COM-007-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.143",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "browser_event:TW-COM-007-BRW-001",
+      "relation": "visits",
+      "target": "url:https://rooms.example.net/change/TW-COM-007",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "browser_event:TW-COM-007-BRW-002",
+      "relation": "visits",
+      "target": "url:https://rooms.example.net/change/TW-COM-007",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-22T07:41:46.155+00:00",
+      "source_timestamp": "2026-05-22T02:41:46.155-05:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://rooms.example.net/change/TW-COM-007",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-007-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-22T07:41:46.727+00:00",
+      "source_timestamp": "2026-05-22T07:41:46.727+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for rooms.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-007-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-22T07:41:48.297+00:00",
+      "source_timestamp": "2026-05-22T02:41:48.297-05:00",
+      "event_type": "page_load",
+      "description": "load https://rooms.example.net/change/TW-COM-007",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-007-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-22T07:42:10.242+00:00",
+      "source_timestamp": "2026-05-22T02:42:10.242-05:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://rooms.example.net/change/TW-COM-007",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-007-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-22T08:23:43+00:00",
+      "source_timestamp": "2026-05-22T08:23:43+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-22T08:23:46+00:00",
+      "source_timestamp": "2026-05-22T08:23:46+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-22T08:23:46+00:00",
+      "source_timestamp": "2026-05-22T08:23:46+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "timestamp_conflict",
+      "description": "Browser and DNS events for the QR URL are about 42 minutes before the email was received.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "browser_events.json",
+        "dns_events.json"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": "ACTIVITY_BEFORE_EMAIL",
+      "expected_handling": "Report the conflict, keep both timestamps, do not silently correct either; lower confidence of dependent correlations."
+    },
+    {
+      "finding_id": "AMB-002",
+      "finding_type": "origin_of_scan_unknown",
+      "description": "Because the visit pre-dates delivery, the URL was reached from another source (earlier exposure, device clock skew, or a different channel). No email-to-scan link may be asserted.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "browser_events.json"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Withhold likely_origin_of relationship."
+    }
+  ],
+  "notes": "Activity precedes delivery, so the email cannot be established as the origin of the scan; nothing else is malicious. Classification: inconclusive. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

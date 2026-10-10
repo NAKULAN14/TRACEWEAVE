@@ -1,0 +1,43 @@
+{
+  "case_id": "TW-BEN-002",
+  "category": "event_invitation",
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "email_is_benign": true,
+  "ics_is_valid": true,
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "expected_relationships": [],
+  "email_attachments": [
+    {
+      "filename": "invite.ics",
+      "content_type": "text/calendar",
+      "identical_to": "event.ics"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-10-08T18:38:00+05:30",
+      "source": "event.ics",
+      "event": "Calendar object created (DTSTAMP and LAST-MODIFIED)"
+    },
+    {
+      "timestamp": "2026-10-08T18:40:00+05:30",
+      "source": "email.eml",
+      "event": "Email sent (Date header)"
+    },
+    {
+      "timestamp": "2026-10-16T16:00:00+05:30",
+      "source": "event.ics",
+      "event": "Event starts"
+    },
+    {
+      "timestamp": "2026-10-16T17:30:00+05:30",
+      "source": "event.ics",
+      "event": "Event ends"
+    }
+  ],
+  "notes": "Student club sends a calendar invitation with the ICS attached. Organiser is the sender; attendees mirror the To and Cc lists. ICS: METHOD:REQUEST, STATUS:CONFIRMED, SEQUENCE:0; timed event in TZID Asia/Kolkata with an embedded VTIMEZONE; 1 VALARM component(s). Email: multipart/alternative (text/plain + text/html) inside multipart/mixed, with this case's ICS attached as invite.ics (text/calendar, identical to event.ics). No URLs, QR codes, images, scripts or macros are present. ORGANIZER/ATTENDEE values are mailto: address URIs, not web URLs. Received headers use reserved example domains and contain no IP addresses. All people and organisations are fictional."
+}

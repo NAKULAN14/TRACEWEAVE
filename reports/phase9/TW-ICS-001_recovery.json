@@ -1,0 +1,57 @@
+{
+  "recovery": {
+    "status": "COMPLETED",
+    "method": "Conservative structural ICS reconstruction",
+    "recovered_at": "2026-10-03T13:28:05.241092+00:00",
+    "encoding": "utf-8"
+  },
+  "original_artifact": {
+    "filename": "TW-ICS-001.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-001.ics",
+    "size_bytes": 828,
+    "sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+  },
+  "recovered_artifact": {
+    "filename": "TW-ICS-001_recovered.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\recovered\\TW-ICS-001_recovered.ics",
+    "size_bytes": 824,
+    "sha256": "d5fc517fb434e20c928d4c2134bed5aabe881cd97b3d241a0f3f71c177db0a04"
+  },
+  "transformations": [
+    {
+      "line_number": 10,
+      "operation": "TRIM_WHITESPACE",
+      "original": "DESCRIPTION:Process scheduling\\, context switching\\, and memory management ",
+      "result": "DESCRIPTION:Process scheduling\\, context switching\\, and memory management"
+    },
+    {
+      "line_number": 11,
+      "operation": "TRIM_WHITESPACE",
+      "original": " fundamentals for first-year students. Please bring your student ID and a l",
+      "result": "fundamentals for first-year students. Please bring your student ID and a l"
+    },
+    {
+      "line_number": 12,
+      "operation": "TRIM_WHITESPACE",
+      "original": " aptop. Review the pre-reading beforehand.\\nAgenda: https://events.example.",
+      "result": "aptop. Review the pre-reading beforehand.\\nAgenda: https://events.example."
+    },
+    {
+      "line_number": 13,
+      "operation": "TRIM_WHITESPACE",
+      "original": " edu/tw/agenda/001",
+      "result": "edu/tw/agenda/001"
+    },
+    {
+      "line_number": 11,
+      "operation": "UNRESOLVED_PROPERTY_STRUCTURE",
+      "line": "fundamentals for first-year students. Please bring your student ID and a l"
+    },
+    {
+      "line_number": 13,
+      "operation": "UNRESOLVED_PROPERTY_STRUCTURE",
+      "line": "edu/tw/agenda/001"
+    }
+  ],
+  "transformation_count": 6
+}

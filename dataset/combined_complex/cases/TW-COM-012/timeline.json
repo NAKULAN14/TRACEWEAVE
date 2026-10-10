@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2026-06-06T10:12:14+00:00",
+    "source_timestamp": "2026-06-06T10:12:14+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-06T10:12:14+00:00",
+    "source_timestamp": "2026-06-06T10:12:14+00:00",
+    "event_type": "calendar_invitation_created",
+    "description": "DTSTAMP of event.ics",
+    "source_artifact": "event.ics",
+    "reference_id": "ics:DTSTAMP",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-06T10:12:17+00:00",
+    "source_timestamp": "2026-06-06T10:12:17+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-06T10:12:17+00:00",
+    "source_timestamp": "2026-06-06T10:12:17+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-06-07T11:12:17.401+00:00",
+    "source_timestamp": "2026-06-07T11:12:17.401+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for openday.example.org",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-012-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  }
+]

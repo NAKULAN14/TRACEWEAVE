@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "TW-PHI-003-BRW-001",
+    "case_id": "TW-PHI-003",
+    "timestamp": "2026-04-10T16:23:46.863Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://docs.example.net/share/TW-PHI-003",
+    "domain": "docs.example.net",
+    "browser": "Edge Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-003-BRW-002",
+    "case_id": "TW-PHI-003",
+    "timestamp": "2026-04-10T16:23:48.822Z",
+    "event_type": "page_load",
+    "url": "https://docs.example.net/share/TW-PHI-003",
+    "domain": "docs.example.net",
+    "browser": "Edge Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-003-BRW-003",
+    "case_id": "TW-PHI-003",
+    "timestamp": "2026-04-10T16:23:50.665Z",
+    "event_type": "form_displayed",
+    "url": "https://docs.example.net/share/TW-PHI-003",
+    "domain": "docs.example.net",
+    "browser": "Edge Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-003-BRW-004",
+    "case_id": "TW-PHI-003",
+    "timestamp": "2026-04-10T16:24:13.347Z",
+    "event_type": "tab_closed",
+    "url": "https://docs.example.net/share/TW-PHI-003",
+    "domain": "docs.example.net",
+    "browser": "Edge Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

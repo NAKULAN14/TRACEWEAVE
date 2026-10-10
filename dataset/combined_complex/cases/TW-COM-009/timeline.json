@@ -1,0 +1,152 @@
+[
+  {
+    "timestamp": "2026-05-28T12:27:30+00:00",
+    "source_timestamp": "2026-05-28T12:27:30+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-28T12:27:30+00:00",
+    "source_timestamp": "2026-05-28T12:27:30+00:00",
+    "event_type": "calendar_invitation_created",
+    "description": "DTSTAMP of event.ics",
+    "source_artifact": "event.ics",
+    "reference_id": "ics:DTSTAMP",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-28T12:27:33+00:00",
+    "source_timestamp": "2026-05-28T12:27:33+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-28T12:27:33+00:00",
+    "source_timestamp": "2026-05-28T12:27:33+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-29T12:27:30+00:00",
+    "source_timestamp": "2026-05-29T12:27:30+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_02.eml",
+    "source_artifact": "email_02.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T12:27:30+00:00",
+    "source_timestamp": "2026-05-29T12:27:30+00:00",
+    "event_type": "calendar_invitation_created",
+    "description": "DTSTAMP of event_02.ics",
+    "source_artifact": "event_02.ics",
+    "reference_id": "ics:DTSTAMP",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T12:27:33+00:00",
+    "source_timestamp": "2026-05-29T12:27:33+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_02.eml",
+    "source_artifact": "email_02.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T12:27:33+00:00",
+    "source_timestamp": "2026-05-29T12:27:33+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_02.png becomes extractable once email_02.eml is received",
+    "source_artifact": "qr_02.png",
+    "reference_id": "qr:qr_02#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-29T15:27:33.240+00:00",
+    "source_timestamp": "2026-05-29T20:57:33.240+05:30",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://events.example.org/workshops/TW-COM-009",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-009-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T15:27:33.735+00:00",
+    "source_timestamp": "2026-05-29T15:27:33.735+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for events.example.org",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-009-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T15:27:34.479+00:00",
+    "source_timestamp": "2026-05-29T20:57:34.479+05:30",
+    "event_type": "page_load",
+    "description": "load https://events.example.org/workshops/TW-COM-009",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-009-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T15:27:36.491+00:00",
+    "source_timestamp": "2026-05-29T20:57:36.491+05:30",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://events.example.org/workshops/TW-COM-009",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-009-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-29T15:28:01.908+00:00",
+    "source_timestamp": "2026-05-29T20:58:01.908+05:30",
+    "event_type": "tab_closed",
+    "description": "close_tab https://events.example.org/workshops/TW-COM-009",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-009-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-31T10:00:00+00:00",
+    "source_timestamp": "2026-05-31T10:00:00+00:00",
+    "event_type": "calendar_event_scheduled_start",
+    "description": "Scheduled start (future event, not an occurrence)",
+    "source_artifact": "event.ics",
+    "reference_id": "ics:DTSTART",
+    "evidence_type": "observed",
+    "entry_kind": "scheduled"
+  },
+  {
+    "timestamp": "2026-05-31T11:30:00+00:00",
+    "source_timestamp": "2026-05-31T11:30:00+00:00",
+    "event_type": "calendar_event_scheduled_start",
+    "description": "Scheduled start (future event, not an occurrence)",
+    "source_artifact": "event_02.ics",
+    "reference_id": "ics:DTSTART",
+    "evidence_type": "observed",
+    "entry_kind": "scheduled"
+  }
+]

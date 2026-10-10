@@ -1,0 +1,178 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://files.example.net/view/TW-COM-002",
+    "normalized_value": "https://files.example.net/view/TW-COM-002",
+    "observed_values": [
+      "https://files.example.net/view/TW-COM-002"
+    ],
+    "roles": [
+      "browser_visited_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "url",
+    "value": "https://go.example.net/r/TW-COM-002",
+    "normalized_value": "https://go.example.net/r/TW-COM-002",
+    "observed_values": [
+      "https://go.example.net/r/TW-COM-002"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "ferncliff-docshare.example.net",
+    "normalized_value": "ferncliff-docshare.example.net",
+    "observed_values": [
+      "ferncliff-docshare.example.net"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "files.example.net",
+    "normalized_value": "files.example.net",
+    "observed_values": [
+      "files.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "domain",
+    "value": "go.example.net",
+    "normalized_value": "go.example.net",
+    "observed_values": [
+      "go.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "email_address",
+    "value": "noreply@ferncliff-docshare.example.net",
+    "normalized_value": "noreply@ferncliff-docshare.example.net",
+    "observed_values": [
+      "noreply@ferncliff-docshare.example.net"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "192.0.2.123",
+    "normalized_value": "192.0.2.123",
+    "observed_values": [
+      "192.0.2.123"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-008",
+    "type": "ipv4",
+    "value": "192.0.2.144",
+    "normalized_value": "192.0.2.144",
+    "observed_values": [
+      "192.0.2.144"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-009",
+    "type": "ipv4",
+    "value": "192.0.2.243",
+    "normalized_value": "192.0.2.243",
+    "observed_values": [
+      "192.0.2.243"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-010",
+    "type": "ipv6",
+    "value": "2001:db8:3::90",
+    "normalized_value": "2001:db8:3::90",
+    "observed_values": [
+      "2001:db8:3::90"
+    ],
+    "roles": [
+      "resolved_ip_aaaa"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  }
+]

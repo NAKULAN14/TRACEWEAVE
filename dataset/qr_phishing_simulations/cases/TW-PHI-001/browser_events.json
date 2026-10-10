@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "TW-PHI-001-BRW-001",
+    "case_id": "TW-PHI-001",
+    "timestamp": "2026-04-07T21:29:17.365Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://example.com/verify/TW-PHI-001",
+    "domain": "example.com",
+    "browser": "Safari Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-001-BRW-002",
+    "case_id": "TW-PHI-001",
+    "timestamp": "2026-04-07T21:29:19.493Z",
+    "event_type": "page_load",
+    "url": "https://example.com/verify/TW-PHI-001",
+    "domain": "example.com",
+    "browser": "Safari Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-001-BRW-003",
+    "case_id": "TW-PHI-001",
+    "timestamp": "2026-04-07T21:29:21.162Z",
+    "event_type": "form_displayed",
+    "url": "https://example.com/verify/TW-PHI-001",
+    "domain": "example.com",
+    "browser": "Safari Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-001-BRW-004",
+    "case_id": "TW-PHI-001",
+    "timestamp": "2026-04-07T21:29:40.007Z",
+    "event_type": "tab_closed",
+    "url": "https://example.com/verify/TW-PHI-001",
+    "domain": "example.com",
+    "browser": "Safari Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

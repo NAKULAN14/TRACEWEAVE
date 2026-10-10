@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-QR-004",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "Workshop: Introduction to Version Control\nDate: Saturday, 24 October 2026, 10:00-13:00 IST\nVenue: Computer Lab 2, CS Block\nSeats: 40 (first come, first served)\nRegistration: https://events.example.com/workshops/version-control",
+  "payload_type": "plain_text",
+  "expected_urls": [
+    "https://events.example.com/workshops/version-control"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Workshop information as plain text with one harmless URL embedded in the text (tests URL extraction from non-URL payloads). QR version 13, error correction Q (~25%), module size 10px, quiet zone 4 modules, image 770x770px (8-bit greyscale PNG, black on white); payload length 226 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

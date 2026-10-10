@@ -1,0 +1,77 @@
+Return-Path: <registrar@northfield.example.org>
+Received: from mail.northfield.example.org (mail.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id 8934866358
+	for <all.students@students.northfield.example.org>; Wed, 28 Oct 2026 16:45:02 +0530
+Received: from workstation.northfield.example.org (workstation.northfield.example.org)
+	by mail.northfield.example.org (Postfix) with ESMTPSA id 7E680D1FB6
+	for <all.students@students.northfield.example.org>; Wed, 28 Oct 2026 16:45:00 +0530
+From: "Office of the Registrar" <registrar@northfield.example.org>
+To: "All Students" <all.students@students.northfield.example.org>
+Cc: "All Faculty and Staff" <all.staff@northfield.example.org>
+Subject: Notice: Institute Holiday on Tuesday 3 November (Founders' Day)
+Date: Wed, 28 Oct 2026 16:45:00 +0530
+Message-ID: <20261028164500.7e680d1fb6af@northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Microsoft Outlook 16.0
+Content-Type: multipart/alternative; boundary="=_TW_ALT_7e680d1fb6af3c2e"
+
+This is a multi-part message in MIME format.
+--=_TW_ALT_7e680d1fb6af3c2e
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Students, Faculty and Staff,
+
+The Institute will remain closed on Tuesday, 3 November 2026 on account
+of Founders' Day. There will be no classes, laboratory sessions or
+administrative services on that day.
+
+What stays open:
+- Hostel mess, at regular timings
+- Campus health centre, for emergency services only
+- Security and maintenance, as usual
+
+What is closed:
+- All academic blocks and laboratories
+- The central library and reading rooms
+- Administrative offices, including the Registrar's office
+
+Regular classes and office hours resume on Wednesday, 4 November 2026.
+Course instructors will reschedule any assessment originally planned for
+the holiday.
+
+Regards,
+Office of the Registrar
+Northfield Institute of Technology
+--=_TW_ALT_7e680d1fb6af3c2e
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notice: Institute Holiday on Tuesday 3 November (Founders&#x27; Day)</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Dear Students, Faculty and Staff,</p>
+<p>The Institute will remain closed on Tuesday, 3 November 2026 on account of Founders&#x27; Day. There will be no classes, laboratory sessions or administrative services on that day.</p>
+<h3 style="margin: 16px 0 6px;">What stays open</h3>
+<ul>
+<li>Hostel mess, at regular timings</li>
+<li>Campus health centre, for emergency services only</li>
+<li>Security and maintenance, as usual</li>
+</ul>
+<h3 style="margin: 16px 0 6px;">What is closed</h3>
+<ul>
+<li>All academic blocks and laboratories</li>
+<li>The central library and reading rooms</li>
+<li>Administrative offices, including the Registrar&#x27;s office</li>
+</ul>
+<p>Regular classes and office hours resume on Wednesday, 4 November 2026. Course instructors will reschedule any assessment originally planned for the holiday.</p>
+<p>Regards,<br>
+Office of the Registrar<br>
+Northfield Institute of Technology</p>
+</body>
+</html>
+--=_TW_ALT_7e680d1fb6af3c2e--

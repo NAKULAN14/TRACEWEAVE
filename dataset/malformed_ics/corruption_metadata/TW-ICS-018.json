@@ -1,0 +1,16 @@
+{
+  "case_id": "TW-ICS-018",
+  "corruption_type": "malformed_property_parameters",
+  "corruption_description": "ORGANIZER has an unterminated quoted CN parameter, DTSTART declares VALUE=DATE but holds a date-time, and LOCATION has a parameter without '=value'.",
+  "original_filename": "TW-ICS-018.ics",
+  "corrupted_filename": "TW-ICS-018.ics",
+  "affected_fields": [
+    "ORGANIZER",
+    "DTSTART",
+    "LOCATION"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "a75da1d93b13135bdbfa3956a3afa8159ed9bea8de4571aed9526bcda156f52c",
+  "corrupted_sha256": "f022dcb90ad59422ff3cc34b05cdf9c42188799b2f96ce5d39cba1e0c2cc6ea7"
+}

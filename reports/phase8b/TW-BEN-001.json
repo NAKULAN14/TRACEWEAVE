@@ -1,0 +1,90 @@
+{
+    "parser": {
+        "name": "TRACEWEAVE EML Parser",
+        "version": "1.0"
+    },
+    "source": {
+        "filename": "email.eml",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\benign_email_ics\\cases\\TW-BEN-001\\email.eml"
+    },
+    "email": {
+        "from": [
+            {
+                "name": "Office of Academic Affairs",
+                "address": "academic.affairs@northfield.example.org"
+            }
+        ],
+        "to": [
+            {
+                "name": "All Third-Year CSE Students",
+                "address": "cse.year3@students.northfield.example.org"
+            }
+        ],
+        "cc": [],
+        "bcc": [],
+        "subject": "Mid-Semester Examination Briefing - Monday 12 October",
+        "date_raw": "Mon, 05 Oct 2026 09:15:00 +0530",
+        "date_normalized": "2026-10-05T09:15:00+05:30",
+        "message_id": "<20261005091500.fe79654344df@northfield.example.org>",
+        "reply_to": null,
+        "return_path": "<academic.affairs@northfield.example.org>"
+    },
+    "headers": [
+        {
+            "name": "Return-Path",
+            "value": "<academic.affairs@northfield.example.org>"
+        },
+        {
+            "name": "Received",
+            "value": "from mail.northfield.example.org (mail.northfield.example.org)\n\tby mx.students.northfield.example.org (Postfix) with ESMTPS id 3421B583DB\n\tfor <cse.year3@students.northfield.example.org>; Mon, 05 Oct 2026 09:15:02 +0530"
+        },
+        {
+            "name": "Received",
+            "value": "from workstation.northfield.example.org (workstation.northfield.example.org)\n\tby mail.northfield.example.org (Postfix) with ESMTPSA id FE79654344\n\tfor <cse.year3@students.northfield.example.org>; Mon, 05 Oct 2026 09:15:00 +0530"
+        },
+        {
+            "name": "From",
+            "value": "\"Office of Academic Affairs\" <academic.affairs@northfield.example.org>"
+        },
+        {
+            "name": "To",
+            "value": "\"All Third-Year CSE Students\" <cse.year3@students.northfield.example.org>"
+        },
+        {
+            "name": "Subject",
+            "value": "Mid-Semester Examination Briefing - Monday 12 October"
+        },
+        {
+            "name": "Date",
+            "value": "Mon, 05 Oct 2026 09:15:00 +0530"
+        },
+        {
+            "name": "Message-ID",
+            "value": "<20261005091500.fe79654344df@northfield.example.org>"
+        },
+        {
+            "name": "MIME-Version",
+            "value": "1.0"
+        },
+        {
+            "name": "X-Mailer",
+            "value": "Microsoft Outlook 16.0"
+        },
+        {
+            "name": "Content-Type",
+            "value": "multipart/alternative; boundary=\"=_TW_ALT_fe79654344df6d5c\""
+        }
+    ],
+    "body": {
+        "plain_text": "Dear Students,\n\nThe mid-semester examinations for the odd semester will begin on Monday,\n19 October 2026. To help everyone prepare, the Office of Academic\nAffairs will hold a short briefing on the examination rules and\nlogistics.\n\nBriefing details:\n  Date: Monday, 12 October 2026\n  Time: 10:00-11:00 IST\n  Venue: Seminar Hall A, Academic Block\n\nTopics to be covered:\n- Seating arrangement and hall allocation\n- Identity card requirements for the examination hall\n- Permitted calculators and stationery\n- Procedure for requesting re-evaluation after results are declared\n\nAttendance is strongly encouraged but not mandatory. Students who cannot\nattend may collect a printed copy of the examination guidelines from the\nAcademic Affairs office during working hours.\n\nPlease carry your institute ID card to the session.\n\nRegards,\nOffice of Academic Affairs\nNorthfield Institute of Technology",
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Mid-Semester Examination Briefing - Monday 12 October</title>\n</head>\n<body style=\"font-family: Arial, sans-serif; font-size: 14px; color: #222;\">\n<p>Dear Students,</p>\n<p>The mid-semester examinations for the odd semester will begin on Monday, 19 October 2026. To help everyone prepare, the Office of Academic Affairs will hold a short briefing on the examination rules and logistics.</p>\n<h3 style=\"margin: 16px 0 6px;\">Briefing details</h3>\n<table style=\"border-collapse: collapse;\">\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Date</b></td><td>Monday, 12 October 2026</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Time</b></td><td>10:00-11:00 IST</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Venue</b></td><td>Seminar Hall A, Academic Block</td></tr>\n</table>\n<h3 style=\"margin: 16px 0 6px;\">Topics to be covered</h3>\n<ul>\n<li>Seating arrangement and hall allocation</li>\n<li>Identity card requirements for the examination hall</li>\n<li>Permitted calculators and stationery</li>\n<li>Procedure for requesting re-evaluation after results are declared</li>\n</ul>\n<p>Attendance is strongly encouraged but not mandatory. Students who cannot attend may collect a printed copy of the examination guidelines from the Academic Affairs office during working hours.</p>\n<p>Please carry your institute ID card to the session.</p>\n<p>Regards,<br>\nOffice of Academic Affairs<br>\nNorthfield Institute of Technology</p>\n</body>\n</html>"
+    },
+    "urls": [],
+    "attachments": [],
+    "embedded_objects": [],
+    "analysis_summary": {
+        "url_count": 0,
+        "attachment_count": 0,
+        "embedded_object_count": 0
+    }
+}

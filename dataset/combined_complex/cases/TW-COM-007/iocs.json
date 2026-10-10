@@ -1,0 +1,108 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://rooms.example.net/change/TW-COM-007",
+    "normalized_value": "https://rooms.example.net/change/TW-COM-007",
+    "observed_values": [
+      "https://rooms.example.net/change/TW-COM-007"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "quillmoor-rooms.example.net",
+    "normalized_value": "quillmoor-rooms.example.net",
+    "observed_values": [
+      "quillmoor-rooms.example.net"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "rooms.example.net",
+    "normalized_value": "rooms.example.net",
+    "observed_values": [
+      "rooms.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "email_address",
+    "value": "rooms@quillmoor-rooms.example.net",
+    "normalized_value": "rooms@quillmoor-rooms.example.net",
+    "observed_values": [
+      "rooms@quillmoor-rooms.example.net"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.132",
+    "normalized_value": "192.0.2.132",
+    "observed_values": [
+      "192.0.2.132"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "192.0.2.143",
+    "normalized_value": "192.0.2.143",
+    "observed_values": [
+      "192.0.2.143"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  }
+]

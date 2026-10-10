@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-BEN-009",
+  "category": "holiday_notice",
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "email_is_benign": true,
+  "ics_is_valid": true,
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "expected_relationships": [],
+  "email_attachments": [],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-10-28T16:43:00+05:30",
+      "source": "event.ics",
+      "event": "Calendar object created (DTSTAMP and LAST-MODIFIED)"
+    },
+    {
+      "timestamp": "2026-10-28T16:45:00+05:30",
+      "source": "email.eml",
+      "event": "Email sent (Date header)"
+    },
+    {
+      "timestamp": "2026-11-03",
+      "source": "event.ics",
+      "event": "All-day event begins (DTSTART;VALUE=DATE)"
+    },
+    {
+      "timestamp": "2026-11-04",
+      "source": "event.ics",
+      "event": "All-day event ends (DTEND;VALUE=DATE is exclusive, so the event covers only the preceding day)"
+    }
+  ],
+  "notes": "All-day event using VALUE=DATE with an exclusive DTEND, no VTIMEZONE and TRANSP:TRANSPARENT (does not block time). ICS: METHOD:PUBLISH, STATUS:CONFIRMED, SEQUENCE:0; all-day event (VALUE=DATE); no VALARM. Email: multipart/alternative (text/plain + text/html); no attachments. No URLs, QR codes, images, scripts or macros are present. ORGANIZER/ATTENDEE values are mailto: address URIs, not web URLs. Received headers use reserved example domains and contain no IP addresses. All people and organisations are fictional."
+}

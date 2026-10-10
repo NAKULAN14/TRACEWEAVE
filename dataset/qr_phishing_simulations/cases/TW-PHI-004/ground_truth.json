@@ -1,0 +1,162 @@
+{
+  "case_id": "TW-PHI-004",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": null,
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.com/workshop/TW-PHI-004",
+  "expected_url": "https://example.com/workshop/TW-PHI-004",
+  "expected_domain": "example.com",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.com/workshop/TW-PHI-004",
+      "normalized_value": "https://example.com/workshop/TW-PHI-004",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "qr.png"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "example.com",
+      "normalized_value": "example.com",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "qr.png"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "workshops@tessarine-centre.example.com",
+      "normalized_value": "workshops@tessarine-centre.example.com",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "tessarine-centre.example.com",
+      "normalized_value": "tessarine-centre.example.com",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.226",
+      "normalized_value": "192.0.2.226",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "references_qr_code",
+      "target": "artifact:qr.png",
+      "evidence_type": "inferred",
+      "basis": "email text refers to a QR code on a poster/notice; qr.png is supplied as separate evidence"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.com/workshop/TW-PHI-004",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "url:https://example.com/workshop/TW-PHI-004",
+      "relation": "has_domain",
+      "target": "domain:example.com",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:workshops@tessarine-centre.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-04-12T09:33:43Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-12T09:33:44Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'workshop_registration' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code referenced by the email (poster/notice image)"
+    }
+  ],
+  "missing_artifacts": [
+    "browser_events.json",
+    "dns_events.json"
+  ],
+  "notes": "Scenario: workshop_registration. QR not attached; email refers to a poster/notice and qr.png is a separately supplied image of it. No calendar artifact in this scenario. No simulated scan occurred: the QR code is present but there is no browser or DNS activity. The missing browser/DNS files reflect absence of activity, not lost evidence. OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic."
+}

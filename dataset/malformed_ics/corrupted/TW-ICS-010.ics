@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-010-7fa546f1@events.example.edu
+UID:tw-ics-010-7fa546f1@events.example.edu
+DTSTAMP:20260202T090000Z
+DTSTART:20260329T040000Z
+DTEND:20260329T060000Z
+SUMMARY:Machine Learning Reading Group
+DESCRIPTION:Discussion of recent papers on anomaly detection and model eval
+ uation with short presentations. Please bring your student ID and a laptop
+ . Review the pre-reading beforehand.\nAgenda: https://events.example.edu/t
+ w/agenda/010
+LOCATION:Room 102\, Block A\, Example Institute of Technology
+LOCATION:Room 102\, Block A\, Example Institute of Technology
+ORGANIZER;CN="Ms. Anitha Das":mailto:anitha.das@example.edu
+CATEGORIES:CLUB,ACADEMIC
+STATUS:CONFIRMED
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/010
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

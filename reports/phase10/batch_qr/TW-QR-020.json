@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-020\\qr.png",
+    "sha256": "1114e05efd4b0480a49c4eb34b9e9d277a6f58bae5b3bcad222240b12e37721d"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:22.372839+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "tel:+15550163",
+        "points": [
+          [
+            48.0,
+            48.0
+          ],
+          [
+            347.0,
+            48.0
+          ],
+          [
+            347.0494079589844,
+            347.0494079589844
+          ],
+          [
+            48.0,
+            347.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "tel:+15550163",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "PHONE",
+    "confidence": 1.0
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-020"
+}

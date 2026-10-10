@@ -1,0 +1,10 @@
+{
+    "filename": "email.eml",
+    "original_path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\benign_email_ics\\cases\\TW-BEN-001\\email.eml",
+    "extension": ".eml",
+    "mime_type": "message/rfc822",
+    "size_bytes": 3732,
+    "sha256": "0c00472347f916af95b10e56c5a3244e6b53891fc59364b37ff6fd8d6b1b225c",
+    "imported_at": "2026-10-03T11:01:32.427175+00:00",
+    "ingestion_status": "success"
+}

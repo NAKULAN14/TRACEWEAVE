@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-004",
+  "corruption_type": "missing_begin_delimiters_vcalendar_vevent",
+  "corruption_description": "BEGIN:VCALENDAR and BEGIN:VEVENT were both removed; END markers remain.",
+  "original_filename": "TW-ICS-004.ics",
+  "corrupted_filename": "TW-ICS-004.ics",
+  "affected_fields": [
+    "BEGIN:VCALENDAR",
+    "BEGIN:VEVENT"
+  ],
+  "expected_parsing_result": "failure",
+  "recovery_possible": true,
+  "original_sha256": "de426f8238392570fc2e0c3828f02b600fd1f71d327427fedf7436bcb5da61dc",
+  "corrupted_sha256": "339b06edb58310fb2e40ce45f3925f7ef7d89ce19846bfc9ac6a98a3cece6105"
+}

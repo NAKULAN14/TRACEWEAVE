@@ -1,0 +1,82 @@
+Received: from mail-out.library.example.org (library.example.org [192.0.2.78])
+	by mx.students.example.net with ESMTP id TWCOM01501;
+	Mon, 15 Jun 2026 15:00:25 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-015
+From: "Quillmoor University Library" <info@library.example.org>
+To: "Grace Mwangi" <grace.mwangi@students.example.net>
+Subject: Library opening hours - poster for your department
+Date: Mon, 15 Jun 2026 15:00:22 +0000
+Message-ID: <tw-com-015.email_01.fba3c0b6f7@mail-out.library.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-015_email_01_mix"
+
+--=_TW-COM-015_email_01_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-015_email_01_alt"
+
+--=_TW-COM-015_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Grace,
+
+Please print and display the attached poster.
+
+The QR code on the poster shows our opening hours.
+
+Attached QR code file(s): library-hours.png
+
+Regards,
+Quillmoor University Library
+
+--=_TW-COM-015_email_01_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Grace,</p><p>Please print and display the attached poster.</p><p>The QR code on the poster shows our opening hours.</p><p>Attached QR code file(s): library-hours.png</p><p>Regards,<br>Quillmoor University Library</p></body></html>
+--=_TW-COM-015_email_01_alt--
+--=_TW-COM-015_email_01_mix
+Content-Type: image/png; name="library-hours.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="library-hours.png"
+
+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
+--=_TW-COM-015_email_01_mix--

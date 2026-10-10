@@ -1,0 +1,35 @@
+{
+  "case_id": "TW-ICS-015",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-015.ics",
+  "corrupted_file": "TW-ICS-015.ics",
+  "is_malformed": true,
+  "corruption_type": "truncated_mid_description",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY"
+  ],
+  "expected_missing_fields": [
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_invalid_fields": [
+    "DESCRIPTION"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Everything before DESCRIPTION survives. DESCRIPTION is cut mid-sentence, so it and the agenda URL inside it are lost, along with every later property."
+}

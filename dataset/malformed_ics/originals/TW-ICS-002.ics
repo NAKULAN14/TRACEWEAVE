@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-002-3a7c0d49@events.example.edu
+DTSTAMP:20260213T090000Z
+DTSTART:20260305T080000Z
+DTEND:20260305T090000Z
+SUMMARY:Network Security Fundamentals Workshop
+DESCRIPTION:Hands-on session covering firewalls\, network segmentation\, an
+ d basic traffic analysis using sample packet captures. Please bring your s
+ tudent ID and a laptop. Review the pre-reading beforehand.\nAgenda: https:
+ //events.example.edu/tw/agenda/002
+LOCATION:Room 203\, Block D\, Example Institute of Technology
+ORGANIZER;CN="Prof. Rohan Iyer":mailto:rohan.iyer@example.edu
+CATEGORIES:WORKSHOP,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/002
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

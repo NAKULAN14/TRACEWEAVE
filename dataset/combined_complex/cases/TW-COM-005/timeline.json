@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2026-05-16T12:55:38+00:00",
+    "source_timestamp": "2026-05-16T12:55:38+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-16T12:55:41+00:00",
+    "source_timestamp": "2026-05-16T12:55:41+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-16T12:55:41+00:00",
+    "source_timestamp": "2026-05-16T12:55:41+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-16T12:55:41+00:00",
+    "source_timestamp": "2026-05-16T12:55:41+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_02.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_02.png",
+    "reference_id": "qr:qr_02#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-16T12:55:41+00:00",
+    "source_timestamp": "2026-05-16T12:55:41+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_03.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_03.png",
+    "reference_id": "qr:qr_03#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-17T13:55:41.972+00:00",
+    "source_timestamp": "2026-05-17T19:25:41.972+05:30",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://conf.example.org/sessions/TW-COM-005/b",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-005-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-17T13:55:42.395+00:00",
+    "source_timestamp": "2026-05-17T13:55:42.395+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for conf.example.org",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-005-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-17T13:55:43.656+00:00",
+    "source_timestamp": "2026-05-17T19:25:43.656+05:30",
+    "event_type": "page_load",
+    "description": "load https://conf.example.org/sessions/TW-COM-005/b",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-005-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-17T13:55:59.434+00:00",
+    "source_timestamp": "2026-05-17T19:25:59.434+05:30",
+    "event_type": "tab_closed",
+    "description": "close_tab https://conf.example.org/sessions/TW-COM-005/b",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-005-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  }
+]

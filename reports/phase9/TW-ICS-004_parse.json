@@ -1,0 +1,17 @@
+{
+  "file": {
+    "filename": "TW-ICS-004.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-004.ics",
+    "size_bytes": 844
+  },
+  "parser": {
+    "name": "icalendar",
+    "status": "FAILED",
+    "parsed_at": "2026-10-03T15:17:17.694986+00:00"
+  },
+  "calendar": null,
+  "error": {
+    "type": "ValueError",
+    "message": "Property \"VERSION\" does not have a parent component."
+  }
+}

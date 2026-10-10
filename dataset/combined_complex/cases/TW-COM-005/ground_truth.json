@@ -1,0 +1,542 @@
+{
+  "case_id": "TW-COM-005",
+  "category": "combined_complex",
+  "scenario": "Conference programme email carrying three QR codes (one per session) on one shared domain; only one session QR was scanned.",
+  "expected_classification": "benign",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "1812524a9a2a76f900a3f8a4b5a8e8f212f73b624cd2cae1e0e9d237d8127ea9"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "fbc493eeff6844a38006b8ab63e9f016cad595b47bf70d2602d100922fee07f9"
+    },
+    {
+      "filename": "qr_02.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "260c8e4ccc48936c28d643caa7648211d40cc8c409cb94e2a0d269fc2e7eae80"
+    },
+    {
+      "filename": "qr_03.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "7675335c4c67ee5312572b7eddc309f2d5d2f52096dbbacc4815f06c8b521488"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "e050343fd8702cffe647034aad99c0e17a495f8123a86a54a0f0be1461851dc2"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "8a7c99b75fa4e5b21e6075329280abd38b882df391bbd5188fc2b0035ca97b8a"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "680beea2f06edda7dcb56f354a88af9f2693246e49a4a4736ecaf60e66357047"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "69eeb68383ea643a2d5d0e99f9934623f2cf3c87bcb610ac9da5c3480fb40ae4"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "80157bba588aab8db149038fa40991daa7439d94726c897e84d0803bd26d0be4"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://conf.example.org/sessions/TW-COM-005/a",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_02#1",
+      "filename": "qr_02.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://conf.example.org/sessions/TW-COM-005/b",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_03#1",
+      "filename": "qr_03.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://conf.example.org/sessions/TW-COM-005/c",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://conf.example.org/sessions/TW-COM-005/a",
+    "https://conf.example.org/sessions/TW-COM-005/b",
+    "https://conf.example.org/sessions/TW-COM-005/c"
+  ],
+  "expected_urls": [
+    "https://conf.example.org/sessions/TW-COM-005/a",
+    "https://conf.example.org/sessions/TW-COM-005/b",
+    "https://conf.example.org/sessions/TW-COM-005/c"
+  ],
+  "expected_domains": [
+    "conf.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://conf.example.org/sessions/TW-COM-005/a",
+      "normalized_value": "https://conf.example.org/sessions/TW-COM-005/a",
+      "observed_values": [
+        "https://conf.example.org/sessions/TW-COM-005/a"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "qr_01.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "https://conf.example.org/sessions/TW-COM-005/b",
+      "normalized_value": "https://conf.example.org/sessions/TW-COM-005/b",
+      "observed_values": [
+        "https://conf.example.org/sessions/TW-COM-005/b"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_02.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "url",
+      "value": "https://conf.example.org/sessions/TW-COM-005/c",
+      "normalized_value": "https://conf.example.org/sessions/TW-COM-005/c",
+      "observed_values": [
+        "https://conf.example.org/sessions/TW-COM-005/c"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "qr_03.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "conf.example.org",
+      "normalized_value": "conf.example.org",
+      "observed_values": [
+        "conf.example.org"
+      ],
+      "roles": [
+        "dns_query_name",
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png",
+        "qr_02.png",
+        "qr_03.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "email_address",
+      "value": "programme@conf.example.org",
+      "normalized_value": "programme@conf.example.org",
+      "observed_values": [
+        "programme@conf.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "192.0.2.228",
+      "normalized_value": "192.0.2.228",
+      "observed_values": [
+        "192.0.2.228"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "ipv4",
+      "value": "198.51.100.76",
+      "normalized_value": "198.51.100.76",
+      "observed_values": [
+        "198.51.100.76"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-005-BRW-001",
+      "timestamp": "2026-05-17T19:25:41.972+05:30",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://conf.example.org/sessions/TW-COM-005/b",
+      "domain": "conf.example.org"
+    },
+    {
+      "event_id": "TW-COM-005-BRW-002",
+      "timestamp": "2026-05-17T19:25:43.656+05:30",
+      "event_type": "page_load",
+      "url": "https://conf.example.org/sessions/TW-COM-005/b",
+      "domain": "conf.example.org"
+    },
+    {
+      "event_id": "TW-COM-005-BRW-003",
+      "timestamp": "2026-05-17T19:25:59.434+05:30",
+      "event_type": "tab_closed",
+      "url": "https://conf.example.org/sessions/TW-COM-005/b",
+      "domain": "conf.example.org"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-005-DNS-001",
+      "timestamp": "2026-05-17T13:55:42.395+00:00",
+      "query": "conf.example.org",
+      "record_type": "A",
+      "response": "198.51.100.76"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'session-a.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_02.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'session-b.png' is byte-identical to qr_02.png"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_03.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'session-c.png' is byte-identical to qr_03.png"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:programme@conf.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://conf.example.org/sessions/TW-COM-005/a",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "artifact:qr_02.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_02#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "qr:qr_02#1",
+      "relation": "encodes",
+      "target": "url:https://conf.example.org/sessions/TW-COM-005/b",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "artifact:qr_03.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_03#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "qr:qr_03#1",
+      "relation": "encodes",
+      "target": "url:https://conf.example.org/sessions/TW-COM-005/c",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "url:https://conf.example.org/sessions/TW-COM-005/a",
+      "relation": "has_domain",
+      "target": "domain:conf.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "url:https://conf.example.org/sessions/TW-COM-005/b",
+      "relation": "has_domain",
+      "target": "domain:conf.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "url:https://conf.example.org/sessions/TW-COM-005/c",
+      "relation": "has_domain",
+      "target": "domain:conf.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-014",
+      "source": "dns_event:TW-COM-005-DNS-001",
+      "relation": "queries",
+      "target": "domain:conf.example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-015",
+      "source": "dns_event:TW-COM-005-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:198.51.100.76",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-016",
+      "source": "browser_event:TW-COM-005-BRW-001",
+      "relation": "visits",
+      "target": "url:https://conf.example.org/sessions/TW-COM-005/b",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-017",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-005-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-018",
+      "source": "browser_event:TW-COM-005-BRW-002",
+      "relation": "visits",
+      "target": "url:https://conf.example.org/sessions/TW-COM-005/b",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-16T12:55:38+00:00",
+      "source_timestamp": "2026-05-16T12:55:38+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T12:55:41+00:00",
+      "source_timestamp": "2026-05-16T12:55:41+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T12:55:41+00:00",
+      "source_timestamp": "2026-05-16T12:55:41+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-16T12:55:41+00:00",
+      "source_timestamp": "2026-05-16T12:55:41+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_02.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_02.png",
+      "reference_id": "qr:qr_02#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-16T12:55:41+00:00",
+      "source_timestamp": "2026-05-16T12:55:41+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_03.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_03.png",
+      "reference_id": "qr:qr_03#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-17T13:55:41.972+00:00",
+      "source_timestamp": "2026-05-17T19:25:41.972+05:30",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://conf.example.org/sessions/TW-COM-005/b",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-005-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-17T13:55:42.395+00:00",
+      "source_timestamp": "2026-05-17T13:55:42.395+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for conf.example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-005-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-17T13:55:43.656+00:00",
+      "source_timestamp": "2026-05-17T19:25:43.656+05:30",
+      "event_type": "page_load",
+      "description": "load https://conf.example.org/sessions/TW-COM-005/b",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-005-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-17T13:55:59.434+00:00",
+      "source_timestamp": "2026-05-17T19:25:59.434+05:30",
+      "event_type": "tab_closed",
+      "description": "close_tab https://conf.example.org/sessions/TW-COM-005/b",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-005-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "multiple_qr_codes",
+      "description": "Three QR codes in one email; the scanned one is identified by URL (session b) only.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": null,
+      "expected_handling": "Link the scan to the QR whose payload equals the opened URL."
+    }
+  ],
+  "notes": "All QR hosts match the sender's domain; no urgency; routine session links; scan matches exactly one QR. Classification: benign. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

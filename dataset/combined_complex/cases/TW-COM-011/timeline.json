@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": "2026-06-03T15:19:40+00:00",
+    "source_timestamp": "2026-06-03T16:19:40+01:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T15:19:43+00:00",
+    "source_timestamp": "2026-06-03T15:19:43+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T15:19:43+00:00",
+    "source_timestamp": "2026-06-03T15:19:43+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-06-03T17:19:40+00:00",
+    "source_timestamp": "2026-06-03T17:19:40+00:00",
+    "event_type": "calendar_invitation_created",
+    "description": "DTSTAMP of event.ics",
+    "source_artifact": "event.ics",
+    "reference_id": "ics:DTSTAMP",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T19:19:43.914+00:00",
+    "source_timestamp": "2026-06-04T00:49:43.914+05:30",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://lab-access.example.net/renew/TW-COM-011",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-011-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T19:19:44.507+00:00",
+    "source_timestamp": "2026-06-03T19:19:44.507+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for lab-access.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-011-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T19:19:45.813+00:00",
+    "source_timestamp": "2026-06-04T00:49:45.813+05:30",
+    "event_type": "page_load",
+    "description": "load https://lab-access.example.net/renew/TW-COM-011",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-011-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T19:19:47.900+00:00",
+    "source_timestamp": "2026-06-04T00:49:47.900+05:30",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://lab-access.example.net/renew/TW-COM-011",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-011-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-03T19:20:19.347+00:00",
+    "source_timestamp": "2026-06-04T00:50:19.347+05:30",
+    "event_type": "tab_closed",
+    "description": "close_tab https://lab-access.example.net/renew/TW-COM-011",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-011-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-06T09:00:00+00:00",
+    "source_timestamp": "2026-06-06T09:00:00+00:00",
+    "event_type": "calendar_event_scheduled_start",
+    "description": "Scheduled start (future event, not an occurrence)",
+    "source_artifact": "event.ics",
+    "reference_id": "ics:DTSTART",
+    "evidence_type": "observed",
+    "entry_kind": "scheduled"
+  }
+]

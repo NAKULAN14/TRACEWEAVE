@@ -1,0 +1,101 @@
+Received: from mail-out.quillmoor-library.example.net (quillmoor-library.example.net [192.0.2.215])
+	by mx.students.example.org with ESMTP id TWPHI015;
+	Mon, 04 May 2026 12:47:42 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-015
+From: "Quillmoor University Library" <renewals@quillmoor-library.example.net>
+To: "Isabel Torres" <isabel.torres@students.example.org>
+Subject: Library account renewal notice
+Date: Mon, 04 May 2026 04:47:41 -0800
+Message-ID: <tw-phi-015.a75c464e9e@mail-out.quillmoor-library.example.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-PHI-015_alt"
+
+--=_TW-PHI-015_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Isabel,
+
+Your library account is due for its annual renewal.
+
+Borrowing privileges may be paused if renewal is not completed this
+month.
+
+Scan the QR code below with your phone camera to continue.
+
+[QR code image is embedded in the HTML version of this message]
+
+Regards,
+Quillmoor University Library
+
+--=_TW-PHI-015_alt
+Content-Type: multipart/related; boundary="=_TW-PHI-015_rel"
+
+--=_TW-PHI-015_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Isabel,</p><p>Your library account is due for its annual renewal.</p><p>Borrowing privileges may be paused if renewal is not completed this month.</p><p>Scan the QR code below with your phone camera to continue.</p><p><img src="cid:qr-tw-phi-015@mail-out.quillmoor-library.example.net" alt="QR code" width="220" height="220"></p><p>Regards,<br>Quillmoor University Library</p></body></html>
+--=_TW-PHI-015_rel
+Content-Type: image/png; name="qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr-tw-phi-015@mail-out.quillmoor-library.example.net>
+Content-Disposition: inline; filename="qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAhwAAAIcCAIAAAAynOArAAALoklEQVR4nO3c0Y3rShIFQWkx/rus
+9eCBwE0UqpsRBmhIiqNE/5zv7/f7AEDhf8mnAICoAFByUgEgIyoAZEQFgIyoAJARFQAyogJARlQA
+yIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZU
+AMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBG
+VADIiAoAGVEBICMqAGREBYCMqACQERUAMn+fZb7f7+etfr9f8nyefM6J38Xk83nzvT9RPZ9t13Oi
+X/QMK04qAGREBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAHDv9teJWzfbtpK2/a03
+X/Pku7rtb23b43rz78YkJxUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAePf2
+17bNnBM3hU685hN3kJ6wn7bnXfW78e+cVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAMiI
+CgAZUQEgc+32161u3b+q9p1ufT63OnGDjv/mpAJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKi
+AkBGVADIiAoAGdtfF24lPdm/qjayJreb3nzNk5tm267ZPthZnFQAyIgKABlRASAjKgCICgD7OKkA
+kBEVADKiAkBGVADIiAoAGVEBIHPt9pe9oJnn82TfqdorO3H3bHKz69ZrnuR34985qQCQERUAMqIC
+QEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogLAu7e/3rxNtG1r60Tb9q+2baNt+5zKm383Jjmp
+AJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAsC921+37k1VJveUJj/H9z7znCc/
+Z5L3Zw8nFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVAC4d/urUu1NTe4gVdcz
+eV+Tm0vbNsS2bWRte59v3Y6bvJ7vsnt/wkkFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWA
+jKgAkBEVAN69/TW5f7XtcyonbhO9edNs0uQ7f6Jt/8vbOKkAkBEVADKiAkBGVADIiAoAGVEBICMq
+AGREBYCMqACQERUAMqICQOa7bZ9n23bTrftg9p3+/Tlve4YnXnNl29bWb9n/8iQnFQAyogJARlQA
+yIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVADI/H1erNresbl01rbVtu2mEzegbt2g27Z79lu2
+6/WEkwoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAvHv7a9sezuR+0eTn3Lrd
+9MST65l8zttsu/fqHdt2XydyUgEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWA
+d29/bbNtj2ty/2rS5PWcuI22bZPqzfd+4m5exUkFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBk
+RAWAjKgAkBEVADLfbbsxT2zb+ZncJqq+r22bS5P3tc2273Tb3zrRd/A93PacnVQAyIgKABlRASAj
+KgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBIPP3WWZyk+rWbasTd7Sq+7r1OU/uO534vZ/4Hn4P
+3Kl7wkkFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVAO7d/tpm277T5A5SpdpB
+OnEn6okTd6Im9/dO/C5+L94Hc1IBICMqAGREBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQF
+gHu3v6otoBM3u7ZtW524y/TEiXtKJ+5Ebbvmbbt532XfV8VJBYCMqACQERUAMqICQEZUAMiICgAZ
+UQEgIyoAZEQFgIyoAJARFQAy3xP3cLZtCk3a9n1Vtn1fk+/Ytvd52zu2bTuu8r30vpxUAMiICgAZ
+UQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRAeDe7a9J2/aUqt2zyrbrOfGat+2DbdsZe6L6
+vk58N37L/r+ecFIBICMqAGREBYCMqACQERUAMqICgKgAsI+TCgAZUQEgIyoAZEQFgMzfZ5kT94sm
+r2dyS+rN70b1fCZ3qyZN3te2e+e/OakAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUA
+MqICwL3bX5UTN6Amr2fb35o0udW2badumxPf50nfA+/LSQWAjKgAkBEVADKiAkBGVADIiAoAGVEB
+ICMqAGREBYCMqACQERUAMtduf1VO3GWqrnnb/tXk51R/a9t93fp9nfj//rt0F85JBYCMqACQERUA
+MqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyr97+2rZNdOLOz4l7Uyfunj1x4h6X67mPkwoA
+GVEBICMqAGREBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZL7Vhk9lcv/qxJ2oEzeg3vx8Jp14
+zZNu/a37LbsvJxUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyPx9ltm2Y1PZ
+tlu1zbYNscnnXN3Xiddc2fadvpmTCgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAj
+KgBkvtu2bqp9nsltohN3qybdujf1hM23s/7fT3xXf8t+w51UAMiICgAZUQEgIyoAZEQFgIyoAJAR
+FQAyogJARlQAyIgKABlRAeDe7a8ntu1oTT7Dyet58996Ytu9b9ub2vadbvut+x54zU84qQCQERUA
+MqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJA5m/bszxxB+nWzaVtW1uTJt+xE3e0Krf+
+rRO/94qTCgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkvtt2Y7hvv+iJbRtH
+b9712rYhtu17f/PzecJJBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyf59l
+tm1bTXqy4VNtSVXXM7mntG0fbPK7qO59205UZdu78X3x75iTCgAZUQEgIyoAZEQFgIyoAJARFQAy
+ogJARlQAyIgKABlRASAjKgDcu/31xIn7RZMbUJXJvalt+2AnXvOb96a2/Sb8ll3PJCcVADKiAkBG
+VADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAHj39tcTkztI23Z+Jvemnjhx2+rEa972fVV/
+a9um2eTzOZGTCgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkrt3+utXkplC1
+uTR5zdXfmtz12rYTte3eT9xhe+LW98dJBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyo
+AJARFQAytr8OU+0gVSa3m56Y3ImqPmfbd7rt3k/0vXSv7AknFQAyogJARlQAyIgKABlRASAjKgBk
+RAWAjKgAkBEVADKiAkBGVADIXLv9NbmVNGlyL6h6hidukT2xbdPs1v+LbRtZ23bqtnFSASAjKgBk
+RAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYB3b39N7vy82bY9pRO3yN68kXXivU9+zq37
+YE4qAGREBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJD5btuNAeBcTioAZEQFgIyo
+AJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCM
+qACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWA
+jKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAMiICgCfyv8BsT/lWoq6
+siIAAAAASUVORK5CYII=
+--=_TW-PHI-015_rel--
+--=_TW-PHI-015_alt--

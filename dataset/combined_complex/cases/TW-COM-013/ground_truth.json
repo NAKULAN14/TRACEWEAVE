@@ -1,0 +1,294 @@
+{
+  "case_id": "TW-COM-013",
+  "category": "combined_complex",
+  "scenario": "Seat-confirmation email whose QR image is damaged and cannot be decoded; an unrelated-looking DNS lookup occurs minutes after delivery.",
+  "expected_classification": "inconclusive",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "05d639d689fd520ae0c05b486acb903eedc3774f989503a7214ed1eb5e91d456"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "fc133c6e1787e94d1c69fe53e1aef704f4cfbec6a02a6ce7c221e50fd7a52b63"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "2a44ea00c213a0ee4f07b0da52d4926d71ab319060aee3296d727367d2bfc69e"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "940143496fd7a6203d14c9fa1025334931f4980e1e423acd5becfffe97a21760"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "6d72c6e8dfae30b24608aa75c941be781d5a50fcb08b3fd5ca0ec153c1e6b927"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "c107a3148a0b44a8105620f72de39b7d90a3465f18f198054e95c3df1091c245"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "unknown",
+      "decodable": false,
+      "payload": null,
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [],
+  "expected_urls": [],
+  "expected_domains": [
+    "ferncliff-workshops.example.net",
+    "portal.example.net"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "domain",
+      "value": "ferncliff-workshops.example.net",
+      "normalized_value": "ferncliff-workshops.example.net",
+      "observed_values": [
+        "ferncliff-workshops.example.net"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "portal.example.net",
+      "normalized_value": "portal.example.net",
+      "observed_values": [
+        "portal.example.net"
+      ],
+      "roles": [
+        "dns_query_name"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "seats@ferncliff-workshops.example.net",
+      "normalized_value": "seats@ferncliff-workshops.example.net",
+      "observed_values": [
+        "seats@ferncliff-workshops.example.net"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "ipv4",
+      "value": "192.0.2.121",
+      "normalized_value": "192.0.2.121",
+      "observed_values": [
+        "192.0.2.121"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.29",
+      "normalized_value": "192.0.2.29",
+      "observed_values": [
+        "192.0.2.29"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-013-DNS-001",
+      "timestamp": "2026-06-09T12:46:23.340+00:00",
+      "query": "portal.example.net",
+      "record_type": "A",
+      "response": "192.0.2.29"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'seat-confirmation.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:seats@ferncliff-workshops.example.net",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr_unreadable",
+      "target": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "basis": "image structure resembles a QR code but it cannot be decoded"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "dns_event:TW-COM-013-DNS-001",
+      "relation": "queries",
+      "target": "domain:portal.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "dns_event:TW-COM-013-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.29",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-06-09T12:42:08+00:00",
+      "source_timestamp": "2026-06-09T12:42:08+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-09T12:42:11+00:00",
+      "source_timestamp": "2026-06-09T12:42:11+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-09T12:42:11+00:00",
+      "source_timestamp": "2026-06-09T12:42:11+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received (image unreadable)",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-06-09T12:46:23.340+00:00",
+      "source_timestamp": "2026-06-09T12:46:23.340+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for portal.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-013-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [
+    {
+      "artifact": "qr_01.png payload",
+      "reason": "unreadable_content",
+      "impact": "QR image is damaged; the destination URL is unknown."
+    },
+    {
+      "artifact": "browser_events.json",
+      "reason": "not_collected",
+      "impact": "No page-view evidence."
+    }
+  ],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "dns_lookup_unattributable",
+      "description": "A lookup for portal.example.net follows delivery but cannot be tied to the unreadable QR code.",
+      "artifacts_involved": [
+        "dns_events.json",
+        "qr_01.png"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": null,
+      "expected_handling": "List the DNS event; do not link it to the QR code or email."
+    },
+    {
+      "finding_id": "AMB-002",
+      "finding_type": "unconfirmed_scan",
+      "description": "DNS lookup(s) exist without browser evidence; a QR scan or page view is not confirmed.",
+      "artifacts_involved": [
+        "dns_events.json"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Do not report a confirmed scan."
+    }
+  ],
+  "notes": "The payload is unrecoverable, so the DNS lookup cannot be attributed to the QR code. Classification: inconclusive. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

@@ -1,0 +1,15 @@
+{
+  "total_images": 20,
+  "qr_detected": 20,
+  "qr_decoded": 20,
+  "errors": 0,
+  "detection_rate": 1.0,
+  "decoding_rate": 1.0,
+  "classification_counts": {
+    "TEXT": 10,
+    "URL": 5,
+    "WIFI": 3,
+    "EMAIL": 1,
+    "PHONE": 1
+  }
+}

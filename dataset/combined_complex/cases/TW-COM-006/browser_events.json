@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-006-BRW-001",
+    "case_id": "TW-COM-006",
+    "timestamp": "2026-05-19T12:12:12.251+01:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://portal.example.com/survey/TW-COM-006-B",
+    "domain": "portal.example.com",
+    "browser": "Firefox Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "workstation-B",
+    "user_account": "ethan.walsh@students.example.net",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-006-BRW-002",
+    "case_id": "TW-COM-006",
+    "timestamp": "2026-05-19T12:12:14.248+01:00",
+    "event_type": "page_load",
+    "url": "https://portal.example.com/survey/TW-COM-006-B",
+    "domain": "portal.example.com",
+    "browser": "Firefox Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "workstation-B",
+    "user_account": "ethan.walsh@students.example.net",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-006-BRW-003",
+    "case_id": "TW-COM-006",
+    "timestamp": "2026-05-19T12:12:15.968+01:00",
+    "event_type": "form_displayed",
+    "url": "https://portal.example.com/survey/TW-COM-006-B",
+    "domain": "portal.example.com",
+    "browser": "Firefox Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "workstation-B",
+    "user_account": "ethan.walsh@students.example.net",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-006-BRW-004",
+    "case_id": "TW-COM-006",
+    "timestamp": "2026-05-19T12:12:28.509+01:00",
+    "event_type": "tab_closed",
+    "url": "https://portal.example.com/survey/TW-COM-006-B",
+    "domain": "portal.example.com",
+    "browser": "Firefox Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "workstation-B",
+    "user_account": "ethan.walsh@students.example.net",
+    "synthetic": true
+  }
+]

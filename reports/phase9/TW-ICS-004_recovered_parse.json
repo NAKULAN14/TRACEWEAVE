@@ -1,0 +1,17 @@
+{
+  "file": {
+    "filename": "TW-ICS-004_recovered.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\recovered\\TW-ICS-004_recovered.ics",
+    "size_bytes": 861
+  },
+  "parser": {
+    "name": "icalendar",
+    "status": "FAILED",
+    "parsed_at": "2026-10-03T15:43:21.132629+00:00"
+  },
+  "calendar": null,
+  "error": {
+    "type": "ValueError",
+    "message": "END encountered without an accompanying BEGIN!"
+  }
+}

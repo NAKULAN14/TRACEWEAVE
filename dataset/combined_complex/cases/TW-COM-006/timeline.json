@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-05-19T10:13:09+00:00",
+    "source_timestamp": "2026-05-19T10:13:09+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T10:13:12+00:00",
+    "source_timestamp": "2026-05-19T10:13:12+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T10:13:12+00:00",
+    "source_timestamp": "2026-05-19T10:13:12+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-19T10:20:09+00:00",
+    "source_timestamp": "2026-05-19T10:20:09+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_02.eml",
+    "source_artifact": "email_02.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T10:20:12+00:00",
+    "source_timestamp": "2026-05-19T10:20:12+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_02.eml",
+    "source_artifact": "email_02.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T10:20:12+00:00",
+    "source_timestamp": "2026-05-19T10:20:12+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_02.png becomes extractable once email_02.eml is received",
+    "source_artifact": "qr_02.png",
+    "reference_id": "qr:qr_02#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-19T10:32:09+00:00",
+    "source_timestamp": "2026-05-19T10:32:09+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_03.eml",
+    "source_artifact": "email_03.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T10:32:12+00:00",
+    "source_timestamp": "2026-05-19T10:32:12+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_03.eml",
+    "source_artifact": "email_03.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T10:32:12+00:00",
+    "source_timestamp": "2026-05-19T10:32:12+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_03.png becomes extractable once email_03.eml is received",
+    "source_artifact": "qr_03.png",
+    "reference_id": "qr:qr_03#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-05-19T11:12:12.251+00:00",
+    "source_timestamp": "2026-05-19T12:12:12.251+01:00",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://portal.example.com/survey/TW-COM-006-B",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-006-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T11:12:12.534+00:00",
+    "source_timestamp": "2026-05-19T11:12:12.534+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for portal.example.com",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-006-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T11:12:14.248+00:00",
+    "source_timestamp": "2026-05-19T12:12:14.248+01:00",
+    "event_type": "page_load",
+    "description": "load https://portal.example.com/survey/TW-COM-006-B",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-006-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T11:12:15.968+00:00",
+    "source_timestamp": "2026-05-19T12:12:15.968+01:00",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://portal.example.com/survey/TW-COM-006-B",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-006-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-05-19T11:12:28.509+00:00",
+    "source_timestamp": "2026-05-19T12:12:28.509+01:00",
+    "event_type": "tab_closed",
+    "description": "close_tab https://portal.example.com/survey/TW-COM-006-B",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-006-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  }
+]

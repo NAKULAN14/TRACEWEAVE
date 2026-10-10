@@ -1,0 +1,34 @@
+[
+  {
+    "relationship_id": "REL-001",
+    "source": "artifact:email_01.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:qr_01.png",
+    "evidence_type": "observed",
+    "basis": "MIME image part 'library-hours.png' is byte-identical to qr_01.png"
+  },
+  {
+    "relationship_id": "REL-002",
+    "source": "artifact:email_01.eml",
+    "relation": "sent_from",
+    "target": "email_address:info@library.example.org",
+    "evidence_type": "observed",
+    "basis": "From header"
+  },
+  {
+    "relationship_id": "REL-003",
+    "source": "artifact:qr_01.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_01#1",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-004",
+    "source": "qr:qr_01#1",
+    "relation": "encodes_text",
+    "target": "text:qr_01#1",
+    "evidence_type": "observed",
+    "basis": "decoded payload is plain text (no URL)"
+  }
+]

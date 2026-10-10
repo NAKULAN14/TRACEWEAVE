@@ -1,0 +1,438 @@
+{
+  "case_id": "TW-PHI-020",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": null,
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.org/helpdesk/expiry/TW-PHI-020",
+  "expected_url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+  "expected_domain": "example.org",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "normalized_value": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "qr.png",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "HTTPS://EXAMPLE.ORG/helpdesk/expiry/TW-PHI-020",
+      "normalized_value": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "role": "email_body_link_unnormalized",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "example.org",
+      "normalized_value": "example.org",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "email.eml",
+        "qr.png",
+        "browser_events.json",
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "email_address",
+      "value": "helpdesk@alderwick-helpdesk.example.org",
+      "normalized_value": "helpdesk@alderwick-helpdesk.example.org",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "domain",
+      "value": "alderwick-helpdesk.example.org",
+      "normalized_value": "alderwick-helpdesk.example.org",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "email_address",
+      "value": "it-support@alderwick-reply.example.com",
+      "normalized_value": "it-support@alderwick-reply.example.com",
+      "role": "reply_to_address_mismatch",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "domain",
+      "value": "alderwick-reply.example.com",
+      "normalized_value": "alderwick-reply.example.com",
+      "role": "reply_to_domain_mismatch",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-008",
+      "type": "ipv4",
+      "value": "192.0.2.15",
+      "normalized_value": "192.0.2.15",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-009",
+      "type": "ipv4",
+      "value": "198.51.100.23",
+      "normalized_value": "198.51.100.23",
+      "role": "resolved_ip_a",
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-010",
+      "type": "ipv6",
+      "value": "2001:db8:2::17",
+      "normalized_value": "2001:db8:2::17",
+      "role": "resolved_ip_aaaa",
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-PHI-020-BRW-001",
+      "timestamp": "2026-05-16T02:42:58.005Z",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "domain": "example.org"
+    },
+    {
+      "event_id": "TW-PHI-020-BRW-002",
+      "timestamp": "2026-05-16T02:42:59.905Z",
+      "event_type": "page_load",
+      "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "domain": "example.org"
+    },
+    {
+      "event_id": "TW-PHI-020-BRW-003",
+      "timestamp": "2026-05-16T02:43:01.549Z",
+      "event_type": "form_displayed",
+      "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "domain": "example.org"
+    },
+    {
+      "event_id": "TW-PHI-020-BRW-004",
+      "timestamp": "2026-05-16T02:43:27.224Z",
+      "event_type": "tab_closed",
+      "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+      "domain": "example.org"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-PHI-020-DNS-001",
+      "timestamp": "2026-05-16T02:42:58.200Z",
+      "query": "example.org",
+      "record_type": "A",
+      "response": "198.51.100.23"
+    },
+    {
+      "event_id": "TW-PHI-020-DNS-002",
+      "timestamp": "2026-05-16T02:42:58.208Z",
+      "query": "example.org",
+      "record_type": "AAAA",
+      "response": "2001:db8:2::17"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'qr.png' (inline) is byte-identical to qr.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.org/helpdesk/expiry/TW-PHI-020",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email.eml",
+      "relation": "contains_url",
+      "target": "url:https://example.org/helpdesk/expiry/TW-PHI-020",
+      "evidence_type": "observed",
+      "basis": "fallback link in body"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "url:https://example.org/helpdesk/expiry/TW-PHI-020",
+      "relation": "has_domain",
+      "target": "domain:example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:helpdesk@alderwick-helpdesk.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email.eml",
+      "relation": "replies_to",
+      "target": "email_address:it-support@alderwick-reply.example.com",
+      "evidence_type": "observed",
+      "basis": "Reply-To domain differs from From domain"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "browser_event:TW-PHI-020-BRW-001",
+      "relation": "visits",
+      "target": "url:https://example.org/helpdesk/expiry/TW-PHI-020",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:email.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-PHI-020-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR delivered by this email; scan source cannot be proven"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "dns_event:TW-PHI-020-DNS-001",
+      "relation": "queries",
+      "target": "domain:example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "dns_event:TW-PHI-020-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:198.51.100.23",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "dns_event:TW-PHI-020-DNS-002",
+      "relation": "queries",
+      "target": "domain:example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "dns_event:TW-PHI-020-DNS-002",
+      "relation": "resolves_to",
+      "target": "ip:2001:db8:2::17",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "browser_event:TW-PHI-020-BRW-001",
+      "relation": "precedes",
+      "target": "dns_event:TW-PHI-020-DNS-001",
+      "evidence_type": "inferred",
+      "basis": "DNS lookup follows URL open within one second"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-15T16:22:43Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-15T16:22:46Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T02:42:58.005Z",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://example.org/helpdesk/expiry/TW-PHI-020",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-020-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T02:42:58.200Z",
+      "event_type": "dns_query",
+      "description": "A lookup for example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-PHI-020-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T02:42:58.208Z",
+      "event_type": "dns_query",
+      "description": "AAAA lookup for example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-PHI-020-DNS-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T02:42:59.905Z",
+      "event_type": "page_load",
+      "description": "load https://example.org/helpdesk/expiry/TW-PHI-020",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-020-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T02:43:01.549Z",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://example.org/helpdesk/expiry/TW-PHI-020",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-020-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-16T02:43:27.224Z",
+      "event_type": "tab_closed",
+      "description": "close_tab https://example.org/helpdesk/expiry/TW-PHI-020",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-020-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'helpdesk_password_notice' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png",
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code attached to the email"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-020-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-020-DNS-001",
+        "TW-PHI-020-DNS-002"
+      ],
+      "description": "Synthetic DNS resolution of the simulated phishing host(s)"
+    },
+    {
+      "order": 6,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-020-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 7,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-020-BRW-003"
+      ],
+      "description": "Static simulated form displayed; no input, credentials or personal data exist in this dataset"
+    }
+  ],
+  "missing_artifacts": [],
+  "notes": "Scenario: helpdesk_password_notice. QR embedded inline (Content-ID) in the HTML body. No calendar artifact in this scenario. Complete evidence chain: email, QR, DNS and browser events all present. OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic. The email body contains a mixed-case copy of the URL that must normalise to the QR payload URL. Reply-To domain differs from the From domain (header mismatch indicator)."
+}

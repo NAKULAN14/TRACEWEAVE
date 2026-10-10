@@ -1,0 +1,422 @@
+{
+  "seed": 20260404,
+  "errors": [
+    "TW-PHI-001: IOC-002 claims qr.png source",
+    "TW-PHI-002: IOC-002 claims qr.png source",
+    "TW-PHI-003: IOC-002 claims qr.png source",
+    "TW-PHI-004: IOC-002 claims qr.png source",
+    "TW-PHI-005: non-reserved domain found: meet.exam",
+    "TW-PHI-005: non-reserved domain found: meet.exam",
+    "TW-PHI-005: IOC-002 claims qr.png source",
+    "TW-PHI-006: IOC-002 claims qr.png source",
+    "TW-PHI-007: non-reserved domain found: securedu-con",
+    "TW-PHI-007: non-reserved domain found: securedu-con",
+    "TW-PHI-007: IOC-002 claims qr.png source",
+    "TW-PHI-008: IOC-002 claims qr.png source",
+    "TW-PHI-009: IOC-003 claims qr.png source",
+    "TW-PHI-010: IOC-003 claims qr.png source",
+    "TW-PHI-011: non-reserved domain found: alderwick-act",
+    "TW-PHI-011: IOC-002 claims qr.png source",
+    "TW-PHI-012: non-reserved domain found: ferncliff-workshops.ex",
+    "TW-PHI-012: non-reserved domain found: ferncliff-workshops.ex",
+    "TW-PHI-012: IOC-002 claims qr.png source",
+    "TW-PHI-013: non-reserved domain found: vantor-facilities.exampl",
+    "TW-PHI-013: non-reserved domain found: vantor-facilities.exampl",
+    "TW-PHI-013: IOC-002 claims qr.png source",
+    "TW-PHI-014: IOC-002 claims qr.png source",
+    "TW-PHI-015: IOC-002 claims qr.png source",
+    "TW-PHI-016: IOC-002 claims qr.png source",
+    "TW-PHI-017: IOC-002 claims qr.png source",
+    "TW-PHI-018: IOC-003 claims qr.png source",
+    "TW-PHI-019: non-reserved domain found: quillmoor-coding.example.",
+    "TW-PHI-019: IOC-002 claims qr.png source",
+    "TW-PHI-020: IOC-003 claims qr.png source"
+  ],
+  "cases": [
+    {
+      "case_id": "TW-PHI-001",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-002",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 4,
+      "dns_events": 2,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-003",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-004",
+      "artifacts": [
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "referenced",
+      "browser_events": 0,
+      "dns_events": 0,
+      "outcome": "no_scan",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-005",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": true,
+      "errors": [
+        "non-reserved domain found: meet.exam",
+        "non-reserved domain found: meet.exam",
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-006",
+      "artifacts": [
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 0,
+      "dns_events": 1,
+      "outcome": "dns_only",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-007",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": true,
+      "errors": [
+        "non-reserved domain found: securedu-con",
+        "non-reserved domain found: securedu-con",
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-008",
+      "artifacts": [
+        "browser_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 4,
+      "dns_events": 0,
+      "outcome": "browser_only",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-009",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 5,
+      "dns_events": 3,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-003 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-010",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-003 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-011",
+      "artifacts": [
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 0,
+      "dns_events": 0,
+      "outcome": "no_scan",
+      "ics": true,
+      "errors": [
+        "non-reserved domain found: alderwick-act",
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-012",
+      "artifacts": [
+        "browser_events.json",
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "referenced",
+      "browser_events": 2,
+      "dns_events": 0,
+      "outcome": "browser_only",
+      "ics": true,
+      "errors": [
+        "non-reserved domain found: ferncliff-workshops.ex",
+        "non-reserved domain found: ferncliff-workshops.ex",
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-013",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": true,
+      "errors": [
+        "non-reserved domain found: vantor-facilities.exampl",
+        "non-reserved domain found: vantor-facilities.exampl",
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-014",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 3,
+      "dns_events": 1,
+      "outcome": "partial",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-015",
+      "artifacts": [
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 0,
+      "dns_events": 2,
+      "outcome": "dns_only",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-016",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 4,
+      "dns_events": 1,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-017",
+      "artifacts": [
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "referenced",
+      "browser_events": 0,
+      "dns_events": 0,
+      "outcome": "no_scan",
+      "ics": false,
+      "errors": [
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-018",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 5,
+      "dns_events": 2,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-003 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-019",
+      "artifacts": [
+        "browser_events.json",
+        "email.eml",
+        "event.ics",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "file",
+      "browser_events": 3,
+      "dns_events": 0,
+      "outcome": "browser_only",
+      "ics": true,
+      "errors": [
+        "non-reserved domain found: quillmoor-coding.example.",
+        "IOC-002 claims qr.png source"
+      ]
+    },
+    {
+      "case_id": "TW-PHI-020",
+      "artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "email.eml",
+        "qr.png",
+        "ground_truth.json"
+      ],
+      "qr_payload_ok": true,
+      "qr_mode": "inline",
+      "browser_events": 4,
+      "dns_events": 2,
+      "outcome": "full",
+      "ics": false,
+      "errors": [
+        "IOC-003 claims qr.png source"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+Received: from mail-out.quillmoor-rooms.example.net (quillmoor-rooms.example.net [192.0.2.132])
+	by mx.students.example.com with ESMTP id TWCOM00701;
+	Fri, 22 May 2026 08:23:46 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-007
+From: "Quillmoor Facilities" <rooms@quillmoor-rooms.example.net>
+To: "Tomas Novak" <tomas.novak@students.example.com>
+Subject: Seminar room change: scan QR for new room
+Date: Fri, 22 May 2026 08:23:43 +0000
+Message-ID: <tw-com-007.email_01.78b78b8db6@mail-out.quillmoor-rooms.example.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-007_email_01_mix"
+
+--=_TW-COM-007_email_01_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-007_email_01_alt"
+
+--=_TW-COM-007_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Tomas,
+
+The seminar room for Thursday has changed.
+
+Scan the attached QR code to see the new room details.
+
+Attached QR code file(s): room-change-qr.png
+
+Regards,
+Quillmoor Facilities
+
+--=_TW-COM-007_email_01_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Tomas,</p><p>The seminar room for Thursday has changed.</p><p>Scan the attached QR code to see the new room details.</p><p>Attached QR code file(s): room-change-qr.png</p><p>Regards,<br>Quillmoor Facilities</p></body></html>
+--=_TW-COM-007_email_01_alt--
+--=_TW-COM-007_email_01_mix
+Content-Type: image/png; name="room-change-qr.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="room-change-qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAewAAAHsCAIAAACfSAk3AAAAEXRFWHRUVy1TeW50aGV0aWMAdHJ1
+ZdGmG8sAAAoHSURBVHic7dxLjgPLEQRBUpj7X7m10P6hIRVS6UWzA0z/OI5axfd5ng8ATf/6f98A
+AP89EQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNx
+gDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GA
+MBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgDARBwgTcYAwEQcIE3GAMBEHCBNxgLC/zzLf7/fz
+q57nGXs/2651ypt73vbst97zrZ7B3/MbTuIAYSIOECbiAGEiDhAm4gBhIg4QJuIAYSIOECbiAGEi
+DhAm4gBh67ZTitsFb2zbmti2i3JqP2TbtW79Pd/6XN9l/6dvOIkDhIk4QJiIA4SJOECYiAOEiThA
+mIgDhIk4QJiIA4SJOECYiAOEJbdTtm0gbNvZOLUN8ubvFLcmTj37rb+fSbe+50lO4gBhIg4QJuIA
+YSIOECbiAGEiDhAm4gBhIg4QJuIAYSIOECbiAGHXbqfc6tQuyimT17r12U891+SuDns4iQOEiThA
+mIgDhIk4QJiIA4SJOECYiAOEiThAmIgDhIk4QJiIA4TZTok5tY8xyTbIzDvkNzmJA4SJOECYiAOE
+iThAmIgDhIk4QJiIA4SJOECYiAOEiThAmIgDhP398sbILzv1fk7tokxugxR3SE69w23/F9vup8hJ
+HCBMxAHCRBwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcICy5nVLcvjhlcqtk267F5HOd+o1t
++16T3/2X/08nOYkDhIk4QJiIA4SJOECYiAOEiThAmIgDhIk4QJiIA4SJOECYiAOEfbftY3DfHsXk
+Vskp23ZITineM//MSRwgTMQBwkQcIEzEAcJEHCBMxAHCRBwgTMQBwkQcIEzEAcJEHCDs77PMqW2H
+U1sc23Y/Tu1abHvP20xujBS/xS+/n2fZtoyTOECYiAOEiThAmIgDhIk4QJiIA4SJOECYiAOEiThA
+mIgDhIk4QNi67ZRtJjciivdzarNicmfjlOIWx62/1W/wW5ziJA4QJuIAYSIOECbiAGEiDhAm4gBh
+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
+--=_TW-COM-007_email_01_mix--

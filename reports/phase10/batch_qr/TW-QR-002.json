@@ -1,0 +1,63 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-002\\qr.png",
+    "sha256": "cac25d716f32e7cfd06676995913e102f0dc12809b5c2798ac99c99aa01814b2"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:20.671812+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "EVENT: Northfield Tech Fest 2026 - Opening Ceremony\nDATE: Saturday, 14 November 2026\nTIME: 10:00-11:30 IST\nVENUE: Main Auditorium, Academic Block\nENTRY: Free for all students with institute ID card",
+        "points": [
+          [
+            [
+              40.0,
+              40.0
+            ],
+            [
+              609.0,
+              40.0
+            ],
+            [
+              609.0,
+              609.0
+            ],
+            [
+              40.0,
+              609.0
+            ]
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "EVENT: Northfield Tech Fest 2026 - Opening Ceremony\nDATE: Saturday, 14 November 2026\nTIME: 10:00-11:30 IST\nVENUE: Main Auditorium, Academic Block\nENTRY: Free for all students with institute ID card",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "TEXT",
+    "confidence": 0.8
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-002"
+}

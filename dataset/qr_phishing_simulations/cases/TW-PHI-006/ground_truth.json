@@ -1,0 +1,248 @@
+{
+  "case_id": "TW-PHI-006",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": null,
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.net/careers/status/TW-PHI-006?src=qr",
+  "expected_url": "https://example.net/careers/status/TW-PHI-006?src=qr",
+  "expected_domain": "example.net",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.net/careers/status/TW-PHI-006?src=qr",
+      "normalized_value": "https://example.net/careers/status/TW-PHI-006?src=qr",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "qr.png"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "example.net",
+      "normalized_value": "example.net",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "qr.png",
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "talent@vantor-careers.example.net",
+      "normalized_value": "talent@vantor-careers.example.net",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "vantor-careers.example.net",
+      "normalized_value": "vantor-careers.example.net",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.166",
+      "normalized_value": "192.0.2.166",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "192.0.2.189",
+      "normalized_value": "192.0.2.189",
+      "role": "resolved_ip_a",
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-PHI-006-DNS-001",
+      "timestamp": "2026-04-17T15:28:19.879Z",
+      "query": "example.net",
+      "record_type": "A",
+      "response": "192.0.2.189"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'qr.png' (inline) is byte-identical to qr.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.net/careers/status/TW-PHI-006?src=qr",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "url:https://example.net/careers/status/TW-PHI-006?src=qr",
+      "relation": "has_domain",
+      "target": "domain:example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:talent@vantor-careers.example.net",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "dns_event:TW-PHI-006-DNS-001",
+      "relation": "queries",
+      "target": "domain:example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "dns_event:TW-PHI-006-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.189",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "artifact:email.eml",
+      "relation": "likely_origin_of",
+      "target": "dns_event:TW-PHI-006-DNS-001",
+      "evidence_type": "inferred",
+      "basis": "no browser evidence; DNS lookup of the QR host is the only trace of a scan"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-04-17T12:11:53Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-17T12:11:56Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-17T15:28:19.879Z",
+      "event_type": "dns_query",
+      "description": "A lookup for example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-PHI-006-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-17T15:28:19.879Z",
+      "event_type": "qr_code_scan_inferred",
+      "description": "Scan inferred from DNS lookup of the QR host; no browser evidence",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-PHI-006-DNS-001",
+      "evidence_type": "inferred",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'internship_notification' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png",
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code attached to the email"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-006-DNS-001"
+      ],
+      "description": "Scan inferred from DNS lookup only"
+    },
+    {
+      "order": 5,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-006-DNS-001"
+      ],
+      "description": "Synthetic DNS resolution of the simulated phishing host(s)"
+    }
+  ],
+  "missing_artifacts": [
+    "browser_events.json"
+  ],
+  "notes": "Scenario: internship_notification. QR embedded inline (Content-ID) in the HTML body. No calendar artifact in this scenario. Incomplete evidence: browser events were not collected; only DNS shows a scan (inferred). OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic."
+}

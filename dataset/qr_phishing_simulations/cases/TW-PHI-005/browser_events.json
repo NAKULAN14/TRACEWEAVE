@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "TW-PHI-005-BRW-001",
+    "case_id": "TW-PHI-005",
+    "timestamp": "2026-04-15T16:40:20.821Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://meet.example.org/join/TW-PHI-005",
+    "domain": "meet.example.org",
+    "browser": "Safari Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-005-BRW-002",
+    "case_id": "TW-PHI-005",
+    "timestamp": "2026-04-15T16:40:22.171Z",
+    "event_type": "page_load",
+    "url": "https://meet.example.org/join/TW-PHI-005",
+    "domain": "meet.example.org",
+    "browser": "Safari Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-005-BRW-003",
+    "case_id": "TW-PHI-005",
+    "timestamp": "2026-04-15T16:40:24.471Z",
+    "event_type": "form_displayed",
+    "url": "https://meet.example.org/join/TW-PHI-005",
+    "domain": "meet.example.org",
+    "browser": "Safari Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-005-BRW-004",
+    "case_id": "TW-PHI-005",
+    "timestamp": "2026-04-15T16:40:57.522Z",
+    "event_type": "tab_closed",
+    "url": "https://meet.example.org/join/TW-PHI-005",
+    "domain": "meet.example.org",
+    "browser": "Safari Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

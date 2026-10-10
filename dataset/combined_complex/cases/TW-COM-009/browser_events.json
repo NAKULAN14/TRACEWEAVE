@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-009-BRW-001",
+    "case_id": "TW-COM-009",
+    "timestamp": "2026-05-29T20:57:33.240+05:30",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://events.example.org/workshops/TW-COM-009",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-009-a",
+    "user_account": "isabel.torres@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-009-BRW-002",
+    "case_id": "TW-COM-009",
+    "timestamp": "2026-05-29T20:57:34.479+05:30",
+    "event_type": "page_load",
+    "url": "https://events.example.org/workshops/TW-COM-009",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-009-a",
+    "user_account": "isabel.torres@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-009-BRW-003",
+    "case_id": "TW-COM-009",
+    "timestamp": "2026-05-29T20:57:36.491+05:30",
+    "event_type": "form_displayed",
+    "url": "https://events.example.org/workshops/TW-COM-009",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-009-a",
+    "user_account": "isabel.torres@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-009-BRW-004",
+    "case_id": "TW-COM-009",
+    "timestamp": "2026-05-29T20:58:01.908+05:30",
+    "event_type": "tab_closed",
+    "url": "https://events.example.org/workshops/TW-COM-009",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-009-a",
+    "user_account": "isabel.torres@students.example.org",
+    "synthetic": true
+  }
+]

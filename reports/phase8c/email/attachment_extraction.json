@@ -1,0 +1,15 @@
+{
+  "parent_evidence": {
+    "filename": "email.eml",
+    "original_path": "dataset\\benign_email_ics\\cases\\TW-BEN-001\\email.eml",
+    "size_bytes": 3732,
+    "sha256": "0c00472347f916af95b10e56c5a3244e6b53891fc59364b37ff6fd8d6b1b225c"
+  },
+  "extraction": {
+    "status": "success",
+    "extracted_at": "2026-10-03T11:54:16.883304+00:00",
+    "method": "MIME attachment extraction",
+    "attachment_count": 0
+  },
+  "attachments": []
+}

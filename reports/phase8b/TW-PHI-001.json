@@ -1,0 +1,105 @@
+{
+    "parser": {
+        "name": "TRACEWEAVE EML Parser",
+        "version": "1.0"
+    },
+    "source": {
+        "filename": "email.eml",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\qr_phishing_simulations\\cases\\TW-PHI-001\\email.eml"
+    },
+    "email": {
+        "from": [
+            {
+                "name": "Alderwick IT Accounts",
+                "address": "accounts-notice@alderwick-notices.example.com"
+            }
+        ],
+        "to": [
+            {
+                "name": "Priya Raman",
+                "address": "priya.raman@students.example.org"
+            }
+        ],
+        "cc": [],
+        "bcc": [],
+        "subject": "Action needed: confirm your campus account by Friday",
+        "date_raw": "Tue, 07 Apr 2026 05:47:59 -0500",
+        "date_normalized": "2026-04-07T05:47:59-05:00",
+        "message_id": "<tw-phi-001.29cf671e28@mail-out.alderwick-notices.example.com>",
+        "reply_to": null,
+        "return_path": null
+    },
+    "headers": [
+        {
+            "name": "Received",
+            "value": "from mail-out.alderwick-notices.example.com (alderwick-notices.example.com [192.0.2.47])\n\tby mx.students.example.org with ESMTP id TWPHI001;\n\tTue, 07 Apr 2026 10:48:01 +0000"
+        },
+        {
+            "name": "X-TW-Dataset",
+            "value": "qr-phishing-simulation-dataset-4"
+        },
+        {
+            "name": "X-TW-Case",
+            "value": "TW-PHI-001"
+        },
+        {
+            "name": "From",
+            "value": "\"Alderwick IT Accounts\" <accounts-notice@alderwick-notices.example.com>"
+        },
+        {
+            "name": "To",
+            "value": "\"Priya Raman\" <priya.raman@students.example.org>"
+        },
+        {
+            "name": "Subject",
+            "value": "Action needed: confirm your campus account by Friday"
+        },
+        {
+            "name": "Date",
+            "value": "Tue, 07 Apr 2026 05:47:59 -0500"
+        },
+        {
+            "name": "Message-ID",
+            "value": "<tw-phi-001.29cf671e28@mail-out.alderwick-notices.example.com>"
+        },
+        {
+            "name": "MIME-Version",
+            "value": "1.0"
+        },
+        {
+            "name": "Content-Type",
+            "value": "multipart/alternative; boundary=\"=_TW-PHI-001_alt\""
+        }
+    ],
+    "body": {
+        "plain_text": "Hello Priya,\n\nOur records show that your campus account has not completed the annual\nverification step.\n\nAccounts that remain unverified after Friday may lose access to the\nlearning portal and library services.\n\nScan the QR code below with your phone camera to continue.\n\n[QR code image is embedded in the HTML version of this message]\n\nRegards,\nAlderwick IT Accounts\n",
+        "html": "<html><body><p>Hello Priya,</p><p>Our records show that your campus account has not completed the annual verification step.</p><p>Accounts that remain unverified after Friday may lose access to the learning portal and library services.</p><p>Scan the QR code below with your phone camera to continue.</p><p><img src=\"cid:qr-tw-phi-001@mail-out.alderwick-notices.example.com\" alt=\"QR code\" width=\"220\" height=\"220\"></p><p>Regards,<br>Alderwick IT Accounts</p></body></html>"
+    },
+    "urls": [],
+    "attachments": [
+        {
+            "attachment_index": 4,
+            "filename": "qr.png",
+            "content_type": "image/png",
+            "content_disposition": "inline",
+            "size_bytes": 1441,
+            "sha256": "5ea8b4c255e693de942968c39bdcbbec5c0d82f2a742fb2afa74cb9c5ad65ab4",
+            "content_id": "<qr-tw-phi-001@mail-out.alderwick-notices.example.com>"
+        }
+    ],
+    "embedded_objects": [
+        {
+            "object_index": 4,
+            "content_type": "image/png",
+            "content_id": "<qr-tw-phi-001@mail-out.alderwick-notices.example.com>",
+            "filename": "qr.png",
+            "size_bytes": 1441,
+            "sha256": "5ea8b4c255e693de942968c39bdcbbec5c0d82f2a742fb2afa74cb9c5ad65ab4"
+        }
+    ],
+    "analysis_summary": {
+        "url_count": 0,
+        "attachment_count": 1,
+        "embedded_object_count": 1
+    }
+}

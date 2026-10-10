@@ -1,0 +1,16 @@
+{
+  "case_id": "TW-ICS-010",
+  "corruption_type": "duplicate_identical_properties",
+  "corruption_description": "UID, LOCATION and STATUS lines were each duplicated verbatim.",
+  "original_filename": "TW-ICS-010.ics",
+  "corrupted_filename": "TW-ICS-010.ics",
+  "affected_fields": [
+    "UID",
+    "LOCATION",
+    "STATUS"
+  ],
+  "expected_parsing_result": "success_despite_corruption",
+  "recovery_possible": true,
+  "original_sha256": "bd7c0e5607c78acdb46a4a073bdcbd2eed67300bc170d01f058d629125b94159",
+  "corrupted_sha256": "ff87d0728e7b865b37dd31c4f080f3f2bc8f0a96d08c30f9038bb5d763816d9e"
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-011",
+  "corruption_type": "duplicate_conflicting_properties",
+  "corruption_description": "A second SUMMARY (different title) and a second DTSTART (next day) were inserted.",
+  "original_filename": "TW-ICS-011.ics",
+  "corrupted_filename": "TW-ICS-011.ics",
+  "affected_fields": [
+    "SUMMARY",
+    "DTSTART"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "cb2e27fb60fa93b5385b2477fd3aa87d809c2984cb6eb2edad8bb6cb2c03bf23",
+  "corrupted_sha256": "175a446cf0640334e7af92c8510836bc75b03646faba99ca52dab8758220e7c9"
+}

@@ -1,0 +1,35 @@
+{
+  "input": "reports\\phase14\\dns_resolution\\dns_evidence.json",
+  "relationship_count": 1,
+  "network_access_performed": false,
+  "relationships": [
+    {
+      "relationship_type": "RESOLVES_TO",
+      "source": {
+        "type": "DOMAIN",
+        "value": "example.com"
+      },
+      "target": {
+        "type": "IP",
+        "value": "192.0.2.1"
+      },
+      "evidence": {
+        "record_type": "A",
+        "method": "DNS_RESOLUTION",
+        "provider": "STATIC_DNS",
+        "confidence": "OBSERVED"
+      },
+      "observed_at": "2026-10-07T17:55:29.553724+00:00",
+      "network_access_performed": false,
+      "provenance": {
+        "evidence_id": "b8438490-f761-4e46-9da4-5992206a1f81",
+        "source_artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+        "source_location": "decoded_payload",
+        "derivation_method": "DNS_EVIDENCE_CORRELATION",
+        "relationship_status": "OBSERVED",
+        "created_at": "2026-10-07T17:55:29.553746+00:00",
+        "network_access_performed": false
+      }
+    }
+  ]
+}

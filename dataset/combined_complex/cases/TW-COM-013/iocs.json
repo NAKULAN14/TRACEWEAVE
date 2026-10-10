@@ -1,0 +1,87 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "domain",
+    "value": "ferncliff-workshops.example.net",
+    "normalized_value": "ferncliff-workshops.example.net",
+    "observed_values": [
+      "ferncliff-workshops.example.net"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "portal.example.net",
+    "normalized_value": "portal.example.net",
+    "observed_values": [
+      "portal.example.net"
+    ],
+    "roles": [
+      "dns_query_name"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "email_address",
+    "value": "seats@ferncliff-workshops.example.net",
+    "normalized_value": "seats@ferncliff-workshops.example.net",
+    "observed_values": [
+      "seats@ferncliff-workshops.example.net"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "ipv4",
+    "value": "192.0.2.121",
+    "normalized_value": "192.0.2.121",
+    "observed_values": [
+      "192.0.2.121"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.29",
+    "normalized_value": "192.0.2.29",
+    "observed_values": [
+      "192.0.2.29"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  }
+]

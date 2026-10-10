@@ -1,0 +1,216 @@
+{
+    "workflow_stage": "Phase 9E.2",
+    "verification_timestamp": "2026-10-03T15:14:55.164814+00:00",
+    "input_directory": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted",
+    "total_cases": 20,
+    "classification_summary": {
+        "PARSER_TOLERATED": 15,
+        "RECOVERY_FAILED": 5
+    },
+    "verification_summary": {
+        "SUCCESS": 15,
+        "FAILED": 5
+    },
+    "results": [
+        {
+            "case": "TW-ICS-001",
+            "filename": "TW-ICS-001.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-002",
+            "filename": "TW-ICS-002.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-003",
+            "filename": "TW-ICS-003.ics",
+            "parser_before": "FAILED",
+            "parser_after": "FAILED",
+            "classification": "RECOVERY_FAILED",
+            "verification_status": "FAILED",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-004",
+            "filename": "TW-ICS-004.ics",
+            "parser_before": "FAILED",
+            "parser_after": "FAILED",
+            "classification": "RECOVERY_FAILED",
+            "verification_status": "FAILED",
+            "transformations": 4,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-005",
+            "filename": "TW-ICS-005.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-006",
+            "filename": "TW-ICS-006.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-007",
+            "filename": "TW-ICS-007.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-008",
+            "filename": "TW-ICS-008.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-009",
+            "filename": "TW-ICS-009.ics",
+            "parser_before": "FAILED",
+            "parser_after": "FAILED",
+            "classification": "RECOVERY_FAILED",
+            "verification_status": "FAILED",
+            "transformations": 55,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-010",
+            "filename": "TW-ICS-010.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-011",
+            "filename": "TW-ICS-011.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-012",
+            "filename": "TW-ICS-012.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-013",
+            "filename": "TW-ICS-013.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 4,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-014",
+            "filename": "TW-ICS-014.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-015",
+            "filename": "TW-ICS-015.ics",
+            "parser_before": "FAILED",
+            "parser_after": "FAILED",
+            "classification": "RECOVERY_FAILED",
+            "verification_status": "FAILED",
+            "transformations": 1,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-016",
+            "filename": "TW-ICS-016.ics",
+            "parser_before": "FAILED",
+            "parser_after": "FAILED",
+            "classification": "RECOVERY_FAILED",
+            "verification_status": "FAILED",
+            "transformations": 1,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-017",
+            "filename": "TW-ICS-017.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 6,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-018",
+            "filename": "TW-ICS-018.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 3,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-019",
+            "filename": "TW-ICS-019.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 6,
+            "original_preserved": true
+        },
+        {
+            "case": "TW-ICS-020",
+            "filename": "TW-ICS-020.ics",
+            "parser_before": "SUCCESS",
+            "parser_after": "SUCCESS",
+            "classification": "PARSER_TOLERATED",
+            "verification_status": "SUCCESS",
+            "transformations": 2,
+            "original_preserved": true
+        }
+    ]
+}

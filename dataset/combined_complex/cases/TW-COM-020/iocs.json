@@ -1,0 +1,57 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://survey.example.net/feedback/TW-COM-020",
+    "normalized_value": "https://survey.example.net/feedback/TW-COM-020",
+    "observed_values": [
+      "https://survey.example.net/feedback/TW-COM-020"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "survey.example.net",
+    "normalized_value": "survey.example.net",
+    "observed_values": [
+      "survey.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "ipv4",
+    "value": "192.0.2.156",
+    "normalized_value": "192.0.2.156",
+    "observed_values": [
+      "192.0.2.156"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  }
+]

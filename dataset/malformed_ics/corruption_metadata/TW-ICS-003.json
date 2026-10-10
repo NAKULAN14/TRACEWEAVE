@@ -1,0 +1,14 @@
+{
+  "case_id": "TW-ICS-003",
+  "corruption_type": "missing_end_delimiter_vevent",
+  "corruption_description": "END:VEVENT was removed so the VEVENT is never closed before END:VCALENDAR.",
+  "original_filename": "TW-ICS-003.ics",
+  "corrupted_filename": "TW-ICS-003.ics",
+  "affected_fields": [
+    "END:VEVENT"
+  ],
+  "expected_parsing_result": "failure",
+  "recovery_possible": true,
+  "original_sha256": "c44ae24ccdce0d418e7426863bbd88ba79b3b1fd526a5ddc1ec7db698e035340",
+  "corrupted_sha256": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6"
+}

@@ -1,0 +1,44 @@
+{
+  "DOMAIN": {
+    "example.com": {
+      "reputation": "benign",
+      "confidence": "high",
+      "source": "CONTROLLED_TEST_DATASET",
+      "tags": [
+        "documentation",
+        "benign"
+      ]
+    }
+  },
+
+  "IPV4": {
+    "192.0.2.1": {
+      "reputation": "test",
+      "confidence": "high",
+      "source": "CONTROLLED_TEST_DATASET",
+      "tags": [
+        "documentation",
+        "TEST-NET"
+      ]
+    }
+  },
+
+  "URL": {
+    "https://example.com/login": {
+      "reputation": "benign",
+      "confidence": "high",
+      "source": "CONTROLLED_TEST_DATASET",
+      "tags": [
+        "documentation"
+      ]
+    }
+  },
+
+  "EMAIL": {},
+
+  "MD5": {},
+
+  "SHA1": {},
+
+  "SHA256": {}
+}

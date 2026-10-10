@@ -1,0 +1,17 @@
+{
+  "input": "reports\\phase14\\dns_resolution\\dns_evidence.json",
+  "total_records": 9,
+  "valid_records": 9,
+  "invalid_records": 0,
+  "validation_status": "PASS",
+  "status_counts": {
+    "RESOLVED": 1,
+    "NOT_FOUND": 8
+  },
+  "record_type_counts": {
+    "A": 1
+  },
+  "duplicate_domains": [],
+  "network_access_performed": false,
+  "errors": []
+}

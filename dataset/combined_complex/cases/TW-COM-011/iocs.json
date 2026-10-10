@@ -1,0 +1,114 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://lab-access.example.net/renew/TW-COM-011",
+    "normalized_value": "https://lab-access.example.net/renew/TW-COM-011",
+    "observed_values": [
+      "https://lab-access.example.net/renew/TW-COM-011"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "lab-access.example.net",
+    "normalized_value": "lab-access.example.net",
+    "observed_values": [
+      "lab-access.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "dns_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "tessarine-labs.example.com",
+    "normalized_value": "tessarine-labs.example.com",
+    "observed_values": [
+      "tessarine-labs.example.com"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "email_address",
+    "value": "labs@tessarine-labs.example.com",
+    "normalized_value": "labs@tessarine-labs.example.com",
+    "observed_values": [
+      "labs@tessarine-labs.example.com"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.34",
+    "normalized_value": "192.0.2.34",
+    "observed_values": [
+      "192.0.2.34"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "192.0.2.65",
+    "normalized_value": "192.0.2.65",
+    "observed_values": [
+      "192.0.2.65"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  }
+]

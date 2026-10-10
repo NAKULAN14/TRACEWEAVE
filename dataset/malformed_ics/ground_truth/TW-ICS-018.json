@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-018",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-018.ics",
+  "corrupted_file": "TW-ICS-018.ics",
+  "is_malformed": true,
+  "corruption_type": "malformed_property_parameters",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "DTSTART",
+    "ORGANIZER",
+    "LOCATION"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/018",
+    "https://events.example.edu/tw/agenda/018"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Parameter syntax errors make three properties unreliable. The unterminated quote swallows the ':' separator so the value is unrecoverable by a conservative parser."
+}

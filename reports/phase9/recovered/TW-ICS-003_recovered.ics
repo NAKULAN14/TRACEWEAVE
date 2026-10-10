@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-003-f8716c29@events.example.edu
+DTSTAMP:20260210T090000Z
+DTSTART:20260309T083000Z
+DTEND:20260309T103000Z
+SUMMARY:Cybersecurity Club Weekly Meeting
+DESCRIPTION:Planning the semester's activities\, assigning workshop leads\,
+  and reviewing the practice challenge schedule. Please bring your student 
+ ID and a laptop. Review the pre-reading beforehand.\nAgenda: https://event
+ s.example.edu/tw/agenda/003
+LOCATION:Room 250\, Block A\, Example Institute of Technology
+ORGANIZER;CN="Dr. Meera Nair":mailto:meera.nair@example.edu
+CATEGORIES:CLUB,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/003
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VCALENDAR

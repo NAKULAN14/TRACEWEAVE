@@ -1,0 +1,81 @@
+Received: from mail-out.vantor-academy.example.net (vantor-academy.example.net [192.0.2.169])
+	by mx.students.example.com with ESMTP id TWCOM01701;
+	Sun, 21 Jun 2026 16:40:52 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-017
+From: "Vantor Academy Admin" <scholarships@vantor-academy.example.net>
+To: "Andre Silva" <andre.silva@students.example.com>
+Subject: Scholarship document ready for review
+Date: Sun, 21 Jun 2026 16:40:49 +0000
+Message-ID: <tw-com-017.email_01.e165444606@mail-out.vantor-academy.example.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-COM-017_email_01_alt"
+
+--=_TW-COM-017_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Andre,
+
+Your scholarship document is ready.
+
+Scan the QR code below to open it.
+
+[QR code image(s) embedded in the HTML version of this message]
+
+Regards,
+Vantor Academy Admin
+
+--=_TW-COM-017_email_01_alt
+Content-Type: multipart/related; boundary="=_TW-COM-017_email_01_rel"
+
+--=_TW-COM-017_email_01_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Andre,</p><p>Your scholarship document is ready.</p><p>Scan the QR code below to open it.</p><p><img src="cid:qr_01.email_01.tw-com-017@mail-out.vantor-academy.example.net" alt="QR code" width="200" height="200"></p><p>Regards,<br>Vantor Academy Admin</p></body></html>
+--=_TW-COM-017_email_01_rel
+Content-Type: image/png; name="scholarship-doc.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr_01.email_01.tw-com-017@mail-out.vantor-academy.example.net>
+Content-Disposition: inline; filename="scholarship-doc.png"
+
+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
+TkSuQmCC
+--=_TW-COM-017_email_01_rel--
+--=_TW-COM-017_email_01_alt--

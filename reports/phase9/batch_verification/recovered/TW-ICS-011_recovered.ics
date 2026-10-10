@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-011-ee291a8b@events.example.edu
+DTSTAMP:20260203T090000Z
+DTSTART:20260403T050000Z
+DTSTART:20260404T050000Z
+DTEND:20260403T060000Z
+SUMMARY:Capture the Flag Practice Round
+SUMMARY:Capture the Flag Practice Round (Rescheduled)
+DESCRIPTION:Timed practice round with beginner puzzles in web\, cryptograph
+ y\, and reverse engineering tracks. Please bring your student ID and a lap
+ top. Review the pre-reading beforehand.\nAgenda: https://events.example.ed
+ u/tw/agenda/011
+LOCATION:Room 193\, Block A\, Example Institute of Technology
+ORGANIZER;CN="Dr. Asha Verma":mailto:asha.verma@example.edu
+CATEGORIES:COMPETITION,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/011
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

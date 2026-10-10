@@ -1,0 +1,52 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+    "sha256": "e3d8a26da0dcd738e5368205ec6d62afe9c3f061c417a2fd06ccb7022fd40df2"
+  },
+  "analysis": {
+    "analyzed_at": "2026-10-07T04:26:06.571265+00:00",
+    "status": "SUCCESS"
+  },
+  "source": {
+    "original_url": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+    "source_type": "QR_PAYLOAD"
+  },
+  "normalization": {
+    "normalized_url": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+    "changed": false
+  },
+  "structure": {
+    "scheme": "https",
+    "hostname": "example.com",
+    "port": null,
+    "domain": "example.com",
+    "subdomain": "",
+    "path": "/clubs/photography/join",
+    "query": "term=autumn-2026&source=poster",
+    "query_parameters": [
+      {
+        "key": "term",
+        "value": "autumn-2026"
+      },
+      {
+        "key": "source",
+        "value": "poster"
+      }
+    ],
+    "fragment": "membership",
+    "username_present": false,
+    "password_present": false
+  },
+  "indicators": {
+    "count": 0,
+    "items": []
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "analysis_engine": "TRACEWEAVE URL Analysis Engine",
+    "network_access_performed": false
+  },
+  "case_id": "TW-QR-008"
+}

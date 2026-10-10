@@ -1,0 +1,70 @@
+case_id,filename,sha256,qr_detected,qr_count,decode_status,payload,decode_method,payload_type,classification_confidence
+TW-QR-001,qr.png,29db0e2bd3e9359abb6a6b0789fd3b4806b8f9d90f808032550b1f4644eaa9f4,True,1,SUCCESS,Welcome to Northfield Institute Open Day 2026,original,TEXT,0.8
+TW-QR-002,qr.png,cac25d716f32e7cfd06676995913e102f0dc12809b5c2798ac99c99aa01814b2,True,1,SUCCESS,"EVENT: Northfield Tech Fest 2026 - Opening Ceremony
+DATE: Saturday, 14 November 2026
+TIME: 10:00-11:30 IST
+VENUE: Main Auditorium, Academic Block
+ENTRY: Free for all students with institute ID card",original,TEXT,0.8
+TW-QR-003,qr.png,f1c4fcfbd4927ee8004cbcb90857c75a9be0b71455831f720ca1d8a8c84347c2,True,1,SUCCESS,"Photography Club - Weekly Meetup
+Every Friday, 17:00-18:00 IST
+Room 2, Student Activity Centre
+Agenda: photo critique, lens lending roster, winter exhibition plan
+Contact: photography.club@example.com",original,TEXT,0.8
+TW-QR-004,qr.png,6497b6d20d2fff3852c46ef49bcb761b1827b457a6f3e501ea2bc522f5908722,True,1,SUCCESS,"Workshop: Introduction to Version Control
+Date: Saturday, 24 October 2026, 10:00-13:00 IST
+Venue: Computer Lab 2, CS Block
+Seats: 40 (first come, first served)
+Registration: https://events.example.com/workshops/version-control",original,TEXT,0.8
+TW-QR-005,qr.png,bce37c2f9314aa3fac0e9862e817ab9a05c93f7691ad53a9de63c38e9286700c,True,1,SUCCESS,"Welcome to Northfield Institute of Technology. New students should report to the Academic Block lobby between 08:30 and 09:30 on the first day of orientation, carrying their admission letter and a photo ID. Volunteers wearing orange badges will guide you to your department briefing. The briefing covers timetables, laboratory safety, library membership, hostel mess timings and the student support desk. Lunch is provided in the central dining hall at 13:00. In the afternoon, club representatives will present short demonstrations at the Main Quadrangle, followed by a campus walk led by senior students. Please wear comfortable shoes and carry a water bottle. If you have questions before the day, contact the Office of Student Affairs by e-mail at student.affairs@example.com during working hours. We look forward to meeting you.",original,TEXT,0.8
+TW-QR-006,qr.png,e69eeecab3f892253f49e0151a89244bb951cbd2617135a2b0e3647e59d63f78,True,1,SUCCESS,https://example.com/open-day-2026,original,URL,1.0
+TW-QR-007,qr.png,744060136c5943f288dcfde10ac5fea8a676703056a0ab56128559122b31ad1f,True,1,SUCCESS,https://events.example.com/tech-fest/2026/schedule,original,URL,1.0
+TW-QR-008,qr.png,e3d8a26da0dcd738e5368205ec6d62afe9c3f061c417a2fd06ccb7022fd40df2,True,1,SUCCESS,https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership,original,URL,1.0
+TW-QR-009,qr.png,95477c3a482224101511dc60645e39eca993f5c45a820a44453b1e79c99a7497,True,1,SUCCESS,http://library.example.com/hours,original,URL,1.0
+TW-QR-010,qr.png,3205c529c0173adc3a299153cdd961c7cf4f377e0a23e0c5045af13ca74be255,True,1,SUCCESS,https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list,original,URL,1.0
+TW-QR-011,qr.png,6c577f8e2c97305e733e9f28e15603971825eb23ecf73c1d4148cd5d2eabb979,True,1,SUCCESS,"BEGIN:VCARD
+VERSION:3.0
+N:Raghavan;Meera;;Dr.;
+FN:Dr. Meera Raghavan
+EMAIL:meera.raghavan@example.com
+END:VCARD",original,TEXT,0.8
+TW-QR-012,qr.png,83c6e159e79e347ea0c602ae4c410116ef06bbb20147a7f905b9e6c6dd1803a6,True,1,SUCCESS,"BEGIN:VCARD
+VERSION:3.0
+N:Menon;Ravi;;Prof.;
+FN:Prof. Ravi Menon
+ORG:Northfield Institute of Technology;Department of Computer Science and Engineering
+TITLE:Faculty Coordinator, Student Clubs
+TEL;TYPE=WORK,VOICE:+1-555-0142
+EMAIL;TYPE=WORK:ravi.menon@example.com
+ADR;TYPE=WORK:;;Block C, Northfield Campus;Sampletown;;000000;India
+URL:https://example.com/people/ravi-menon
+NOTE:Office hours Tuesday and Thursday 15:00-16:00 IST in Room C-204.
+END:VCARD",original,TEXT,0.8
+TW-QR-013,qr.png,8b378111459105a3fbd75f45a4352eec43cb3d50754d164c571c031b075c3f5b,True,1,SUCCESS,"MECARD:N:Nair,Vikram;TEL:+1-555-0177;EMAIL:vikram.nair@example.com;NOTE:Operating Systems course coordinator;;",original,TEXT,0.8
+TW-QR-014,qr.png,ea96b078636765b90138a9bf0aa9a272c3a037826cc021c4be6410c4c0b8de22,True,1,SUCCESS,WIFI:T:WPA;S:Northfield-Guest;P:Sample-205073;H:false;;,original,WIFI,1.0
+TW-QR-015,qr.png,ce3eea8f275dafda00ec6915bae2b703afd6bf0fe1b87603857f4fd081623ee1,True,1,SUCCESS,WIFI:T:nopass;S:Library-Public;;,original,WIFI,1.0
+TW-QR-016,qr.png,5eadd26a907c2174e81b6a123275cc0392d60a4ad8f7ab90ff59f5a3b23eaaa2,True,1,SUCCESS,"WIFI:T:WPA;S:Lab\;Net\,2026;P:Fake\:Pass\;5610;H:true;;",original,WIFI,1.0
+TW-QR-017,qr.png,6246a98b8c145d97c7de420e8effaa79dc9feff57c1f3ff68704484b822165e6,True,1,SUCCESS,"BEGIN:VEVENT
+SUMMARY:Club Fair
+DTSTART:20261105T100000
+DTEND:20261105T160000
+LOCATION:Main Quadrangle
+END:VEVENT",original,TEXT,0.8
+TW-QR-018,qr.png,e10b3f20bb28d982acdd2e89f19aff0bc7590c6ceb9207a270b601e7e49a0d45,True,1,SUCCESS,"BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Northfield Institute//Poster QR//EN
+BEGIN:VEVENT
+UID:tw-qr-018-56ed216e018e@example.com
+DTSTAMP:20261101T090000Z
+DTSTART:20261120T140000
+DTEND:20261120T153000
+SUMMARY:Guest Lecture: Machine Learning Pipelines in Practice
+LOCATION:Seminar Hall B\, Academic Block
+DESCRIPTION:Guest lecture for third-year students.\nTopics: data validation
+ \, feature stores\, model monitoring.\nQuestions welcome at the end.
+URL:https://events.example.com/seminars/ml-pipelines
+STATUS:CONFIRMED
+CATEGORIES:Academic,Lecture
+END:VEVENT
+END:VCALENDAR",original,TEXT,0.8
+TW-QR-019,qr.png,9f953fe3d0663bf3b240890e591dbf0189962bc01e54d907ad89f89d2da9e539,True,1,SUCCESS,mailto:club.secretary@example.com?subject=Join%20Photography%20Club&body=Hello%2C%20I%20would%20like%20to%20join%20the%20club.,original,EMAIL,1.0
+TW-QR-020,qr.png,1114e05efd4b0480a49c4eb34b9e9d277a6f58bae5b3bcad222240b12e37721d,True,1,SUCCESS,tel:+15550163,original,PHONE,1.0

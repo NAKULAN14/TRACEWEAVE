@@ -1,0 +1,31 @@
+{
+  "input": "reports\\phase14\\tls_certificates\\tls_evidence.json",
+  "relationship_count": 1,
+  "network_access_performed": false,
+  "relationships": [
+    {
+      "relationship_type": "PRESENTS_CERTIFICATE",
+      "source": {
+        "type": "DOMAIN",
+        "value": "example.com"
+      },
+      "target": {
+        "type": "TLS_CERTIFICATE",
+        "value": "CERT-TRACEWEAVE-001"
+      },
+      "certificate": {
+        "fingerprint_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "subject": "CN=example.com",
+        "issuer": "CN=TRACEWEAVE TEST CA",
+        "serial_number": "100001"
+      },
+      "evidence": {
+        "method": "TLS_CERTIFICATE_COLLECTION",
+        "provider": "STATIC_TLS",
+        "confidence": "OBSERVED"
+      },
+      "observed_at": "2026-10-07T18:00:26.728386+00:00",
+      "network_access_performed": false
+    }
+  ]
+}

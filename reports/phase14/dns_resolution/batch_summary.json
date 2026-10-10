@@ -1,0 +1,9 @@
+{
+  "input": "reports\\phase12\\deduplicated_iocs.json",
+  "total_domain_iocs": 9,
+  "processed": 9,
+  "resolved": 1,
+  "not_found": 8,
+  "errors": 0,
+  "network_access_performed": false
+}

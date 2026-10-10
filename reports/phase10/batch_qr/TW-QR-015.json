@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-015\\qr.png",
+    "sha256": "ce3eea8f275dafda00ec6915bae2b703afd6bf0fe1b87603857f4fd081623ee1"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:21.976036+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "WIFI:T:nopass;S:Library-Public;;",
+        "points": [
+          [
+            48.0,
+            48.0
+          ],
+          [
+            347.0,
+            48.0
+          ],
+          [
+            347.0494079589844,
+            347.0494079589844
+          ],
+          [
+            48.0,
+            347.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "WIFI:T:nopass;S:Library-Public;;",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "WIFI",
+    "confidence": 1.0
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-015"
+}

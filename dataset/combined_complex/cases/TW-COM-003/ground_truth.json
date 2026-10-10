@@ -1,0 +1,518 @@
+{
+  "case_id": "TW-COM-003",
+  "category": "combined_complex",
+  "scenario": "Calendar invitation whose ICS embeds the QR image (ATTACH); QR host mismatches the sender's domain. No separate PNG is attached to the email.",
+  "expected_classification": "simulated_phishing",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "f52d1cafa359702b228596a77a544c096f9b9fd57e5af258e364440ceb6de448"
+    },
+    {
+      "filename": "event.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "3f8a653fffb4f96fe83497fc4faab6188a717ac4ec326a91e8f6f2fffb3c1818"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "ffc549e1fa4ac76793b52d93316d174237992d9b330a541d9f87f855c9f82e80"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "a39d72501f09d7773c151b76ddcb98060be1d145a01324aa7614d2432ac1e539"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "4e440403e6538d554dbeb1ed2b80bbf3ac8bbef9b19f701f99bc5dd1d9d28369"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "273fd261b0defd0d0a1399738c764ee6a3a627613198deb7a95985c83b55640c"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "126e28a695c8e61a64a6d79216f816ad2cbb2d973bb9f10990840f654e6e460e"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "99955576d6218b25cd340c1f05556d34c2e3192f1d13edc8e4ee4f54b773db53"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "ATTACH property of event.ics (carried by email_01.eml)",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003"
+  ],
+  "expected_urls": [
+    "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003"
+  ],
+  "expected_domains": [
+    "enroll.vantor-benefits.example.net",
+    "vantor-hr.example.com"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "normalized_value": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "observed_values": [
+        "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "enroll.vantor-benefits.example.net",
+      "normalized_value": "enroll.vantor-benefits.example.net",
+      "observed_values": [
+        "enroll.vantor-benefits.example.net"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "vantor-hr.example.com",
+      "normalized_value": "vantor-hr.example.com",
+      "observed_values": [
+        "vantor-hr.example.com"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "email_address",
+      "value": "hr-calendar@vantor-hr.example.com",
+      "normalized_value": "hr-calendar@vantor-hr.example.com",
+      "observed_values": [
+        "hr-calendar@vantor-hr.example.com"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.175",
+      "normalized_value": "192.0.2.175",
+      "observed_values": [
+        "192.0.2.175"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "192.0.2.70",
+      "normalized_value": "192.0.2.70",
+      "observed_values": [
+        "192.0.2.70"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-003-BRW-001",
+      "timestamp": "2026-05-11T20:04:14.039+05:30",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "domain": "enroll.vantor-benefits.example.net"
+    },
+    {
+      "event_id": "TW-COM-003-BRW-002",
+      "timestamp": "2026-05-11T20:04:16.325+05:30",
+      "event_type": "page_load",
+      "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "domain": "enroll.vantor-benefits.example.net"
+    },
+    {
+      "event_id": "TW-COM-003-BRW-003",
+      "timestamp": "2026-05-11T20:04:17.871+05:30",
+      "event_type": "form_displayed",
+      "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "domain": "enroll.vantor-benefits.example.net"
+    },
+    {
+      "event_id": "TW-COM-003-BRW-004",
+      "timestamp": "2026-05-11T20:04:26.230+05:30",
+      "event_type": "tab_closed",
+      "url": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "domain": "enroll.vantor-benefits.example.net"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-003-DNS-001",
+      "timestamp": "2026-05-11T14:34:14.221+00:00",
+      "query": "enroll.vantor-benefits.example.net",
+      "record_type": "A",
+      "response": "192.0.2.70"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:event.ics",
+      "relation": "embeds_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "ICS ATTACH (base64 PNG) identical to the QR file"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:hr-calendar@vantor-hr.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "url:https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "relation": "has_domain",
+      "target": "domain:enroll.vantor-benefits.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "dns_event:TW-COM-003-DNS-001",
+      "relation": "queries",
+      "target": "domain:enroll.vantor-benefits.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "dns_event:TW-COM-003-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.70",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "browser_event:TW-COM-003-BRW-001",
+      "relation": "visits",
+      "target": "url:https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-003-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "browser_event:TW-COM-003-BRW-002",
+      "relation": "visits",
+      "target": "url:https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-10T12:34:11+00:00",
+      "source_timestamp": "2026-05-10T12:34:11+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-10T12:34:11+00:00",
+      "source_timestamp": "2026-05-10T12:34:11+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event.ics",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-10T12:34:14+00:00",
+      "source_timestamp": "2026-05-10T12:34:14+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-10T12:34:14+00:00",
+      "source_timestamp": "2026-05-10T12:34:14+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-11T14:34:14.039+00:00",
+      "source_timestamp": "2026-05-11T20:04:14.039+05:30",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-003-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-11T14:34:14.221+00:00",
+      "source_timestamp": "2026-05-11T14:34:14.221+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for enroll.vantor-benefits.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-003-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-11T14:34:16.325+00:00",
+      "source_timestamp": "2026-05-11T20:04:16.325+05:30",
+      "event_type": "page_load",
+      "description": "load https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-003-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-11T14:34:17.871+00:00",
+      "source_timestamp": "2026-05-11T20:04:17.871+05:30",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-003-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-11T14:34:26.230+00:00",
+      "source_timestamp": "2026-05-11T20:04:26.230+05:30",
+      "event_type": "tab_closed",
+      "description": "close_tab https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-003-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-12T10:00:00+00:00",
+      "source_timestamp": "2026-05-12T10:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "1 phishing-style email(s) delivered"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Urgency/authority lure theme in subject and body"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr_01.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code presented to the recipient(s)"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-003-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-003-DNS-001"
+      ],
+      "description": "Synthetic DNS resolution of simulated hosts"
+    },
+    {
+      "order": 6,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-003-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 7,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-003-BRW-003"
+      ],
+      "description": "Static form displayed; no input or credentials exist in the dataset"
+    }
+  ],
+  "missing_evidence": [],
+  "ambiguous_findings": [],
+  "notes": "Mandatory-attendance lure; QR hidden inside the invitation; QR host unrelated to sender domain; scan observed. Classification: simulated_phishing. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

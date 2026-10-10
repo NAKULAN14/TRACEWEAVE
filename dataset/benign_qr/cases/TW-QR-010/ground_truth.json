@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-QR-010",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+  "payload_type": "url",
+  "expected_urls": [
+    "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Long (>200 character) HTTPS URL with a deep path; tests long-URL extraction without any obfuscation. QR version 10, error correction M (~15%), module size 8px, quiet zone 4 modules, image 520x520px (8-bit greyscale PNG, black on white); payload length 191 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

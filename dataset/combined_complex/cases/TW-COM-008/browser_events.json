@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-008-BRW-001",
+    "case_id": "TW-COM-008",
+    "timestamp": "2026-05-25T17:40:23.118+00:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://offer.example.net/accept/TW-COM-008",
+    "domain": "offer.example.net",
+    "browser": "Chrome Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-008-a",
+    "user_account": "sara.haddad@interns.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-008-BRW-002",
+    "case_id": "TW-COM-008",
+    "timestamp": "2026-05-25T17:40:25.304+00:00",
+    "event_type": "page_load",
+    "url": "https://offer.example.net/accept/TW-COM-008",
+    "domain": "offer.example.net",
+    "browser": "Chrome Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-008-a",
+    "user_account": "sara.haddad@interns.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-008-BRW-003",
+    "case_id": "TW-COM-008",
+    "timestamp": "2026-05-25T17:40:26.610+00:00",
+    "event_type": "form_displayed",
+    "url": "https://offer.example.net/accept/TW-COM-008",
+    "domain": "offer.example.net",
+    "browser": "Chrome Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-008-a",
+    "user_account": "sara.haddad@interns.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-008-BRW-004",
+    "case_id": "TW-COM-008",
+    "timestamp": "2026-05-25T17:40:31.893+00:00",
+    "event_type": "tab_closed",
+    "url": "https://offer.example.net/accept/TW-COM-008",
+    "domain": "offer.example.net",
+    "browser": "Chrome Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-008-a",
+    "user_account": "sara.haddad@interns.example.com",
+    "synthetic": true
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "total_results": 20,
+  "passed": 20,
+  "failed": 0,
+  "validation_status": "PASS",
+  "results": [
+    {
+      "file": "TW-QR-001.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-002.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-003.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-004.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-005.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-006.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-007.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-008.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-009.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-010.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-011.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-012.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-013.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-014.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-015.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-016.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-017.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-018.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-019.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "TW-QR-020.json",
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

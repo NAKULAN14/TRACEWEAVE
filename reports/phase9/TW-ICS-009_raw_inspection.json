@@ -1,0 +1,628 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-009.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-009.ics",
+    "size_bytes": 1760,
+    "sha256": "3907ff3efc3de6d6592d09325ee7c5f5dba821db3ef83ab35f6b56f8798e0882"
+  },
+  "inspection": {
+    "inspected_at": "2026-10-03T15:17:29.394019+00:00",
+    "encoding_used": "latin-1"
+  },
+  "structure": {
+    "has_vcalendar_begin": false,
+    "has_vcalendar_end": false,
+    "balanced_vcalendar": false,
+    "component_analysis": {
+      "begin_components": [],
+      "end_components": []
+    },
+    "line_analysis": {
+      "total_lines": 53,
+      "lines": [
+        {
+          "line_number": 1,
+          "length": 32,
+          "text": "ÿþB\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 2,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 3,
+          "length": 23,
+          "text": "\u0000V\u0000E\u0000R\u0000S\u0000I\u0000O\u0000N\u0000:\u00002\u0000.\u00000\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 4,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 5,
+          "length": 99,
+          "text": "\u0000P\u0000R\u0000O\u0000D\u0000I\u0000D\u0000:\u0000-\u0000/\u0000/\u0000T\u0000R\u0000A\u0000C\u0000E\u0000W\u0000E\u0000A\u0000V\u0000E\u0000/\u0000/\u0000S\u0000y\u0000n\u0000t\u0000h\u0000e\u0000t\u0000i\u0000c\u0000 \u0000I\u0000C\u0000S\u0000 \u0000D\u0000a\u0000t\u0000a\u0000s\u0000e\u0000t\u0000 \u00003\u0000/\u0000/\u0000E\u0000N\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 6,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 7,
+          "length": 37,
+          "text": "\u0000C\u0000A\u0000L\u0000S\u0000C\u0000A\u0000L\u0000E\u0000:\u0000G\u0000R\u0000E\u0000G\u0000O\u0000R\u0000I\u0000A\u0000N\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 8,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 9,
+          "length": 25,
+          "text": "\u0000B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000E\u0000V\u0000E\u0000N\u0000T\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 10,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 11,
+          "length": 85,
+          "text": "\u0000U\u0000I\u0000D\u0000:\u0000t\u0000w\u0000-\u0000i\u0000c\u0000s\u0000-\u00000\u00000\u00009\u0000-\u00002\u00007\u00001\u00005\u00000\u00004\u00000\u0000d\u0000@\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 12,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 13,
+          "length": 49,
+          "text": "\u0000D\u0000T\u0000S\u0000T\u0000A\u0000M\u0000P\u0000:\u00002\u00000\u00002\u00006\u00000\u00002\u00000\u00002\u0000T\u00000\u00009\u00000\u00000\u00000\u00000\u0000Z\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 14,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 15,
+          "length": 49,
+          "text": "\u0000D\u0000T\u0000S\u0000T\u0000A\u0000R\u0000T\u0000:\u00002\u00000\u00002\u00006\u00000\u00003\u00002\u00006\u0000T\u00000\u00009\u00000\u00000\u00000\u00000\u0000Z\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 16,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 17,
+          "length": 45,
+          "text": "\u0000D\u0000T\u0000E\u0000N\u0000D\u0000:\u00002\u00000\u00002\u00006\u00000\u00003\u00002\u00006\u0000T\u00001\u00000\u00003\u00000\u00000\u00000\u0000Z\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 18,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 19,
+          "length": 87,
+          "text": "\u0000S\u0000U\u0000M\u0000M\u0000A\u0000R\u0000Y\u0000:\u0000I\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000 \u0000R\u0000e\u0000s\u0000p\u0000o\u0000n\u0000s\u0000e\u0000 \u0000T\u0000a\u0000b\u0000l\u0000e\u0000t\u0000o\u0000p\u0000 \u0000E\u0000x\u0000e\u0000r\u0000c\u0000i\u0000s\u0000e\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 20,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 21,
+          "length": 151,
+          "text": "\u0000D\u0000E\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000I\u0000O\u0000N\u0000:\u0000G\u0000u\u0000i\u0000d\u0000e\u0000d\u0000 \u0000t\u0000a\u0000b\u0000l\u0000e\u0000t\u0000o\u0000p\u0000 \u0000s\u0000c\u0000e\u0000n\u0000a\u0000r\u0000i\u0000o\u0000 \u0000f\u0000o\u0000r\u0000 \u0000p\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000i\u0000n\u0000g\u0000 \u0000t\u0000r\u0000i\u0000a\u0000g\u0000e\u0000\\\u0000,\u0000 \u0000c\u0000o\u0000m\u0000m\u0000u\u0000n\u0000i\u0000c\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\\\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 22,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 23,
+          "length": 151,
+          "text": "\u0000 \u0000,\u0000 \u0000a\u0000n\u0000d\u0000 \u0000e\u0000s\u0000c\u0000a\u0000l\u0000a\u0000t\u0000i\u0000o\u0000n\u0000 \u0000d\u0000u\u0000r\u0000i\u0000n\u0000g\u0000 \u0000a\u0000 \u0000s\u0000i\u0000m\u0000u\u0000l\u0000a\u0000t\u0000e\u0000d\u0000 \u0000i\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000.\u0000 \u0000P\u0000l\u0000e\u0000a\u0000s\u0000e\u0000 \u0000b\u0000r\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000s\u0000t\u0000u\u0000d\u0000e\u0000n\u0000t\u0000 \u0000I\u0000D\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 24,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 25,
+          "length": 151,
+          "text": "\u0000 \u0000 \u0000a\u0000n\u0000d\u0000 \u0000a\u0000 \u0000l\u0000a\u0000p\u0000t\u0000o\u0000p\u0000.\u0000 \u0000R\u0000e\u0000v\u0000i\u0000e\u0000w\u0000 \u0000t\u0000h\u0000e\u0000 \u0000p\u0000r\u0000e\u0000-\u0000r\u0000e\u0000a\u0000d\u0000i\u0000n\u0000g\u0000 \u0000b\u0000e\u0000f\u0000o\u0000r\u0000e\u0000h\u0000a\u0000n\u0000d\u0000.\u0000\\\u0000n\u0000A\u0000g\u0000e\u0000n\u0000d\u0000a\u0000:\u0000 \u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 26,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 27,
+          "length": 53,
+          "text": "\u0000 \u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u0000a\u0000g\u0000e\u0000n\u0000d\u0000a\u0000/\u00000\u00000\u00009\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 28,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 29,
+          "length": 123,
+          "text": "\u0000L\u0000O\u0000C\u0000A\u0000T\u0000I\u0000O\u0000N\u0000:\u0000R\u0000o\u0000o\u0000m\u0000 \u00003\u00004\u00009\u0000\\\u0000,\u0000 \u0000B\u0000l\u0000o\u0000c\u0000k\u0000 \u0000C\u0000\\\u0000,\u0000 \u0000E\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000 \u0000I\u0000n\u0000s\u0000t\u0000i\u0000t\u0000u\u0000t\u0000e\u0000 \u0000o\u0000f\u0000 \u0000T\u0000e\u0000c\u0000h\u0000n\u0000o\u0000l\u0000o\u0000g\u0000y\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 30,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 31,
+          "length": 127,
+          "text": "\u0000O\u0000R\u0000G\u0000A\u0000N\u0000I\u0000Z\u0000E\u0000R\u0000;\u0000C\u0000N\u0000=\u0000\"\u0000D\u0000r\u0000.\u0000 \u0000N\u0000i\u0000s\u0000h\u0000a\u0000 \u0000K\u0000a\u0000p\u0000o\u0000o\u0000r\u0000\"\u0000:\u0000m\u0000a\u0000i\u0000l\u0000t\u0000o\u0000:\u0000n\u0000i\u0000s\u0000h\u0000a\u0000.\u0000k\u0000a\u0000p\u0000o\u0000o\u0000r\u0000@\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 32,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 33,
+          "length": 57,
+          "text": "\u0000C\u0000A\u0000T\u0000E\u0000G\u0000O\u0000R\u0000I\u0000E\u0000S\u0000:\u0000E\u0000X\u0000E\u0000R\u0000C\u0000I\u0000S\u0000E\u0000,\u0000A\u0000C\u0000A\u0000D\u0000E\u0000M\u0000I\u0000C\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 34,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 35,
+          "length": 33,
+          "text": "\u0000S\u0000T\u0000A\u0000T\u0000U\u0000S\u0000:\u0000C\u0000O\u0000N\u0000F\u0000I\u0000R\u0000M\u0000E\u0000D\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 36,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 37,
+          "length": 75,
+          "text": "\u0000U\u0000R\u0000L\u0000:\u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u00000\u00000\u00009\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 38,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 39,
+          "length": 25,
+          "text": "\u0000B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000A\u0000L\u0000A\u0000R\u0000M\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 40,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 41,
+          "length": 29,
+          "text": "\u0000A\u0000C\u0000T\u0000I\u0000O\u0000N\u0000:\u0000D\u0000I\u0000S\u0000P\u0000L\u0000A\u0000Y\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 42,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 43,
+          "length": 77,
+          "text": "\u0000D\u0000E\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000I\u0000O\u0000N\u0000:\u0000E\u0000v\u0000e\u0000n\u0000t\u0000 \u0000s\u0000t\u0000a\u0000r\u0000t\u0000s\u0000 \u0000i\u0000n\u0000 \u00001\u00005\u0000 \u0000m\u0000i\u0000n\u0000u\u0000t\u0000e\u0000s\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 44,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 45,
+          "length": 29,
+          "text": "\u0000T\u0000R\u0000I\u0000G\u0000G\u0000E\u0000R\u0000:\u0000-\u0000P\u0000T\u00001\u00005\u0000M\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 46,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 47,
+          "length": 21,
+          "text": "\u0000E\u0000N\u0000D\u0000:\u0000V\u0000A\u0000L\u0000A\u0000R\u0000M\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 48,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 49,
+          "length": 21,
+          "text": "\u0000E\u0000N\u0000D\u0000:\u0000V\u0000E\u0000V\u0000E\u0000N\u0000T\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 50,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 51,
+          "length": 27,
+          "text": "\u0000E\u0000N\u0000D\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 52,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 53,
+          "length": 1,
+          "text": "\u0000",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        }
+      ]
+    }
+  },
+  "anomalies": [
+    {
+      "line_number": 2,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 4,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 6,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 8,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 10,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 12,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 14,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 16,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 18,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 20,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 22,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 23,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000 \u0000,\u0000 \u0000a\u0000n\u0000d\u0000 \u0000e\u0000s\u0000c\u0000a\u0000l\u0000a\u0000t\u0000i\u0000o\u0000n\u0000 \u0000d\u0000u\u0000r\u0000i\u0000n\u0000g\u0000 \u0000a\u0000 \u0000s\u0000i\u0000m\u0000u\u0000l\u0000a\u0000t\u0000e\u0000d\u0000 \u0000i\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000.\u0000 \u0000P\u0000l\u0000e\u0000a\u0000s\u0000e\u0000 \u0000b\u0000r\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000s\u0000t\u0000u\u0000d\u0000e\u0000n\u0000t\u0000 \u0000I\u0000D\u0000"
+    },
+    {
+      "line_number": 24,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 26,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 27,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000 \u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u0000a\u0000g\u0000e\u0000n\u0000d\u0000a\u0000/\u00000\u00000\u00009\u0000"
+    },
+    {
+      "line_number": 28,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 30,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 32,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 34,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 36,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 38,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 40,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 42,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 44,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 46,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 48,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 50,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 52,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    },
+    {
+      "line_number": 53,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "\u0000"
+    }
+  ],
+  "encoded_candidates": [],
+  "raw_preview": "ÿþB\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000\r\u0000\n\u0000V\u0000E\u0000R\u0000S\u0000I\u0000O\u0000N\u0000:\u00002\u0000.\u00000\u0000\r\u0000\n\u0000P\u0000R\u0000O\u0000D\u0000I\u0000D\u0000:\u0000-\u0000/\u0000/\u0000T\u0000R\u0000A\u0000C\u0000E\u0000W\u0000E\u0000A\u0000V\u0000E\u0000/\u0000/\u0000S\u0000y\u0000n\u0000t\u0000h\u0000e\u0000t\u0000i\u0000c\u0000 \u0000I\u0000C\u0000S\u0000 \u0000D\u0000a\u0000t\u0000a\u0000s\u0000e\u0000t\u0000 \u00003\u0000/\u0000/\u0000E\u0000N\u0000\r\u0000\n\u0000C\u0000A\u0000L\u0000S\u0000C\u0000A\u0000L\u0000E\u0000:\u0000G\u0000R\u0000E\u0000G\u0000O\u0000R\u0000I\u0000A\u0000N\u0000\r\u0000\n\u0000B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000E\u0000V\u0000E\u0000N\u0000T\u0000\r\u0000\n\u0000U\u0000I\u0000D\u0000:\u0000t\u0000w\u0000-\u0000i\u0000c\u0000s\u0000-\u00000\u00000\u00009\u0000-\u00002\u00007\u00001\u00005\u00000\u00004\u00000\u0000d\u0000@\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000\r\u0000\n\u0000D\u0000T\u0000S\u0000T\u0000A\u0000M\u0000P\u0000:\u00002\u00000\u00002\u00006\u00000\u00002\u00000\u00002\u0000T\u00000\u00009\u00000\u00000\u00000\u00000\u0000Z\u0000\r\u0000\n\u0000D\u0000T\u0000S\u0000T\u0000A\u0000R\u0000T\u0000:\u00002\u00000\u00002\u00006\u00000\u00003\u00002\u00006\u0000T\u00000\u00009\u00000\u00000\u00000\u00000\u0000Z\u0000\r\u0000\n\u0000D\u0000T\u0000E\u0000N\u0000D\u0000:\u00002\u00000\u00002\u00006\u00000\u00003\u00002\u00006\u0000T\u00001\u00000\u00003\u00000\u00000\u00000\u0000Z\u0000\r\u0000\n\u0000S\u0000U\u0000M\u0000M\u0000A\u0000R\u0000Y\u0000:\u0000I\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000 \u0000R\u0000e\u0000s\u0000p\u0000o\u0000n\u0000s\u0000e\u0000 \u0000T\u0000a\u0000b\u0000l\u0000e\u0000t\u0000o\u0000p\u0000 \u0000E\u0000x\u0000e\u0000r\u0000c\u0000i\u0000s\u0000e\u0000\r\u0000\n\u0000D\u0000E\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000I\u0000O\u0000N\u0000:\u0000G\u0000u\u0000i\u0000d\u0000e\u0000d\u0000 \u0000t\u0000a\u0000b\u0000l\u0000e\u0000t\u0000o\u0000p\u0000 \u0000s\u0000c\u0000e\u0000n\u0000a\u0000r\u0000i\u0000o\u0000 \u0000f\u0000o\u0000r\u0000 \u0000p\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000i\u0000n\u0000g\u0000 \u0000t\u0000r\u0000i\u0000a\u0000g\u0000e\u0000\\\u0000,\u0000 \u0000c\u0000o\u0000m\u0000m\u0000u\u0000n\u0000i\u0000c\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\\\u0000\r\u0000\n\u0000 \u0000,\u0000 \u0000a\u0000n\u0000d\u0000 \u0000e\u0000s\u0000c\u0000a\u0000l\u0000a\u0000t\u0000i\u0000o\u0000n\u0000 \u0000d\u0000u\u0000r\u0000i\u0000n\u0000g\u0000 \u0000a\u0000 \u0000s\u0000i\u0000m\u0000u\u0000l\u0000a\u0000t\u0000e\u0000d\u0000 \u0000i\u0000n\u0000c\u0000i\u0000d\u0000e\u0000n\u0000t\u0000.\u0000 \u0000P\u0000l\u0000e\u0000a\u0000s\u0000e\u0000 \u0000b\u0000r\u0000i\u0000n\u0000g\u0000 \u0000y\u0000o\u0000u\u0000r\u0000 \u0000s\u0000t\u0000u\u0000d\u0000e\u0000n\u0000t\u0000 \u0000I\u0000D\u0000\r\u0000\n\u0000 \u0000 \u0000a\u0000n\u0000d\u0000 \u0000a\u0000 \u0000l\u0000a\u0000p\u0000t\u0000o\u0000p\u0000.\u0000 \u0000R\u0000e\u0000v\u0000i\u0000e\u0000w\u0000 \u0000t\u0000h\u0000e\u0000 \u0000p\u0000r\u0000e\u0000-\u0000r\u0000e\u0000a\u0000d\u0000i\u0000n\u0000g\u0000 \u0000b\u0000e\u0000f\u0000o\u0000r\u0000e\u0000h\u0000a\u0000n\u0000d\u0000.\u0000\\\u0000n\u0000A\u0000g\u0000e\u0000n\u0000d\u0000a\u0000:\u0000 \u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000\r\u0000\n\u0000 \u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u0000a\u0000g\u0000e\u0000n\u0000d\u0000a\u0000/\u00000\u00000\u00009\u0000\r\u0000\n\u0000L\u0000O\u0000C\u0000A\u0000T\u0000I\u0000O\u0000N\u0000:\u0000R\u0000o\u0000o\u0000m\u0000 \u00003\u00004\u00009\u0000\\\u0000,\u0000 \u0000B\u0000l\u0000o\u0000c\u0000k\u0000 \u0000C\u0000\\\u0000,\u0000 \u0000E\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000 \u0000I\u0000n\u0000s\u0000t\u0000i\u0000t\u0000u\u0000t\u0000e\u0000 \u0000o\u0000f\u0000 \u0000T\u0000e\u0000c\u0000h\u0000n\u0000o\u0000l\u0000o\u0000g\u0000y\u0000\r\u0000\n\u0000O\u0000R\u0000G\u0000A\u0000N\u0000I\u0000Z\u0000E\u0000R\u0000;\u0000C\u0000N\u0000=\u0000\"\u0000D\u0000r\u0000.\u0000 \u0000N\u0000i\u0000s\u0000h\u0000a\u0000 \u0000K\u0000a\u0000p\u0000o\u0000o\u0000r\u0000\"\u0000:\u0000m\u0000a\u0000i\u0000l\u0000t\u0000o\u0000:\u0000n\u0000i\u0000s\u0000h\u0000a\u0000.\u0000k\u0000a\u0000p\u0000o\u0000o\u0000r\u0000@\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000\r\u0000\n\u0000C\u0000A\u0000T\u0000E\u0000G\u0000O\u0000R\u0000I\u0000E\u0000S\u0000:\u0000E\u0000X\u0000E\u0000R\u0000C\u0000I\u0000S\u0000E\u0000,\u0000A\u0000C\u0000A\u0000D\u0000E\u0000M\u0000I\u0000C\u0000\r\u0000\n\u0000S\u0000T\u0000A\u0000T\u0000U\u0000S\u0000:\u0000C\u0000O\u0000N\u0000F\u0000I\u0000R\u0000M\u0000E\u0000D\u0000\r\u0000\n\u0000U\u0000R\u0000L\u0000:\u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000e\u0000v\u0000e\u0000n\u0000t\u0000s\u0000.\u0000e\u0000x\u0000a\u0000m\u0000p\u0000l\u0000e\u0000.\u0000e\u0000d\u0000u\u0000/\u0000t\u0000w\u0000/\u00000\u00000\u00009\u0000\r\u0000\n\u0000B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000A\u0000L\u0000A\u0000R\u0000M\u0000\r\u0000\n\u0000A\u0000C\u0000T\u0000I\u0000O\u0000N\u0000:\u0000D\u0000I\u0000S\u0000P\u0000L\u0000A\u0000Y\u0000\r\u0000\n\u0000D\u0000E\u0000S\u0000C\u0000R\u0000I\u0000P\u0000T\u0000I\u0000O\u0000N\u0000:\u0000E\u0000v\u0000e\u0000n\u0000t\u0000 \u0000s\u0000t\u0000a\u0000r\u0000t\u0000s\u0000 \u0000i\u0000n\u0000 \u00001\u00005\u0000 \u0000m\u0000i\u0000n\u0000u\u0000t\u0000e\u0000s\u0000\r\u0000\n\u0000T\u0000R\u0000I\u0000G\u0000G\u0000E\u0000R\u0000:\u0000-\u0000P\u0000T\u00001\u00005\u0000M\u0000\r\u0000\n\u0000E\u0000N\u0000D\u0000:\u0000V\u0000A\u0000L\u0000A\u0000R\u0000M\u0000\r\u0000\n\u0000E\u0000N\u0000D\u0000:\u0000V\u0000E\u0000V\u0000E\u0000N\u0000T\u0000\r\u0000\n\u0000E\u0000N\u0000D\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000\r\u0000\n\u0000"
+}

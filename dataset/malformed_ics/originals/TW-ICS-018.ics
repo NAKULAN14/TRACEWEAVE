@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-018-9c1864ef@events.example.edu
+DTSTAMP:20260214T090000Z
+DTSTART:20260422T050000Z
+DTEND:20260422T063000Z
+SUMMARY:Cyber Law and Ethics Panel
+DESCRIPTION:Panel conversation on responsible disclosure\, evidence preserv
+ ation\, and professional ethics. Please bring your student ID and a laptop
+ . Review the pre-reading beforehand.\nAgenda: https://events.example.edu/t
+ w/agenda/018
+LOCATION:Room 113\, Block D\, Example Institute of Technology
+ORGANIZER;CN="Mr. Vikram Rao":mailto:vikram.rao@example.edu
+CATEGORIES:ACADEMIC,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/018
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

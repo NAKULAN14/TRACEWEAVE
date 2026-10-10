@@ -1,0 +1,2687 @@
+{
+  "summary": {
+    "total_observations": 56,
+    "unique_iocs": 24,
+    "duplicate_observations": 32,
+    "duplicate_groups": 8,
+    "unique_ioc_type_counts": {
+      "EMAIL": 7,
+      "DOMAIN": 9,
+      "URL": 8
+    }
+  },
+  "iocs": [
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "photography.club@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "photography.club@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "cfc50eae-c63a-4c5d-b1ad-9145ddc912d0",
+            "type": "EMAIL",
+            "value": "photography.club@example.com",
+            "original_value": "photography.club@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.968054+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "dc33f957-c75a-4aa8-be61-d2a83ce4c57f",
+            "ioc_reference": {
+              "ioc_id": "cfc50eae-c63a-4c5d-b1ad-9145ddc912d0",
+              "type": "EMAIL",
+              "value": "photography.club@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.968099+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "cfc50eae-c63a-4c5d-b1ad-9145ddc912d0"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "photography.club",
+      "observation_count": 1,
+      "original_values": [
+        "photography.club"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "1705001b-39f0-4ae3-a107-2b1764c4048f",
+            "type": "DOMAIN",
+            "value": "photography.club",
+            "original_value": "photography.club",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.968124+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "36476504-0a81-482f-ad18-64016d648ce7",
+            "ioc_reference": {
+              "ioc_id": "1705001b-39f0-4ae3-a107-2b1764c4048f",
+              "type": "DOMAIN",
+              "value": "photography.club"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.968137+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "1705001b-39f0-4ae3-a107-2b1764c4048f"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "example.com",
+      "observation_count": 14,
+      "original_values": [
+        "example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "b8438490-f761-4e46-9da4-5992206a1f81",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.968151+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "52ebc254-091d-4c69-b260-3d7ab0738515",
+            "ioc_reference": {
+              "ioc_id": "b8438490-f761-4e46-9da4-5992206a1f81",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.968171+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "c6173dc0-2fa7-4758-9721-4054fc2cdaf5",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-005\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.969544+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "33b062cf-4636-4f4d-ba53-7fd9c8aa835d",
+            "ioc_reference": {
+              "ioc_id": "c6173dc0-2fa7-4758-9721-4054fc2cdaf5",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-005\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.969551+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "1fa4bfc9-411d-435f-bcb1-7d41f3a55dbf",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.969980+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "4e7563c3-94ef-4ad4-a759-f7560ed990cd",
+            "ioc_reference": {
+              "ioc_id": "1fa4bfc9-411d-435f-bcb1-7d41f3a55dbf",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.969991+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "b60e0d63-5d06-4fd0-9f36-195a5d4677fe",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.970922+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "e42d1df9-2100-4870-95df-9ec3f2b1ffd9",
+            "ioc_reference": {
+              "ioc_id": "b60e0d63-5d06-4fd0-9f36-195a5d4677fe",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.970928+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "9444c31d-1def-4c1a-bfc0-6154c79ea8c6",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-011\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.972344+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "37b1087c-e6a5-4a18-b64e-fc08007f37ab",
+            "ioc_reference": {
+              "ioc_id": "9444c31d-1def-4c1a-bfc0-6154c79ea8c6",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-011\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.972349+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "08635968-067e-440b-bd00-a49b19811d27",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973171+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "32be250e-3612-42a6-8cde-cc61eca6fcf1",
+            "ioc_reference": {
+              "ioc_id": "08635968-067e-440b-bd00-a49b19811d27",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973177+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "ed5f1507-b3b7-4104-bc60-8b7d3f0742e5",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973184+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "b93b7da7-45e3-4ba9-bc5f-4c01a15342b6",
+            "ioc_reference": {
+              "ioc_id": "ed5f1507-b3b7-4104-bc60-8b7d3f0742e5",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973189+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "1144f4fb-3b6b-4b8a-bfdd-fb610e8d33a8",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-013\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973774+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "e56e8d19-66cf-4672-b253-e346e99587e4",
+            "ioc_reference": {
+              "ioc_id": "1144f4fb-3b6b-4b8a-bfdd-fb610e8d33a8",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-013\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973780+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "892b5833-df7a-44c7-a022-dd4b6577cd33",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.976847+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "7f263a7b-cd8e-48b1-92b2-0daa8072cba1",
+            "ioc_reference": {
+              "ioc_id": "892b5833-df7a-44c7-a022-dd4b6577cd33",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.976856+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "e4eee080-0023-4394-8eba-64a304a6d442",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-019\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.977869+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "7d36cdd8-e138-4163-b6a9-5bb851b29947",
+            "ioc_reference": {
+              "ioc_id": "e4eee080-0023-4394-8eba-64a304a6d442",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-019\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.977878+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "9a211df4-ecc7-488a-8549-ab673b61df83",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.979506+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "4bfb810a-2b27-44f0-92b0-e0d97dcb0ad8",
+            "ioc_reference": {
+              "ioc_id": "9a211df4-ecc7-488a-8549-ab673b61df83",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.979515+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "0931c137-866c-427f-a862-e8bae5fe7158",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.979525+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "4c3881e3-5d51-40d2-b8b2-4a2e2627aa86",
+            "ioc_reference": {
+              "ioc_id": "0931c137-866c-427f-a862-e8bae5fe7158",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.979534+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "15beca52-67e3-4bb8-b0e2-de319cbd838b",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980782+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "c13da08b-2af4-405b-8441-a0f971f41e36",
+            "ioc_reference": {
+              "ioc_id": "15beca52-67e3-4bb8-b0e2-de319cbd838b",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980794+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "ba27972f-8df0-4feb-9935-7613dc0b78bf",
+            "type": "DOMAIN",
+            "value": "example.com",
+            "original_value": "example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980806+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "71743935-ea60-4454-97dd-fdcf38492940",
+            "ioc_reference": {
+              "ioc_id": "ba27972f-8df0-4feb-9935-7613dc0b78bf",
+              "type": "DOMAIN",
+              "value": "example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980815+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "b8438490-f761-4e46-9da4-5992206a1f81"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://events.example.com/workshops/version-control",
+      "observation_count": 1,
+      "original_values": [
+        "https://events.example.com/workshops/version-control"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "813fe40d-24f7-4ffc-8012-8a85cfeba560",
+            "type": "URL",
+            "value": "https://events.example.com/workshops/version-control",
+            "original_value": "https://events.example.com/workshops/version-control",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-004\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.968896+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "87484311-22b1-4c75-b5a3-6705b37e321b",
+            "ioc_reference": {
+              "ioc_id": "813fe40d-24f7-4ffc-8012-8a85cfeba560",
+              "type": "URL",
+              "value": "https://events.example.com/workshops/version-control"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-004\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.968915+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "813fe40d-24f7-4ffc-8012-8a85cfeba560"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "events.example.com",
+      "observation_count": 8,
+      "original_values": [
+        "events.example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "08d7bb92-a7de-4836-96e6-2b381e991003",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-004\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.968931+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "bd5d181a-b0b2-4a5b-9217-a2e999d59a1c",
+            "ioc_reference": {
+              "ioc_id": "08d7bb92-a7de-4836-96e6-2b381e991003",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-004\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.968938+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "f14901e8-ffcf-4663-89a6-e998398c4110",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.970486+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "72fac527-1dc5-4417-87e1-1e50df69abaf",
+            "ioc_reference": {
+              "ioc_id": "f14901e8-ffcf-4663-89a6-e998398c4110",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.970493+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "a6dee57b-e68d-4a3e-b005-fd37a86dd482",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.971944+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "73c92ad8-bec0-4466-9ce1-e7f6197ffdd4",
+            "ioc_reference": {
+              "ioc_id": "a6dee57b-e68d-4a3e-b005-fd37a86dd482",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.971950+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "426f7e91-ae13-4e8a-a0b3-d714ef92d13e",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.976865+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "36a024cf-b20a-4549-b645-2de8553db00b",
+            "ioc_reference": {
+              "ioc_id": "426f7e91-ae13-4e8a-a0b3-d714ef92d13e",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.976874+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "8c27e74f-8524-43a2-9824-0c26971b38a5",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980152+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "94b52311-75f4-4794-80cf-2067e1fb71f2",
+            "ioc_reference": {
+              "ioc_id": "8c27e74f-8524-43a2-9824-0c26971b38a5",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980161+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "bc83ac4c-66c1-43c1-9507-21302a8dd707",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980170+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "5e174701-87d2-4b55-ac12-4d7debd98625",
+            "ioc_reference": {
+              "ioc_id": "bc83ac4c-66c1-43c1-9507-21302a8dd707",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980179+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "5cd7771a-d1aa-4645-b942-1a957721c20c",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.982464+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "dc201ac9-ebaf-467c-a395-f263ff78b563",
+            "ioc_reference": {
+              "ioc_id": "5cd7771a-d1aa-4645-b942-1a957721c20c",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.982475+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "8736fb71-79ff-4b91-afca-ce744278d6a0",
+            "type": "DOMAIN",
+            "value": "events.example.com",
+            "original_value": "events.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.982485+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "14978155-3896-4cf6-a72c-d2f0a4cc360f",
+            "ioc_reference": {
+              "ioc_id": "8736fb71-79ff-4b91-afca-ce744278d6a0",
+              "type": "DOMAIN",
+              "value": "events.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.982494+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "08d7bb92-a7de-4836-96e6-2b381e991003"
+    },
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "student.affairs@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "student.affairs@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "b3bcaecf-b349-45d2-b978-e3a3383bf262",
+            "type": "EMAIL",
+            "value": "student.affairs@example.com",
+            "original_value": "student.affairs@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-005\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.969498+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "adda1b96-857e-4588-90ee-a7ae2bcf09a0",
+            "ioc_reference": {
+              "ioc_id": "b3bcaecf-b349-45d2-b978-e3a3383bf262",
+              "type": "EMAIL",
+              "value": "student.affairs@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-005\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.969512+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "b3bcaecf-b349-45d2-b978-e3a3383bf262"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "student.affairs",
+      "observation_count": 1,
+      "original_values": [
+        "student.affairs"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "08d3182b-7889-4200-a1dd-e859af16fa56",
+            "type": "DOMAIN",
+            "value": "student.affairs",
+            "original_value": "student.affairs",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-005\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.969526+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "5425441e-ee08-4880-93cb-8a928a075eb2",
+            "ioc_reference": {
+              "ioc_id": "08d3182b-7889-4200-a1dd-e859af16fa56",
+              "type": "DOMAIN",
+              "value": "student.affairs"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-005\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.969532+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "08d3182b-7889-4200-a1dd-e859af16fa56"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://example.com/open-day-2026",
+      "observation_count": 3,
+      "original_values": [
+        "https://example.com/open-day-2026"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "cba88af0-b0e1-4f69-86f7-d350a5bd40dc",
+            "type": "URL",
+            "value": "https://example.com/open-day-2026",
+            "original_value": "https://example.com/open-day-2026",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.969955+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "2d042139-9b75-4a17-a52b-9a6d10584d85",
+            "ioc_reference": {
+              "ioc_id": "cba88af0-b0e1-4f69-86f7-d350a5bd40dc",
+              "type": "URL",
+              "value": "https://example.com/open-day-2026"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.969969+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "968975ff-1840-415e-a860-32cda16a8c7a",
+            "type": "URL",
+            "value": "https://example.com/open-day-2026",
+            "original_value": "https://example.com/open-day-2026",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.979428+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "8f3ee66e-a015-4f96-86b2-859e48529642",
+            "ioc_reference": {
+              "ioc_id": "968975ff-1840-415e-a860-32cda16a8c7a",
+              "type": "URL",
+              "value": "https://example.com/open-day-2026"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.979452+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "39fa31ae-899c-4174-8881-8b8a6a862fcc",
+            "type": "URL",
+            "value": "https://example.com/open-day-2026",
+            "original_value": "https://example.com/open-day-2026",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.979477+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "9bf6b364-c1a2-47a7-9e37-0359f933e26f",
+            "ioc_reference": {
+              "ioc_id": "39fa31ae-899c-4174-8881-8b8a6a862fcc",
+              "type": "URL",
+              "value": "https://example.com/open-day-2026"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-006\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.979494+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "cba88af0-b0e1-4f69-86f7-d350a5bd40dc"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://events.example.com/tech-fest/2026/schedule",
+      "observation_count": 3,
+      "original_values": [
+        "https://events.example.com/tech-fest/2026/schedule"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "6581bdb2-b13f-4c5b-86c5-b532847b50cc",
+            "type": "URL",
+            "value": "https://events.example.com/tech-fest/2026/schedule",
+            "original_value": "https://events.example.com/tech-fest/2026/schedule",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.970448+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "ad120841-3f3d-4a12-95ac-81946ece1610",
+            "ioc_reference": {
+              "ioc_id": "6581bdb2-b13f-4c5b-86c5-b532847b50cc",
+              "type": "URL",
+              "value": "https://events.example.com/tech-fest/2026/schedule"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.970465+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "1c9166ef-f126-4a5a-ae5b-a17c55f9f84e",
+            "type": "URL",
+            "value": "https://events.example.com/tech-fest/2026/schedule",
+            "original_value": "https://events.example.com/tech-fest/2026/schedule",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980083+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "bd2d4923-4924-45c5-ad26-66bc228a95f8",
+            "ioc_reference": {
+              "ioc_id": "1c9166ef-f126-4a5a-ae5b-a17c55f9f84e",
+              "type": "URL",
+              "value": "https://events.example.com/tech-fest/2026/schedule"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980103+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "08a1b771-6b07-48cf-a36c-d431e24f66f6",
+            "type": "URL",
+            "value": "https://events.example.com/tech-fest/2026/schedule",
+            "original_value": "https://events.example.com/tech-fest/2026/schedule",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980131+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "c2e91602-2909-46b6-8c77-c58e6b0333f3",
+            "ioc_reference": {
+              "ioc_id": "08a1b771-6b07-48cf-a36c-d431e24f66f6",
+              "type": "URL",
+              "value": "https://events.example.com/tech-fest/2026/schedule"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-007\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980141+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "6581bdb2-b13f-4c5b-86c5-b532847b50cc"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+      "observation_count": 3,
+      "original_values": [
+        "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "b67f3a63-4ffa-45ea-92bd-b0a7b0fec72f",
+            "type": "URL",
+            "value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+            "original_value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.970892+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "8de1b49a-5987-4ed7-8c17-d98152c3e6fa",
+            "ioc_reference": {
+              "ioc_id": "b67f3a63-4ffa-45ea-92bd-b0a7b0fec72f",
+              "type": "URL",
+              "value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.970912+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "bd5ab229-c9c9-4f21-a37a-79ce63b1e63f",
+            "type": "URL",
+            "value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+            "original_value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980714+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "04bb8b3c-9c7c-459f-9178-8f6230749ce6",
+            "ioc_reference": {
+              "ioc_id": "bd5ab229-c9c9-4f21-a37a-79ce63b1e63f",
+              "type": "URL",
+              "value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980735+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "32f3054d-39e4-4a09-8919-1477342a2d49",
+            "type": "URL",
+            "value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+            "original_value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.980757+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "b3a0cecb-41a7-4ef9-98cd-4ca12ffac6cc",
+            "ioc_reference": {
+              "ioc_id": "32f3054d-39e4-4a09-8919-1477342a2d49",
+              "type": "URL",
+              "value": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.980767+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "b67f3a63-4ffa-45ea-92bd-b0a7b0fec72f"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "http://library.example.com/hours",
+      "observation_count": 3,
+      "original_values": [
+        "http://library.example.com/hours"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "3479fd2c-ed95-4e6d-bfbe-9ad2e6713045",
+            "type": "URL",
+            "value": "http://library.example.com/hours",
+            "original_value": "http://library.example.com/hours",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.971351+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "6dee542f-37dd-48fb-a0f6-bcc6d005bbac",
+            "ioc_reference": {
+              "ioc_id": "3479fd2c-ed95-4e6d-bfbe-9ad2e6713045",
+              "type": "URL",
+              "value": "http://library.example.com/hours"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.971367+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "23e63b98-b111-412e-8941-a24044862520",
+            "type": "URL",
+            "value": "http://library.example.com/hours",
+            "original_value": "http://library.example.com/hours",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.981529+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "892b48bd-b4e4-4630-a260-11ab88482fd0",
+            "ioc_reference": {
+              "ioc_id": "23e63b98-b111-412e-8941-a24044862520",
+              "type": "URL",
+              "value": "http://library.example.com/hours"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.981555+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "dc8b6268-7ce6-48af-8a03-37a967466280",
+            "type": "URL",
+            "value": "http://library.example.com/hours",
+            "original_value": "http://library.example.com/hours",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.981578+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "6100c351-9b37-4b95-97dc-8a4bc6112ee6",
+            "ioc_reference": {
+              "ioc_id": "dc8b6268-7ce6-48af-8a03-37a967466280",
+              "type": "URL",
+              "value": "http://library.example.com/hours"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.981588+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "3479fd2c-ed95-4e6d-bfbe-9ad2e6713045"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "library.example.com",
+      "observation_count": 3,
+      "original_values": [
+        "library.example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "671d111f-8c00-4d4e-a462-20c35aa7fee9",
+            "type": "DOMAIN",
+            "value": "library.example.com",
+            "original_value": "library.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.971382+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "73a004c2-79ed-4b8a-87cc-d488b5fd7427",
+            "ioc_reference": {
+              "ioc_id": "671d111f-8c00-4d4e-a462-20c35aa7fee9",
+              "type": "DOMAIN",
+              "value": "library.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.971388+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "0501d6ae-6559-4cd8-9caf-ac816a51cd23",
+            "type": "DOMAIN",
+            "value": "library.example.com",
+            "original_value": "library.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.981600+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "34d0be50-3e09-472d-a380-b7860972ceb9",
+            "ioc_reference": {
+              "ioc_id": "0501d6ae-6559-4cd8-9caf-ac816a51cd23",
+              "type": "DOMAIN",
+              "value": "library.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.981608+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "a4a2e7b6-2f52-4ae7-b725-c3482b307929",
+            "type": "DOMAIN",
+            "value": "library.example.com",
+            "original_value": "library.example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.981620+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "8a156b1f-dc22-46cb-a1c1-bee0514f52fe",
+            "ioc_reference": {
+              "ioc_id": "a4a2e7b6-2f52-4ae7-b725-c3482b307929",
+              "type": "DOMAIN",
+              "value": "library.example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-009\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.981628+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "671d111f-8c00-4d4e-a462-20c35aa7fee9"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+      "observation_count": 3,
+      "original_values": [
+        "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "8db426b0-de2b-4941-962a-44ec6637dcd3",
+            "type": "URL",
+            "value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+            "original_value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.971916+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "905c6c26-11a6-4d8f-aa8c-2caa8b05bac5",
+            "ioc_reference": {
+              "ioc_id": "8db426b0-de2b-4941-962a-44ec6637dcd3",
+              "type": "URL",
+              "value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.971934+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "b08b30f2-aec9-4419-a243-170019fc7f1a",
+            "type": "URL",
+            "value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+            "original_value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.982392+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "84a0facd-71c7-4e5d-8f26-541eeb4c8a13",
+            "ioc_reference": {
+              "ioc_id": "b08b30f2-aec9-4419-a243-170019fc7f1a",
+              "type": "URL",
+              "value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.982418+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        },
+        {
+          "ioc": {
+            "ioc_id": "00702e0d-046c-4178-8981-3b31a503d3a7",
+            "type": "URL",
+            "value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+            "original_value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "location": "url_analysis"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.982441+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "2da47d4f-f989-4c58-8abb-a20b8ae968cc",
+            "ioc_reference": {
+              "ioc_id": "00702e0d-046c-4178-8981-3b31a503d3a7",
+              "type": "URL",
+              "value": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+              "parent_artifact": null,
+              "source_location": "url_analysis"
+            },
+            "extraction": {
+              "method": "URL_ANALYSIS",
+              "observed_at": "2026-10-07T04:36:02.982453+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "8db426b0-de2b-4941-962a-44ec6637dcd3"
+    },
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "meera.raghavan@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "meera.raghavan@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "f53abf63-547a-46af-8dc6-4f1c542b2640",
+            "type": "EMAIL",
+            "value": "meera.raghavan@example.com",
+            "original_value": "meera.raghavan@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-011\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.972305+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "e28d5bcb-4548-4ca5-a6a5-5651ef20f1dd",
+            "ioc_reference": {
+              "ioc_id": "f53abf63-547a-46af-8dc6-4f1c542b2640",
+              "type": "EMAIL",
+              "value": "meera.raghavan@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-011\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.972317+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "f53abf63-547a-46af-8dc6-4f1c542b2640"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "meera.raghavan",
+      "observation_count": 1,
+      "original_values": [
+        "meera.raghavan"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "88f6a903-b971-4fb1-8484-1746d908810b",
+            "type": "DOMAIN",
+            "value": "meera.raghavan",
+            "original_value": "meera.raghavan",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-011\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.972329+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "602f8b62-0132-4eb0-ad77-3818844b6e21",
+            "ioc_reference": {
+              "ioc_id": "88f6a903-b971-4fb1-8484-1746d908810b",
+              "type": "DOMAIN",
+              "value": "meera.raghavan"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-011\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.972335+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "88f6a903-b971-4fb1-8484-1746d908810b"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://example.com/people/ravi-menon",
+      "observation_count": 1,
+      "original_values": [
+        "https://example.com/people/ravi-menon"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "46e6a689-aa4e-4edd-89f8-5454d89773ac",
+            "type": "URL",
+            "value": "https://example.com/people/ravi-menon",
+            "original_value": "https://example.com/people/ravi-menon",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973112+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "6bc28a31-35e7-4f7f-a51b-16eff5dd0890",
+            "ioc_reference": {
+              "ioc_id": "46e6a689-aa4e-4edd-89f8-5454d89773ac",
+              "type": "URL",
+              "value": "https://example.com/people/ravi-menon"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973129+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "46e6a689-aa4e-4edd-89f8-5454d89773ac"
+    },
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "ravi.menon@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "ravi.menon@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "de12f4c9-34d3-48c5-ba0f-900fad0a78f1",
+            "type": "EMAIL",
+            "value": "ravi.menon@example.com",
+            "original_value": "ravi.menon@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973139+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "52e5826d-edb7-4a8e-bb35-526d1d8b2713",
+            "ioc_reference": {
+              "ioc_id": "de12f4c9-34d3-48c5-ba0f-900fad0a78f1",
+              "type": "EMAIL",
+              "value": "ravi.menon@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973146+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "de12f4c9-34d3-48c5-ba0f-900fad0a78f1"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "ravi.menon",
+      "observation_count": 1,
+      "original_values": [
+        "ravi.menon"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "e7258156-9a64-4b3b-9842-cd2fd7c6a616",
+            "type": "DOMAIN",
+            "value": "ravi.menon",
+            "original_value": "ravi.menon",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973159+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "83afdc66-5de7-425b-8dec-268a139fc553",
+            "ioc_reference": {
+              "ioc_id": "e7258156-9a64-4b3b-9842-cd2fd7c6a616",
+              "type": "DOMAIN",
+              "value": "ravi.menon"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-012\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973165+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "e7258156-9a64-4b3b-9842-cd2fd7c6a616"
+    },
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "vikram.nair@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "vikram.nair@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "64d7f2dd-f849-4c62-983e-e6e62ee7326b",
+            "type": "EMAIL",
+            "value": "vikram.nair@example.com",
+            "original_value": "vikram.nair@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-013\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973721+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "58e8f6c2-d8b5-44fa-88a1-7598e302b6c0",
+            "ioc_reference": {
+              "ioc_id": "64d7f2dd-f849-4c62-983e-e6e62ee7326b",
+              "type": "EMAIL",
+              "value": "vikram.nair@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-013\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973745+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "64d7f2dd-f849-4c62-983e-e6e62ee7326b"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "vikram.nair",
+      "observation_count": 1,
+      "original_values": [
+        "vikram.nair"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "04d2df78-0975-457f-ba14-3dfc525eb956",
+            "type": "DOMAIN",
+            "value": "vikram.nair",
+            "original_value": "vikram.nair",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-013\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.973759+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "74e443f8-afd3-4a5a-a2a3-64f0418299ce",
+            "ioc_reference": {
+              "ioc_id": "04d2df78-0975-457f-ba14-3dfc525eb956",
+              "type": "DOMAIN",
+              "value": "vikram.nair"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-013\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.973765+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "04d2df78-0975-457f-ba14-3dfc525eb956"
+    },
+    {
+      "ioc_type": "URL",
+      "canonical_value": "https://events.example.com/seminars/ml-pipelines",
+      "observation_count": 1,
+      "original_values": [
+        "https://events.example.com/seminars/ml-pipelines"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "8fb6878b-cc04-422c-9d5f-2566afd04ef3",
+            "type": "URL",
+            "value": "https://events.example.com/seminars/ml-pipelines",
+            "original_value": "https://events.example.com/seminars/ml-pipelines",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.976773+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "638f0ab7-aa94-4ae9-be04-6ba262e27611",
+            "ioc_reference": {
+              "ioc_id": "8fb6878b-cc04-422c-9d5f-2566afd04ef3",
+              "type": "URL",
+              "value": "https://events.example.com/seminars/ml-pipelines"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.976800+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "8fb6878b-cc04-422c-9d5f-2566afd04ef3"
+    },
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "tw-qr-018-56ed216e018e@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "tw-qr-018-56ed216e018e@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "7d3fcd01-c6a3-432d-b293-25aac6987b0b",
+            "type": "EMAIL",
+            "value": "tw-qr-018-56ed216e018e@example.com",
+            "original_value": "tw-qr-018-56ed216e018e@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.976817+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "94aeac21-4425-415c-bae8-48845ce34e61",
+            "ioc_reference": {
+              "ioc_id": "7d3fcd01-c6a3-432d-b293-25aac6987b0b",
+              "type": "EMAIL",
+              "value": "tw-qr-018-56ed216e018e@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-018\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.976833+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "7d3fcd01-c6a3-432d-b293-25aac6987b0b"
+    },
+    {
+      "ioc_type": "EMAIL",
+      "canonical_value": "club.secretary@example.com",
+      "observation_count": 1,
+      "original_values": [
+        "club.secretary@example.com"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "f0401c67-c754-4ed5-a06b-eb8938b4de2e",
+            "type": "EMAIL",
+            "value": "club.secretary@example.com",
+            "original_value": "club.secretary@example.com",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-019\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.977794+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "0c4ca04b-7a5f-4457-9c9d-842171a5eaaf",
+            "ioc_reference": {
+              "ioc_id": "f0401c67-c754-4ed5-a06b-eb8938b4de2e",
+              "type": "EMAIL",
+              "value": "club.secretary@example.com"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-019\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.977822+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "f0401c67-c754-4ed5-a06b-eb8938b4de2e"
+    },
+    {
+      "ioc_type": "DOMAIN",
+      "canonical_value": "club.secretary",
+      "observation_count": 1,
+      "original_values": [
+        "club.secretary"
+      ],
+      "observations": [
+        {
+          "ioc": {
+            "ioc_id": "48a593e4-6044-439f-ace8-a28b5fca4d98",
+            "type": "DOMAIN",
+            "value": "club.secretary",
+            "original_value": "club.secretary",
+            "source": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-019\\qr.png",
+              "location": "decoded_payload"
+            },
+            "observation": {
+              "observed_at": "2026-10-07T04:36:02.977844+00:00",
+              "status": "OBSERVED",
+              "maliciousness": "UNDETERMINED"
+            },
+            "provenance": {
+              "extraction_engine": "TRACEWEAVE IOC Extraction Engine",
+              "normalization_applied": false,
+              "original_preserved": true
+            }
+          },
+          "observation": {
+            "observation_id": "dca11c95-dd3c-414a-ba9f-f089bc7fe18d",
+            "ioc_reference": {
+              "ioc_id": "48a593e4-6044-439f-ace8-a28b5fca4d98",
+              "type": "DOMAIN",
+              "value": "club.secretary"
+            },
+            "evidence": {
+              "artifact": "dataset\\benign_qr\\cases\\TW-QR-019\\qr.png",
+              "parent_artifact": null,
+              "source_location": "decoded_payload"
+            },
+            "extraction": {
+              "method": "QR_PAYLOAD_DECODE",
+              "observed_at": "2026-10-07T04:36:02.977858+00:00"
+            },
+            "provenance": {
+              "direct_observation": true,
+              "original_evidence_preserved": true
+            }
+          }
+        }
+      ],
+      "first_ioc_id": "48a593e4-6044-439f-ace8-a28b5fca4d98"
+    }
+  ]
+}

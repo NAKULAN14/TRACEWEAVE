@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "TW-PHI-020-BRW-001",
+    "case_id": "TW-PHI-020",
+    "timestamp": "2026-05-16T02:42:58.005Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-020-BRW-002",
+    "case_id": "TW-PHI-020",
+    "timestamp": "2026-05-16T02:42:59.905Z",
+    "event_type": "page_load",
+    "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-020-BRW-003",
+    "case_id": "TW-PHI-020",
+    "timestamp": "2026-05-16T02:43:01.549Z",
+    "event_type": "form_displayed",
+    "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-020-BRW-004",
+    "case_id": "TW-PHI-020",
+    "timestamp": "2026-05-16T02:43:27.224Z",
+    "event_type": "tab_closed",
+    "url": "https://example.org/helpdesk/expiry/TW-PHI-020",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

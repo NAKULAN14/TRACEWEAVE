@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-006-81d360bf@events.example.edu
+DTSTAMP:20260202T090000Z
+DTSTART:20261318T040000Z
+DTEND:20260318T256100Z
+SUMMARY:Capstone Project Discussion
+DESCRIPTION:Milestone review covering requirements\, architecture decisions
+ \, and the upcoming demonstration plan. Please bring your student ID and a
+  laptop. Review the pre-reading beforehand.\nAgenda: https://events.exampl
+ e.edu/tw/agenda/006
+LOCATION:Room 354\, Block B\, Example Institute of Technology
+ORGANIZER;CN="Dr. Arjun Pillai":mailto:arjun.pillai@example.edu
+CATEGORIES:PROJECT,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/006
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

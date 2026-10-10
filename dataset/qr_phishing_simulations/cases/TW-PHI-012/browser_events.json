@@ -1,0 +1,26 @@
+[
+  {
+    "event_id": "TW-PHI-012-BRW-001",
+    "case_id": "TW-PHI-012",
+    "timestamp": "2026-04-28T19:01:54.936Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+    "domain": "example.net",
+    "browser": "Chrome Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-012-BRW-002",
+    "case_id": "TW-PHI-012",
+    "timestamp": "2026-04-28T19:01:56.283Z",
+    "event_type": "page_load",
+    "url": "https://example.net/workshops/seat/TW-PHI-012?src=qr",
+    "domain": "example.net",
+    "browser": "Chrome Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  }
+]

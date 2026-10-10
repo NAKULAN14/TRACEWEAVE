@@ -1,0 +1,148 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://events.example.org/agenda/TW-COM-019",
+    "normalized_value": "https://events.example.org/agenda/TW-COM-019",
+    "observed_values": [
+      "https://events.example.org/agenda/TW-COM-019"
+    ],
+    "roles": [
+      "ics_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "event.ics"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "url",
+    "value": "https://events.example.org/register/TW-COM-019",
+    "normalized_value": "https://events.example.org/register/TW-COM-019",
+    "observed_values": [
+      "https://events.example.org/register/TW-COM-019"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "url",
+    "value": "https://www.example.org/news/TW-COM-019",
+    "normalized_value": "https://www.example.org/news/TW-COM-019",
+    "observed_values": [
+      "https://www.example.org/news/TW-COM-019"
+    ],
+    "roles": [
+      "email_body_link"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "events.example.org",
+    "normalized_value": "events.example.org",
+    "observed_values": [
+      "events.example.org"
+    ],
+    "roles": [
+      "dns_query_name",
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "dns_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "domain",
+    "value": "www.example.org",
+    "normalized_value": "www.example.org",
+    "observed_values": [
+      "www.example.org"
+    ],
+    "roles": [
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "email_address",
+    "value": "newsletter@events.example.org",
+    "normalized_value": "newsletter@events.example.org",
+    "observed_values": [
+      "newsletter@events.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "192.0.2.21",
+    "normalized_value": "192.0.2.21",
+    "observed_values": [
+      "192.0.2.21"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-008",
+    "type": "ipv4",
+    "value": "198.51.100.87",
+    "normalized_value": "198.51.100.87",
+    "observed_values": [
+      "198.51.100.87"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  }
+]

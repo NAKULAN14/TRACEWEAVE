@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-001",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-001.ics",
+  "corrupted_file": "TW-ICS-001.ics",
+  "is_malformed": true,
+  "corruption_type": "missing_required_property_uid",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [
+    "UID"
+  ],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/001",
+    "https://events.example.edu/tw/agenda/001"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "RFC 5545 requires UID. Everything else is intact; the event can be recovered but has no identifier, so a synthetic UID is needed for dedup."
+}

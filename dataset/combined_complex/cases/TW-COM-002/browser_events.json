@@ -1,0 +1,73 @@
+[
+  {
+    "event_id": "TW-COM-002-BRW-001",
+    "case_id": "TW-COM-002",
+    "timestamp": "2026-05-07T19:10:25.506+00:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://go.example.net/r/TW-COM-002",
+    "domain": "go.example.net",
+    "browser": "Firefox Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-002-a",
+    "user_account": "mei.tanaka@research.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-002-BRW-002",
+    "case_id": "TW-COM-002",
+    "timestamp": "2026-05-07T19:10:26.318+00:00",
+    "event_type": "http_redirect",
+    "url": "https://go.example.net/r/TW-COM-002",
+    "domain": "go.example.net",
+    "browser": "Firefox Mobile",
+    "action": "redirect",
+    "source": "browser_navigation",
+    "device_id": "device-002-a",
+    "user_account": "mei.tanaka@research.example.org",
+    "synthetic": true,
+    "redirect_location": "https://files.example.net/view/TW-COM-002"
+  },
+  {
+    "event_id": "TW-COM-002-BRW-003",
+    "case_id": "TW-COM-002",
+    "timestamp": "2026-05-07T19:10:27.701+00:00",
+    "event_type": "page_load",
+    "url": "https://files.example.net/view/TW-COM-002",
+    "domain": "files.example.net",
+    "browser": "Firefox Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-002-a",
+    "user_account": "mei.tanaka@research.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-002-BRW-004",
+    "case_id": "TW-COM-002",
+    "timestamp": "2026-05-07T19:10:30.102+00:00",
+    "event_type": "form_displayed",
+    "url": "https://files.example.net/view/TW-COM-002",
+    "domain": "files.example.net",
+    "browser": "Firefox Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-002-a",
+    "user_account": "mei.tanaka@research.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-002-BRW-005",
+    "case_id": "TW-COM-002",
+    "timestamp": "2026-05-07T19:10:50.564+00:00",
+    "event_type": "tab_closed",
+    "url": "https://files.example.net/view/TW-COM-002",
+    "domain": "files.example.net",
+    "browser": "Firefox Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-002-a",
+    "user_account": "mei.tanaka@research.example.org",
+    "synthetic": true
+  }
+]

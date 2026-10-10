@@ -1,0 +1,77 @@
+Received: from mail-out.vantor-academy.example.net (vantor-academy.example.net [192.0.2.92])
+	by mx.students.example.com with ESMTP id TWCOM01702;
+	Mon, 22 Jun 2026 16:40:52 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-017
+From: "Vantor Academy Admin" <scholarships@vantor-academy.example.net>
+To: "Andre Silva" <andre.silva@students.example.com>
+Subject: Reminder: scholarship document still unopened
+Date: Mon, 22 Jun 2026 16:40:49 +0000
+Message-ID: <tw-com-017.email_02.28f963cb62@mail-out.vantor-academy.example.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-017_email_02_mix"
+
+--=_TW-COM-017_email_02_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-017_email_02_alt"
+
+--=_TW-COM-017_email_02_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Andre,
+
+Our records show the document has not been opened.
+
+Scan the attached QR code to open it.
+
+Attached QR code file(s): scholarship-doc-reminder.png
+
+Regards,
+Vantor Academy Admin
+
+--=_TW-COM-017_email_02_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Andre,</p><p>Our records show the document has not been opened.</p><p>Scan the attached QR code to open it.</p><p>Attached QR code file(s): scholarship-doc-reminder.png</p><p>Regards,<br>Vantor Academy Admin</p></body></html>
+--=_TW-COM-017_email_02_alt--
+--=_TW-COM-017_email_02_mix
+Content-Type: image/png; name="scholarship-doc-reminder.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="scholarship-doc-reminder.png"
+
+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
+QmCC
+--=_TW-COM-017_email_02_mix--

@@ -1,0 +1,504 @@
+{
+  "case_id": "TW-COM-008",
+  "category": "combined_complex",
+  "scenario": "Offer-acceptance lure whose Date header is three hours later than the receiving server's Received timestamp (header conflict).",
+  "expected_classification": "simulated_phishing",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "88c5d2954b33d05f261b986f79e8ca1527aa0d922e8449f554ecd8d4a25c5921"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "4ead16859918cf5f0da77ebfe9c00a71e44a0399a60b5a721a3d3d0b99b4d116"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "3c42716e44e46588cc653ad69431126f75fa7bd62c5e63607991ccca85584697"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "b1ffa9783f07bdaa12a6ea156abed690f568ee00f987ad23efd725e9ba06b3b8"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "f6aa8ea81bb7fcfafddb344abb01919a02363aee0a34a8df9175654c65d53447"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "9696b1dce51cf92e568096b79dcd2934eb0ba4f38d6b90373c9e6b94b0fcb9d6"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "9d4e3f462c8e58b6ec5408da7de8422fc4677b8e83b5b6696ca99cb7e9b2915a"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://offer.example.net/accept/TW-COM-008",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://offer.example.net/accept/TW-COM-008"
+  ],
+  "expected_urls": [
+    "https://offer.example.net/accept/TW-COM-008"
+  ],
+  "expected_domains": [
+    "offer.example.net",
+    "vantor-talent.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://offer.example.net/accept/TW-COM-008",
+      "normalized_value": "https://offer.example.net/accept/TW-COM-008",
+      "observed_values": [
+        "https://offer.example.net/accept/TW-COM-008"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "offer.example.net",
+      "normalized_value": "offer.example.net",
+      "observed_values": [
+        "offer.example.net"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "vantor-talent.example.org",
+      "normalized_value": "vantor-talent.example.org",
+      "observed_values": [
+        "vantor-talent.example.org"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "email_address",
+      "value": "offers@vantor-talent.example.org",
+      "normalized_value": "offers@vantor-talent.example.org",
+      "observed_values": [
+        "offers@vantor-talent.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.136",
+      "normalized_value": "192.0.2.136",
+      "observed_values": [
+        "192.0.2.136"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "192.0.2.63",
+      "normalized_value": "192.0.2.63",
+      "observed_values": [
+        "192.0.2.63"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-008-BRW-001",
+      "timestamp": "2026-05-25T17:40:23.118+00:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://offer.example.net/accept/TW-COM-008",
+      "domain": "offer.example.net"
+    },
+    {
+      "event_id": "TW-COM-008-BRW-002",
+      "timestamp": "2026-05-25T17:40:25.304+00:00",
+      "event_type": "page_load",
+      "url": "https://offer.example.net/accept/TW-COM-008",
+      "domain": "offer.example.net"
+    },
+    {
+      "event_id": "TW-COM-008-BRW-003",
+      "timestamp": "2026-05-25T17:40:26.610+00:00",
+      "event_type": "form_displayed",
+      "url": "https://offer.example.net/accept/TW-COM-008",
+      "domain": "offer.example.net"
+    },
+    {
+      "event_id": "TW-COM-008-BRW-004",
+      "timestamp": "2026-05-25T17:40:31.893+00:00",
+      "event_type": "tab_closed",
+      "url": "https://offer.example.net/accept/TW-COM-008",
+      "domain": "offer.example.net"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-008-DNS-001",
+      "timestamp": "2026-05-25T17:40:23.655+00:00",
+      "query": "offer.example.net",
+      "record_type": "A",
+      "response": "192.0.2.136"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'offer-acceptance.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:offers@vantor-talent.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://offer.example.net/accept/TW-COM-008",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://offer.example.net/accept/TW-COM-008",
+      "relation": "has_domain",
+      "target": "domain:offer.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "dns_event:TW-COM-008-DNS-001",
+      "relation": "queries",
+      "target": "domain:offer.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "dns_event:TW-COM-008-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.136",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "browser_event:TW-COM-008-BRW-001",
+      "relation": "visits",
+      "target": "url:https://offer.example.net/accept/TW-COM-008",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-008-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "browser_event:TW-COM-008-BRW-002",
+      "relation": "visits",
+      "target": "url:https://offer.example.net/accept/TW-COM-008",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-25T12:37:23+00:00",
+      "source_timestamp": "2026-05-25T12:37:23+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-25T12:37:23+00:00",
+      "source_timestamp": "2026-05-25T12:37:23+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-25T15:37:23+00:00",
+      "source_timestamp": "2026-05-25T21:07:23+05:30",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-25T17:40:23.118+00:00",
+      "source_timestamp": "2026-05-25T17:40:23.118+00:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://offer.example.net/accept/TW-COM-008",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-008-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-25T17:40:23.655+00:00",
+      "source_timestamp": "2026-05-25T17:40:23.655+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for offer.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-008-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-25T17:40:25.304+00:00",
+      "source_timestamp": "2026-05-25T17:40:25.304+00:00",
+      "event_type": "page_load",
+      "description": "load https://offer.example.net/accept/TW-COM-008",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-008-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-25T17:40:26.610+00:00",
+      "source_timestamp": "2026-05-25T17:40:26.610+00:00",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://offer.example.net/accept/TW-COM-008",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-008-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-25T17:40:31.893+00:00",
+      "source_timestamp": "2026-05-25T17:40:31.893+00:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://offer.example.net/accept/TW-COM-008",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-008-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "1 phishing-style email(s) delivered"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Urgency/authority lure theme in subject and body"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr_01.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code presented to the recipient(s)"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-008-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-008-DNS-001"
+      ],
+      "description": "Synthetic DNS resolution of simulated hosts"
+    },
+    {
+      "order": 6,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-008-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 7,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-008-BRW-003"
+      ],
+      "description": "Static form displayed; no input or credentials exist in the dataset"
+    }
+  ],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "timestamp_conflict",
+      "description": "The Date header is about three hours after the Received timestamp of the receiving server.",
+      "artifacts_involved": [
+        "email_01.eml"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": "DATE_AFTER_RECEIVED",
+      "expected_handling": "Report the conflict, keep both timestamps, do not silently correct either; lower confidence of dependent correlations."
+    },
+    {
+      "finding_id": "AMB-002",
+      "finding_type": "authoritative_send_time",
+      "description": "Unclear whether the Date header was spoofed or the sender clock was wrong; the Received time is the better lower bound for delivery.",
+      "artifacts_involved": [
+        "email_01.eml"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Order events by Received time and report the Date discrepancy."
+    }
+  ],
+  "notes": "Time-pressure lure, QR-only action, scan and DNS observed; header time conflict does not change the outcome. Classification: simulated_phishing. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

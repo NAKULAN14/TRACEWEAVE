@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-COM-014-DNS-001",
+    "case_id": "TW-COM-014",
+    "timestamp": "2026-06-12T12:38:02.842+00:00",
+    "query": "print-help.example.net",
+    "record_type": "A",
+    "response": "192.0.2.15",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

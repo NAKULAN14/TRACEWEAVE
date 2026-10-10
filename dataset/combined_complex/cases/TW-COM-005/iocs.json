@@ -1,0 +1,129 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://conf.example.org/sessions/TW-COM-005/a",
+    "normalized_value": "https://conf.example.org/sessions/TW-COM-005/a",
+    "observed_values": [
+      "https://conf.example.org/sessions/TW-COM-005/a"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "url",
+    "value": "https://conf.example.org/sessions/TW-COM-005/b",
+    "normalized_value": "https://conf.example.org/sessions/TW-COM-005/b",
+    "observed_values": [
+      "https://conf.example.org/sessions/TW-COM-005/b"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_02.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "url",
+    "value": "https://conf.example.org/sessions/TW-COM-005/c",
+    "normalized_value": "https://conf.example.org/sessions/TW-COM-005/c",
+    "observed_values": [
+      "https://conf.example.org/sessions/TW-COM-005/c"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "qr_03.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "conf.example.org",
+    "normalized_value": "conf.example.org",
+    "observed_values": [
+      "conf.example.org"
+    ],
+    "roles": [
+      "dns_query_name",
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png",
+      "qr_02.png",
+      "qr_03.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "email_address",
+    "value": "programme@conf.example.org",
+    "normalized_value": "programme@conf.example.org",
+    "observed_values": [
+      "programme@conf.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "192.0.2.228",
+    "normalized_value": "192.0.2.228",
+    "observed_values": [
+      "192.0.2.228"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "198.51.100.76",
+    "normalized_value": "198.51.100.76",
+    "observed_values": [
+      "198.51.100.76"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  }
+]

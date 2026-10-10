@@ -1,0 +1,17 @@
+{
+  "case_id": "TW-ICS-017",
+  "corruption_type": "unexpected_malformed_properties",
+  "corruption_description": "Four junk lines were injected: an unregistered property, two malformed property names ('S UMMARY', '1BADNAME') and PRIORITY with a non-numeric value.",
+  "original_filename": "TW-ICS-017.ics",
+  "corrupted_filename": "TW-ICS-017.ics",
+  "affected_fields": [
+    "UNEXPECTED-PROPERTY",
+    "S UMMARY",
+    "1BADNAME",
+    "PRIORITY"
+  ],
+  "expected_parsing_result": "success_despite_corruption",
+  "recovery_possible": true,
+  "original_sha256": "09c00b09df00fdc8a2cf3671c037a288450d04d3a393d94c3978e255e851184d",
+  "corrupted_sha256": "425c15f4da5abf7318aa07195b7af6d7c56e7cfc03e02c015280a411a2fe8898"
+}

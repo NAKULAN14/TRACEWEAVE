@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-011-BRW-001",
+    "case_id": "TW-COM-011",
+    "timestamp": "2026-06-04T00:49:43.914+05:30",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://lab-access.example.net/renew/TW-COM-011",
+    "domain": "lab-access.example.net",
+    "browser": "Edge Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-011-a",
+    "user_account": "kenji.mori@interns.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-011-BRW-002",
+    "case_id": "TW-COM-011",
+    "timestamp": "2026-06-04T00:49:45.813+05:30",
+    "event_type": "page_load",
+    "url": "https://lab-access.example.net/renew/TW-COM-011",
+    "domain": "lab-access.example.net",
+    "browser": "Edge Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-011-a",
+    "user_account": "kenji.mori@interns.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-011-BRW-003",
+    "case_id": "TW-COM-011",
+    "timestamp": "2026-06-04T00:49:47.900+05:30",
+    "event_type": "form_displayed",
+    "url": "https://lab-access.example.net/renew/TW-COM-011",
+    "domain": "lab-access.example.net",
+    "browser": "Edge Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-011-a",
+    "user_account": "kenji.mori@interns.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-011-BRW-004",
+    "case_id": "TW-COM-011",
+    "timestamp": "2026-06-04T00:50:19.347+05:30",
+    "event_type": "tab_closed",
+    "url": "https://lab-access.example.net/renew/TW-COM-011",
+    "domain": "lab-access.example.net",
+    "browser": "Edge Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-011-a",
+    "user_account": "kenji.mori@interns.example.org",
+    "synthetic": true
+  }
+]

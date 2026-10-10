@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-008\\qr.png",
+    "sha256": "e3d8a26da0dcd738e5368205ec6d62afe9c3f061c417a2fd06ccb7022fd40df2"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:21.329372+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+        "points": [
+          [
+            40.0,
+            40.0
+          ],
+          [
+            488.9866027832031,
+            40.0
+          ],
+          [
+            489.6108703613281,
+            489.7907409667969
+          ],
+          [
+            40.0,
+            489.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "https://example.com/clubs/photography/join?term=autumn-2026&source=poster#membership",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "URL",
+    "confidence": 1.0
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-008"
+}

@@ -1,0 +1,43 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-010\\qr.png",
+    "sha256": "3205c529c0173adc3a299153cdd961c7cf4f377e0a23e0c5045af13ca74be255"
+  },
+  "analysis": {
+    "analyzed_at": "2026-10-07T04:26:06.576869+00:00",
+    "status": "SUCCESS"
+  },
+  "source": {
+    "original_url": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+    "source_type": "QR_PAYLOAD"
+  },
+  "normalization": {
+    "normalized_url": "https://events.example.com/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+    "changed": false
+  },
+  "structure": {
+    "scheme": "https",
+    "hostname": "events.example.com",
+    "port": null,
+    "domain": "example.com",
+    "subdomain": "events",
+    "path": "/academic/2026/autumn/department-of-computer-science-and-engineering/seminars/guest-lectures/machine-learning-pipelines-in-practice/materials/slides-and-reading-list",
+    "query": "",
+    "query_parameters": [],
+    "fragment": "",
+    "username_present": false,
+    "password_present": false
+  },
+  "indicators": {
+    "count": 0,
+    "items": []
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "analysis_engine": "TRACEWEAVE URL Analysis Engine",
+    "network_access_performed": false
+  },
+  "case_id": "TW-QR-010"
+}

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:TW-PHI-005-c5917740@vantor-projects.example.org
+DTSTAMP:20260415T135934Z
+DTSTART:20260419T130000Z
+DTEND:20260419T143000Z
+SUMMARY:Project Sync (Weekly)
+DESCRIPTION:Weekly project sync. Agenda and meeting page: https://meet.exam
+ ple.org/join/TW-PHI-005
+LOCATION:Room 3B\, Vantor Training Centre
+ORGANIZER;CN="Vantor Project Office":mailto:pmo@vantor-projects.example.org
+ATTENDEE;CN="Sara Haddad";ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:sara.haddad
+ @staff.example.com
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

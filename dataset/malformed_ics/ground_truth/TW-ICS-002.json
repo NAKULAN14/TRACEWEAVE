@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-002",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-002.ics",
+  "corrupted_file": "TW-ICS-002.ics",
+  "is_malformed": true,
+  "corruption_type": "missing_required_properties_dtstamp_dtstart",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [
+    "DTSTAMP",
+    "DTSTART"
+  ],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/002",
+    "https://events.example.edu/tw/agenda/002"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Event timing is partially lost: only DTEND survives, so the start time cannot be reconstructed from this file alone."
+}

@@ -1,0 +1,37 @@
+{
+    "verification_timestamp": "2026-10-03T15:13:25.008431+00:00",
+    "artifact": {
+        "filename": "TW-ICS-001.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-001.ics"
+    },
+    "before_recovery": {
+        "parser": "icalendar",
+        "status": "SUCCESS",
+        "error": null,
+        "sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+    },
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH",
+        "transformations": 3
+    },
+    "after_recovery": {
+        "recovered_artifact": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\verification\\TW-ICS-001_recovered.ics",
+        "parser": "icalendar",
+        "status": "SUCCESS",
+        "error": null,
+        "sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+    },
+    "integrity": {
+        "original_hash_before": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1",
+        "original_hash_after": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1",
+        "original_preserved": true
+    },
+    "classification": "PARSER_TOLERATED",
+    "verification": {
+        "verification_status": "SUCCESS",
+        "standard_parser_succeeded_before": true,
+        "standard_parser_succeeded_after": true,
+        "original_preserved": true
+    }
+}

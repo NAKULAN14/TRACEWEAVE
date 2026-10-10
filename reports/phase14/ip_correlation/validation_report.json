@@ -1,0 +1,10 @@
+{
+  "input": "reports\\phase14\\ip_correlation\\dns_ip_relationships.json",
+  "total_relationships": 1,
+  "valid_relationships": 1,
+  "invalid_relationships": 0,
+  "validation_status": "PASS",
+  "duplicate_relationships": [],
+  "network_access_performed": false,
+  "errors": []
+}

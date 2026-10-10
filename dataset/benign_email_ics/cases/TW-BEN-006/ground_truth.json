@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-BEN-006",
+  "category": "club_meeting",
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "email_is_benign": true,
+  "ics_is_valid": true,
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "expected_relationships": [],
+  "email_attachments": [],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-11-02T19:08:00+05:30",
+      "source": "event.ics",
+      "event": "Calendar object created (DTSTAMP and LAST-MODIFIED)"
+    },
+    {
+      "timestamp": "2026-11-02T19:10:00+05:30",
+      "source": "email.eml",
+      "event": "Email sent (Date header)"
+    },
+    {
+      "timestamp": "2026-11-07T15:00:00+05:30",
+      "source": "event.ics",
+      "event": "Event starts"
+    },
+    {
+      "timestamp": "2026-11-07T16:30:00+05:30",
+      "source": "event.ics",
+      "event": "Event ends"
+    }
+  ],
+  "notes": "Routine club agenda email sent to a members list; standalone ICS for the same meetup. ICS: METHOD:PUBLISH, STATUS:CONFIRMED, SEQUENCE:0; timed event in TZID Asia/Kolkata with an embedded VTIMEZONE; 1 VALARM component(s). Email: multipart/alternative (text/plain + text/html); no attachments. No URLs, QR codes, images, scripts or macros are present. ORGANIZER/ATTENDEE values are mailto: address URIs, not web URLs. Received headers use reserved example domains and contain no IP addresses. All people and organisations are fictional."
+}

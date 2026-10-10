@@ -1,0 +1,92 @@
+Received: from mail-out.tessarine-it.example.org (tessarine-it.example.org [192.0.2.37])
+	by mx.mail.example.net with ESMTP id TWCOM00401;
+	Wed, 13 May 2026 10:50:02 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-004
+From: "Tessarine IT Service Desk" <servicedesk@tessarine-it.example.org>
+To: "Lucas Ferreira" <lucas.ferreira@mail.example.net>
+Subject: Reminder: refresh your Wi-Fi certificate by end of day
+Date: Wed, 13 May 2026 10:49:59 +0000
+Message-ID: <tw-com-004.email_01.10734d856e@mail-out.tessarine-it.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-COM-004_email_01_alt"
+
+--=_TW-COM-004_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Lucas,
+
+Campus Wi-Fi certificates are being refreshed this week.
+
+Please scan the QR code below by end of day to refresh your device
+certificate.
+
+[QR code image(s) embedded in the HTML version of this message]
+
+Regards,
+Tessarine IT Service Desk
+
+--=_TW-COM-004_email_01_alt
+Content-Type: multipart/related; boundary="=_TW-COM-004_email_01_rel"
+
+--=_TW-COM-004_email_01_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Lucas,</p><p>Campus Wi-Fi certificates are being refreshed this week.</p><p>Please scan the QR code below by end of day to refresh your device certificate.</p><p><img src="cid:qr_01.email_01.tw-com-004@mail-out.tessarine-it.example.org" alt="QR code" width="200" height="200"></p><p>Regards,<br>Tessarine IT Service Desk</p></body></html>
+--=_TW-COM-004_email_01_rel
+Content-Type: image/png; name="wifi-cert-qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr_01.email_01.tw-com-004@mail-out.tessarine-it.example.org>
+Content-Disposition: inline; filename="wifi-cert-qr.png"
+
+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
+--=_TW-COM-004_email_01_rel--
+--=_TW-COM-004_email_01_alt--

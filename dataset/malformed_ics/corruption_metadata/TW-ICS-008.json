@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-008",
+  "corruption_type": "invalid_encoding_latin1",
+  "corruption_description": "The file was re-encoded as ISO-8859-1 instead of UTF-8, so accented characters are invalid UTF-8 byte sequences.",
+  "original_filename": "TW-ICS-008.ics",
+  "corrupted_filename": "TW-ICS-008.ics",
+  "affected_fields": [
+    "SUMMARY",
+    "LOCATION"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "9c52d54d669e7b9aba04c8c8e9c00445969ad6b685aaf49ba0e993aa6a3f7976",
+  "corrupted_sha256": "93c0fe5a231e542775e5b8e477095dc1abee415ad6220f7c98532981fac95f2e"
+}

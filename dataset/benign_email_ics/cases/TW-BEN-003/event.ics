@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-003-d1acc00daa3795c6@northfield.example.org
+DTSTAMP:20261009T053300Z
+DTSTART;TZID=Asia/Kolkata:20261015T143000
+DTEND;TZID=Asia/Kolkata:20261015T153000
+SUMMARY:Capstone Review Meeting
+DESCRIPTION:Progress review for the capstone project teams. Bring the updat
+ ed report and be ready for a 10-minute demo.\nRescheduled from Wednesday 1
+ 4 October 11:00.
+LOCATION:Room 305\, CS Block
+ORGANIZER;CN="Prof. Anita Deshpande":mailto:anita.deshpande@northfield.exam
+ ple.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Meera Joshi":mailto:meera.joshi@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Karthik Rao":mailto:karthik.rao@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Tanvi Bhat":mailto:tanvi.bhat@students.northfield.example.org
+CATEGORIES:Academic,Meeting
+STATUS:CONFIRMED
+SEQUENCE:1
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261009T053300Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Capstone Review Meeting
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

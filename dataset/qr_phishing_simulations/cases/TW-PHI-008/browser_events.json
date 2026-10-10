@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "TW-PHI-008-BRW-001",
+    "case_id": "TW-PHI-008",
+    "timestamp": "2026-04-22T02:37:57.882Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://example.org/scholarship/claim/TW-PHI-008",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-008-BRW-002",
+    "case_id": "TW-PHI-008",
+    "timestamp": "2026-04-22T02:37:59.087Z",
+    "event_type": "page_load",
+    "url": "https://example.org/scholarship/claim/TW-PHI-008",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-008-BRW-003",
+    "case_id": "TW-PHI-008",
+    "timestamp": "2026-04-22T02:37:59.948Z",
+    "event_type": "form_displayed",
+    "url": "https://example.org/scholarship/claim/TW-PHI-008",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-008-BRW-004",
+    "case_id": "TW-PHI-008",
+    "timestamp": "2026-04-22T02:38:09.353Z",
+    "event_type": "tab_closed",
+    "url": "https://example.org/scholarship/claim/TW-PHI-008",
+    "domain": "example.org",
+    "browser": "Chrome Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

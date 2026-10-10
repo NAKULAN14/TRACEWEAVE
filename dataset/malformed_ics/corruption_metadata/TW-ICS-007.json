@@ -1,0 +1,14 @@
+{
+  "case_id": "TW-ICS-007",
+  "corruption_type": "improper_line_folding",
+  "corruption_description": "The leading space was stripped from every continuation line of DESCRIPTION, turning folded text into orphan lines that are not valid properties.",
+  "original_filename": "TW-ICS-007.ics",
+  "corrupted_filename": "TW-ICS-007.ics",
+  "affected_fields": [
+    "DESCRIPTION"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "00fe470bf95aaa1035b111fd285142a56bf2c65166070f973c3b704b80b5d865",
+  "corrupted_sha256": "b49e5809a8cc8655e7777f7f216033b0c62737977d3bcc0803df71c04ac7f908"
+}

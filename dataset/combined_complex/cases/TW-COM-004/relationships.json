@@ -1,0 +1,42 @@
+[
+  {
+    "relationship_id": "REL-001",
+    "source": "artifact:email_01.eml",
+    "relation": "embeds_inline",
+    "target": "artifact:qr_01.png",
+    "evidence_type": "observed",
+    "basis": "MIME image part 'wifi-cert-qr.png' is byte-identical to qr_01.png"
+  },
+  {
+    "relationship_id": "REL-002",
+    "source": "artifact:email_01.eml",
+    "relation": "sent_from",
+    "target": "email_address:servicedesk@tessarine-it.example.org",
+    "evidence_type": "observed",
+    "basis": "From header"
+  },
+  {
+    "relationship_id": "REL-003",
+    "source": "artifact:qr_01.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_01#1",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-004",
+    "source": "qr:qr_01#1",
+    "relation": "encodes",
+    "target": "url:https://wifi-help.example.org/certs/TW-COM-004",
+    "evidence_type": "observed",
+    "basis": "decoded payload is a URL"
+  },
+  {
+    "relationship_id": "REL-005",
+    "source": "url:https://wifi-help.example.org/certs/TW-COM-004",
+    "relation": "has_domain",
+    "target": "domain:wifi-help.example.org",
+    "evidence_type": "observed",
+    "basis": "URL host"
+  }
+]

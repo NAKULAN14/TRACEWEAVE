@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-005",
+  "corruption_type": "invalid_datetime_format",
+  "corruption_description": "DTSTART uses an ISO-8601-with-dashes format and DTSTAMP lost its 'T' separator.",
+  "original_filename": "TW-ICS-005.ics",
+  "corrupted_filename": "TW-ICS-005.ics",
+  "affected_fields": [
+    "DTSTART",
+    "DTSTAMP"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "9e45408e5875f744a88e45d83962abc23cba3510656eb7aa50897a353244ff30",
+  "corrupted_sha256": "c6e4aeb15ad1dc6e2d4dd62ca4ab9bfb0abbff4ed4a0b152d34b79357dbe1bfa"
+}

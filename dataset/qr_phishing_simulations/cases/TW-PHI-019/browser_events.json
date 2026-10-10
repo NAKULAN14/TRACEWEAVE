@@ -1,0 +1,38 @@
+[
+  {
+    "event_id": "TW-PHI-019-BRW-001",
+    "case_id": "TW-PHI-019",
+    "timestamp": "2026-05-13T21:54:33.660Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://example.com/hack/signup/TW-PHI-019",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-019-BRW-002",
+    "case_id": "TW-PHI-019",
+    "timestamp": "2026-05-13T21:54:36.033Z",
+    "event_type": "page_load",
+    "url": "https://example.com/hack/signup/TW-PHI-019",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-019-BRW-003",
+    "case_id": "TW-PHI-019",
+    "timestamp": "2026-05-13T21:54:37.125Z",
+    "event_type": "form_displayed",
+    "url": "https://example.com/hack/signup/TW-PHI-019",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  }
+]

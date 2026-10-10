@@ -1,0 +1,54 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-020.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-020.ics",
+        "size_bytes": 842,
+        "sha256": "a4949bc1e9041340f3c92c45370f15526174ae751e1b4cd64ea52781a1a94bbf"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-020_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-020_recovered.ics",
+        "size_bytes": 842,
+        "sha256": "a4949bc1e9041340f3c92c45370f15526174ae751e1b4cd64ea52781a1a94bbf"
+    },
+    "transformations": [
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 12,
+            "original": " lty feedback. Pl\\qease bring your student\u0007ID and a laptop. Review the pre-",
+            "recovered": " lty feedback. Pl\\qease bring your student\u0007ID and a laptop. Review the pre-",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 13,
+            "original": " reading beforehand.\\nAgenda: https://events.example.edu/tw/agenda/020",
+            "recovered": " reading beforehand.\\nAgenda: https://events.example.edu/tw/agenda/020",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 2,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:55.162320+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

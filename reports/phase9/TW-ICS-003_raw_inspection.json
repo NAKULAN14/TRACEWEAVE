@@ -1,0 +1,289 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-003.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-003.ics",
+    "size_bytes": 859,
+    "sha256": "ddb652416f5105349ed8a4df317fd6e32aa9205f45468dd3154424af752a14e6"
+  },
+  "inspection": {
+    "inspected_at": "2026-10-03T15:17:29.244082+00:00",
+    "encoding_used": "utf-8"
+  },
+  "structure": {
+    "has_vcalendar_begin": true,
+    "has_vcalendar_end": true,
+    "balanced_vcalendar": true,
+    "component_analysis": {
+      "begin_components": [
+        {
+          "line_number": 1,
+          "component": "VCALENDAR"
+        },
+        {
+          "line_number": 5,
+          "component": "VEVENT"
+        },
+        {
+          "line_number": 20,
+          "component": "VALARM"
+        }
+      ],
+      "end_components": [
+        {
+          "line_number": 24,
+          "component": "VALARM"
+        },
+        {
+          "line_number": 25,
+          "component": "VCALENDAR"
+        }
+      ]
+    },
+    "line_analysis": {
+      "total_lines": 25,
+      "lines": [
+        {
+          "line_number": 1,
+          "length": 15,
+          "text": "BEGIN:VCALENDAR",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 2,
+          "length": 11,
+          "text": "VERSION:2.0",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 3,
+          "length": 49,
+          "text": "PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 4,
+          "length": 18,
+          "text": "CALSCALE:GREGORIAN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 5,
+          "length": 12,
+          "text": "BEGIN:VEVENT",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 6,
+          "length": 42,
+          "text": "UID:tw-ics-003-f8716c29@events.example.edu",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 7,
+          "length": 24,
+          "text": "DTSTAMP:20260210T090000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 8,
+          "length": 24,
+          "text": "DTSTART:20260309T083000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 9,
+          "length": 22,
+          "text": "DTEND:20260309T103000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 10,
+          "length": 41,
+          "text": "SUMMARY:Cybersecurity Club Weekly Meeting",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 11,
+          "length": 75,
+          "text": "DESCRIPTION:Planning the semester's activities\\, assigning workshop leads\\,",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 12,
+          "length": 75,
+          "text": "  and reviewing the practice challenge schedule. Please bring your student ",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 13,
+          "length": 75,
+          "text": " ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://event",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 14,
+          "length": 28,
+          "text": " s.example.edu/tw/agenda/003",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 15,
+          "length": 61,
+          "text": "LOCATION:Room 250\\, Block A\\, Example Institute of Technology",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 16,
+          "length": 59,
+          "text": "ORGANIZER;CN=\"Dr. Meera Nair\":mailto:meera.nair@example.edu",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 17,
+          "length": 24,
+          "text": "CATEGORIES:CLUB,ACADEMIC",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 18,
+          "length": 16,
+          "text": "STATUS:CONFIRMED",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 19,
+          "length": 37,
+          "text": "URL:https://events.example.edu/tw/003",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 20,
+          "length": 12,
+          "text": "BEGIN:VALARM",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 21,
+          "length": 14,
+          "text": "ACTION:DISPLAY",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 22,
+          "length": 38,
+          "text": "DESCRIPTION:Event starts in 15 minutes",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 23,
+          "length": 14,
+          "text": "TRIGGER:-PT15M",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 24,
+          "length": 10,
+          "text": "END:VALARM",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        },
+        {
+          "line_number": 25,
+          "length": 13,
+          "text": "END:VCALENDAR",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        }
+      ]
+    }
+  },
+  "anomalies": [
+    {
+      "line_number": 12,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "and reviewing the practice challenge schedule. Please bring your student"
+    },
+    {
+      "line_number": 14,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "s.example.edu/tw/agenda/003"
+    }
+  ],
+  "encoded_candidates": [
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 167,
+      "end_offset": 183,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "40129f5018eb841f8295aac9c2448a77237f26663cafdc06c384579684176d17"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 193,
+      "end_offset": 209,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "da08d9c0942629e3183fed188dd03b27620e018e994e9b9df204c378e3aeaf63"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 217,
+      "end_offset": 233,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "89b466bcc75f97e578ebfb99b23d32ab84adb622f47ecce214b41192b0e7fe01"
+    }
+  ],
+  "raw_preview": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:tw-ics-003-f8716c29@events.example.edu\r\nDTSTAMP:20260210T090000Z\r\nDTSTART:20260309T083000Z\r\nDTEND:20260309T103000Z\r\nSUMMARY:Cybersecurity Club Weekly Meeting\r\nDESCRIPTION:Planning the semester's activities\\, assigning workshop leads\\,\r\n  and reviewing the practice challenge schedule. Please bring your student \r\n ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://event\r\n s.example.edu/tw/agenda/003\r\nLOCATION:Room 250\\, Block A\\, Example Institute of Technology\r\nORGANIZER;CN=\"Dr. Meera Nair\":mailto:meera.nair@example.edu\r\nCATEGORIES:CLUB,ACADEMIC\r\nSTATUS:CONFIRMED\r\nURL:https://events.example.edu/tw/003\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Event starts in 15 minutes\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VCALENDAR\r\n"
+}

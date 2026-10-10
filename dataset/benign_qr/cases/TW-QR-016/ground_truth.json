@@ -1,0 +1,13 @@
+{
+  "case_id": "TW-QR-016",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "WIFI:T:WPA;S:Lab\\;Net\\,2026;P:Fake\\:Pass\\;5610;H:true;;",
+  "payload_type": "wifi",
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Wi-Fi configuration with a hidden SSID and backslash-escaped special characters. Unescaped SSID is 'Lab;Net,2026' and the unescaped placeholder passphrase is 'Fake:Pass;5610' (fictional, not a real credential). Tests parsing of escape sequences. QR version 5, error correction Q (~25%), module size 10px, quiet zone 4 modules, image 450x450px (8-bit greyscale PNG, black on white); payload length 55 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

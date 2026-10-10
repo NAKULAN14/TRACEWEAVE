@@ -1,0 +1,86 @@
+Return-Path: <cse.newsletter@northfield.example.org>
+Received: from mail.northfield.example.org (mail.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id FD0A7550FB
+	for <cse.all@northfield.example.org>; Thu, 01 Oct 2026 08:00:02 +0530
+Received: from workstation.northfield.example.org (workstation.northfield.example.org)
+	by mail.northfield.example.org (Postfix) with ESMTPSA id 398F99ED15
+	for <cse.all@northfield.example.org>; Thu, 01 Oct 2026 08:00:00 +0530
+From: "CSE Connect Newsletter" <cse.newsletter@northfield.example.org>
+To: "CSE Department Mailing List" <cse.all@northfield.example.org>
+Subject: CSE Connect - October 2026 Edition
+Date: Thu, 01 Oct 2026 08:00:00 +0530
+Message-ID: <20261001080000.398f99ed158b@northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: CampusMailer 3.2
+Precedence: bulk
+List-Id: CSE Connect <cse-connect.northfield.example.org>
+Content-Type: multipart/alternative; boundary="=_TW_ALT_398f99ed158b3626"
+
+This is a multi-part message in MIME format.
+--=_TW_ALT_398f99ed158b3626
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear members of the CSE community,
+
+Welcome to the October edition of CSE Connect. Here is a quick round-up
+of last month and a look at what is coming up.
+
+Highlights from September:
+- A third-year team placed second at an inter-college coding contest.
+- The open-source club merged its first batch of student contributions
+  into the course lab toolkit.
+- Faculty completed the revision of the elective list for the next
+  academic year.
+
+Upcoming this month:
+- Guest talk on practical machine learning pipelines: Wednesday, 14
+  October 2026, 15:00-16:00 IST, Seminar Hall B.
+- Introduction to Version Control workshop: Saturday, 24 October 2026,
+  10:00-13:00 IST, Computer Lab 2. Limited to 40 participants; register
+  at the department office.
+
+Reminders:
+- Mid-semester examination guidelines are on the department notice
+  board.
+- Lost-and-found items from the labs are kept at the department office
+  for two weeks.
+
+Warm regards,
+CSE Connect Editorial Team
+Department of Computer Science and Engineering
+--=_TW_ALT_398f99ed158b3626
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSE Connect - October 2026 Edition</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Dear members of the CSE community,</p>
+<p>Welcome to the October edition of CSE Connect. Here is a quick round-up of last month and a look at what is coming up.</p>
+<h3 style="margin: 16px 0 6px;">Highlights from September</h3>
+<ul>
+<li>A third-year team placed second at an inter-college coding contest.</li>
+<li>The open-source club merged its first batch of student contributions into the course lab toolkit.</li>
+<li>Faculty completed the revision of the elective list for the next academic year.</li>
+</ul>
+<h3 style="margin: 16px 0 6px;">Upcoming this month</h3>
+<ul>
+<li>Guest talk on practical machine learning pipelines: Wednesday, 14 October 2026, 15:00-16:00 IST, Seminar Hall B.</li>
+<li>Introduction to Version Control workshop: Saturday, 24 October 2026, 10:00-13:00 IST, Computer Lab 2. Limited to 40 participants; register at the department office.</li>
+</ul>
+<h3 style="margin: 16px 0 6px;">Reminders</h3>
+<ul>
+<li>Mid-semester examination guidelines are on the department notice board.</li>
+<li>Lost-and-found items from the labs are kept at the department office for two weeks.</li>
+</ul>
+<p>Warm regards,<br>
+CSE Connect Editorial Team<br>
+Department of Computer Science and Engineering</p>
+</body>
+</html>
+--=_TW_ALT_398f99ed158b3626--

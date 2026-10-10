@@ -1,0 +1,17 @@
+{
+  "file": {
+    "filename": "TW-ICS-009.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-009.ics",
+    "size_bytes": 1760
+  },
+  "parser": {
+    "name": "icalendar",
+    "status": "FAILED",
+    "parsed_at": "2026-10-03T15:17:17.840313+00:00"
+  },
+  "calendar": null,
+  "error": {
+    "type": "ValueError",
+    "message": "Content line could not be parsed into parts: '��B\u0000E\u0000G\u0000I\u0000N\u0000:\u0000V\u0000C\u0000A\u0000L\u0000E\u0000N\u0000D\u0000A\u0000R\u0000\r\u0000': ��B\u0000E\u0000G\u0000I\u0000N\u0000"
+  }
+}

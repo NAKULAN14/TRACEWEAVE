@@ -1,0 +1,88 @@
+Received: from mail-out.quillmoor-union.example.org (quillmoor-union.example.org [192.0.2.82])
+	by mx.mail.example.com with ESMTP id TWPHI002;
+	Thu, 09 Apr 2026 12:29:33 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-002
+From: "Quillmoor Student Union" <events@quillmoor-union.example.org>
+To: "Daniel Okafor" <daniel.okafor@mail.example.com>
+Subject: You're invited: Spring Orientation Mixer - register your spot
+Date: Thu, 09 Apr 2026 17:59:28 +0530
+Message-ID: <tw-phi-002.ae01d6241b@mail-out.quillmoor-union.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-PHI-002_mix"
+
+--=_TW-PHI-002_mix
+Content-Type: multipart/alternative; boundary="=_TW-PHI-002_alt"
+
+--=_TW-PHI-002_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Daniel,
+
+Spots for the Spring Orientation Mixer are filling up fast, and we would
+love to see you there.
+
+Registration is required for entry and closes at midnight tonight.
+
+Scan the attached QR code (mixer-registration-qr.png) with your phone
+camera to continue.
+
+If scanning does not work, use this link instead:
+https://example.org/register/TW-PHI-002
+
+Regards,
+Quillmoor Student Union
+
+--=_TW-PHI-002_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Daniel,</p><p>Spots for the Spring Orientation Mixer are filling up fast, and we would love to see you there.</p><p>Registration is required for entry and closes at midnight tonight.</p><p>Scan the attached QR code (mixer-registration-qr.png) with your phone camera to continue.</p><p>(QR code attached: mixer-registration-qr.png)</p><p>If scanning does not work, use this link instead:<br><a href="https://example.org/register/TW-PHI-002">https://example.org/register/TW-PHI-002</a></p><p>Regards,<br>Quillmoor Student Union</p></body></html>
+--=_TW-PHI-002_alt--
+--=_TW-PHI-002_mix
+Content-Type: image/png; name="mixer-registration-qr.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="mixer-registration-qr.png"
+
+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
+rkJggg==
+--=_TW-PHI-002_mix--

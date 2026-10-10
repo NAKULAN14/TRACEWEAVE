@@ -1,0 +1,112 @@
+Received: from mail-out.events.example.org (events.example.org [192.0.2.232])
+	by mx.students.example.net with ESMTP id TWCOM01201;
+	Sat, 06 Jun 2026 10:12:17 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-012
+From: "Alderwick Open Day Team" <openday@events.example.org>
+To: "Chloe Dubois" <chloe.dubois@students.example.net>
+Subject: Open day schedule and map
+Date: Sat, 06 Jun 2026 10:12:14 +0000
+Message-ID: <tw-com-012.email_01.4581f82217@mail-out.events.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-012_email_01_mix"
+
+--=_TW-COM-012_email_01_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-012_email_01_alt"
+
+--=_TW-COM-012_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Chloe,
+
+Our spring open day is coming up.
+
+Scan the attached QR code for the full schedule.
+
+Attached QR code file(s): openday-schedule-qr.png
+
+A calendar invitation is attached.
+
+Regards,
+Alderwick Open Day Team
+
+--=_TW-COM-012_email_01_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Chloe,</p><p>Our spring open day is coming up.</p><p>Scan the attached QR code for the full schedule.</p><p>Attached QR code file(s): openday-schedule-qr.png</p><p>A calendar invitation is attached.</p><p>Regards,<br>Alderwick Open Day Team</p></body></html>
+--=_TW-COM-012_email_01_alt--
+--=_TW-COM-012_email_01_mix
+Content-Type: image/png; name="openday-schedule-qr.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="openday-schedule-qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCCAIAAADzel4SAAAAEXRFWHRUVy1TeW50aGV0aWMAdHJ1
+ZdGmG8sAAAlySURBVHic7d3NrRs7GkVR3YYD0Phl1ZF2Vj1WBnoZFAxv0PxYtdZcv1feoAcH/Pl+
+vy8A/tR//viRAMgoQOU0CpDIKEAiowCJjAIkMgqQyChAIqMAiYwCJDIKkMgoQCKjAImMAiQyCpDI
+KEAiowCJjAIkMgqQyChAIqMAiYwCJDIKkMgoQCKjAImMAiQyCpDIKEAiowCJjAIkMgqQyChAIqMA
+iYwCJDIKkMgoQCKjAImMAiQyCpD8em3y/ue/r3v5/P9/f/x51z322onv6trMb+N+73mmT/gmC6dR
+gERGARIZBUhkFCCRUYBERgESGQVIZBQgkVGAM1dMM9cI19YtVWYugnY99sTtTXnPuxZQu565mPnX
+dxoFSGQUIJFRgERGARIZBUhkFCCRUYBERgESGQW444pp15LhxOVGec8z7xcqnnYn0rrfRnnd+/0b
+vOY0CpDIKEAiowCJjAIkMgqQyChAIqMAiYwCJDIK8LwV0/3susln5h1Q16+7a5mza11z4qrnaZxG
+ARIZBUhkFCCRUYBERgESGQVIZBQgkVGAREYBEiumv2TX3TW7dkozt0a7brXi3pxGARIZBUhkFCCR
+UYBERgESGQVIZBQgkVGAREYBnrdiut9iZNetR+vMvItp18Zp3bsqz1zc799g4TQKkMgoQCKjAImM
+AiQyCpDIKICMAuzjNAqQyCjAHVdMM5c5u6y7fWjX6858bDHz8xb+Df4+p1GAREYBEhkFSGQUIJFR
+gERGARIZBUhkFCCRUYAzV0xPu8tl5o5l1+bn2q7blp626nnav8F1nEYBEhkFSGQUIJFRgERGARIZ
+BUhkFCCRUYBERgESdzH9JScugtZtnHatp3bdxbRrtXXiJzpxd+c0CpDIKEAiowCJjAIkMgqQyChA
+IqMAiYwCJDIKcOaKad1GYtf6Yubq42lmLq9OvMdp5krtM/JfitMoQCKjAImMAiQyCpDIKEAiowCJ
+jAIkMgqQyChA8vP9fl87rNuE7HpsceLnnbknKU78bRQzd3fvke/qmtMoQCKjAImMAiQyCpDIKEAi
+owCJjAIkMgqQyCjAmXcx7TJz83PiXT3Fid/zzNvDZt569B75rtZxGgVIZBQgkVGAREYBEhkFSGQU
+IJFRgERGARIZBXjeXUzrXreYua942rcx876sda97bdc67jNyK7iO0yhAIqMAiYwCJDIKkMgoQCKj
+AImMAiQyCpDIKMCZK6bixMXIrmeeeYPQ/RZfMz/RiXdefUZ+k9ecRgESGQVIZBQgkVGAREYBEhkF
+SGQUIJFRgERGAZJfr01OvDNn5o5l5rs6cSHztPvBdn3ez8itYOE0CpDIKEAiowCJjAIkMgqQyChA
+IqMAiYwCJDIKcMe7mNbtOq7tWqqcuIA68e6pmff87Pq1FzM3XR8rJoAT+U89QCKjADIKsI/TKEAi
+owCJjAIkMgqQyCjAHe9iOnFt8rTdzsx3dW3XPU7rnvl+7+oz8t/+NadRgERGARIZBUhkFCCRUYBE
+RgESGQVIZBQgkVGAM1dMxcxtxrrXXffM697VtZnvat3ftzjxRqyncRoFSGQUIJFRgERGARIZBUhk
+FCCRUYBERgESGQVIfr7f72ueE1c991ubzNyxzFxAnbhhK8987T3ye17HaRQgkVGAREYBEhkFSGQU
+IJFRgERGARIZBUhkFOCOdzHtWlDs2u3sWiJdu9+m62n3dK3ztO3cNadRgERGARIZBUhkFCCRUYBE
+RgESGQVIZBQgkVGAO66YZt7GU173xGXOOrve1czfxok7pXWPPZHTKEAiowCJjAIkMgqQyChAIqMA
+iYwCJDIKkMgowPNWTLvM3KLMXObcb+NUrNuhrXvs/XZZ6ziNAiQyCpDIKEAiowCJjAIkMgqQyChA
+IqMAiYwCJD/f7/c1z679zMxbgGauemYuVXbtdsozz/xdFe9N3+S6T3TNaRQgkVGAREYBEhkFSGQU
+IJFRgERGARIZBUhkFOCOdzHN3PycePtQeeZdr7vrdqlddv2urpW/0WfTmmgXp1GAREYBEhkFSGQU
+IJFRgERGARIZBUhkFCCRUYAz72Jat2PZdWfOrsXIrmXOzLXYiQu3E9/ztffI/ds6TqMAiYwCJDIK
+kMgoQCKjAImMAiQyCpDIKEAiowB3vIvp2q6twrp9xYmrrafda1Tcb7NXfMJ7nvn3dRoFSGQUIJFR
+gERGARIZBUhkFCCRUYBERgESGQV43l1M6153l123LZ14g9Au99sL3e8v+HEXE8CJ/KceIJFRgERG
+ARIZBUhkFCCRUYBERgESGQV43l1MJ+4crlcfM+/q2WXm9mbXXVsnflfX7vd7dhoFSGQUIJFRgERG
+ARIZBUhkFCCRUYBERgESGQV43l1M97sHZt1yY+adV7tWPcXMX92JPgf+nq85jQIkMgqQyChAIqMA
+iYwCJDIKkMgoQCKjAImMApy5YnoaN9v8nW9y191EM3d3M1dqJ+6UrjmNAiQyCpDIKEAiowCJjAIk
+MgqQyChAIqMAiYwCJL9em9zvZpuyr1i3+lhn3Y1JM3csu3ZK6173xCXSe+Rvw2kUIJFRgERGARIZ
+BUhkFCCRUYBERgESGQVIZBTgzBXTtZk3rszcC81cucz8rspjd63U1ln3rj4jP+86TqMAiYwCJDIK
+kMgoQCKjAImMAiQyCpDIKEAiowB3XDFd23XvzYnbm/LYdd/GzG3Vup3SiZuudd4HruOuOY0CJDIK
+kMgoQCKjAImMAiQyCpDIKEAiowCJjAI8b8XE7yubkBPvJtq1cVr3Xc185rIm+oz85RROowCJjAIk
+MgqQyChAIqMAiYwCJDIKkMgoQCKjAIkV0/Fm3iC0bl1TXnfXLV4zP9GuXVYx8105jQIkMgqQyChA
+IqMAiYwCJDIKkMgogIwC7OM0CvC8FdPM+1hOvDFp3apn5rexzv3+Cvw+p1GAREYBEhkFSGQUIJFR
+gERGARIZBUhkFCCRUYA7rpjut+uYee/NzBuT1rnfDUL3W3ydyGkUIJFRgERGARIZBUhkFCCRUYBE
+RgESGQVIZBQg+fl+v+0ZAB7NaRQgkVGAREYBEhkFSGQUIJFRgERGARIZBUhkFCCRUYBERgESGQVI
+ZBQgkVGAREYBEhkFSGQUIJFRgERGARIZBUhkFCCRUYBERgESGQVIZBQgkVGAREYBEhkFSGQUIJFR
+gERGARIZBUhkFCCRUYBERgESGQVIZBQgkVGAREYBXsW/70Hxb+3VTn8AAAAASUVORK5CYII=
+--=_TW-COM-012_email_01_mix
+Content-Type: text/calendar; charset=utf-8; method=PUBLISH
+Content-Disposition: attachment; filename="invite-event.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic Combined Cases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:openday-TW-COM-012@tw-uid.example.org
+DTSTAMP:20260606T101214Z
+DTSTART:2026-06-14 10:00
+DTEND:20260614T110000Z
+SEQUENCE:0
+SUMMARY:Alderwick Open Day
+DESCRIPTION:Schedule: https://openday.example.org/schedule/TW-COM-012
+LOCATION:Main Quad
+ORGANIZER;CN="Alderwick Open Day Team":mailto:openday@events.example.org
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-COM-012_email_01_mix--

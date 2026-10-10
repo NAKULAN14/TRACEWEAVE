@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-PHI-014-DNS-001",
+    "case_id": "TW-PHI-014",
+    "timestamp": "2026-05-03T14:19:30.709Z",
+    "query": "hr.example.org",
+    "record_type": "A",
+    "response": "198.51.100.132",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

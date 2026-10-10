@@ -1,0 +1,61 @@
+{
+  "artifact": {
+    "filename": "qr.png",
+    "path": "dataset\\benign_qr\\cases\\TW-QR-003\\qr.png",
+    "sha256": "f1c4fcfbd4927ee8004cbcb90857c75a9be0b71455831f720ca1d8a8c84347c2"
+  },
+  "extraction": {
+    "extracted_at": "2026-10-07T04:11:20.784169+00:00",
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "qr_count": 1
+  },
+  "detection": {
+    "status": "SUCCESS",
+    "qr_detected": true,
+    "count": 1,
+    "detections": [
+      {
+        "index": 1,
+        "decoded": true,
+        "payload": "Photography Club - Weekly Meetup\nEvery Friday, 17:00-18:00 IST\nRoom 2, Student Activity Centre\nAgenda: photo critique, lens lending roster, winter exhibition plan\nContact: photography.club@example.com",
+        "points": [
+          [
+            40.0,
+            40.0
+          ],
+          [
+            609.0,
+            40.0
+          ],
+          [
+            609.3432006835938,
+            609.53173828125
+          ],
+          [
+            40.0,
+            609.0
+          ]
+        ]
+      }
+    ]
+  },
+  "decoding": {
+    "status": "SUCCESS",
+    "payload": "Photography Club - Weekly Meetup\nEvery Friday, 17:00-18:00 IST\nRoom 2, Student Activity Centre\nAgenda: photo critique, lens lending roster, winter exhibition plan\nContact: photography.club@example.com",
+    "method": "original",
+    "attempts": [
+      "original"
+    ]
+  },
+  "classification": {
+    "type": "TEXT",
+    "confidence": 0.8
+  },
+  "provenance": {
+    "original_artifact_preserved": true,
+    "source_artifact": "qr.png",
+    "processing_engine": "TRACEWEAVE QR Extraction Engine"
+  },
+  "case_id": "TW-QR-003"
+}

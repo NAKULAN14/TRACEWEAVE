@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-013",
+  "corruption_type": "vevent_nested_in_vjournal",
+  "corruption_description": "The VEVENT was wrapped inside an unrelated VJOURNAL component.",
+  "original_filename": "TW-ICS-013.ics",
+  "corrupted_filename": "TW-ICS-013.ics",
+  "affected_fields": [
+    "VJOURNAL",
+    "VEVENT"
+  ],
+  "expected_parsing_result": "success_despite_corruption",
+  "recovery_possible": true,
+  "original_sha256": "fb6e30ac4248c2ebd164ed595b79969d571176cdfcdb65e606f9b7cd00df6749",
+  "corrupted_sha256": "8209875b71b46c17ff63aff53b105107e81964f1db6d0659fc07b4c4561cf727"
+}

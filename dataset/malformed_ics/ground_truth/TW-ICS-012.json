@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-012",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-012.ics",
+  "corrupted_file": "TW-ICS-012.ics",
+  "is_malformed": true,
+  "corruption_type": "crossed_component_nesting",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/012",
+    "https://events.example.edu/tw/agenda/012"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "All properties are intact. Closing the VEVENT while the VALARM is open is a nesting violation; the trailing END:VALARM is unmatched. Tolerant parsers such as icalendar may accept it without complaint."
+}

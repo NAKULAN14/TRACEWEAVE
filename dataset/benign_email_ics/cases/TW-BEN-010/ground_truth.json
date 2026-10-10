@@ -1,0 +1,43 @@
+{
+  "case_id": "TW-BEN-010",
+  "category": "meeting_cancellation",
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "email_is_benign": true,
+  "ics_is_valid": true,
+  "expected_qr_codes": [],
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "expected_relationships": [],
+  "email_attachments": [
+    {
+      "filename": "cancellation.ics",
+      "content_type": "text/calendar",
+      "identical_to": "event.ics"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-10-29T20:18:00+05:30",
+      "source": "event.ics",
+      "event": "Calendar object created (DTSTAMP and LAST-MODIFIED)"
+    },
+    {
+      "timestamp": "2026-10-29T20:20:00+05:30",
+      "source": "email.eml",
+      "event": "Email sent (Date header)"
+    },
+    {
+      "timestamp": "2026-10-31T17:00:00+05:30",
+      "source": "event.ics",
+      "event": "Cancelled event was scheduled to start"
+    },
+    {
+      "timestamp": "2026-10-31T19:00:00+05:30",
+      "source": "event.ics",
+      "event": "Cancelled event was scheduled to end"
+    }
+  ],
+  "notes": "Cancellation notice. ICS uses METHOD:CANCEL, STATUS:CANCELLED and SEQUENCE 1; a valid ICS even though the event is cancelled. ICS: METHOD:CANCEL, STATUS:CANCELLED, SEQUENCE:1; timed event in TZID Asia/Kolkata with an embedded VTIMEZONE; no VALARM. Email: multipart/alternative (text/plain + text/html) inside multipart/mixed, with this case's ICS attached as cancellation.ics (text/calendar, identical to event.ics); In-Reply-To/References point to an earlier message that is not part of the dataset. No URLs, QR codes, images, scripts or macros are present. ORGANIZER/ATTENDEE values are mailto: address URIs, not web URLs. Received headers use reserved example domains and contain no IP addresses. All people and organisations are fictional."
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://print-help.example.net/pay/TW-COM-014",
+    "normalized_value": "https://print-help.example.net/pay/TW-COM-014",
+    "observed_values": [
+      "https://print-help.example.net/pay/TW-COM-014"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "url",
+    "value": "https://print.example.org/info/TW-COM-014",
+    "normalized_value": "https://print.example.org/info/TW-COM-014",
+    "observed_values": [
+      "https://print.example.org/info/TW-COM-014"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "qr_01.png"
+    ],
+    "assessment": "benign_context",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "print-help.example.net",
+    "normalized_value": "print-help.example.net",
+    "observed_values": [
+      "print-help.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "print.example.org",
+    "normalized_value": "print.example.org",
+    "observed_values": [
+      "print.example.org"
+    ],
+    "roles": [
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "qr_01.png"
+    ],
+    "assessment": "benign_context",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "email_address",
+    "value": "print@print.example.org",
+    "normalized_value": "print@print.example.org",
+    "observed_values": [
+      "print@print.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "192.0.2.15",
+    "normalized_value": "192.0.2.15",
+    "observed_values": [
+      "192.0.2.15"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "192.0.2.235",
+    "normalized_value": "192.0.2.235",
+    "observed_values": [
+      "192.0.2.235"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  }
+]

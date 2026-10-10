@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Northfield Institute//Campus Calendar 2.1//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:tw-ben-009-7e680d1fb6af3c2e@northfield.example.org
+DTSTAMP:20261028T111300Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Founders' Day - Institute Holiday
+DESCRIPTION:Institute holiday on account of Founders' Day. No classes or ad
+ ministrative services.\nClasses resume on Wednesday\, 4 November 2026.
+LOCATION:Northfield Institute of Technology
+ORGANIZER;CN="Office of the Registrar":mailto:registrar@northfield.example.
+ org
+CATEGORIES:Holiday,Announcement
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+LAST-MODIFIED:20261028T111300Z
+END:VEVENT
+END:VCALENDAR

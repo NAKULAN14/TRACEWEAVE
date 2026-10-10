@@ -1,0 +1,139 @@
+[
+  {
+    "relationship_id": "REL-001",
+    "source": "artifact:email_01.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:qr_01.png",
+    "evidence_type": "observed",
+    "basis": "MIME image part 'join-qr.png' is byte-identical to qr_01.png"
+  },
+  {
+    "relationship_id": "REL-002",
+    "source": "artifact:email_01.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:event.ics",
+    "evidence_type": "observed",
+    "basis": "text/calendar MIME part identical to the ICS file"
+  },
+  {
+    "relationship_id": "REL-003",
+    "source": "artifact:event.ics",
+    "relation": "contains_url",
+    "target": "url:https://calendar.example.org/join/TW-COM-010",
+    "evidence_type": "observed",
+    "basis": "URL in ICS DESCRIPTION"
+  },
+  {
+    "relationship_id": "REL-004",
+    "source": "artifact:email_01.eml",
+    "relation": "sent_from",
+    "target": "email_address:calendar@calendar.example.org",
+    "evidence_type": "observed",
+    "basis": "From header"
+  },
+  {
+    "relationship_id": "REL-005",
+    "source": "artifact:email_02.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:qr_02.png",
+    "evidence_type": "observed",
+    "basis": "MIME image part 'join-qr.png' is byte-identical to qr_02.png"
+  },
+  {
+    "relationship_id": "REL-006",
+    "source": "artifact:email_02.eml",
+    "relation": "carries_attachment",
+    "target": "artifact:event_02.ics",
+    "evidence_type": "observed",
+    "basis": "text/calendar MIME part identical to the ICS file"
+  },
+  {
+    "relationship_id": "REL-007",
+    "source": "artifact:event_02.ics",
+    "relation": "contains_url",
+    "target": "url:https://calendar-sync.example.org/join/TW-COM-010",
+    "evidence_type": "observed",
+    "basis": "URL in ICS DESCRIPTION"
+  },
+  {
+    "relationship_id": "REL-008",
+    "source": "artifact:email_02.eml",
+    "relation": "sent_from",
+    "target": "email_address:calendar-team@calendar-sync.example.org",
+    "evidence_type": "observed",
+    "basis": "From header"
+  },
+  {
+    "relationship_id": "REL-009",
+    "source": "artifact:qr_01.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_01#1",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-010",
+    "source": "qr:qr_01#1",
+    "relation": "encodes",
+    "target": "url:https://calendar.example.org/join/TW-COM-010",
+    "evidence_type": "observed",
+    "basis": "decoded payload is a URL"
+  },
+  {
+    "relationship_id": "REL-011",
+    "source": "artifact:qr_02.png",
+    "relation": "contains_qr",
+    "target": "qr:qr_02#1",
+    "evidence_type": "observed",
+    "basis": "QR code decoded from image"
+  },
+  {
+    "relationship_id": "REL-012",
+    "source": "qr:qr_02#1",
+    "relation": "encodes",
+    "target": "url:https://calendar-sync.example.org/join/TW-COM-010",
+    "evidence_type": "observed",
+    "basis": "decoded payload is a URL"
+  },
+  {
+    "relationship_id": "REL-013",
+    "source": "url:https://calendar-sync.example.org/join/TW-COM-010",
+    "relation": "has_domain",
+    "target": "domain:calendar-sync.example.org",
+    "evidence_type": "observed",
+    "basis": "URL host"
+  },
+  {
+    "relationship_id": "REL-014",
+    "source": "url:https://calendar.example.org/join/TW-COM-010",
+    "relation": "has_domain",
+    "target": "domain:calendar.example.org",
+    "evidence_type": "observed",
+    "basis": "URL host"
+  },
+  {
+    "relationship_id": "REL-015",
+    "source": "dns_event:TW-COM-010-DNS-001",
+    "relation": "queries",
+    "target": "domain:calendar.example.org",
+    "evidence_type": "observed",
+    "basis": "DNS query name"
+  },
+  {
+    "relationship_id": "REL-016",
+    "source": "dns_event:TW-COM-010-DNS-001",
+    "relation": "resolves_to",
+    "target": "ip:198.51.100.110",
+    "evidence_type": "observed",
+    "basis": "DNS response"
+  },
+  {
+    "relationship_id": "REL-017",
+    "source": "artifact:email_01.eml",
+    "relation": "refers_to_same_event",
+    "target": "artifact:email_02.eml",
+    "evidence_type": "inferred",
+    "basis": "same UID and equal SEQUENCE but differing content",
+    "confidence": "medium"
+  }
+]

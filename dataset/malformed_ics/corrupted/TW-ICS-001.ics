@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20260201T090000Z
+DTSTART:20260302T103000Z
+DTEND:20260302T123000Z
+SUMMARY:Introduction to Operating Systems Lecture
+DESCRIPTION:Process scheduling\, context switching\, and memory management 
+ fundamentals for first-year students. Please bring your student ID and a l
+ aptop. Review the pre-reading beforehand.\nAgenda: https://events.example.
+ edu/tw/agenda/001
+LOCATION:Room 124\, Block D\, Example Institute of Technology
+ORGANIZER;CN="Dr. Asha Verma":mailto:asha.verma@example.edu
+CATEGORIES:LECTURE,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/001
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,35 @@
+[
+  {
+    "event_id": "TW-COM-017-DNS-001",
+    "case_id": "TW-COM-017",
+    "timestamp": "2026-06-21T19:00:52.970+00:00",
+    "query": "go.example.net",
+    "record_type": "A",
+    "response": "192.0.2.144",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-017-DNS-002",
+    "case_id": "TW-COM-017",
+    "timestamp": "2026-06-21T19:00:52.978+00:00",
+    "query": "go.example.net",
+    "record_type": "AAAA",
+    "response": "2001:db8:3::90",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-017-DNS-003",
+    "case_id": "TW-COM-017",
+    "timestamp": "2026-06-21T19:00:53.462+00:00",
+    "query": "files.example.net",
+    "record_type": "A",
+    "response": "192.0.2.123",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

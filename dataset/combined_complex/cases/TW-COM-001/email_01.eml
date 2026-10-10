@@ -1,0 +1,97 @@
+Received: from mail-out.events.example.org (events.example.org [192.0.2.153])
+	by mx.students.example.org with ESMTP id TWCOM00101;
+	Mon, 04 May 2026 13:37:42 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-001
+From: "Alderwick Events Office" <events@events.example.org>
+To: "Priya Raman" <priya.raman@students.example.org>
+Subject: Guest lecture: Digital Forensics in Practice - register now
+Date: Mon, 04 May 2026 13:37:39 +0000
+Message-ID: <tw-com-001.email_01.7a758900fc@mail-out.events.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-001_email_01_mix"
+
+--=_TW-COM-001_email_01_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-001_email_01_alt"
+
+--=_TW-COM-001_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Priya,
+
+The Department of Computer Science invites you to a guest lecture on
+digital forensics next week.
+
+Seating is limited. Scan the attached QR code to register.
+
+Attached QR code file(s): lecture-registration-qr.png
+
+A calendar invitation is attached.
+
+Regards,
+Alderwick Events Office
+
+--=_TW-COM-001_email_01_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Priya,</p><p>The Department of Computer Science invites you to a guest lecture on digital forensics next week.</p><p>Seating is limited. Scan the attached QR code to register.</p><p>Attached QR code file(s): lecture-registration-qr.png</p><p>A calendar invitation is attached.</p><p>Regards,<br>Alderwick Events Office</p></body></html>
+--=_TW-COM-001_email_01_alt--
+--=_TW-COM-001_email_01_mix
+Content-Type: image/png; name="lecture-registration-qr.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="lecture-registration-qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAASgAAAEoCAIAAABkZftOAAAAEXRFWHRUVy1TeW50aGV0aWMAdHJ1
+ZdGmG8sAAAV/SURBVHic7d3RbeM4FEDReLDNqP9iXI6mAmGhAZlLSud8G7IT5IIOHkh+zvP8AX7X
+n19+P0B40LDiQUB4EBAeBIQHAeFBQHgQEB4EhAcB4UFAeBAQHgSEBwHhQUB4EBAeBIQHAeFBQHgQ
+EB4EhAcB4UFAeBAQHgSEBwHhQUB4EBAeBIQHAeFB4L/Zb3Acx88Ovt/v1J/36vmjXr/L7221zz/7
+7+GKFQ8CwoOA8CAgPAgIDwLCg4Dw4IlzvGpOMmqOdHfOtsvvYfZc7u5zvpv8PYxixYOA8CAgPAgI
+DwLCg4DwICA8eNMcb/ZcpZqzzZ6DzX7+7Lnl7n8Po1jxICA8CAgPAsKDgPAgIDwICA8Cy83xVrPa
+HGnU3G/3fXS7s+JBQHgQEB4EhAcB4UFAeBAQHgTM8f7H2+Zgq80tn8qKBwHhQUB4EBAeBIQHAeFB
+QHgQWG6O99S51ux72J46f/su9nlGseJBQHgQEB4EhAcB4UFAeBAQHrxpjjd7rrXLPr23vf6pfw93
+WfEgIDwICA8CwoOA8CAgPAgIDwKf8zyL991etf9t1NxslNU+zy6seBAQHgSEBwHhQUB4EBAeBIQH
+T9yPV+2zurt/bLX3HbUv7q5d9vUd0b7BUax4EBAeBIQHAeFBQHgQEB4EhAdP3I+32rmLs/e/zZ6/
+Vfv3Rn3O1e7xO6L5nhUPAsKDgPAgIDwICA8CwoOA8OBN52rOngvt8vrd9zfyb6x4EBAeBIQHAeFB
+QHgQEB4EhAdvOldzl/14s19f7QebvV9utXnp4VxNwFdNCAgPAsKDgPAgIDwICA+eOMcbNY966r1z
+s82ea416znfzczLvsuJBQHgQEB4EhAcB4UFAeBAQHjxxjrfaHGb351T3+42y2lz0cD8evIevmhAQ
+HgSEBwHhQUB4EBAePPF+vGpOMur+vV3mV9U5k7PvORzFfjzAV00o+B8PAsKDgPAgIDwICA8C2+zH
+G2W1ed3u51jefX61H+9Y7LxNKx4EhAcB4UFAeBAQHgSEBwHhwRP3491V7RNbbX5V7Vu7a/Z+v132
+W95lxYOA8CAgPAgIDwLCg4DwICA8eOJ+vGqeUz1/1Ot3mWfefX51vugV9+PBi/iqCQHhQUB4EBAe
+BIQHAeFBYLlzNXeZF40yar43+/Ncqe7lG8W5mvAivmpCQHgQEB4EhAcB4UFAeBBYbo43e7/Zaveq
+jZqD3TXq88/eF3f3fXeZH1rxICA8CAgPAsKDgPAgIDwICA8Cy83xRs1bRs1zqv14s+1ybuddztUE
+LvmqCQHhQUB4EBAeBIQHAeFB4HOeZ/G+2xi1T6zaR1fdRzd7v+Jss+erVjwICA8CwoOA8CAgPAgI
+DwLCgyfux1ttv9aVUfv97r5+9rmaq83TqvMtv9G+xytWPAgIDwLCg4DwICA8CAgPAsKDN52rudp5
+kld2uW9ttfv3qnv5rlTzzytWPAgIDwLCg4DwQHjwDlY8CAgPAtvcj3fX7H1os+/fmz1/m30/XrUP
+81hsbnnFigcB4UFAeBAQHgSEBwHhQUB4EFhujreL1eZFs+eBd+eQdx3R3LJixYOA8CAgPAgIDwLC
+g4DwICA8CJjj/ZJq391q51XedSz2845ixYOA8CAgPAgIDwLCg4DwICA8CCw3x1vtfrldzP69zb5f
+7ph8nqr9eICvmlDwPx4EhAcB4UFAeBAQHrxpjrfaXKVSnYc56n68au76nfxzzWbFA+HBO1jxICA8
+CAgPAsKDgPAg8DnPs3hfeDUrHgSEBwHhQUB4EBAeBIQHAeFBQHgQEB4EhAcB4UFAeBAQHgSEBwHh
+QUB4EBAeBIQHAeFBQHgQEB4EhAcB4UFAeBAQHgSEBwHhQUB4EBAeBIQHwoOfV/gLKAlFXHXa77oA
+AAAASUVORK5CYII=
+--=_TW-COM-001_email_01_mix
+Content-Type: text/calendar; charset=utf-8; method=PUBLISH
+Content-Disposition: attachment; filename="invite-event.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic Combined Cases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lecture-TW-COM-001@tw-uid.example.org
+DTSTAMP:20260504T133739Z
+DTSTART:20260507T100000Z
+DTEND:20260507T110000Z
+SEQUENCE:0
+SUMMARY:Guest Lecture: Digital Forensics in Practice
+DESCRIPTION:Registration page: https://events.example.org/lectures/TW-COM-0
+ 01
+LOCATION:Seminar Hall 2\, Alderwick College
+ORGANIZER;CN="Alderwick Events Office":mailto:events@events.example.org
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-COM-001_email_01_mix--

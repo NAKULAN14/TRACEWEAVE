@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-COM-010-DNS-001",
+    "case_id": "TW-COM-010",
+    "timestamp": "2026-05-31T11:13:37.701+00:00",
+    "query": "calendar.example.org",
+    "record_type": "A",
+    "response": "198.51.100.110",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

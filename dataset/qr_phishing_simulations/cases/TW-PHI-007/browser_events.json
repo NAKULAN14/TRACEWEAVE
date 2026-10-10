@@ -1,0 +1,50 @@
+[
+  {
+    "event_id": "TW-PHI-007-BRW-001",
+    "case_id": "TW-PHI-007",
+    "timestamp": "2026-04-22T16:38:25.006Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://example.com/conf/badge/TW-PHI-007",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-007-BRW-002",
+    "case_id": "TW-PHI-007",
+    "timestamp": "2026-04-22T16:38:27.272Z",
+    "event_type": "page_load",
+    "url": "https://example.com/conf/badge/TW-PHI-007",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-007-BRW-003",
+    "case_id": "TW-PHI-007",
+    "timestamp": "2026-04-22T16:38:28.876Z",
+    "event_type": "form_displayed",
+    "url": "https://example.com/conf/badge/TW-PHI-007",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-007-BRW-004",
+    "case_id": "TW-PHI-007",
+    "timestamp": "2026-04-22T16:38:46.365Z",
+    "event_type": "tab_closed",
+    "url": "https://example.com/conf/badge/TW-PHI-007",
+    "domain": "example.com",
+    "browser": "Edge Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

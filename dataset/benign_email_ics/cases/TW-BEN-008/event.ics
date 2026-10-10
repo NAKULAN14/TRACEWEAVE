@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-008-bee869cc86c4d08f@northfield.example.org
+DTSTAMP:20261104T065800Z
+DTSTART;TZID=Asia/Kolkata:20261113T140000
+DTEND;TZID=Asia/Kolkata:20261113T160000
+SUMMARY:Resume Building Workshop
+DESCRIPTION:Workshop for pre-final-year students on structuring a one-page 
+ resume and writing impactful points.\nReply to the invitation email to con
+ firm your seat.
+LOCATION:Seminar Hall B\, Academic Block
+ORGANIZER;CN="Career Development Cell":mailto:cdc@northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Neha Kulkarni":mailto:neha.kulkarni@students.northfield.example.o
+ rg
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Sanjay Gill":mailto:sanjay.gill@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Priya Ramesh":mailto:priya.ramesh@students.northfield.example.org
+CATEGORIES:Workshop,Career
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261104T065800Z
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Resume Building Workshop
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

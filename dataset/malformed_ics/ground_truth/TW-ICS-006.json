@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-006",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-006.ics",
+  "corrupted_file": "TW-ICS-006.ics",
+  "is_malformed": true,
+  "corruption_type": "invalid_datetime_values",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "DTSTART",
+    "DTEND"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/006",
+    "https://events.example.edu/tw/agenda/006"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Both timestamps match the textual pattern but are impossible calendar values. The event window cannot be recovered; DTSTAMP is still valid."
+}

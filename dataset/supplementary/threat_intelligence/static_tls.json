@@ -1,0 +1,27 @@
+{
+  "example.com": {
+    "certificate_id": "CERT-TRACEWEAVE-001",
+    "subject": "CN=example.com",
+    "issuer": "CN=TRACEWEAVE TEST CA",
+    "serial_number": "100001",
+    "not_before": "2026-01-01T00:00:00Z",
+    "not_after": "2027-01-01T00:00:00Z",
+    "fingerprint_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "san": [
+      "example.com",
+      "www.example.com"
+    ]
+  },
+  "example.org": {
+    "certificate_id": "CERT-TRACEWEAVE-002",
+    "subject": "CN=example.org",
+    "issuer": "CN=TRACEWEAVE TEST CA",
+    "serial_number": "100002",
+    "not_before": "2026-01-01T00:00:00Z",
+    "not_after": "2027-01-01T00:00:00Z",
+    "fingerprint_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "san": [
+      "example.org"
+    ]
+  }
+}

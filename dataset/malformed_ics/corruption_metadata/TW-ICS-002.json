@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-002",
+  "corruption_type": "missing_required_properties_dtstamp_dtstart",
+  "corruption_description": "DTSTAMP and DTSTART were deleted; DTEND remains without a start time.",
+  "original_filename": "TW-ICS-002.ics",
+  "corrupted_filename": "TW-ICS-002.ics",
+  "affected_fields": [
+    "DTSTAMP",
+    "DTSTART"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "a2a3d2964770100f1f4947e067db97e2bdcaa3d65317845b7fd7ee6449135706",
+  "corrupted_sha256": "ecae1836ae465fe1fcc15d0034497d0d6b45143447bff091e1152e7921ddd4a2"
+}

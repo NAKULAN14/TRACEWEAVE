@@ -1,0 +1,120 @@
+Return-Path: <sneha.krishnan@students.northfield.example.org>
+Received: from mail.students.northfield.example.org (mail.students.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id 4146A6BBFA
+	for <vivek.anand@students.northfield.example.org>; Thu, 29 Oct 2026 20:20:02 +0530
+Received: from workstation.students.northfield.example.org (workstation.students.northfield.example.org)
+	by mail.students.northfield.example.org (Postfix) with ESMTPSA id 1CA669A3F5
+	for <vivek.anand@students.northfield.example.org>; Thu, 29 Oct 2026 20:20:00 +0530
+From: "Sneha Krishnan" <sneha.krishnan@students.northfield.example.org>
+To: "Vivek Anand" <vivek.anand@students.northfield.example.org>,
+	"Ananya Das" <ananya.das@students.northfield.example.org>,
+	"Mohit Jain" <mohit.jain@students.northfield.example.org>
+Subject: Cancelled: Algorithms Study Group - Saturday 31 October
+Date: Thu, 29 Oct 2026 20:20:00 +0530
+Message-ID: <20261029202000.1ca669a3f53f@students.northfield.example.org>
+In-Reply-To: <20261022202000.472606a1cf06@students.northfield.example.org>
+References: <20261022202000.472606a1cf06@students.northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Apple Mail (16.0)
+Content-Type: multipart/mixed; boundary="=_TW_MIX_1ca669a3f53faee0"
+
+This is a multi-part message in MIME format.
+--=_TW_MIX_1ca669a3f53faee0
+Content-Type: multipart/alternative; boundary="=_TW_ALT_1ca669a3f53faee0"
+
+--=_TW_ALT_1ca669a3f53faee0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi everyone,
+
+I am sorry for the short notice, but this Saturday's Algorithms Study
+Group session (Session 4) is cancelled. The library has told us that its
+discussion rooms will be closed on the evening of Saturday 31 October
+for scheduled electrical maintenance.
+
+  Cancelled session: Saturday, 31 October 2026, 17:00-19:00 IST
+  Venue: Library Discussion Room 3
+  Planned topic: Dynamic programming practice set 2
+
+We will cover the same problems in the next session on Saturday, 7
+November 2026. I will send a fresh calendar invite once the room is
+confirmed. Until then, try the first four problems on your own and note
+down any questions.
+
+The attached calendar update removes the cancelled session from your
+calendar.
+
+Thanks,
+Sneha
+--=_TW_ALT_1ca669a3f53faee0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cancelled: Algorithms Study Group - Saturday 31 October</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Hi everyone,</p>
+<p>I am sorry for the short notice, but this Saturday&#x27;s Algorithms Study Group session (Session 4) is cancelled. The library has told us that its discussion rooms will be closed on the evening of Saturday 31 October for scheduled electrical maintenance.</p>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Cancelled session</b></td><td>Saturday, 31 October 2026, 17:00-19:00 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Venue</b></td><td>Library Discussion Room 3</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Planned topic</b></td><td>Dynamic programming practice set 2</td></tr>
+</table>
+<p>We will cover the same problems in the next session on Saturday, 7 November 2026. I will send a fresh calendar invite once the room is confirmed. Until then, try the first four problems on your own and note down any questions.</p>
+<p>The attached calendar update removes the cancelled session from your calendar.</p>
+<p>Thanks,<br>
+Sneha</p>
+</body>
+</html>
+--=_TW_ALT_1ca669a3f53faee0--
+--=_TW_MIX_1ca669a3f53faee0
+Content-Type: text/calendar; charset="utf-8"; method=CANCEL; name="cancellation.ics"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="cancellation.ics"
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+CALSCALE:GREGORIAN
+METHOD:CANCEL
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tw-ben-010-1ca669a3f53faee0@northfield.example.org
+DTSTAMP:20261029T144800Z
+DTSTART;TZID=Asia/Kolkata:20261031T170000
+DTEND;TZID=Asia/Kolkata:20261031T190000
+SUMMARY:Algorithms Study Group - Session 4
+DESCRIPTION:Dynamic programming practice set 2.\nCANCELLED due to scheduled
+  electrical maintenance in the library.
+LOCATION:Library Discussion Room 3
+ORGANIZER;CN="Sneha Krishnan":mailto:sneha.krishnan@students.northfield.exa
+ mple.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Vivek Anand":mailto:vivek.anand@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Ananya Das":mailto:ananya.das@students.northfield.example.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN="Mohit Jain":mailto:mohit.jain@students.northfield.example.org
+CATEGORIES:Study Group,Cancelled
+STATUS:CANCELLED
+SEQUENCE:1
+TRANSP:OPAQUE
+CLASS:PUBLIC
+LAST-MODIFIED:20261029T144800Z
+END:VEVENT
+END:VCALENDAR
+
+--=_TW_MIX_1ca669a3f53faee0--

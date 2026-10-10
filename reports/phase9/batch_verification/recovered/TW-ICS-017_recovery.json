@@ -1,0 +1,80 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-017.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-017.ics",
+        "size_bytes": 985,
+        "sha256": "425c15f4da5abf7318aa07195b7af6d7c56e7cfc03e02c015280a411a2fe8898"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-017_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-017_recovered.ics",
+        "size_bytes": 985,
+        "sha256": "425c15f4da5abf7318aa07195b7af6d7c56e7cfc03e02c015280a411a2fe8898"
+    },
+    "transformations": [
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 6,
+            "original": "UNEXPECTED-PROPERTY:synthetic-test-value",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 7,
+            "original": "S UMMARY:Spaced property name",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 8,
+            "original": "1BADNAME:synthetic",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 16,
+            "original": " ents\\, and prepare first contributions. Please bring your student ID and a",
+            "recovered": " ents\\, and prepare first contributions. Please bring your student ID and a",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 17,
+            "original": "  laptop. Review the pre-reading beforehand.\\nAgenda: https://events.exampl",
+            "recovered": "  laptop. Review the pre-reading beforehand.\\nAgenda: https://events.exampl",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 18,
+            "original": " e.edu/tw/agenda/017",
+            "recovered": " e.edu/tw/agenda/017",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 6,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:55.117092+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

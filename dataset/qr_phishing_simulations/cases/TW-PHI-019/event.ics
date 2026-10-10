@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:TW-PHI-019-ce5fd56d@quillmoor-coding.example.com
+DTSTAMP:20260513T101300Z
+DTSTART:20260514T100000Z
+DTEND:20260514T110000Z
+SUMMARY:Hackathon Kickoff
+DESCRIPTION:Team sign-up page: https://example.com/hack/signup/TW-PHI-019
+LOCATION:Quillmoor Innovation Lab
+ORGANIZER;CN="Quillmoor Coding Club":mailto:hello@quillmoor-coding.example.
+ com
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

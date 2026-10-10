@@ -1,0 +1,98 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://events.example.org/lectures/TW-COM-001",
+    "normalized_value": "https://events.example.org/lectures/TW-COM-001",
+    "observed_values": [
+      "https://events.example.org/lectures/TW-COM-001"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "events.example.org",
+    "normalized_value": "events.example.org",
+    "observed_values": [
+      "events.example.org"
+    ],
+    "roles": [
+      "dns_query_name",
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "browser_events.json",
+      "dns_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "email_address",
+    "value": "events@events.example.org",
+    "normalized_value": "events@events.example.org",
+    "observed_values": [
+      "events@events.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "ipv4",
+    "value": "192.0.2.153",
+    "normalized_value": "192.0.2.153",
+    "observed_values": [
+      "192.0.2.153"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "198.51.100.87",
+    "normalized_value": "198.51.100.87",
+    "observed_values": [
+      "198.51.100.87"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  }
+]

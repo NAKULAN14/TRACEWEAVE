@@ -1,0 +1,63 @@
+[
+  {
+    "event_id": "TW-PHI-018-BRW-001",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:20.718Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://go.example.net/r/TW-PHI-018?v=2",
+    "domain": "go.example.net",
+    "browser": "Firefox Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-018-BRW-002",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:21.539Z",
+    "event_type": "http_redirect",
+    "url": "https://go.example.net/r/TW-PHI-018?v=2",
+    "domain": "go.example.net",
+    "browser": "Firefox Mobile",
+    "action": "redirect",
+    "source": "browser_navigation",
+    "synthetic": true,
+    "redirect_location": "https://files.example.net/review/TW-PHI-018"
+  },
+  {
+    "event_id": "TW-PHI-018-BRW-003",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:23.096Z",
+    "event_type": "page_load",
+    "url": "https://files.example.net/review/TW-PHI-018",
+    "domain": "files.example.net",
+    "browser": "Firefox Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-018-BRW-004",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:24.815Z",
+    "event_type": "form_displayed",
+    "url": "https://files.example.net/review/TW-PHI-018",
+    "domain": "files.example.net",
+    "browser": "Firefox Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-018-BRW-005",
+    "case_id": "TW-PHI-018",
+    "timestamp": "2026-05-10T18:11:31.215Z",
+    "event_type": "tab_closed",
+    "url": "https://files.example.net/review/TW-PHI-018",
+    "domain": "files.example.net",
+    "browser": "Firefox Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

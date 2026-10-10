@@ -1,0 +1,62 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-001.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-001.ics",
+        "size_bytes": 828,
+        "sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-001_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\verification\\TW-ICS-001_recovered.ics",
+        "size_bytes": 828,
+        "sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+    },
+    "transformations": [
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 11,
+            "original": " fundamentals for first-year students. Please bring your student ID and a l",
+            "recovered": " fundamentals for first-year students. Please bring your student ID and a l",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 12,
+            "original": " aptop. Review the pre-reading beforehand.\\nAgenda: https://events.example.",
+            "recovered": " aptop. Review the pre-reading beforehand.\\nAgenda: https://events.example.",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 13,
+            "original": " edu/tw/agenda/001",
+            "recovered": " edu/tw/agenda/001",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 3,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:13:25.006712+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

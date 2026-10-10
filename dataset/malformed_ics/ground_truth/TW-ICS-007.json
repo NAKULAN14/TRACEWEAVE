@@ -1,0 +1,36 @@
+{
+  "case_id": "TW-ICS-007",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-007.ics",
+  "corrupted_file": "TW-ICS-007.ics",
+  "is_malformed": true,
+  "corruption_type": "improper_line_folding",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "SUMMARY",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "DESCRIPTION"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/007"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "DESCRIPTION is truncated to its first physical line; the remaining text appears as stray lines. The event URL is intact; the agenda URL survives only if it was not split across a fold boundary."
+}

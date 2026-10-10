@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-06-30T14:16:59+00:00",
+    "source_timestamp": "2026-06-30T14:16:59+00:00",
+    "event_type": "qr_image_captured",
+    "description": "PNG metadata TW-CapturedAt of qr_01.png",
+    "source_artifact": "qr_01.png",
+    "reference_id": "png:TW-CapturedAt",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-30T14:16:59+00:00",
+    "source_timestamp": "2026-06-30T14:16:59+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png available from capture time",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-06-30T14:22:59.455+00:00",
+    "source_timestamp": "2026-06-30T19:52:59.455+05:30",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://survey.example.net/feedback/TW-COM-020",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-020-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-30T14:23:00.757+00:00",
+    "source_timestamp": "2026-06-30T19:53:00.757+05:30",
+    "event_type": "page_load",
+    "description": "load https://survey.example.net/feedback/TW-COM-020",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-020-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-30T14:23:02.278+00:00",
+    "source_timestamp": "2026-06-30T19:53:02.278+05:30",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://survey.example.net/feedback/TW-COM-020",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-020-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-30T14:23:05.662+00:00",
+    "source_timestamp": "2026-06-30T14:23:05.662+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for survey.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-020-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-30T14:23:29.269+00:00",
+    "source_timestamp": "2026-06-30T19:53:29.269+05:30",
+    "event_type": "tab_closed",
+    "description": "close_tab https://survey.example.net/feedback/TW-COM-020",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-020-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  }
+]

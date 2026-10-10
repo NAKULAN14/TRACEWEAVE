@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-008-a68ada6b@events.example.edu
+DTSTAMP:20260212T090000Z
+DTSTART:20260324T090000Z
+DTEND:20260324T110000Z
+SUMMARY:Résumé Review Clinic for Cybersecurity Interns
+DESCRIPTION:Peer review of resumes with feedback on structure\, clarity\, a
+ nd presenting security projects. Please bring your student ID and a laptop
+ . Review the pre-reading beforehand.\nAgenda: https://events.example.edu/t
+ w/agenda/008
+LOCATION:Café Commons\, Block C\, Example Institute of Technology
+ORGANIZER;CN="Mr. Vikram Rao":mailto:vikram.rao@example.edu
+CATEGORIES:CAREER,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/008
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

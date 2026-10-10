@@ -1,0 +1,131 @@
+Received: from mail-out.securedu-conf.example.com (securedu-conf.example.com [192.0.2.202])
+	by mx.mail.example.org with ESMTP id TWPHI007;
+	Sat, 18 Apr 2026 16:24:22 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-007
+From: "SecurEdu 2026 Registrations" <registration@securedu-conf.example.com>
+To: "Aisha Khan" <aisha.khan@mail.example.org>
+Subject: Conference registration confirmation required - SecurEdu 2026
+Date: Sat, 18 Apr 2026 17:24:18 +0100
+Message-ID: <tw-phi-007.87cb181582@mail-out.securedu-conf.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-PHI-007_mix"
+
+--=_TW-PHI-007_mix
+Content-Type: multipart/alternative; boundary="=_TW-PHI-007_alt"
+
+--=_TW-PHI-007_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Aisha,
+
+Your pre-registration for the SecurEdu 2026 conference is still pending
+confirmation.
+
+Confirm your attendance to reserve your badge and workshop sessions.
+
+Scan the QR code below with your phone camera to continue.
+
+A calendar invitation is attached to this message.
+
+[QR code image is embedded in the HTML version of this message]
+
+Regards,
+SecurEdu 2026 Registrations
+
+--=_TW-PHI-007_alt
+Content-Type: multipart/related; boundary="=_TW-PHI-007_rel"
+
+--=_TW-PHI-007_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Aisha,</p><p>Your pre-registration for the SecurEdu 2026 conference is still pending confirmation.</p><p>Confirm your attendance to reserve your badge and workshop sessions.</p><p>Scan the QR code below with your phone camera to continue.</p><p>A calendar invitation is attached to this message.</p><p><img src="cid:qr-tw-phi-007@mail-out.securedu-conf.example.com" alt="QR code" width="220" height="220"></p><p>Regards,<br>SecurEdu 2026 Registrations</p></body></html>
+--=_TW-PHI-007_rel
+Content-Type: image/png; name="qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr-tw-phi-007@mail-out.securedu-conf.example.com>
+Content-Disposition: inline; filename="qr.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAhwAAAIcCAIAAAAynOArAAALh0lEQVR4nO3c0Y3rSBAEQemw/rus
+c4HASzR6hhEGaEmK2sT81Pf3+30AoPBf8ikAICoAlJxUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAy
+ogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUA
+MqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEV
+ADKiAkBGVADIiAoAGVEBICMqAGREBYDM32eZ7/f7eavf7/c5zZPv68l9bfucW9/5E++9+t5v9Vv2
+nTqpAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAsC9218nbt08MblN9OYtqcqJ
+G2KVW+/9xGv+Hrhp5qQCQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKAO/e/nri
+zftX266n2pKqvtPJbavqmrddz7b7qrz5/0bFSQWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGRE
+BYCMqACQERUAMtduf73ZiftFt25Jnbhpdut3wQwnFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgA
+kBEVADKiAkBGVADI2P46zLZdr8nrqUxuZG3bRnuiuvfJ58MeTioAZEQFgIyoAJARFQBEBYB9nFQA
+yIgKABlRASAjKgBkRAWAjKgAkLl2++vWTaHJLaltG1nV/lX1DLd9zrY9rhN/gyde8zZOKgBkRAWA
+jKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqADw7u2vagPqRNu2m07cB/M573yf3/x/Y5KT
+CgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkvtWuDjMm94u2bS5NXs/kPtiJ
+z/DWa+bfOakAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQOba7a9tu0PbNrsm
+n8+JW1uTbt0Qm/zen3jzOzbJSQWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUA
+3r39tW1L6ta9oFv3yraZ3PV68/s86fviZ+ikAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMqIC
+QEZUAMiICgD3bn9N7hdV7IydtYO07d048Xex7fs68X/CrZxUAMiICgAZUQEgIyoAZEQFgIyoAJAR
+FQAyogJARlQAyIgKABlRASDz91lmcjNn21bS5DbRiXtc1fXcel+TJve4bn0+lW3Px0kFgIyoAJAR
+FQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADLfbbsxJzpx52fymidt21jbtjO2zYn7e5O/
+wd+B/5+dVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAMiICgAZUQHg3u2vag9n2w7Str2g
+E3eHbt2Aqmx75yvbfu8nXs8kJxUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQA
+yPx9LvXm3ao3719N7jJtez6T+3KT38Xkc962n/Zb9vt6wkkFgIyoAJARFQAyogJARlQAyIgKABlR
+ASAjKgBkRAWAjKgAkBEVADLfE7dltm0TTf6tWzeOTvy+nqi+0xPv61bbnuFv2f9wJxUAMqICQEZU
+AMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyPx9LrVtT2lyK2nbhtjkNtHk35rc9Zp8x7Zt
+Um17xyZ/y79lu15POKkAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQOZ74rbM
+5PbOEyc+w2227V9N7lY98eZNsyf8rT2cVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAMiI
+CgAZUQEg8+rtr8ktqcq2/attm0uTtr0/k9/Xrfc16XvgLtwTTioAZEQFgIyoAJARFQAyogJARlQA
+yIgKABlRASAjKgBkRAWAjKgAkHn19tekEze73rwPtm3/6oltv2U7Y+/kpAJARlQAyIgKABlRASAj
+KgBkRAUAUQFgHycVADKiAkBGVADIiAoAmVdvf03uVm3biXpi2x7XNidurFV/q7Ltmk+8nt+y/+FO
+KgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQsf114RbQE67nnc9w2/szaXJH
+63vgZlfFSQWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMn/dR92p2lOqNpcq
+2/amJreSJjeyKide86Tq/bEP9u+cVADIiAoAGVEBICMqAGREBYCMqACQERUAMqICQEZUAMiICgAZ
+UQEg8632lLaZ3La6dY+ruvfJv1W59ZqfmPzeKyf+Tivb3kMnFQAyogJARlQAyIgKABlRASAjKgBk
+RAWAjKgAkBEVADKiAkBGVADI/HUfdadt+0Xb9sFu3a26dQOquuZqG23b5/DvnFQAyIgKABlRASAj
+KgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBIPO1h3PfJtUTt26ITdq2SXXid7rt3k+85t+y/y1O
+KgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQ+fscqNpTOnEr6Vbb9oueqL7T
+bbtV234XTz7nzTts2zipAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAsC921/b
+dr0q27aJntj2DLftKU1+pyfug03e+7Z9sN+y73SSkwoAGVEBICMqAGREBYCMqACQERUAMqICQEZU
+AMiICgAZUQEgIyoA3Lv9NbnLNGly52fbhtiJf2vyGU5umm3bT6uu59YdrRM5qQCQERUAMqICQEZU
+AMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJA5rttI4uzNo4m96Yq23arJn+D1abZts+pTL6rvwOf
+zxNOKgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGREBYCMqACQ+fsss20natLkhs/kZte2
+jSP7TnueT2XbRtbvwE28ipMKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqANy7
+/fXE5IZPZXJHqzK5tbVtH+zEe6/curF2ot+B9+WkAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUA
+MqICQEZUAMiICgDv3v56wu7QzDN8sk20bb/oxP206m9Vv4vJTbPJ3/Kk37K9u4qTCgAZUQEgIyoA
+ZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkrt3+ulW1gzS52TW53bRtK+nE3arJZzj5jk1u
+o1W27Xo94aQCQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABnbXxyzRbaNnbF3
+2rZXto2TCgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkvtu2ZW7dw5m8r2qP
+64kn11zd+7ZnOPkebrv3J7Zdzza/A/+PPeGkAkBGVADIiAoAGVEBICMqAGREBYCMqACQERUAMqIC
+QEZUAMiICgDv3v661bYtqcqJu17bnPg7vfWat70/v2XP2UkFgIyoAJARFQAyogJARlQAyIgKABlR
+ASAjKgBkRAWAjKgAkBEVAO7d/gLgXE4qAGREBYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQF
+gIyoAJARFQAyogJARlQAyIgKABlRASAjKgBkRAWAjKgAkBEVADKiAkBGVADIiAoAGVEBICMqAGRE
+BYCMqACQERUAMqICQEZUAMiICgAZUQEgIyoAZEQFgIyoAJARFQAyogJARlQAyIgKABlRASAjKgBk
+RAWAjKgAkBEVADKiAkBGVADIiAoAn8r/iLTQMB+g0BEAAAAASUVORK5CYII=
+--=_TW-PHI-007_rel--
+--=_TW-PHI-007_alt--
+--=_TW-PHI-007_mix
+Content-Type: text/calendar; charset=utf-8; method=PUBLISH
+Content-Disposition: attachment; filename="invite.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic QR Phishing Simulation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:TW-PHI-007-02dba082@securedu-conf.example.com
+DTSTAMP:20260418T162418Z
+DTSTART:20260422T163000Z
+DTEND:20260422T180000Z
+SUMMARY:SecurEdu 2026 Conference - Day 1
+DESCRIPTION:Conference schedule and badge page: https://example.com/conf/ba
+ dge/TW-PHI-007
+LOCATION:Ferncliff Convention Hall
+ORGANIZER;CN="SecurEdu 2026 Registrations":mailto:registration@securedu-con
+ f.example.com
+URL:https://example.com/conf/badge/TW-PHI-007
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-PHI-007_mix--

@@ -1,0 +1,14 @@
+{
+  "case_id": "TW-ICS-009",
+  "corruption_type": "invalid_encoding_utf16_bom",
+  "corruption_description": "The whole file was saved as UTF-16 LE with a BOM instead of UTF-8.",
+  "original_filename": "TW-ICS-009.ics",
+  "corrupted_filename": "TW-ICS-009.ics",
+  "affected_fields": [
+    "(entire file)"
+  ],
+  "expected_parsing_result": "failure",
+  "recovery_possible": true,
+  "original_sha256": "fee153cfd5ae0b079194d7efc83133ac4bdb10457b66714ffd95cbeec8981b7c",
+  "corrupted_sha256": "3907ff3efc3de6d6592d09325ee7c5f5dba821db3ef83ab35f6b56f8798e0882"
+}

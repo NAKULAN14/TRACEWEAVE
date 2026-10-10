@@ -1,0 +1,50 @@
+{
+  "graph_type": "TRACEWEAVE_INFRASTRUCTURE",
+  "schema_version": "1.0",
+  "created_at": "2026-10-07T19:42:28.462980+00:00",
+  "network_access_performed": false,
+  "summary": {
+    "node_count": 2,
+    "relationship_count": 1,
+    "node_type_counts": {
+      "DOMAIN": 1,
+      "IP": 1
+    },
+    "relationship_type_counts": {
+      "RESOLVES_TO": 1
+    }
+  },
+  "nodes": [
+    {
+      "node_id": "DOMAIN:example.com",
+      "node_type": "DOMAIN",
+      "value": "example.com",
+      "source": "TRACEWEAVE",
+      "created_at": "2026-10-07T19:42:28.462931+00:00"
+    },
+    {
+      "node_id": "IP:192.0.2.1",
+      "node_type": "IP",
+      "value": "192.0.2.1",
+      "source": "TRACEWEAVE",
+      "created_at": "2026-10-07T19:42:28.462953+00:00"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "DOMAIN:example.com->RESOLVES_TO->IP:192.0.2.1",
+      "relationship_type": "RESOLVES_TO",
+      "source": {
+        "node_id": "DOMAIN:example.com"
+      },
+      "target": {
+        "node_id": "IP:192.0.2.1"
+      },
+      "evidence": {
+        "method": "DNS_RESOLUTION",
+        "confidence": "OBSERVED"
+      },
+      "observed_at": "2026-10-07T19:42:28.462959+00:00"
+    }
+  ]
+}

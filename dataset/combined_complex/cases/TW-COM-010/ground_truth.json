@@ -1,0 +1,602 @@
+{
+  "case_id": "TW-COM-010",
+  "category": "combined_complex",
+  "scenario": "Two emails about the same event UID and SEQUENCE but different start times and different QR hosts; only a DNS lookup of one host is recorded.",
+  "expected_classification": "inconclusive",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "6fd930da6386274bcafa2ceada900a5ae7a2195388347cd3a8ed6b667321b4e4"
+    },
+    {
+      "filename": "email_02.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "c8497294de6e5439ee0095d680a43c8cd90762b5ac8cd1ab609a1d5b8509c4cb"
+    },
+    {
+      "filename": "event.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "764201ab03cb6cd064e820e023f2ef956484a8b0f5c0aa33c287734aab054363"
+    },
+    {
+      "filename": "event_02.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "aebca538a1e9dff411875612ba71b251a96ce8e5987c2f36252b800d3a1f9ac5"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "458b9c42d02748f8f9b6401a88d717b3f57dbb22528d30126b46b1742f17948a"
+    },
+    {
+      "filename": "qr_02.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "28031217646ed9ad4668658e82f384a07cd492c0af9ffcd57cd040dd54129bad"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "9c3c0c08ca01043f95544d4a3ccf38045a1e51c04949613b1f39a3d21b46aaee"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "94963e9b96d4bd3815d89aab5e46749a0d7a7f431f834215f1c768565cd06c44"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "5aad4748fbf85089b12d9b43933576e42147b82c4ed7f3d86a34c641c24daeda"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "75a2d3a78cb126507806c14dfda878815d04ed5804d58bb3d1758ebd44455c76"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://calendar.example.org/join/TW-COM-010",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_02#1",
+      "filename": "qr_02.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_02.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://calendar-sync.example.org/join/TW-COM-010",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://calendar.example.org/join/TW-COM-010",
+    "https://calendar-sync.example.org/join/TW-COM-010"
+  ],
+  "expected_urls": [
+    "https://calendar-sync.example.org/join/TW-COM-010",
+    "https://calendar.example.org/join/TW-COM-010"
+  ],
+  "expected_domains": [
+    "calendar-sync.example.org",
+    "calendar.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://calendar-sync.example.org/join/TW-COM-010",
+      "normalized_value": "https://calendar-sync.example.org/join/TW-COM-010",
+      "observed_values": [
+        "https://calendar-sync.example.org/join/TW-COM-010"
+      ],
+      "roles": [
+        "ics_url",
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "email_02.eml",
+        "event_02.ics",
+        "qr_02.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "https://calendar.example.org/join/TW-COM-010",
+      "normalized_value": "https://calendar.example.org/join/TW-COM-010",
+      "observed_values": [
+        "https://calendar.example.org/join/TW-COM-010"
+      ],
+      "roles": [
+        "ics_url",
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "calendar-sync.example.org",
+      "normalized_value": "calendar-sync.example.org",
+      "observed_values": [
+        "calendar-sync.example.org"
+      ],
+      "roles": [
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_02.eml",
+        "event_02.ics",
+        "qr_02.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "calendar.example.org",
+      "normalized_value": "calendar.example.org",
+      "observed_values": [
+        "calendar.example.org"
+      ],
+      "roles": [
+        "dns_query_name",
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "dns_events.json",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "email_address",
+      "value": "calendar-team@calendar-sync.example.org",
+      "normalized_value": "calendar-team@calendar-sync.example.org",
+      "observed_values": [
+        "calendar-team@calendar-sync.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_02.eml",
+        "event_02.ics"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "email_address",
+      "value": "calendar@calendar.example.org",
+      "normalized_value": "calendar@calendar.example.org",
+      "observed_values": [
+        "calendar@calendar.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "ipv4",
+      "value": "192.0.2.175",
+      "normalized_value": "192.0.2.175",
+      "observed_values": [
+        "192.0.2.175"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_02.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-008",
+      "type": "ipv4",
+      "value": "192.0.2.70",
+      "normalized_value": "192.0.2.70",
+      "observed_values": [
+        "192.0.2.70"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-009",
+      "type": "ipv4",
+      "value": "198.51.100.110",
+      "normalized_value": "198.51.100.110",
+      "observed_values": [
+        "198.51.100.110"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "undetermined",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-010-DNS-001",
+      "timestamp": "2026-05-31T11:13:37.701+00:00",
+      "query": "calendar.example.org",
+      "record_type": "A",
+      "response": "198.51.100.110"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'join-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://calendar.example.org/join/TW-COM-010",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:calendar@calendar.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:email_02.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_02.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'join-qr.png' is byte-identical to qr_02.png"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email_02.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event_02.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "artifact:event_02.ics",
+      "relation": "contains_url",
+      "target": "url:https://calendar-sync.example.org/join/TW-COM-010",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:email_02.eml",
+      "relation": "sent_from",
+      "target": "email_address:calendar-team@calendar-sync.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://calendar.example.org/join/TW-COM-010",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "artifact:qr_02.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_02#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "qr:qr_02#1",
+      "relation": "encodes",
+      "target": "url:https://calendar-sync.example.org/join/TW-COM-010",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "url:https://calendar-sync.example.org/join/TW-COM-010",
+      "relation": "has_domain",
+      "target": "domain:calendar-sync.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-014",
+      "source": "url:https://calendar.example.org/join/TW-COM-010",
+      "relation": "has_domain",
+      "target": "domain:calendar.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-015",
+      "source": "dns_event:TW-COM-010-DNS-001",
+      "relation": "queries",
+      "target": "domain:calendar.example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-016",
+      "source": "dns_event:TW-COM-010-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:198.51.100.110",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-017",
+      "source": "artifact:email_01.eml",
+      "relation": "refers_to_same_event",
+      "target": "artifact:email_02.eml",
+      "evidence_type": "inferred",
+      "basis": "same UID and equal SEQUENCE but differing content",
+      "confidence": "medium"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-31T08:13:34+00:00",
+      "source_timestamp": "2026-05-31T08:13:34+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T08:13:34+00:00",
+      "source_timestamp": "2026-05-31T08:13:34+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event.ics",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T08:13:37+00:00",
+      "source_timestamp": "2026-05-31T08:13:37+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T08:13:37+00:00",
+      "source_timestamp": "2026-05-31T08:13:37+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-05-31T11:13:37.701+00:00",
+      "source_timestamp": "2026-05-31T11:13:37.701+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for calendar.example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-010-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T14:13:34+00:00",
+      "source_timestamp": "2026-05-31T14:13:34+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T14:13:34+00:00",
+      "source_timestamp": "2026-05-31T14:13:34+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event_02.ics",
+      "source_artifact": "event_02.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T14:13:37+00:00",
+      "source_timestamp": "2026-05-31T14:13:37+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_02.eml",
+      "source_artifact": "email_02.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-31T14:13:37+00:00",
+      "source_timestamp": "2026-05-31T14:13:37+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_02.png becomes extractable once email_02.eml is received",
+      "source_artifact": "qr_02.png",
+      "reference_id": "qr:qr_02#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-06-04T10:00:00+00:00",
+      "source_timestamp": "2026-06-04T10:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    },
+    {
+      "timestamp": "2026-06-04T14:00:00+00:00",
+      "source_timestamp": "2026-06-04T14:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event_02.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [
+    {
+      "artifact": "browser_events.json",
+      "reason": "not_collected",
+      "impact": "A DNS lookup exists but no browser evidence confirms a scan or page view."
+    }
+  ],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "timestamp_conflict",
+      "description": "Both ICS files use the same UID and SEQUENCE 0 but start at different times (10:00 vs 14:00 UTC).",
+      "artifacts_involved": [
+        "event.ics",
+        "event_02.ics",
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "evidence_type": "observed",
+      "conflict_code": "EVENT_TIME_MISMATCH",
+      "expected_handling": "Report the conflict, keep both timestamps, do not silently correct either; lower confidence of dependent correlations."
+    },
+    {
+      "finding_id": "AMB-002",
+      "finding_type": "authenticity_unresolved",
+      "description": "Cannot tell which email is authentic; the second sender uses a look-alike sub-domain, but no malicious behaviour is observed.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "email_02.eml"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Report both, assert neither."
+    },
+    {
+      "finding_id": "AMB-003",
+      "finding_type": "unconfirmed_scan",
+      "description": "DNS lookup(s) exist without browser evidence; a QR scan or page view is not confirmed.",
+      "artifacts_involved": [
+        "dns_events.json"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Do not report a confirmed scan."
+    }
+  ],
+  "notes": "Contradictory duplicates suggest spoofing or error, but nothing establishes which is authentic or that anything was scanned. Classification: inconclusive. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

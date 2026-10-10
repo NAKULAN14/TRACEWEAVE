@@ -1,0 +1,72 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-004.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-004.ics",
+        "size_bytes": 844,
+        "sha256": "339b06edb58310fb2e40ce45f3925f7ef7d89ce19846bfc9ac6a98a3cece6105"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-004_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-004_recovered.ics",
+        "size_bytes": 861,
+        "sha256": "5edf67bf417a94c7a681bb6d5162ea71a9271e504362e279088f10c0d222b2ee"
+    },
+    "transformations": [
+        {
+            "type": "MISSING_COMPONENT_RECONSTRUCTION",
+            "component": "VCALENDAR",
+            "position": "BEGIN",
+            "inserted": "BEGIN:VCALENDAR",
+            "reason": "VCALENDAR begin boundary was missing"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 11,
+            "original": " meline reconstruction using synthetic case data. Please bring your student",
+            "recovered": " meline reconstruction using synthetic case data. Please bring your student",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 12,
+            "original": "  ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://even",
+            "recovered": "  ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https://even",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 13,
+            "original": " ts.example.edu/tw/agenda/004",
+            "recovered": " ts.example.edu/tw/agenda/004",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 4,
+    "validation": {
+        "validation_status": "FAILED",
+        "parser": {
+            "name": "icalendar",
+            "status": "FAILED"
+        },
+        "error": {
+            "type": "ValueError",
+            "message": "END encountered without an accompanying BEGIN!"
+        }
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:54.872854+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "FAILED",
+        "confidence": "LOW"
+    }
+}

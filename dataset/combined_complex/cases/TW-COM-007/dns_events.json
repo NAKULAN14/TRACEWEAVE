@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-COM-007-DNS-001",
+    "case_id": "TW-COM-007",
+    "timestamp": "2026-05-22T07:41:46.727+00:00",
+    "query": "rooms.example.net",
+    "record_type": "A",
+    "response": "192.0.2.143",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

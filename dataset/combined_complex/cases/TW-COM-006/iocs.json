@@ -1,0 +1,186 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://portal.example.com/survey/TW-COM-006-A",
+    "normalized_value": "https://portal.example.com/survey/TW-COM-006-A",
+    "observed_values": [
+      "https://portal.example.com/survey/TW-COM-006-A"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "url",
+    "value": "https://portal.example.com/survey/TW-COM-006-B",
+    "normalized_value": "https://portal.example.com/survey/TW-COM-006-B",
+    "observed_values": [
+      "https://portal.example.com/survey/TW-COM-006-B"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_02.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "url",
+    "value": "HTTPS://PORTAL.EXAMPLE.COM/survey/TW-COM-006-C",
+    "normalized_value": "https://portal.example.com/survey/TW-COM-006-C",
+    "observed_values": [
+      "HTTPS://PORTAL.EXAMPLE.COM/survey/TW-COM-006-C",
+      "https://portal.example.com/survey/TW-COM-006-C"
+    ],
+    "roles": [
+      "email_body_link",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_03.eml",
+      "qr_03.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "ferncliff-surveys.example.com",
+    "normalized_value": "ferncliff-surveys.example.com",
+    "observed_values": [
+      "ferncliff-surveys.example.com"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "email_02.eml",
+      "email_03.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "domain",
+    "value": "portal.example.com",
+    "normalized_value": "portal.example.com",
+    "observed_values": [
+      "portal.example.com"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_03.eml",
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png",
+      "qr_02.png",
+      "qr_03.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "email_address",
+    "value": "survey@ferncliff-surveys.example.com",
+    "normalized_value": "survey@ferncliff-surveys.example.com",
+    "observed_values": [
+      "survey@ferncliff-surveys.example.com"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "email_02.eml",
+      "email_03.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "192.0.2.210",
+    "normalized_value": "192.0.2.210",
+    "observed_values": [
+      "192.0.2.210"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_02.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-008",
+    "type": "ipv4",
+    "value": "192.0.2.43",
+    "normalized_value": "192.0.2.43",
+    "observed_values": [
+      "192.0.2.43"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-009",
+    "type": "ipv4",
+    "value": "192.0.2.91",
+    "normalized_value": "192.0.2.91",
+    "observed_values": [
+      "192.0.2.91"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_03.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-010",
+    "type": "ipv4",
+    "value": "203.0.113.86",
+    "normalized_value": "203.0.113.86",
+    "observed_values": [
+      "203.0.113.86"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  }
+]

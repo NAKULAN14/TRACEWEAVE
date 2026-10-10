@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic Combined Cases//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lecture-TW-COM-001@tw-uid.example.org
+DTSTAMP:20260504T133739Z
+DTSTART:20260507T100000Z
+DTEND:20260507T110000Z
+SEQUENCE:0
+SUMMARY:Guest Lecture: Digital Forensics in Practice
+DESCRIPTION:Registration page: https://events.example.org/lectures/TW-COM-0
+ 01
+LOCATION:Seminar Hall 2\, Alderwick College
+ORGANIZER;CN="Alderwick Events Office":mailto:events@events.example.org
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-014-BRW-001",
+    "case_id": "TW-COM-014",
+    "timestamp": "2026-06-12T13:38:02.657+01:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://print-help.example.net/pay/TW-COM-014",
+    "domain": "print-help.example.net",
+    "browser": "Firefox Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-014-a",
+    "user_account": "chloe.dubois@students.example.net",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-014-BRW-002",
+    "case_id": "TW-COM-014",
+    "timestamp": "2026-06-12T13:38:04.343+01:00",
+    "event_type": "page_load",
+    "url": "https://print-help.example.net/pay/TW-COM-014",
+    "domain": "print-help.example.net",
+    "browser": "Firefox Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-014-a",
+    "user_account": "chloe.dubois@students.example.net",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-014-BRW-003",
+    "case_id": "TW-COM-014",
+    "timestamp": "2026-06-12T13:38:06.131+01:00",
+    "event_type": "form_displayed",
+    "url": "https://print-help.example.net/pay/TW-COM-014",
+    "domain": "print-help.example.net",
+    "browser": "Firefox Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-014-a",
+    "user_account": "chloe.dubois@students.example.net",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-014-BRW-004",
+    "case_id": "TW-COM-014",
+    "timestamp": "2026-06-12T13:38:19.387+01:00",
+    "event_type": "tab_closed",
+    "url": "https://print-help.example.net/pay/TW-COM-014",
+    "domain": "print-help.example.net",
+    "browser": "Firefox Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-014-a",
+    "user_account": "chloe.dubois@students.example.net",
+    "synthetic": true
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://calendar-sync.example.org/join/TW-COM-010",
+    "normalized_value": "https://calendar-sync.example.org/join/TW-COM-010",
+    "observed_values": [
+      "https://calendar-sync.example.org/join/TW-COM-010"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_02.eml",
+      "event_02.ics",
+      "qr_02.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "url",
+    "value": "https://calendar.example.org/join/TW-COM-010",
+    "normalized_value": "https://calendar.example.org/join/TW-COM-010",
+    "observed_values": [
+      "https://calendar.example.org/join/TW-COM-010"
+    ],
+    "roles": [
+      "ics_url",
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "calendar-sync.example.org",
+    "normalized_value": "calendar-sync.example.org",
+    "observed_values": [
+      "calendar-sync.example.org"
+    ],
+    "roles": [
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_02.eml",
+      "event_02.ics",
+      "qr_02.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "domain",
+    "value": "calendar.example.org",
+    "normalized_value": "calendar.example.org",
+    "observed_values": [
+      "calendar.example.org"
+    ],
+    "roles": [
+      "dns_query_name",
+      "sender_domain",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "dns_events.json",
+      "event.ics",
+      "qr_01.png"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "email_address",
+    "value": "calendar-team@calendar-sync.example.org",
+    "normalized_value": "calendar-team@calendar-sync.example.org",
+    "observed_values": [
+      "calendar-team@calendar-sync.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_02.eml",
+      "event_02.ics"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "email_address",
+    "value": "calendar@calendar.example.org",
+    "normalized_value": "calendar@calendar.example.org",
+    "observed_values": [
+      "calendar@calendar.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-007",
+    "type": "ipv4",
+    "value": "192.0.2.175",
+    "normalized_value": "192.0.2.175",
+    "observed_values": [
+      "192.0.2.175"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_02.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-008",
+    "type": "ipv4",
+    "value": "192.0.2.70",
+    "normalized_value": "192.0.2.70",
+    "observed_values": [
+      "192.0.2.70"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-009",
+    "type": "ipv4",
+    "value": "198.51.100.110",
+    "normalized_value": "198.51.100.110",
+    "observed_values": [
+      "198.51.100.110"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "undetermined",
+    "evidence_type": "observed"
+  }
+]

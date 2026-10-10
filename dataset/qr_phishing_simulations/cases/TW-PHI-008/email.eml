@@ -1,0 +1,88 @@
+Received: from mail-out.quillmoor-awards.example.org (quillmoor-awards.example.org [192.0.2.107])
+	by mx.students.example.net with ESMTP id TWPHI008;
+	Tue, 21 Apr 2026 16:20:09 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-008
+From: "Quillmoor Awards Office" <awards@quillmoor-awards.example.org>
+To: "Ethan Walsh" <ethan.walsh@students.example.net>
+Subject: Scholarship notification: you have been shortlisted
+Date: Tue, 21 Apr 2026 08:20:06 -0800
+Message-ID: <tw-phi-008.1eade38f47@mail-out.quillmoor-awards.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-PHI-008_mix"
+
+--=_TW-PHI-008_mix
+Content-Type: multipart/alternative; boundary="=_TW-PHI-008_alt"
+
+--=_TW-PHI-008_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Ethan,
+
+Congratulations! You have been shortlisted for the Merit Scholarship.
+
+To keep your place on the shortlist, please confirm your interest before
+the deadline.
+
+Scan the attached QR code (scholarship-qr-code.png) with your phone
+camera to continue.
+
+Regards,
+Quillmoor Awards Office
+
+--=_TW-PHI-008_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Ethan,</p><p>Congratulations! You have been shortlisted for the Merit Scholarship.</p><p>To keep your place on the shortlist, please confirm your interest before the deadline.</p><p>Scan the attached QR code (scholarship-qr-code.png) with your phone camera to continue.</p><p>(QR code attached: scholarship-qr-code.png)</p><p>Regards,<br>Quillmoor Awards Office</p></body></html>
+--=_TW-PHI-008_alt--
+--=_TW-PHI-008_mix
+Content-Type: image/png; name="scholarship-qr-code.png"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="scholarship-qr-code.png"
+
+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
+QmCC
+--=_TW-PHI-008_mix--

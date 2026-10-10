@@ -1,0 +1,109 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "url",
+    "value": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+    "normalized_value": "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003",
+    "observed_values": [
+      "https://enroll.vantor-benefits.example.net/confirm/TW-COM-003"
+    ],
+    "roles": [
+      "qr_payload_url"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "domain",
+    "value": "enroll.vantor-benefits.example.net",
+    "normalized_value": "enroll.vantor-benefits.example.net",
+    "observed_values": [
+      "enroll.vantor-benefits.example.net"
+    ],
+    "roles": [
+      "dns_query_name",
+      "url_host"
+    ],
+    "source_artifacts": [
+      "browser_events.json",
+      "dns_events.json",
+      "qr_01.png"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "domain",
+    "value": "vantor-hr.example.com",
+    "normalized_value": "vantor-hr.example.com",
+    "observed_values": [
+      "vantor-hr.example.com"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-004",
+    "type": "email_address",
+    "value": "hr-calendar@vantor-hr.example.com",
+    "normalized_value": "hr-calendar@vantor-hr.example.com",
+    "observed_values": [
+      "hr-calendar@vantor-hr.example.com"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml",
+      "event.ics"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-005",
+    "type": "ipv4",
+    "value": "192.0.2.175",
+    "normalized_value": "192.0.2.175",
+    "observed_values": [
+      "192.0.2.175"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "suspicious_simulated",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-006",
+    "type": "ipv4",
+    "value": "192.0.2.70",
+    "normalized_value": "192.0.2.70",
+    "observed_values": [
+      "192.0.2.70"
+    ],
+    "roles": [
+      "resolved_ip_a"
+    ],
+    "source_artifacts": [
+      "dns_events.json"
+    ],
+    "assessment": "malicious_simulated",
+    "evidence_type": "observed"
+  }
+]

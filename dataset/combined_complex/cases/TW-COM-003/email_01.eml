@@ -1,0 +1,107 @@
+Received: from mail-out.vantor-hr.example.com (vantor-hr.example.com [192.0.2.175])
+	by mx.staff.example.com with ESMTP id TWCOM00301;
+	Sun, 10 May 2026 12:34:14 +0000
+X-TW-Dataset: combined-complex-dataset-5
+X-TW-Case: TW-COM-003
+From: "Vantor HR Calendar" <hr-calendar@vantor-hr.example.com>
+To: "Sara Haddad" <sara.haddad@staff.example.com>
+Subject: Mandatory: Benefits Enrollment Briefing - invitation attached
+Date: Sun, 10 May 2026 12:34:11 +0000
+Message-ID: <tw-com-003.email_01.7b25fe5d1e@mail-out.vantor-hr.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_TW-COM-003_email_01_mix"
+
+--=_TW-COM-003_email_01_mix
+Content-Type: multipart/alternative; boundary="=_TW-COM-003_email_01_alt"
+
+--=_TW-COM-003_email_01_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Sara,
+
+You are required to attend the benefits enrollment briefing.
+
+Please accept the attached calendar invitation and confirm attendance
+using the QR code inside it.
+
+A calendar invitation is attached.
+
+Regards,
+Vantor HR Calendar
+
+--=_TW-COM-003_email_01_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Sara,</p><p>You are required to attend the benefits enrollment briefing.</p><p>Please accept the attached calendar invitation and confirm attendance using the QR code inside it.</p><p>A calendar invitation is attached.</p><p>Regards,<br>Vantor HR Calendar</p></body></html>
+--=_TW-COM-003_email_01_alt--
+--=_TW-COM-003_email_01_mix
+Content-Type: text/calendar; charset=utf-8; method=REQUEST
+Content-Disposition: attachment; filename="invite-event.ics"
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic Combined Cases//EN
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:briefing-TW-COM-003@tw-uid.example.org
+DTSTAMP:20260510T123411Z
+DTSTART:20260512T100000Z
+DTEND:20260512T110000Z
+SEQUENCE:0
+SUMMARY:Mandatory: Benefits Enrollment Briefing
+DESCRIPTION:Scan the QR code attached to this invitation to confirm your at
+ tendance.
+LOCATION:Online (see attached QR code)
+ORGANIZER;CN="Vantor HR Calendar":mailto:hr-calendar@vantor-hr.example.com
+ATTENDEE;CN="Sara Haddad";ROLE=REQ-PARTICIPANT;RSVP=TRUE:mailto:sara.haddad
+ @staff.example.com
+ATTACH;FMTTYPE=image/png;ENCODING=BASE64;VALUE=BINARY:iVBORw0KGgoAAAANSUhEU
+ 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
+ MZAAAAAAElFTkSuQmCC
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
+--=_TW-COM-003_email_01_mix--

@@ -1,0 +1,68 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-013.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-013.ics",
+        "size_bytes": 924,
+        "sha256": "8209875b71b46c17ff63aff53b105107e81964f1db6d0659fc07b4c4561cf727"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-013_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-013_recovered.ics",
+        "size_bytes": 924,
+        "sha256": "8209875b71b46c17ff63aff53b105107e81964f1db6d0659fc07b4c4561cf727"
+    },
+    "transformations": [
+        {
+            "type": "UNRESOLVED_PROPERTY_STRUCTURE",
+            "line_number": 6,
+            "original": "X-TW-WRAPPER:nested-container",
+            "reason": "No safe ICS property recovery rule matched"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 14,
+            "original": " management\\, and service configuration. Please bring your student ID and a",
+            "recovered": " management\\, and service configuration. Please bring your student ID and a",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 15,
+            "original": "  laptop. Review the pre-reading beforehand.\\nAgenda: https://events.exampl",
+            "recovered": "  laptop. Review the pre-reading beforehand.\\nAgenda: https://events.exampl",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 16,
+            "original": " e.edu/tw/agenda/013",
+            "recovered": " e.edu/tw/agenda/013",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 4,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:55.044657+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

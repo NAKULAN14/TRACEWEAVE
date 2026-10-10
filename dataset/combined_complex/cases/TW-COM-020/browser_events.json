@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-020-BRW-001",
+    "case_id": "TW-COM-020",
+    "timestamp": "2026-06-30T19:52:59.455+05:30",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://survey.example.net/feedback/TW-COM-020",
+    "domain": "survey.example.net",
+    "browser": "Chrome Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-020-a",
+    "user_account": "user.020@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-020-BRW-002",
+    "case_id": "TW-COM-020",
+    "timestamp": "2026-06-30T19:53:00.757+05:30",
+    "event_type": "page_load",
+    "url": "https://survey.example.net/feedback/TW-COM-020",
+    "domain": "survey.example.net",
+    "browser": "Chrome Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-020-a",
+    "user_account": "user.020@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-020-BRW-003",
+    "case_id": "TW-COM-020",
+    "timestamp": "2026-06-30T19:53:02.278+05:30",
+    "event_type": "form_displayed",
+    "url": "https://survey.example.net/feedback/TW-COM-020",
+    "domain": "survey.example.net",
+    "browser": "Chrome Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-020-a",
+    "user_account": "user.020@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-020-BRW-004",
+    "case_id": "TW-COM-020",
+    "timestamp": "2026-06-30T19:53:29.269+05:30",
+    "event_type": "tab_closed",
+    "url": "https://survey.example.net/feedback/TW-COM-020",
+    "domain": "survey.example.net",
+    "browser": "Chrome Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-020-a",
+    "user_account": "user.020@students.example.org",
+    "synthetic": true
+  }
+]

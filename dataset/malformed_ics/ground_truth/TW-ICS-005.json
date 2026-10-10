@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-005",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-005.ics",
+  "corrupted_file": "TW-ICS-005.ics",
+  "is_malformed": true,
+  "corruption_type": "invalid_datetime_format",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTEND",
+    "SUMMARY",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "DTSTART",
+    "DTSTAMP"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/005",
+    "https://events.example.edu/tw/agenda/005"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Date-time values are present but do not match the iCalendar DATE-TIME grammar. DTEND is intact. A heuristic repair could normalise them, but the reference recovery is conservative and flags them invalid."
+}

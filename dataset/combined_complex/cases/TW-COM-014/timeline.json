@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-06-12T11:52:59+00:00",
+    "source_timestamp": "2026-06-12T11:52:59+00:00",
+    "event_type": "email_sent",
+    "description": "Date header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Date",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-12T11:53:02+00:00",
+    "source_timestamp": "2026-06-12T11:53:02+00:00",
+    "event_type": "email_received",
+    "description": "Received header of email_01.eml",
+    "source_artifact": "email_01.eml",
+    "reference_id": "header:Received",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-12T11:53:02+00:00",
+    "source_timestamp": "2026-06-12T11:53:02+00:00",
+    "event_type": "qr_code_available_for_extraction",
+    "description": "qr_01.png becomes extractable once email_01.eml is received",
+    "source_artifact": "qr_01.png",
+    "reference_id": "qr:qr_01#1",
+    "evidence_type": "inferred",
+    "entry_kind": "derived"
+  },
+  {
+    "timestamp": "2026-06-12T12:38:02.657+00:00",
+    "source_timestamp": "2026-06-12T13:38:02.657+01:00",
+    "event_type": "qr_scan_url_opened",
+    "description": "open_url https://print-help.example.net/pay/TW-COM-014",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-014-BRW-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-12T12:38:02.842+00:00",
+    "source_timestamp": "2026-06-12T12:38:02.842+00:00",
+    "event_type": "dns_query",
+    "description": "A lookup for print-help.example.net",
+    "source_artifact": "dns_events.json",
+    "reference_id": "TW-COM-014-DNS-001",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-12T12:38:04.343+00:00",
+    "source_timestamp": "2026-06-12T13:38:04.343+01:00",
+    "event_type": "page_load",
+    "description": "load https://print-help.example.net/pay/TW-COM-014",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-014-BRW-002",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-12T12:38:06.131+00:00",
+    "source_timestamp": "2026-06-12T13:38:06.131+01:00",
+    "event_type": "form_displayed",
+    "description": "render_static_form_no_input https://print-help.example.net/pay/TW-COM-014",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-014-BRW-003",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  },
+  {
+    "timestamp": "2026-06-12T12:38:19.387+00:00",
+    "source_timestamp": "2026-06-12T13:38:19.387+01:00",
+    "event_type": "tab_closed",
+    "description": "close_tab https://print-help.example.net/pay/TW-COM-014",
+    "source_artifact": "browser_events.json",
+    "reference_id": "TW-COM-014-BRW-004",
+    "evidence_type": "observed",
+    "entry_kind": "occurred"
+  }
+]

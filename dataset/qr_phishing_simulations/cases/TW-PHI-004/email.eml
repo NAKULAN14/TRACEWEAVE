@@ -1,0 +1,36 @@
+Received: from mail-out.tessarine-centre.example.com (tessarine-centre.example.com [192.0.2.226])
+	by mx.mail.example.net with ESMTP id TWPHI004;
+	Sun, 12 Apr 2026 09:33:44 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-004
+From: "Tessarine Research Centre" <workshops@tessarine-centre.example.com>
+To: "Lucas Ferreira" <lucas.ferreira@mail.example.net>
+Subject: Complete your registration - Applied Cryptography Workshop
+Date: Sun, 12 Apr 2026 10:33:43 +0100
+Message-ID: <tw-phi-004.685479b42c@mail-out.tessarine-centre.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-PHI-004_alt"
+
+--=_TW-PHI-004_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Lucas,
+
+Thank you for your interest in the Applied Cryptography Workshop.
+
+Seats are held only for people who complete registration. Unclaimed
+seats are released on Monday.
+
+Scan the QR code on the workshop notice posted outside the Computer
+Science block to continue.
+
+Regards,
+Tessarine Research Centre
+
+--=_TW-PHI-004_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Lucas,</p><p>Thank you for your interest in the Applied Cryptography Workshop.</p><p>Seats are held only for people who complete registration. Unclaimed seats are released on Monday.</p><p>Scan the QR code on the workshop notice posted outside the Computer Science block to continue.</p><p>Regards,<br>Tessarine Research Centre</p></body></html>
+--=_TW-PHI-004_alt--

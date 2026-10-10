@@ -1,0 +1,303 @@
+{
+  "case_id": "TW-PHI-019",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.com/hack/signup/TW-PHI-019",
+  "expected_url": "https://example.com/hack/signup/TW-PHI-019",
+  "expected_domain": "example.com",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.com/hack/signup/TW-PHI-019",
+      "normalized_value": "https://example.com/hack/signup/TW-PHI-019",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "event.ics",
+        "qr.png",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "example.com",
+      "normalized_value": "example.com",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "event.ics",
+        "qr.png",
+        "browser_events.json"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "hello@quillmoor-coding.example.com",
+      "normalized_value": "hello@quillmoor-coding.example.com",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "quillmoor-coding.example.com",
+      "normalized_value": "quillmoor-coding.example.com",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.190",
+      "normalized_value": "192.0.2.190",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-PHI-019-BRW-001",
+      "timestamp": "2026-05-13T21:54:33.660Z",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://example.com/hack/signup/TW-PHI-019",
+      "domain": "example.com"
+    },
+    {
+      "event_id": "TW-PHI-019-BRW-002",
+      "timestamp": "2026-05-13T21:54:36.033Z",
+      "event_type": "page_load",
+      "url": "https://example.com/hack/signup/TW-PHI-019",
+      "domain": "example.com"
+    },
+    {
+      "event_id": "TW-PHI-019-BRW-003",
+      "timestamp": "2026-05-13T21:54:37.125Z",
+      "event_type": "form_displayed",
+      "url": "https://example.com/hack/signup/TW-PHI-019",
+      "domain": "example.com"
+    }
+  ],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'hackathon-qr.png' (file) is byte-identical to qr.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.com/hack/signup/TW-PHI-019",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email.eml",
+      "relation": "references_calendar_invitation",
+      "target": "artifact:event.ics",
+      "evidence_type": "inferred",
+      "basis": "email says an invitation was sent separately; event.ics supplied as separate evidence"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://example.com/hack/signup/TW-PHI-019",
+      "evidence_type": "observed",
+      "basis": "URL present in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://example.com/hack/signup/TW-PHI-019",
+      "relation": "has_domain",
+      "target": "domain:example.com",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:hello@quillmoor-coding.example.com",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "browser_event:TW-PHI-019-BRW-001",
+      "relation": "visits",
+      "target": "url:https://example.com/hack/signup/TW-PHI-019",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "artifact:email.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-PHI-019-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR delivered by this email; scan source cannot be proven"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-05-13T10:13:00Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T10:13:00Z",
+      "event_type": "calendar_invitation_created",
+      "description": "ICS DTSTAMP",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T10:13:01Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T21:54:33.660Z",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://example.com/hack/signup/TW-PHI-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-019-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T21:54:36.033Z",
+      "event_type": "page_load",
+      "description": "load https://example.com/hack/signup/TW-PHI-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-019-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-13T21:54:37.125Z",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://example.com/hack/signup/TW-PHI-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-PHI-019-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-14T10:00:00Z",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'hackathon_signup' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png",
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code attached to the email"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-019-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-019-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 6,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-PHI-019-BRW-003"
+      ],
+      "description": "Static simulated form displayed; no input, credentials or personal data exist in this dataset"
+    }
+  ],
+  "missing_artifacts": [
+    "dns_events.json"
+  ],
+  "notes": "Scenario: hackathon_signup. QR attached as file 'hackathon-qr.png'. Email says the invitation arrived separately; event.ics supplied as separate evidence. Incomplete evidence: DNS events were not collected; browser events show the scan. OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic."
+}

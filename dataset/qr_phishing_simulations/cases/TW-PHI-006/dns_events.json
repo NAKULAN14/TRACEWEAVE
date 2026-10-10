@@ -1,0 +1,13 @@
+[
+  {
+    "event_id": "TW-PHI-006-DNS-001",
+    "case_id": "TW-PHI-006",
+    "timestamp": "2026-04-17T15:28:19.879Z",
+    "query": "example.net",
+    "record_type": "A",
+    "response": "192.0.2.189",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

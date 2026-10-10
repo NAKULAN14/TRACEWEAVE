@@ -1,0 +1,36 @@
+Received: from mail-out.ferncliff-foundation.example.org (ferncliff-foundation.example.org [192.0.2.91])
+	by mx.students.example.net with ESMTP id TWPHI017;
+	Fri, 08 May 2026 08:15:21 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-017
+From: "Ferncliff Foundation" <scholarships@ferncliff-foundation.example.org>
+To: "Grace Mwangi" <grace.mwangi@students.example.net>
+Subject: Scholarship results are available
+Date: Fri, 08 May 2026 09:15:20 +0100
+Message-ID: <tw-phi-017.9fbb7b98ee@mail-out.ferncliff-foundation.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-PHI-017_alt"
+
+--=_TW-PHI-017_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Grace,
+
+The results of this year's Foundation Scholarship round are now
+available.
+
+Applicants can view their outcome on the results page.
+
+Scan the QR code on the results flyer pinned to the Foundation notice
+board to continue.
+
+Regards,
+Ferncliff Foundation
+
+--=_TW-PHI-017_alt
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Grace,</p><p>The results of this year&#x27;s Foundation Scholarship round are now available.</p><p>Applicants can view their outcome on the results page.</p><p>Scan the QR code on the results flyer pinned to the Foundation notice board to continue.</p><p>Regards,<br>Ferncliff Foundation</p></body></html>
+--=_TW-PHI-017_alt--

@@ -1,0 +1,24 @@
+[
+  {
+    "event_id": "TW-PHI-002-DNS-001",
+    "case_id": "TW-PHI-002",
+    "timestamp": "2026-04-09T18:57:27.101Z",
+    "query": "example.org",
+    "record_type": "A",
+    "response": "198.51.100.23",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-002-DNS-002",
+    "case_id": "TW-PHI-002",
+    "timestamp": "2026-04-09T18:57:27.109Z",
+    "query": "example.org",
+    "record_type": "AAAA",
+    "response": "2001:db8:2::17",
+    "ttl": 300,
+    "source": "simulated_resolver_log",
+    "synthetic": true
+  }
+]

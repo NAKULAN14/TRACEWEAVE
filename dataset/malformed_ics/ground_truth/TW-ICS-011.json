@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-011",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-011.ics",
+  "corrupted_file": "TW-ICS-011.ics",
+  "is_malformed": true,
+  "corruption_type": "duplicate_conflicting_properties",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTEND",
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "SUMMARY",
+    "DTSTART"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/011",
+    "https://events.example.edu/tw/agenda/011"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "The first occurrence equals the original value, but a parser cannot know which duplicate is authoritative, so both fields are flagged ambiguous/invalid."
+}

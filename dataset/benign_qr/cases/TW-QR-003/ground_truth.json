@@ -1,0 +1,13 @@
+{
+  "case_id": "TW-QR-003",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "Photography Club - Weekly Meetup\nEvery Friday, 17:00-18:00 IST\nRoom 2, Student Activity Centre\nAgenda: photo critique, lens lending roster, winter exhibition plan\nContact: photography.club@example.com",
+  "payload_type": "plain_text",
+  "expected_urls": [],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Club meeting details as plain text. Contains an e-mail address but no URL. QR version 10, error correction M (~15%), module size 10px, quiet zone 4 modules, image 650x650px (8-bit greyscale PNG, black on white); payload length 200 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

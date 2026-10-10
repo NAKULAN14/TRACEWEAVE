@@ -1,0 +1,37 @@
+{
+  "case_id": "TW-ICS-008",
+  "category": "malformed_ics",
+  "original_file": "TW-ICS-008.ics",
+  "corrupted_file": "TW-ICS-008.ics",
+  "is_malformed": true,
+  "corruption_type": "invalid_encoding_latin1",
+  "expected_event_count": 1,
+  "expected_recovered_fields": [
+    "VERSION",
+    "PRODID",
+    "CALSCALE",
+    "UID",
+    "DTSTAMP",
+    "DTSTART",
+    "DTEND",
+    "DESCRIPTION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM"
+  ],
+  "expected_missing_fields": [],
+  "expected_invalid_fields": [
+    "SUMMARY",
+    "LOCATION"
+  ],
+  "expected_qr_codes": [],
+  "expected_urls": [
+    "https://events.example.edu/tw/008",
+    "https://events.example.edu/tw/agenda/008"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Only SUMMARY and LOCATION contain non-ASCII text. A UTF-8 decoder cannot decode them (icalendar silently substitutes replacement characters). Latin-1/CP1252 would restore the text, but the encoding is not declared, so the reference recovery marks the two fields invalid."
+}

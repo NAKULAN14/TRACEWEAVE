@@ -1,0 +1,192 @@
+{
+  "case_id": "TW-COM-015",
+  "category": "combined_complex",
+  "scenario": "Library-hours poster email whose QR code encodes plain harmless text (no URL); no logs are expected.",
+  "expected_classification": "benign",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "d128b766cc1d2e52183ad722d929fbdb77d5b4502660e5ea8748839b3efbc4dc"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "ba43e5f867f1153158757ddd7101d37894304995b5e983b644bbff2942cbf598"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "03440569a5b67841caee238e1fcba74f73a466eb250b232a1f892e8422d006da"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "c0b3ad6bb6c5a822a9274372da70766a4f474bcf1418a1eb24691b04f73c58a1"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "ca64855414ad50d63c67cc193e0e0c90bc2f688aa9387e99d9f997ccbae3b4a2"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "text",
+      "decodable": true,
+      "payload": "Library hours: Mon-Fri 09:00-17:00. Help desk ext. 1234.",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "Library hours: Mon-Fri 09:00-17:00. Help desk ext. 1234."
+  ],
+  "expected_urls": [],
+  "expected_domains": [
+    "library.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "domain",
+      "value": "library.example.org",
+      "normalized_value": "library.example.org",
+      "observed_values": [
+        "library.example.org"
+      ],
+      "roles": [
+        "sender_domain"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "email_address",
+      "value": "info@library.example.org",
+      "normalized_value": "info@library.example.org",
+      "observed_values": [
+        "info@library.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "ipv4",
+      "value": "192.0.2.78",
+      "normalized_value": "192.0.2.78",
+      "observed_values": [
+        "192.0.2.78"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'library-hours.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:info@library.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "qr:qr_01#1",
+      "relation": "encodes_text",
+      "target": "text:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "decoded payload is plain text (no URL)"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-06-15T15:00:22+00:00",
+      "source_timestamp": "2026-06-15T15:00:22+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-15T15:00:25+00:00",
+      "source_timestamp": "2026-06-15T15:00:25+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-15T15:00:25+00:00",
+      "source_timestamp": "2026-06-15T15:00:25+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [],
+  "ambiguous_findings": [],
+  "notes": "Text-only payload, consistent sender, no links, nothing to resolve. Classification: benign. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

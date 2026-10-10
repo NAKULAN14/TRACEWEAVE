@@ -1,0 +1,62 @@
+{
+    "workflow_stage": "Phase 9D",
+    "recovery_method": "Conservative structural and property-level ICS reconstruction",
+    "original_artifact": {
+        "filename": "TW-ICS-002.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-002.ics",
+        "size_bytes": 837,
+        "sha256": "ecae1836ae465fe1fcc15d0034497d0d6b45143447bff091e1152e7921ddd4a2"
+    },
+    "recovered_artifact": {
+        "filename": "TW-ICS-002_recovered.ics",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\reports\\phase9\\batch_verification\\recovered\\TW-ICS-002_recovered.ics",
+        "size_bytes": 837,
+        "sha256": "ecae1836ae465fe1fcc15d0034497d0d6b45143447bff091e1152e7921ddd4a2"
+    },
+    "transformations": [
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 10,
+            "original": " d basic traffic analysis using sample packet captures. Please bring your s",
+            "recovered": " d basic traffic analysis using sample packet captures. Please bring your s",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 11,
+            "original": " tudent ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https:",
+            "recovered": " tudent ID and a laptop. Review the pre-reading beforehand.\\nAgenda: https:",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        },
+        {
+            "type": "FOLDED_LINE_PRESERVED",
+            "line_number": 12,
+            "original": " //events.example.edu/tw/agenda/002",
+            "recovered": " //events.example.edu/tw/agenda/002",
+            "property": "DESCRIPTION",
+            "reason": "Whitespace-prefixed continuation line preserved as ICS folded content"
+        }
+    ],
+    "transformation_count": 3,
+    "validation": {
+        "validation_status": "SUCCESS",
+        "parser": {
+            "name": "icalendar",
+            "status": "SUCCESS"
+        },
+        "error": null
+    },
+    "provenance": {
+        "original_preserved": true,
+        "recovered_written_separately": true,
+        "original_modified": false,
+        "timestamp_utc": "2026-10-03T15:14:54.838037+00:00"
+    },
+    "encoding": "utf-8",
+    "recovery": {
+        "status": "SUCCESS",
+        "confidence": "HIGH"
+    }
+}

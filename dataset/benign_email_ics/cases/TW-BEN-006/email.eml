@@ -1,0 +1,73 @@
+Return-Path: <dhruv.patel@students.northfield.example.org>
+Received: from mail.students.northfield.example.org (mail.students.northfield.example.org)
+	by mx.students.northfield.example.org (Postfix) with ESMTPS id B675213AEF
+	for <photography.club@students.northfield.example.org>; Mon, 02 Nov 2026 19:10:02 +0530
+Received: from workstation.students.northfield.example.org (workstation.students.northfield.example.org)
+	by mail.students.northfield.example.org (Postfix) with ESMTPSA id 6BB6467925
+	for <photography.club@students.northfield.example.org>; Mon, 02 Nov 2026 19:10:00 +0530
+From: "Dhruv Patel" <dhruv.patel@students.northfield.example.org>
+To: "Photography Club Members" <photography.club@students.northfield.example.org>
+Subject: Photography Club Monthly Meetup - Saturday 7 November
+Date: Mon, 02 Nov 2026 19:10:00 +0530
+Message-ID: <20261102191000.6bb64679258a@students.northfield.example.org>
+MIME-Version: 1.0
+X-Mailer: Apple Mail (16.0)
+Content-Type: multipart/alternative; boundary="=_TW_ALT_6bb64679258ac90c"
+
+This is a multi-part message in MIME format.
+--=_TW_ALT_6bb64679258ac90c
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello everyone,
+
+Our monthly meetup is coming up. Here are the details and the agenda.
+
+  Date: Saturday, 7 November 2026
+  Time: 15:00-16:30 IST
+  Venue: Student Activity Centre, Room 2
+
+Agenda:
+- Review of the best shots from the October theme: reflections
+- Plan the November photo walk around the campus lake
+- Lens lending roster for the rest of the semester
+- Open floor: ideas for the winter exhibition
+
+Bring your laptop or a few printed photographs if you like. Tea and
+snacks will be provided.
+
+Cheers,
+Dhruv Patel
+Secretary, Photography Club
+--=_TW_ALT_6bb64679258ac90c
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Photography Club Monthly Meetup - Saturday 7 November</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; color: #222;">
+<p>Hello everyone,</p>
+<p>Our monthly meetup is coming up. Here are the details and the agenda.</p>
+<table style="border-collapse: collapse;">
+<tr><td style="padding: 2px 14px 2px 0;"><b>Date</b></td><td>Saturday, 7 November 2026</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Time</b></td><td>15:00-16:30 IST</td></tr>
+<tr><td style="padding: 2px 14px 2px 0;"><b>Venue</b></td><td>Student Activity Centre, Room 2</td></tr>
+</table>
+<h3 style="margin: 16px 0 6px;">Agenda</h3>
+<ul>
+<li>Review of the best shots from the October theme: reflections</li>
+<li>Plan the November photo walk around the campus lake</li>
+<li>Lens lending roster for the rest of the semester</li>
+<li>Open floor: ideas for the winter exhibition</li>
+</ul>
+<p>Bring your laptop or a few printed photographs if you like. Tea and snacks will be provided.</p>
+<p>Cheers,<br>
+Dhruv Patel<br>
+Secretary, Photography Club</p>
+</body>
+</html>
+--=_TW_ALT_6bb64679258ac90c--

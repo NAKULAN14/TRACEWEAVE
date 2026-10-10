@@ -1,0 +1,58 @@
+[
+  {
+    "event_id": "TW-COM-001-BRW-001",
+    "case_id": "TW-COM-001",
+    "timestamp": "2026-05-04T17:54:42.952+01:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://events.example.org/lectures/TW-COM-001",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-001-a",
+    "user_account": "priya.raman@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-001-BRW-002",
+    "case_id": "TW-COM-001",
+    "timestamp": "2026-05-04T17:54:44.727+01:00",
+    "event_type": "page_load",
+    "url": "https://events.example.org/lectures/TW-COM-001",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-001-a",
+    "user_account": "priya.raman@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-001-BRW-003",
+    "case_id": "TW-COM-001",
+    "timestamp": "2026-05-04T17:54:46.147+01:00",
+    "event_type": "form_displayed",
+    "url": "https://events.example.org/lectures/TW-COM-001",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "device_id": "device-001-a",
+    "user_account": "priya.raman@students.example.org",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-001-BRW-004",
+    "case_id": "TW-COM-001",
+    "timestamp": "2026-05-04T17:55:03.669+01:00",
+    "event_type": "tab_closed",
+    "url": "https://events.example.org/lectures/TW-COM-001",
+    "domain": "events.example.org",
+    "browser": "Safari Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-001-a",
+    "user_account": "priya.raman@students.example.org",
+    "synthetic": true
+  }
+]

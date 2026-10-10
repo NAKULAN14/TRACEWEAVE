@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+UID:tw-ics-004-aa04518c@events.example.edu
+DTSTAMP:20260221T090000Z
+DTSTART:20260311T080000Z
+DTEND:20260311T100000Z
+SUMMARY:Digital Forensics Lab Session
+DESCRIPTION:Practical exercise on disk imaging\, evidence handling\, and ti
+ meline reconstruction using synthetic case data. Please bring your student
+  ID and a laptop. Review the pre-reading beforehand.\nAgenda: https://even
+ ts.example.edu/tw/agenda/004
+LOCATION:Room 285\, Block B\, Example Institute of Technology
+ORGANIZER;CN="Prof. Karthik Menon":mailto:karthik.menon@example.edu
+CATEGORIES:LAB,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/004
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

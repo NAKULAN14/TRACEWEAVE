@@ -1,0 +1,22 @@
+{
+  "case_id": "TW-ICS-015",
+  "corruption_type": "truncated_mid_description",
+  "corruption_description": "File cut off 25 characters into the DESCRIPTION value (no closing delimiters).",
+  "original_filename": "TW-ICS-015.ics",
+  "corrupted_filename": "TW-ICS-015.ics",
+  "affected_fields": [
+    "DESCRIPTION",
+    "LOCATION",
+    "ORGANIZER",
+    "CATEGORIES",
+    "STATUS",
+    "URL",
+    "VALARM",
+    "END:VEVENT",
+    "END:VCALENDAR"
+  ],
+  "expected_parsing_result": "failure",
+  "recovery_possible": true,
+  "original_sha256": "7442b2276a268dd2e68e7188ec5819c45bbac8b3e4e53c33907a70ebbb71a0fe",
+  "corrupted_sha256": "8d4f025048586600f8291090931587e1fcff1b69eaa4e23c15c9a5837ce3bad5"
+}

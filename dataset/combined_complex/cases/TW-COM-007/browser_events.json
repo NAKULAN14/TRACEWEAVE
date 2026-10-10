@@ -1,0 +1,44 @@
+[
+  {
+    "event_id": "TW-COM-007-BRW-001",
+    "case_id": "TW-COM-007",
+    "timestamp": "2026-05-22T02:41:46.155-05:00",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://rooms.example.net/change/TW-COM-007",
+    "domain": "rooms.example.net",
+    "browser": "Edge Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "device_id": "device-007-a",
+    "user_account": "tomas.novak@students.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-007-BRW-002",
+    "case_id": "TW-COM-007",
+    "timestamp": "2026-05-22T02:41:48.297-05:00",
+    "event_type": "page_load",
+    "url": "https://rooms.example.net/change/TW-COM-007",
+    "domain": "rooms.example.net",
+    "browser": "Edge Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "device_id": "device-007-a",
+    "user_account": "tomas.novak@students.example.com",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-COM-007-BRW-003",
+    "case_id": "TW-COM-007",
+    "timestamp": "2026-05-22T02:42:10.242-05:00",
+    "event_type": "tab_closed",
+    "url": "https://rooms.example.net/change/TW-COM-007",
+    "domain": "rooms.example.net",
+    "browser": "Edge Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "device_id": "device-007-a",
+    "user_account": "tomas.novak@students.example.com",
+    "synthetic": true
+  }
+]

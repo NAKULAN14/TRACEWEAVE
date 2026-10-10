@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-QR-006",
+  "category": "benign_qr",
+  "filename": "qr.png",
+  "is_benign": true,
+  "qr_detected": true,
+  "qr_payload": "https://example.com/open-day-2026",
+  "payload_type": "url",
+  "expected_urls": [
+    "https://example.com/open-day-2026"
+  ],
+  "expected_iocs": [],
+  "expected_attack_stages": [],
+  "notes": "Short HTTPS URL on the bare reserved domain. QR version 3, error correction L (~7%), module size 12px, quiet zone 4 modules, image 444x444px (8-bit greyscale PNG, black on white); payload length 33 characters. Single QR code, no logo overlay, no obfuscation, no redirect services. All names, domains and numbers are fictional."
+}

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:tw-ics-012-53655639@events.example.edu
+DTSTAMP:20260207T090000Z
+DTSTART:20260406T100000Z
+DTEND:20260406T110000Z
+SUMMARY:Guest Lecture: Careers in Threat Intelligence
+DESCRIPTION:Invited talk on analyst workflows\, reporting practices\, and h
+ ow students can prepare for the field. Please bring your student ID and a 
+ laptop. Review the pre-reading beforehand.\nAgenda: https://events.example
+ .edu/tw/agenda/012
+LOCATION:Room 251\, Block B\, Example Institute of Technology
+ORGANIZER;CN="Prof. Rohan Iyer":mailto:rohan.iyer@example.edu
+CATEGORIES:LECTURE,ACADEMIC
+STATUS:CONFIRMED
+URL:https://events.example.edu/tw/012
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Event starts in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

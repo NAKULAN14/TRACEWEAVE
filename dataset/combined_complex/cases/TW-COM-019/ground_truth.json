@@ -1,0 +1,575 @@
+{
+  "case_id": "TW-COM-019",
+  "category": "combined_complex",
+  "scenario": "Event newsletter with several URLs on one domain: registration QR, agenda link in the ICS and a news link; the user scans then opens the agenda page.",
+  "expected_classification": "benign",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "a9e517d64cd25427fa0178cbd3b82078b7a17c8b1db53e335d3ed4f1317a3823"
+    },
+    {
+      "filename": "event.ics",
+      "artifact_type": "calendar",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "4a5a6656843ccffd3bb6d7650812bf1c5d75b21a49636a9ed90bbf51ae01adfc"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "f39262cab30fa73fb312478aa5dba721413ed08a2eda6d59184343ad0da85242"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "865c878a2d545f2c61aaf97cff0c8e868d186bbb6d302b53756155dd4df33ccc"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "4733f0be91acd7238a753afebd5a54b721f501e4d429f2c87ec8619bbe04579f"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "7aec3fb13b192682da9f01fb2d008fd987d673aa86c96de95c4e5d0e8db58aa4"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "c897759601119fcc42618f6681739c0d468c17d599314955fbc8cba01ddb25f3"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "921193082f59429f234eb13a594be114e10e7d1d377846665c9bd0f4671250ed"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://events.example.org/register/TW-COM-019",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://events.example.org/register/TW-COM-019"
+  ],
+  "expected_urls": [
+    "https://events.example.org/agenda/TW-COM-019",
+    "https://events.example.org/register/TW-COM-019",
+    "https://www.example.org/news/TW-COM-019"
+  ],
+  "expected_domains": [
+    "events.example.org",
+    "www.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://events.example.org/agenda/TW-COM-019",
+      "normalized_value": "https://events.example.org/agenda/TW-COM-019",
+      "observed_values": [
+        "https://events.example.org/agenda/TW-COM-019"
+      ],
+      "roles": [
+        "ics_url"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "browser_events.json",
+        "event.ics"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "https://events.example.org/register/TW-COM-019",
+      "normalized_value": "https://events.example.org/register/TW-COM-019",
+      "observed_values": [
+        "https://events.example.org/register/TW-COM-019"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "url",
+      "value": "https://www.example.org/news/TW-COM-019",
+      "normalized_value": "https://www.example.org/news/TW-COM-019",
+      "observed_values": [
+        "https://www.example.org/news/TW-COM-019"
+      ],
+      "roles": [
+        "email_body_link"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "events.example.org",
+      "normalized_value": "events.example.org",
+      "observed_values": [
+        "events.example.org"
+      ],
+      "roles": [
+        "dns_query_name",
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "browser_events.json",
+        "dns_events.json",
+        "event.ics",
+        "qr_01.png"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "domain",
+      "value": "www.example.org",
+      "normalized_value": "www.example.org",
+      "observed_values": [
+        "www.example.org"
+      ],
+      "roles": [
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "email_address",
+      "value": "newsletter@events.example.org",
+      "normalized_value": "newsletter@events.example.org",
+      "observed_values": [
+        "newsletter@events.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "event.ics"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "ipv4",
+      "value": "192.0.2.21",
+      "normalized_value": "192.0.2.21",
+      "observed_values": [
+        "192.0.2.21"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-008",
+      "type": "ipv4",
+      "value": "198.51.100.87",
+      "normalized_value": "198.51.100.87",
+      "observed_values": [
+        "198.51.100.87"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "benign",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-019-BRW-001",
+      "timestamp": "2026-06-27T16:43:28.021+00:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://events.example.org/register/TW-COM-019",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-019-BRW-002",
+      "timestamp": "2026-06-27T16:43:29.299+00:00",
+      "event_type": "page_load",
+      "url": "https://events.example.org/register/TW-COM-019",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-019-BRW-003",
+      "timestamp": "2026-06-27T16:43:30.245+00:00",
+      "event_type": "form_displayed",
+      "url": "https://events.example.org/register/TW-COM-019",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-019-BRW-004",
+      "timestamp": "2026-06-27T16:43:39.245+00:00",
+      "event_type": "link_clicked",
+      "url": "https://events.example.org/agenda/TW-COM-019",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-019-BRW-005",
+      "timestamp": "2026-06-27T16:43:40.645+00:00",
+      "event_type": "page_load",
+      "url": "https://events.example.org/agenda/TW-COM-019",
+      "domain": "events.example.org"
+    },
+    {
+      "event_id": "TW-COM-019-BRW-006",
+      "timestamp": "2026-06-27T16:44:05.245+00:00",
+      "event_type": "tab_closed",
+      "url": "https://events.example.org/agenda/TW-COM-019",
+      "domain": "events.example.org"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-019-DNS-001",
+      "timestamp": "2026-06-27T16:43:28.513+00:00",
+      "query": "events.example.org",
+      "record_type": "A",
+      "response": "198.51.100.87"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'register-qr.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:event.ics",
+      "evidence_type": "observed",
+      "basis": "text/calendar MIME part identical to the ICS file"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://events.example.org/agenda/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "URL in ICS DESCRIPTION and URL property"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:email_01.eml",
+      "relation": "contains_url",
+      "target": "url:https://www.example.org/news/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "link in email body"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:newsletter@events.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://events.example.org/register/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "url:https://events.example.org/agenda/TW-COM-019",
+      "relation": "has_domain",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "url:https://events.example.org/register/TW-COM-019",
+      "relation": "has_domain",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "url:https://www.example.org/news/TW-COM-019",
+      "relation": "has_domain",
+      "target": "domain:www.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "dns_event:TW-COM-019-DNS-001",
+      "relation": "queries",
+      "target": "domain:events.example.org",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "dns_event:TW-COM-019-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:198.51.100.87",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "browser_event:TW-COM-019-BRW-001",
+      "relation": "visits",
+      "target": "url:https://events.example.org/register/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-014",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-019-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-015",
+      "source": "browser_event:TW-COM-019-BRW-002",
+      "relation": "visits",
+      "target": "url:https://events.example.org/register/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-016",
+      "source": "browser_event:TW-COM-019-BRW-004",
+      "relation": "visits",
+      "target": "url:https://events.example.org/agenda/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-017",
+      "source": "browser_event:TW-COM-019-BRW-005",
+      "relation": "visits",
+      "target": "url:https://events.example.org/agenda/TW-COM-019",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-06-27T14:32:25+00:00",
+      "source_timestamp": "2026-06-27T14:32:25+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T14:32:25+00:00",
+      "source_timestamp": "2026-06-27T14:32:25+00:00",
+      "event_type": "calendar_invitation_created",
+      "description": "DTSTAMP of event.ics",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T14:32:28+00:00",
+      "source_timestamp": "2026-06-27T14:32:28+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T14:32:28+00:00",
+      "source_timestamp": "2026-06-27T14:32:28+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-06-27T16:43:28.021+00:00",
+      "source_timestamp": "2026-06-27T16:43:28.021+00:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://events.example.org/register/TW-COM-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-019-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T16:43:28.513+00:00",
+      "source_timestamp": "2026-06-27T16:43:28.513+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for events.example.org",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-019-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T16:43:29.299+00:00",
+      "source_timestamp": "2026-06-27T16:43:29.299+00:00",
+      "event_type": "page_load",
+      "description": "load https://events.example.org/register/TW-COM-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-019-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T16:43:30.245+00:00",
+      "source_timestamp": "2026-06-27T16:43:30.245+00:00",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://events.example.org/register/TW-COM-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-019-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T16:43:39.245+00:00",
+      "source_timestamp": "2026-06-27T16:43:39.245+00:00",
+      "event_type": "link_clicked",
+      "description": "click_simulated_link https://events.example.org/agenda/TW-COM-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-019-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T16:43:40.645+00:00",
+      "source_timestamp": "2026-06-27T16:43:40.645+00:00",
+      "event_type": "page_load",
+      "description": "load https://events.example.org/agenda/TW-COM-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-019-BRW-005",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-27T16:44:05.245+00:00",
+      "source_timestamp": "2026-06-27T16:44:05.245+00:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://events.example.org/agenda/TW-COM-019",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-019-BRW-006",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-07-02T17:00:00+00:00",
+      "source_timestamp": "2026-07-02T17:00:00+00:00",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "no_second_dns_lookup",
+      "description": "The agenda page shares a host with the registration page, so no new DNS lookup is expected (cached).",
+      "artifacts_involved": [
+        "dns_events.json",
+        "browser_events.json"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Do not flag the missing second lookup as an anomaly."
+    }
+  ],
+  "notes": "All URLs on the sender's registered domain, no urgency, valid ICS, ordinary browsing; complete evidence. Classification: benign. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

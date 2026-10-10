@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-006",
+  "corruption_type": "invalid_datetime_values",
+  "corruption_description": "DTSTART has month 13; DTEND has hour 25 and minute 61 (syntactically shaped, semantically impossible).",
+  "original_filename": "TW-ICS-006.ics",
+  "corrupted_filename": "TW-ICS-006.ics",
+  "affected_fields": [
+    "DTSTART",
+    "DTEND"
+  ],
+  "expected_parsing_result": "partial_recovery",
+  "recovery_possible": true,
+  "original_sha256": "ced855dd56f0e8c7668d58f86b06423594a882d6cec82e45b06150c8b9926289",
+  "corrupted_sha256": "de7b1eefac1d26becae5268596d9803c7556f67b3704a3b1a2cc8111ad74558a"
+}

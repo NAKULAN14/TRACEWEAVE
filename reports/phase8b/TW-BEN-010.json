@@ -1,0 +1,116 @@
+{
+    "parser": {
+        "name": "TRACEWEAVE EML Parser",
+        "version": "1.0"
+    },
+    "source": {
+        "filename": "email.eml",
+        "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\benign_email_ics\\cases\\TW-BEN-010\\email.eml"
+    },
+    "email": {
+        "from": [
+            {
+                "name": "Sneha Krishnan",
+                "address": "sneha.krishnan@students.northfield.example.org"
+            }
+        ],
+        "to": [
+            {
+                "name": "Vivek Anand",
+                "address": "vivek.anand@students.northfield.example.org"
+            },
+            {
+                "name": "Ananya Das",
+                "address": "ananya.das@students.northfield.example.org"
+            },
+            {
+                "name": "Mohit Jain",
+                "address": "mohit.jain@students.northfield.example.org"
+            }
+        ],
+        "cc": [],
+        "bcc": [],
+        "subject": "Cancelled: Algorithms Study Group - Saturday 31 October",
+        "date_raw": "Thu, 29 Oct 2026 20:20:00 +0530",
+        "date_normalized": "2026-10-29T20:20:00+05:30",
+        "message_id": "<20261029202000.1ca669a3f53f@students.northfield.example.org>",
+        "reply_to": null,
+        "return_path": "<sneha.krishnan@students.northfield.example.org>"
+    },
+    "headers": [
+        {
+            "name": "Return-Path",
+            "value": "<sneha.krishnan@students.northfield.example.org>"
+        },
+        {
+            "name": "Received",
+            "value": "from mail.students.northfield.example.org (mail.students.northfield.example.org)\n\tby mx.students.northfield.example.org (Postfix) with ESMTPS id 4146A6BBFA\n\tfor <vivek.anand@students.northfield.example.org>; Thu, 29 Oct 2026 20:20:02 +0530"
+        },
+        {
+            "name": "Received",
+            "value": "from workstation.students.northfield.example.org (workstation.students.northfield.example.org)\n\tby mail.students.northfield.example.org (Postfix) with ESMTPSA id 1CA669A3F5\n\tfor <vivek.anand@students.northfield.example.org>; Thu, 29 Oct 2026 20:20:00 +0530"
+        },
+        {
+            "name": "From",
+            "value": "\"Sneha Krishnan\" <sneha.krishnan@students.northfield.example.org>"
+        },
+        {
+            "name": "To",
+            "value": "\"Vivek Anand\" <vivek.anand@students.northfield.example.org>,\n\t\"Ananya Das\" <ananya.das@students.northfield.example.org>,\n\t\"Mohit Jain\" <mohit.jain@students.northfield.example.org>"
+        },
+        {
+            "name": "Subject",
+            "value": "Cancelled: Algorithms Study Group - Saturday 31 October"
+        },
+        {
+            "name": "Date",
+            "value": "Thu, 29 Oct 2026 20:20:00 +0530"
+        },
+        {
+            "name": "Message-ID",
+            "value": "<20261029202000.1ca669a3f53f@students.northfield.example.org>"
+        },
+        {
+            "name": "In-Reply-To",
+            "value": "<20261022202000.472606a1cf06@students.northfield.example.org>"
+        },
+        {
+            "name": "References",
+            "value": "<20261022202000.472606a1cf06@students.northfield.example.org>"
+        },
+        {
+            "name": "MIME-Version",
+            "value": "1.0"
+        },
+        {
+            "name": "X-Mailer",
+            "value": "Apple Mail (16.0)"
+        },
+        {
+            "name": "Content-Type",
+            "value": "multipart/mixed; boundary=\"=_TW_MIX_1ca669a3f53faee0\""
+        }
+    ],
+    "body": {
+        "plain_text": "Hi everyone,\n\nI am sorry for the short notice, but this Saturday's Algorithms Study\nGroup session (Session 4) is cancelled. The library has told us that its\ndiscussion rooms will be closed on the evening of Saturday 31 October\nfor scheduled electrical maintenance.\n\n  Cancelled session: Saturday, 31 October 2026, 17:00-19:00 IST\n  Venue: Library Discussion Room 3\n  Planned topic: Dynamic programming practice set 2\n\nWe will cover the same problems in the next session on Saturday, 7\nNovember 2026. I will send a fresh calendar invite once the room is\nconfirmed. Until then, try the first four problems on your own and note\ndown any questions.\n\nThe attached calendar update removes the cancelled session from your\ncalendar.\n\nThanks,\nSneha",
+        "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Cancelled: Algorithms Study Group - Saturday 31 October</title>\n</head>\n<body style=\"font-family: Arial, sans-serif; font-size: 14px; color: #222;\">\n<p>Hi everyone,</p>\n<p>I am sorry for the short notice, but this Saturday&#x27;s Algorithms Study Group session (Session 4) is cancelled. The library has told us that its discussion rooms will be closed on the evening of Saturday 31 October for scheduled electrical maintenance.</p>\n<table style=\"border-collapse: collapse;\">\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Cancelled session</b></td><td>Saturday, 31 October 2026, 17:00-19:00 IST</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Venue</b></td><td>Library Discussion Room 3</td></tr>\n<tr><td style=\"padding: 2px 14px 2px 0;\"><b>Planned topic</b></td><td>Dynamic programming practice set 2</td></tr>\n</table>\n<p>We will cover the same problems in the next session on Saturday, 7 November 2026. I will send a fresh calendar invite once the room is confirmed. Until then, try the first four problems on your own and note down any questions.</p>\n<p>The attached calendar update removes the cancelled session from your calendar.</p>\n<p>Thanks,<br>\nSneha</p>\n</body>\n</html>"
+    },
+    "urls": [],
+    "attachments": [
+        {
+            "attachment_index": 4,
+            "filename": "cancellation.ics",
+            "content_type": "text/calendar",
+            "content_disposition": "attachment",
+            "size_bytes": 1304,
+            "sha256": "2e2e1ae643d83c279a8c1f5682e9e20a34237d7d4605f831fb499cbabca3ebc5",
+            "content_id": null
+        }
+    ],
+    "embedded_objects": [],
+    "analysis_summary": {
+        "url_count": 0,
+        "attachment_count": 1,
+        "embedded_object_count": 0
+    }
+}

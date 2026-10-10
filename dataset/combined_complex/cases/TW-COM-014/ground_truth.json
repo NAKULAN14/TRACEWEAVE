@@ -1,0 +1,549 @@
+{
+  "case_id": "TW-COM-014",
+  "category": "combined_complex",
+  "scenario": "One poster image contains two QR codes: a benign-looking one on the sender's domain and a payment QR on a mismatched host; the second was scanned.",
+  "expected_classification": "simulated_phishing",
+  "artifacts": [
+    {
+      "filename": "email_01.eml",
+      "artifact_type": "email",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "72f561301717f8038588ba1646b2a7a112156d5082a3cea7cb888a4d4a1449c9"
+    },
+    {
+      "filename": "qr_01.png",
+      "artifact_type": "qr_image",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "fd5bcfebb83364d84846fcfbf60043196e8ffb825f9c5b7cbf4db9fb29461226"
+    },
+    {
+      "filename": "browser_events.json",
+      "artifact_type": "browser_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "6c3f72ef0e26bc7946bce3b078b244c566e5072d6c072901ef99c387405bc803"
+    },
+    {
+      "filename": "dns_events.json",
+      "artifact_type": "dns_log",
+      "role": "primary_evidence",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "df64465053486a58ab90e8d1c11513c70efed2fc7e5609b6d5e17d3d64808341"
+    },
+    {
+      "filename": "iocs.json",
+      "artifact_type": "iocs",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "6f798d377186e88bf392d4ae278c33f40ac65d1040f2f96eed29d97810a34c81"
+    },
+    {
+      "filename": "relationships.json",
+      "artifact_type": "relationships",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "54d69cb4eb724a82f9e146537e5197bcd137c22ae6405ede4cb60b193f6579ba"
+    },
+    {
+      "filename": "timeline.json",
+      "artifact_type": "timeline",
+      "role": "reference_reconstruction",
+      "is_malformed": false,
+      "malformation": null,
+      "sha256": "1a85a5e294e6758dd5399640acbb7727e94b4b1d3358cfc68d04d9c2b0d91396"
+    }
+  ],
+  "expected_qr_codes": [
+    {
+      "qr_id": "qr_01#1",
+      "filename": "qr_01.png",
+      "position_left_to_right": 1,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://print.example.org/info/TW-COM-014",
+      "evidence_type": "observed"
+    },
+    {
+      "qr_id": "qr_01#2",
+      "filename": "qr_01.png",
+      "position_left_to_right": 2,
+      "source": "attachment of email_01.eml",
+      "payload_type": "url",
+      "decodable": true,
+      "payload": "https://print-help.example.net/pay/TW-COM-014",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_qr_payloads": [
+    "https://print.example.org/info/TW-COM-014",
+    "https://print-help.example.net/pay/TW-COM-014"
+  ],
+  "expected_urls": [
+    "https://print-help.example.net/pay/TW-COM-014",
+    "https://print.example.org/info/TW-COM-014"
+  ],
+  "expected_domains": [
+    "print-help.example.net",
+    "print.example.org"
+  ],
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://print-help.example.net/pay/TW-COM-014",
+      "normalized_value": "https://print-help.example.net/pay/TW-COM-014",
+      "observed_values": [
+        "https://print-help.example.net/pay/TW-COM-014"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "url",
+      "value": "https://print.example.org/info/TW-COM-014",
+      "normalized_value": "https://print.example.org/info/TW-COM-014",
+      "observed_values": [
+        "https://print.example.org/info/TW-COM-014"
+      ],
+      "roles": [
+        "qr_payload_url"
+      ],
+      "source_artifacts": [
+        "qr_01.png"
+      ],
+      "assessment": "benign_context",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "domain",
+      "value": "print-help.example.net",
+      "normalized_value": "print-help.example.net",
+      "observed_values": [
+        "print-help.example.net"
+      ],
+      "roles": [
+        "dns_query_name",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "browser_events.json",
+        "dns_events.json",
+        "qr_01.png"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "print.example.org",
+      "normalized_value": "print.example.org",
+      "observed_values": [
+        "print.example.org"
+      ],
+      "roles": [
+        "sender_domain",
+        "url_host"
+      ],
+      "source_artifacts": [
+        "email_01.eml",
+        "qr_01.png"
+      ],
+      "assessment": "benign_context",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "email_address",
+      "value": "print@print.example.org",
+      "normalized_value": "print@print.example.org",
+      "observed_values": [
+        "print@print.example.org"
+      ],
+      "roles": [
+        "sender_address"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-006",
+      "type": "ipv4",
+      "value": "192.0.2.15",
+      "normalized_value": "192.0.2.15",
+      "observed_values": [
+        "192.0.2.15"
+      ],
+      "roles": [
+        "resolved_ip_a"
+      ],
+      "source_artifacts": [
+        "dns_events.json"
+      ],
+      "assessment": "malicious_simulated",
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-007",
+      "type": "ipv4",
+      "value": "192.0.2.235",
+      "normalized_value": "192.0.2.235",
+      "observed_values": [
+        "192.0.2.235"
+      ],
+      "roles": [
+        "email_origin_ip"
+      ],
+      "source_artifacts": [
+        "email_01.eml"
+      ],
+      "assessment": "suspicious_simulated",
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [
+    {
+      "event_id": "TW-COM-014-BRW-001",
+      "timestamp": "2026-06-12T13:38:02.657+01:00",
+      "event_type": "qr_scan_url_opened",
+      "url": "https://print-help.example.net/pay/TW-COM-014",
+      "domain": "print-help.example.net"
+    },
+    {
+      "event_id": "TW-COM-014-BRW-002",
+      "timestamp": "2026-06-12T13:38:04.343+01:00",
+      "event_type": "page_load",
+      "url": "https://print-help.example.net/pay/TW-COM-014",
+      "domain": "print-help.example.net"
+    },
+    {
+      "event_id": "TW-COM-014-BRW-003",
+      "timestamp": "2026-06-12T13:38:06.131+01:00",
+      "event_type": "form_displayed",
+      "url": "https://print-help.example.net/pay/TW-COM-014",
+      "domain": "print-help.example.net"
+    },
+    {
+      "event_id": "TW-COM-014-BRW-004",
+      "timestamp": "2026-06-12T13:38:19.387+01:00",
+      "event_type": "tab_closed",
+      "url": "https://print-help.example.net/pay/TW-COM-014",
+      "domain": "print-help.example.net"
+    }
+  ],
+  "expected_dns_events": [
+    {
+      "event_id": "TW-COM-014-DNS-001",
+      "timestamp": "2026-06-12T12:38:02.842+00:00",
+      "query": "print-help.example.net",
+      "record_type": "A",
+      "response": "192.0.2.15"
+    }
+  ],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email_01.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr_01.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'printing-poster.png' is byte-identical to qr_01.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:email_01.eml",
+      "relation": "sent_from",
+      "target": "email_address:print@print.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#1",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "qr:qr_01#1",
+      "relation": "encodes",
+      "target": "url:https://print.example.org/info/TW-COM-014",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "artifact:qr_01.png",
+      "relation": "contains_qr",
+      "target": "qr:qr_01#2",
+      "evidence_type": "observed",
+      "basis": "QR code decoded from image"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "qr:qr_01#2",
+      "relation": "encodes",
+      "target": "url:https://print-help.example.net/pay/TW-COM-014",
+      "evidence_type": "observed",
+      "basis": "decoded payload is a URL"
+    },
+    {
+      "relationship_id": "REL-007",
+      "source": "url:https://print-help.example.net/pay/TW-COM-014",
+      "relation": "has_domain",
+      "target": "domain:print-help.example.net",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-008",
+      "source": "url:https://print.example.org/info/TW-COM-014",
+      "relation": "has_domain",
+      "target": "domain:print.example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-009",
+      "source": "dns_event:TW-COM-014-DNS-001",
+      "relation": "queries",
+      "target": "domain:print-help.example.net",
+      "evidence_type": "observed",
+      "basis": "DNS query name"
+    },
+    {
+      "relationship_id": "REL-010",
+      "source": "dns_event:TW-COM-014-DNS-001",
+      "relation": "resolves_to",
+      "target": "ip:192.0.2.15",
+      "evidence_type": "observed",
+      "basis": "DNS response"
+    },
+    {
+      "relationship_id": "REL-011",
+      "source": "browser_event:TW-COM-014-BRW-001",
+      "relation": "visits",
+      "target": "url:https://print-help.example.net/pay/TW-COM-014",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    },
+    {
+      "relationship_id": "REL-012",
+      "source": "artifact:email_01.eml",
+      "relation": "likely_origin_of",
+      "target": "browser_event:TW-COM-014-BRW-001",
+      "evidence_type": "inferred",
+      "basis": "QR in this email encodes the opened URL and the email was received earlier; the scan source cannot be proven",
+      "confidence": "high"
+    },
+    {
+      "relationship_id": "REL-013",
+      "source": "browser_event:TW-COM-014-BRW-002",
+      "relation": "visits",
+      "target": "url:https://print-help.example.net/pay/TW-COM-014",
+      "evidence_type": "observed",
+      "basis": "browser event url"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-06-12T11:52:59+00:00",
+      "source_timestamp": "2026-06-12T11:52:59+00:00",
+      "event_type": "email_sent",
+      "description": "Date header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-12T11:53:02+00:00",
+      "source_timestamp": "2026-06-12T11:53:02+00:00",
+      "event_type": "email_received",
+      "description": "Received header of email_01.eml",
+      "source_artifact": "email_01.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-12T11:53:02+00:00",
+      "source_timestamp": "2026-06-12T11:53:02+00:00",
+      "event_type": "qr_code_available_for_extraction",
+      "description": "qr_01.png becomes extractable once email_01.eml is received",
+      "source_artifact": "qr_01.png",
+      "reference_id": "qr:qr_01#1",
+      "evidence_type": "inferred",
+      "entry_kind": "derived"
+    },
+    {
+      "timestamp": "2026-06-12T12:38:02.657+00:00",
+      "source_timestamp": "2026-06-12T13:38:02.657+01:00",
+      "event_type": "qr_scan_url_opened",
+      "description": "open_url https://print-help.example.net/pay/TW-COM-014",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-014-BRW-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-12T12:38:02.842+00:00",
+      "source_timestamp": "2026-06-12T12:38:02.842+00:00",
+      "event_type": "dns_query",
+      "description": "A lookup for print-help.example.net",
+      "source_artifact": "dns_events.json",
+      "reference_id": "TW-COM-014-DNS-001",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-12T12:38:04.343+00:00",
+      "source_timestamp": "2026-06-12T13:38:04.343+01:00",
+      "event_type": "page_load",
+      "description": "load https://print-help.example.net/pay/TW-COM-014",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-014-BRW-002",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-12T12:38:06.131+00:00",
+      "source_timestamp": "2026-06-12T13:38:06.131+01:00",
+      "event_type": "form_displayed",
+      "description": "render_static_form_no_input https://print-help.example.net/pay/TW-COM-014",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-014-BRW-003",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-06-12T12:38:19.387+00:00",
+      "source_timestamp": "2026-06-12T13:38:19.387+01:00",
+      "event_type": "tab_closed",
+      "description": "close_tab https://print-help.example.net/pay/TW-COM-014",
+      "source_artifact": "browser_events.json",
+      "reference_id": "TW-COM-014-BRW-004",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "1 phishing-style email(s) delivered"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email_01.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Urgency/authority lure theme in subject and body"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr_01.png"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code presented to the recipient(s)"
+    },
+    {
+      "order": 4,
+      "stage": "qr_scan_and_url_open",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-014-BRW-001"
+      ],
+      "description": "Browser opened the QR payload URL via the QR handler"
+    },
+    {
+      "order": 5,
+      "stage": "dns_resolution",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "dns_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-014-DNS-001"
+      ],
+      "description": "Synthetic DNS resolution of simulated hosts"
+    },
+    {
+      "order": 6,
+      "stage": "landing_page_access",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-014-BRW-002"
+      ],
+      "description": "Simulated landing page loaded"
+    },
+    {
+      "order": 7,
+      "stage": "simulated_form_exposure",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "browser_events.json"
+      ],
+      "supporting_event_ids": [
+        "TW-COM-014-BRW-003"
+      ],
+      "description": "Static form displayed; no input or credentials exist in the dataset"
+    }
+  ],
+  "missing_evidence": [],
+  "ambiguous_findings": [
+    {
+      "finding_id": "AMB-001",
+      "finding_type": "mixed_qr_content",
+      "description": "A single image holds a benign-looking QR (sender domain) and a mismatched-host QR. That the second may have been overlaid is an inference.",
+      "artifacts_involved": [
+        "email_01.eml",
+        "qr_01.png"
+      ],
+      "evidence_type": "inferred",
+      "conflict_code": null,
+      "expected_handling": "Decode both; assess each URL separately; only the second was scanned."
+    }
+  ],
+  "notes": "Payment lure; second QR host unrelated to sender; scan of that URL observed. Classification: simulated_phishing. Evidence labels: 'observed' = readable in an artifact; 'inferred' = derived/correlated. iocs/timeline/relationships files are the reference reconstruction (hide for blind tests). All hosts and addresses use reserved example domains, all IPs are documentation ranges, all activity is synthetic."
+}

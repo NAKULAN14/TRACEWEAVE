@@ -1,0 +1,293 @@
+{
+  "artifact": {
+    "filename": "TW-ICS-001.ics",
+    "path": "C:\\Users\\nakul\\OneDrive\\Desktop\\Traceweave\\dataset\\malformed_ics\\corrupted\\TW-ICS-001.ics",
+    "size_bytes": 828,
+    "sha256": "992e6f62045c39121145087984599a01dbe76cb5644898f060867619ac6000e1"
+  },
+  "inspection": {
+    "inspected_at": "2026-10-03T13:07:43.067868+00:00",
+    "encoding_used": "utf-8"
+  },
+  "structure": {
+    "has_vcalendar_begin": true,
+    "has_vcalendar_end": true,
+    "balanced_vcalendar": true,
+    "component_analysis": {
+      "begin_components": [
+        {
+          "line_number": 1,
+          "component": "VCALENDAR"
+        },
+        {
+          "line_number": 5,
+          "component": "VEVENT"
+        },
+        {
+          "line_number": 19,
+          "component": "VALARM"
+        }
+      ],
+      "end_components": [
+        {
+          "line_number": 23,
+          "component": "VALARM"
+        },
+        {
+          "line_number": 24,
+          "component": "VEVENT"
+        },
+        {
+          "line_number": 25,
+          "component": "VCALENDAR"
+        }
+      ]
+    },
+    "line_analysis": {
+      "total_lines": 25,
+      "lines": [
+        {
+          "line_number": 1,
+          "length": 15,
+          "text": "BEGIN:VCALENDAR",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 2,
+          "length": 11,
+          "text": "VERSION:2.0",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 3,
+          "length": 49,
+          "text": "PRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 4,
+          "length": 18,
+          "text": "CALSCALE:GREGORIAN",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 5,
+          "length": 12,
+          "text": "BEGIN:VEVENT",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 6,
+          "length": 24,
+          "text": "DTSTAMP:20260201T090000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 7,
+          "length": 24,
+          "text": "DTSTART:20260302T103000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 8,
+          "length": 22,
+          "text": "DTEND:20260302T123000Z",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 9,
+          "length": 49,
+          "text": "SUMMARY:Introduction to Operating Systems Lecture",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 10,
+          "length": 75,
+          "text": "DESCRIPTION:Process scheduling\\, context switching\\, and memory management ",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 11,
+          "length": 75,
+          "text": " fundamentals for first-year students. Please bring your student ID and a l",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 12,
+          "length": 75,
+          "text": " aptop. Review the pre-reading beforehand.\\nAgenda: https://events.example.",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 13,
+          "length": 18,
+          "text": " edu/tw/agenda/001",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 14,
+          "length": 61,
+          "text": "LOCATION:Room 124\\, Block D\\, Example Institute of Technology",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 15,
+          "length": 59,
+          "text": "ORGANIZER;CN=\"Dr. Asha Verma\":mailto:asha.verma@example.edu",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 16,
+          "length": 27,
+          "text": "CATEGORIES:LECTURE,ACADEMIC",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 17,
+          "length": 16,
+          "text": "STATUS:CONFIRMED",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 18,
+          "length": 37,
+          "text": "URL:https://events.example.edu/tw/001",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 19,
+          "length": 12,
+          "text": "BEGIN:VALARM",
+          "is_begin": true,
+          "is_end": false,
+          "is_property": false
+        },
+        {
+          "line_number": 20,
+          "length": 14,
+          "text": "ACTION:DISPLAY",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 21,
+          "length": 38,
+          "text": "DESCRIPTION:Event starts in 15 minutes",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 22,
+          "length": 14,
+          "text": "TRIGGER:-PT15M",
+          "is_begin": false,
+          "is_end": false,
+          "is_property": true
+        },
+        {
+          "line_number": 23,
+          "length": 10,
+          "text": "END:VALARM",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        },
+        {
+          "line_number": 24,
+          "length": 10,
+          "text": "END:VEVENT",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        },
+        {
+          "line_number": 25,
+          "length": 13,
+          "text": "END:VCALENDAR",
+          "is_begin": false,
+          "is_end": true,
+          "is_property": false
+        }
+      ]
+    }
+  },
+  "anomalies": [
+    {
+      "line_number": 11,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "fundamentals for first-year students. Please bring your student ID and a l"
+    },
+    {
+      "line_number": 13,
+      "type": "MISSING_PROPERTY_DELIMITER",
+      "description": "Line does not contain a property delimiter.",
+      "line_preview": "edu/tw/agenda/001"
+    }
+  ],
+  "encoded_candidates": [
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 123,
+      "end_offset": 139,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "f3ef375b520fb22ceb7a6472ec10f3517cefe14610cbcef130d352175e490339"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 149,
+      "end_offset": 165,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "468248be77149a655c42518af7edccb09b7953b514cb89ad3b22ff1935a5a76a"
+    },
+    {
+      "type": "BASE64_CANDIDATE",
+      "start_offset": 173,
+      "end_offset": 189,
+      "encoded_length": 16,
+      "decoded_size": 12,
+      "decoded_sha256": "e34120cdbddd14a05985b1d251a7c509f666222161c1b175938bc1568c99f479"
+    }
+  ],
+  "raw_preview": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//TRACEWEAVE//Synthetic ICS Dataset 3//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nDTSTAMP:20260201T090000Z\r\nDTSTART:20260302T103000Z\r\nDTEND:20260302T123000Z\r\nSUMMARY:Introduction to Operating Systems Lecture\r\nDESCRIPTION:Process scheduling\\, context switching\\, and memory management \r\n fundamentals for first-year students. Please bring your student ID and a l\r\n aptop. Review the pre-reading beforehand.\\nAgenda: https://events.example.\r\n edu/tw/agenda/001\r\nLOCATION:Room 124\\, Block D\\, Example Institute of Technology\r\nORGANIZER;CN=\"Dr. Asha Verma\":mailto:asha.verma@example.edu\r\nCATEGORIES:LECTURE,ACADEMIC\r\nSTATUS:CONFIRMED\r\nURL:https://events.example.edu/tw/001\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:Event starts in 15 minutes\r\nTRIGGER:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+}

@@ -1,0 +1,93 @@
+Received: from mail-out.alderwick-helpdesk.example.org (alderwick-helpdesk.example.org [192.0.2.15])
+	by mx.mail.example.com with ESMTP id TWPHI020;
+	Fri, 15 May 2026 16:22:46 +0000
+X-TW-Dataset: qr-phishing-simulation-dataset-4
+X-TW-Case: TW-PHI-020
+From: "Alderwick IT Helpdesk" <helpdesk@alderwick-helpdesk.example.org>
+To: "Noah Fischer" <noah.fischer@mail.example.com>
+Reply-To: it-support@alderwick-reply.example.com
+Subject: Your password expires in 24 hours (helpdesk notice)
+Date: Sat, 16 May 2026 00:22:43 +0800
+Message-ID: <tw-phi-020.23bb2de2f9@mail-out.alderwick-helpdesk.example.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_TW-PHI-020_alt"
+
+--=_TW-PHI-020_alt
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Hello Noah,
+
+Your account password is scheduled to expire within 24 hours.
+
+To avoid being locked out of campus systems, complete the renewal check
+on the helpdesk page.
+
+Scan the QR code below with your phone camera to continue.
+
+[QR code image is embedded in the HTML version of this message]
+
+If scanning does not work, use this link instead:
+HTTPS://EXAMPLE.ORG/helpdesk/expiry/TW-PHI-020
+
+Regards,
+Alderwick IT Helpdesk
+
+--=_TW-PHI-020_alt
+Content-Type: multipart/related; boundary="=_TW-PHI-020_rel"
+
+--=_TW-PHI-020_rel
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello Noah,</p><p>Your account password is scheduled to expire within 24 hours.</p><p>To avoid being locked out of campus systems, complete the renewal check on the helpdesk page.</p><p>Scan the QR code below with your phone camera to continue.</p><p><img src="cid:qr-tw-phi-020@mail-out.alderwick-helpdesk.example.org" alt="QR code" width="220" height="220"></p><p>If scanning does not work, use this link instead:<br><a href="HTTPS://EXAMPLE.ORG/helpdesk/expiry/TW-PHI-020">HTTPS://EXAMPLE.ORG/helpdesk/expiry/TW-PHI-020</a></p><p>Regards,<br>Alderwick IT Helpdesk</p></body></html>
+--=_TW-PHI-020_rel
+Content-Type: image/png; name="qr.png"
+Content-Transfer-Encoding: base64
+Content-ID: <qr-tw-phi-020@mail-out.alderwick-helpdesk.example.org>
+Content-Disposition: inline; filename="qr.png"
+
+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
+--=_TW-PHI-020_rel--
+--=_TW-PHI-020_alt--

@@ -1,0 +1,15 @@
+{
+  "case_id": "TW-ICS-012",
+  "corruption_type": "crossed_component_nesting",
+  "corruption_description": "END:VEVENT and END:VALARM were swapped so the VALARM/VEVENT nesting overlaps.",
+  "original_filename": "TW-ICS-012.ics",
+  "corrupted_filename": "TW-ICS-012.ics",
+  "affected_fields": [
+    "END:VALARM",
+    "END:VEVENT"
+  ],
+  "expected_parsing_result": "success_despite_corruption",
+  "recovery_possible": true,
+  "original_sha256": "bf560534314ef2118af8d271bb5f8859c4534c7b472a4e649ada491607877c31",
+  "corrupted_sha256": "959c3e00a6de188091f7294272567d3aef904581d608a364262fbaa5203829ed"
+}

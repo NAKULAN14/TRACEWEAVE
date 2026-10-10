@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-10-07T05:02:18.707019+00:00",
+  "input": "reports\\phase12\\deduplicated_iocs.json",
+  "total_iocs": 24,
+  "enriched": 24,
+  "found": 0,
+  "not_found": 24,
+  "errors": 0,
+  "ioc_type_counts": {
+    "EMAIL": 7,
+    "DOMAIN": 9,
+    "URL": 8
+  },
+  "network_access_performed": false
+}

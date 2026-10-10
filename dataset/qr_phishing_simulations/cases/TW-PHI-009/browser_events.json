@@ -1,0 +1,63 @@
+[
+  {
+    "event_id": "TW-PHI-009-BRW-001",
+    "case_id": "TW-PHI-009",
+    "timestamp": "2026-04-24T01:14:27.019Z",
+    "event_type": "qr_scan_url_opened",
+    "url": "https://go.example.net/r/TW-PHI-009",
+    "domain": "go.example.net",
+    "browser": "Safari Mobile",
+    "action": "open_url",
+    "source": "mobile_camera_qr_handler",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-009-BRW-002",
+    "case_id": "TW-PHI-009",
+    "timestamp": "2026-04-24T01:14:27.987Z",
+    "event_type": "http_redirect",
+    "url": "https://go.example.net/r/TW-PHI-009",
+    "domain": "go.example.net",
+    "browser": "Safari Mobile",
+    "action": "redirect",
+    "source": "browser_navigation",
+    "synthetic": true,
+    "redirect_location": "https://files.example.net/view/TW-PHI-009"
+  },
+  {
+    "event_id": "TW-PHI-009-BRW-003",
+    "case_id": "TW-PHI-009",
+    "timestamp": "2026-04-24T01:14:29.464Z",
+    "event_type": "page_load",
+    "url": "https://files.example.net/view/TW-PHI-009",
+    "domain": "files.example.net",
+    "browser": "Safari Mobile",
+    "action": "load",
+    "source": "browser_navigation",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-009-BRW-004",
+    "case_id": "TW-PHI-009",
+    "timestamp": "2026-04-24T01:14:31.573Z",
+    "event_type": "form_displayed",
+    "url": "https://files.example.net/view/TW-PHI-009",
+    "domain": "files.example.net",
+    "browser": "Safari Mobile",
+    "action": "render_static_form_no_input",
+    "source": "page_renderer",
+    "synthetic": true
+  },
+  {
+    "event_id": "TW-PHI-009-BRW-005",
+    "case_id": "TW-PHI-009",
+    "timestamp": "2026-04-24T01:14:50.434Z",
+    "event_type": "tab_closed",
+    "url": "https://files.example.net/view/TW-PHI-009",
+    "domain": "files.example.net",
+    "browser": "Safari Mobile",
+    "action": "close_tab",
+    "source": "browser_tab_manager",
+    "synthetic": true
+  }
+]

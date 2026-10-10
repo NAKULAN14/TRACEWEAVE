@@ -1,0 +1,53 @@
+[
+  {
+    "ioc_id": "IOC-001",
+    "type": "domain",
+    "value": "library.example.org",
+    "normalized_value": "library.example.org",
+    "observed_values": [
+      "library.example.org"
+    ],
+    "roles": [
+      "sender_domain"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-002",
+    "type": "email_address",
+    "value": "info@library.example.org",
+    "normalized_value": "info@library.example.org",
+    "observed_values": [
+      "info@library.example.org"
+    ],
+    "roles": [
+      "sender_address"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  },
+  {
+    "ioc_id": "IOC-003",
+    "type": "ipv4",
+    "value": "192.0.2.78",
+    "normalized_value": "192.0.2.78",
+    "observed_values": [
+      "192.0.2.78"
+    ],
+    "roles": [
+      "email_origin_ip"
+    ],
+    "source_artifacts": [
+      "email_01.eml"
+    ],
+    "assessment": "benign",
+    "evidence_type": "observed"
+  }
+]

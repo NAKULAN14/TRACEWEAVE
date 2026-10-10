@@ -1,0 +1,201 @@
+{
+  "case_id": "TW-PHI-011",
+  "category": "qr_phishing_simulation",
+  "is_simulated_phishing": true,
+  "email_filename": "email.eml",
+  "ics_filename": "event.ics",
+  "qr_filename": "qr.png",
+  "qr_detected": true,
+  "expected_qr_payload": "https://example.org/events/checkin/TW-PHI-011",
+  "expected_url": "https://example.org/events/checkin/TW-PHI-011",
+  "expected_domain": "example.org",
+  "expected_iocs": [
+    {
+      "ioc_id": "IOC-001",
+      "type": "url",
+      "value": "https://example.org/events/checkin/TW-PHI-011",
+      "normalized_value": "https://example.org/events/checkin/TW-PHI-011",
+      "role": "qr_payload_url",
+      "source_artifacts": [
+        "event.ics",
+        "qr.png"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-002",
+      "type": "domain",
+      "value": "example.org",
+      "normalized_value": "example.org",
+      "role": "phishing_url_domain",
+      "source_artifacts": [
+        "event.ics",
+        "qr.png"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-003",
+      "type": "email_address",
+      "value": "activities@alderwick-activities.example.org",
+      "normalized_value": "activities@alderwick-activities.example.org",
+      "role": "sender_address",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-004",
+      "type": "domain",
+      "value": "alderwick-activities.example.org",
+      "normalized_value": "alderwick-activities.example.org",
+      "role": "sender_domain",
+      "source_artifacts": [
+        "email.eml",
+        "event.ics"
+      ],
+      "evidence_type": "observed"
+    },
+    {
+      "ioc_id": "IOC-005",
+      "type": "ipv4",
+      "value": "192.0.2.65",
+      "normalized_value": "192.0.2.65",
+      "role": "email_origin_ip",
+      "source_artifacts": [
+        "email.eml"
+      ],
+      "evidence_type": "observed"
+    }
+  ],
+  "expected_browser_events": [],
+  "expected_dns_events": [],
+  "expected_relationships": [
+    {
+      "relationship_id": "REL-001",
+      "source": "artifact:email.eml",
+      "relation": "carries_attachment",
+      "target": "artifact:qr.png",
+      "evidence_type": "observed",
+      "basis": "MIME image part 'techfair-checkin.png' (file) is byte-identical to qr.png"
+    },
+    {
+      "relationship_id": "REL-002",
+      "source": "artifact:qr.png",
+      "relation": "encodes",
+      "target": "url:https://example.org/events/checkin/TW-PHI-011",
+      "evidence_type": "observed",
+      "basis": "QR payload decoded from image"
+    },
+    {
+      "relationship_id": "REL-003",
+      "source": "artifact:email.eml",
+      "relation": "references_calendar_invitation",
+      "target": "artifact:event.ics",
+      "evidence_type": "inferred",
+      "basis": "email says an invitation was sent separately; event.ics supplied as separate evidence"
+    },
+    {
+      "relationship_id": "REL-004",
+      "source": "artifact:event.ics",
+      "relation": "contains_url",
+      "target": "url:https://example.org/events/checkin/TW-PHI-011",
+      "evidence_type": "observed",
+      "basis": "URL present in ICS DESCRIPTION"
+    },
+    {
+      "relationship_id": "REL-005",
+      "source": "url:https://example.org/events/checkin/TW-PHI-011",
+      "relation": "has_domain",
+      "target": "domain:example.org",
+      "evidence_type": "observed",
+      "basis": "URL host"
+    },
+    {
+      "relationship_id": "REL-006",
+      "source": "artifact:email.eml",
+      "relation": "sent_from",
+      "target": "email_address:activities@alderwick-activities.example.org",
+      "evidence_type": "observed",
+      "basis": "From header"
+    }
+  ],
+  "expected_timeline": [
+    {
+      "timestamp": "2026-04-27T08:11:46Z",
+      "event_type": "email_sent",
+      "description": "Email Date header (converted to UTC)",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Date",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-27T08:11:46Z",
+      "event_type": "calendar_invitation_created",
+      "description": "ICS DTSTAMP",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTAMP",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-04-27T08:11:48Z",
+      "event_type": "email_received",
+      "description": "Receiving MTA timestamp",
+      "source_artifact": "email.eml",
+      "reference_id": "header:Received",
+      "evidence_type": "observed",
+      "entry_kind": "occurred"
+    },
+    {
+      "timestamp": "2026-05-02T08:30:00Z",
+      "event_type": "calendar_event_scheduled_start",
+      "description": "Scheduled start (future event, not an occurrence)",
+      "source_artifact": "event.ics",
+      "reference_id": "ics:DTSTART",
+      "evidence_type": "observed",
+      "entry_kind": "scheduled"
+    }
+  ],
+  "expected_attack_stages": [
+    {
+      "order": 1,
+      "stage": "initial_delivery",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Phishing-style email delivered to the recipient"
+    },
+    {
+      "order": 2,
+      "stage": "social_engineering_lure",
+      "evidence_type": "inferred",
+      "supporting_artifacts": [
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "Lure theme 'campus_event_checkin' with urgency/deadline language"
+    },
+    {
+      "order": 3,
+      "stage": "qr_code_presentation",
+      "evidence_type": "observed",
+      "supporting_artifacts": [
+        "qr.png",
+        "email.eml"
+      ],
+      "supporting_event_ids": [],
+      "description": "QR code attached to the email"
+    }
+  ],
+  "missing_artifacts": [
+    "browser_events.json",
+    "dns_events.json"
+  ],
+  "notes": "Scenario: campus_event_checkin. QR attached as file 'techfair-checkin.png'. Email says the invitation arrived separately; event.ics supplied as separate evidence. No simulated scan occurred: the QR code is present but there is no browser or DNS activity. The missing browser/DNS files reflect absence of activity, not lost evidence. OBSERVED = values readable in artifacts (headers, QR payload, JSON events, ICS fields). INFERRED = stage classification, email-to-scan linkage, and scan-from-DNS conclusions. All hosts/addresses use reserved example domains; all IPs are documentation ranges; all activity is synthetic."
+}

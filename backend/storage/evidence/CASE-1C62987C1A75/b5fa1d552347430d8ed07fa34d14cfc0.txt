@@ -1,0 +1,4 @@
+TRACEWEAVE Evidence Upload Test
+Artifact: Synthetic benign evidence
+Purpose: Validate file storage, SHA-256 hashing,
+file size detection, and evidence metadata.
